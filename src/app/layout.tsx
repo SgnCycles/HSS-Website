@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+export const metadata: Metadata = {
+  title: "Hässelby Strands sjöscoutkår",
+  description: "Välkommen till Hässelby Strand Sjöscoutkår",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
