@@ -1,5 +1,4 @@
-import AgeGroupCardHome from "@/components/AgeGroupCardHome";
-import Image from "next/image";
+import AgeGroupCardHome from "@/components/cards/AgeGroupCardHome";
 
 export default function Home() {
   return (
