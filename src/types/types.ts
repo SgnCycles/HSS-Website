@@ -1,3 +1,5 @@
+import { navItems } from "@/data/navMenu"
+
 export type ageGroupCardContentType = {
     title: string,
     ageGroup: string,
@@ -11,4 +13,17 @@ export type ageGroupCardContentType = {
     image: string,
     price: string,
     apply: string
+}
+
+interface MenuItems{
+
+   title:string,
+   content:string[]
+}
+
+
+
+export interface NavProps{
+
+  items: MenuItems[]
 }
