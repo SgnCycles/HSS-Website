@@ -3,3 +3,70 @@
 * {
   box-sizing: border-box;
 }
+
+@theme {
+  --color-*: initial;
+
+  /* Primary colors */
+  --color-white: #ffffff;
+  --color-black: #363636;
+  --color-grey-300: #b6b6b6;
+
+  /* Brown */
+  --color-brown-900: #413414;
+
+  /* Yellow */
+  --color-yellow-200: #fff4d8;
+  --color-yellow-500: #f7b309;
+
+  /* Blue */
+  --color-blue-100: #e3edf5;
+  --color-blue-500: #0b81dd;
+  --color-blue-900: #00355f;
+
+  /* Green */
+  --color-green-100: #d4e4d7;
+  --color-green-500: #2a7636;
+  --color-green-700: #055a13;
+
+  /* Pink */
+  --color-pink-100: #fbe5ee;
+  --color-pink-500: #db1a68;
+  --color-pink-700: #8e1845;
+
+  /* Orange */
+  --color-orange-100: #fce0d1;
+  --color-orange-500: #ce8c69;
+  --color-orange-700: #b95c2a;
+
+  /* Age cards */
+  --color-sjohumlor-primary: #2a7636;
+  --color-sjohumlor-secondary: #d4e4d7;
+  --color-kaparna-primary: #1165ae;
+  --color-kaparna-secondary: #cee6f8;
+  --color-konvojen-primary: #aa4611;
+  --color-konvojen-secondary: #fce0d1;
+  --color-utmanare-primary: #b92e66;
+  --color-utmanare-secondary: #f4bad2;
+
+  /* Color Aliases */
+  --color-background: var(--color-white);
+  --color-primary: var(--color-blue-900);
+  --color-primary-hover: var(--color-brown-900);
+  --color-secondary: var(--color-yellow-200);
+  --color-muted: var(--color-grey-300);
+  --color-accent: var(--color-yellow-500);
+  --color-accent-hover: var(--color-white);
+
+  /* Border-radius */
+  --radius-*: initial;
+  --radius-xs: 5px;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+  --radius-xl: 50px;
+
+  /* Fonts */
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
