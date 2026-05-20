@@ -18,6 +18,16 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage-grotesque",
+  subsets: ["latin"],
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
+  subsets: ["latin"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,6 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      lang="en" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
       lang="en" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
