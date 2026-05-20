@@ -8,11 +8,6 @@ export const metadata: Metadata = {
   description: "Välkommen till Hässelby Strand Sjöscoutkår",
 };
 
-const bricolageGrotesque = Bricolage_Grotesque({
-  variable: "--font-bricolage-grotesque",
-  subsets: ["latin"],
-});
-
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
@@ -20,11 +15,6 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
-  subsets: ["latin"],
-});
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });
 
@@ -36,13 +26,11 @@ export default function RootLayout({
   return (
     <html
       lang="en" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
-      lang="en" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
        <Nav items={[]} />
       {children}
       </body>
-    
     </html>
   );
 }
