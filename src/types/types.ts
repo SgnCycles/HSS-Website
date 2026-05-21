@@ -15,11 +15,3 @@ export type ageGroupCardContentType = {
     apply: string
 }
 
-interface MenuItems{
-   title:string,
-   content:string[]
-}
-
-export interface NavProps{
-  items: MenuItems[]
-}

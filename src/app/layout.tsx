@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
-import Nav from "@/components/cards/Nav";
+import Nav from "@/components/common/Nav";
+import { navItems } from "@/data/navMenu";
 
 export const metadata: Metadata = {
   title: "Hässelby Strands sjöscoutkår",
@@ -25,11 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
+      lang="en"
+      className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
-       <Nav items={[]} />
-      {children}
+        <Nav items={navItems} />
+        {children}
       </body>
     </html>
   );
