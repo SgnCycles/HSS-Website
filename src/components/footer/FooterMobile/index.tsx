@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import FooterImage from "../FooterImage";
-import FooterHeadSection from "../FooterHeadSection";
-import FooterLocation from "../FooterLocation";
-import FooterContact from "../FooterContact";
+import FooterHeadSection from "./FooterHeadSection";
+import FooterLocation from "./FooterLocation";
+import FooterContact from "./FooterContact";
 
 const FooterMobile = () => {
   return (
