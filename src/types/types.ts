@@ -12,3 +12,19 @@ export type ageGroupCardContentType = {
     price: string,
     apply: string
 }
+
+export type activityCardType = {
+    icon: string,
+    title: string,
+    info: string,
+}
+
+export type activityFeatureType = {
+    title: string,
+    subTitle: string,
+    subIcon: string,
+    info: string,
+    infoDescFirst: string,
+    infoDescSecond: string,
+    icon: string
+}

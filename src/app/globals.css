@@ -3,3 +3,58 @@
 * {
   box-sizing: border-box;
 }
+
+@theme {
+  --color-*: initial;
+
+  /* Primary colors */
+  --color-white: #FFFFFF;
+  --color-black: #363636;
+  --color-grey-300: #B6B6B6;
+
+  /* Brown */
+  --color-brown-900: #413414;
+
+  /* Yellow */
+  --color-yellow-200: #FFF4D8;
+  --color-yellow-500: #F7B309;
+
+  /* Blue */
+  --color-blue-100: #E3EDF5;
+  --color-blue-500: #0B81DD;
+  --color-blue-900: #00355F;
+
+  /* Green */
+  --color-green-100: #D4E4D7;
+  --color-green-500: #2A7636;
+  --color-green-700: #055A13;
+
+  /* Pink */
+  --color-pink-100: #FBE5EE;
+  --color-pink-500: #DB1A68;
+  --color-pink-700: #8E1845;
+
+  /* Orange */
+  --color-orange-100: #FCE0D1;
+  --color-orange-500: #CE8C69;
+  --color-orange-700: #B95C2A;
+
+/* Color Aliases */
+  --color-background:     var(--color-white);
+  --color-primary:        var(--color-blue-900);
+  --color-primary-hover:  var(--color-brown-900);
+  --color-secondary:      var(--color-yellow-200);
+  --color-muted:          var(--color-grey-300);
+  --color-accent:         var(--color-yellow-500);
+  --color-accent-hover:   var(--color-white);
+
+/* Border-radius */
+  --radius-*: initial;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+
+  /* Fonts */
+  --font-heading: "Bricolage Grotesque", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
