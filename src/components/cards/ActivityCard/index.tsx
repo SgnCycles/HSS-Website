@@ -18,7 +18,6 @@ const ActivityCard = () => {
           <p className="text-[15px] p-1 font-body md:text-[16px] md:p-3 lg:text-[20px]">{card.info}</p>
         </div>
       ))}
-
     </div>
   )
 }
