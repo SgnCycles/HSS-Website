@@ -34,8 +34,8 @@ const BliLedareHome = () => {
           <div className="hidden md:block">
             <Image src={'/images/Body/home_body2.png'} height={300} width={300} alt=""/>
           </div>
-          <a className="w-full border border-accent bg-primary-hover rounded-sm p-4 text-lg cursor-pointer">Anmäll ditt intresse <span className="pl-1">&#8594;</span></a>
-          <a className="border border-accent rounded-sm p-4 w-[70%] text-base text-accent cursor-pointer">Mer information här</a>
+          <a className="w-full border border-accent bg-primary-hover rounded-sm p-4 text-lg cursor-pointer" href="https://www.scoutnet.se/register/in/group/764" target="_blank">Anmäll ditt intresse <span className="pl-1">&#8594;</span></a>
+          <a className="border border-accent rounded-sm p-4 w-[70%] text-base text-accent cursor-pointer" href="/bli-ledare">Mer information här</a>
         </div>
       </div>
     </div>
