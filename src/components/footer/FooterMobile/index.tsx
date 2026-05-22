@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import FooterImage from "../FooterImage";
@@ -20,7 +22,9 @@ const FooterMobile = () => {
 
         <div className="flex flex-row justify-between border-solid border-0 border-b border-grey-300 py-3">
           <FooterContact title={"Kontakt"} icon={"yellow-envelope-icon.svg"}>
-            <p className="text-white pl-1 font-body font-medium text-[16px]">info@hss-scout.org</p>
+            <Link href={"mailto:info@hss-scout.org"}>
+              <p className="text-white pl-1 font-body font-medium text-[16px]">info@hss-scout.org</p>
+            </Link>
           </FooterContact>
           <FooterContact title={"Följ oss"} icon={"yellow-instagram-icon.svg"}>
             <Link target="_blank" href="https://www.instagram.com/hss_scout" className="text-white pl-1 font-body font-medium text-[16px]">@hss_scout</Link>
@@ -33,7 +37,7 @@ const FooterMobile = () => {
           </FooterContact>
           <FooterContact title={"Stöds av"} icon={null}>
             <Link target="_blank" href={`https://www.postkodlotteriet.se/`}>
-              <Image src={`/images/Logo/postkodlotteriet_logo.png`} height={37} width={112} alt={`PostkodLogo`}></Image>
+              <Image src={`/images/Logo/postkodlotteriet_logo.svg`} height={37} width={112} alt={`PostkodLogo`}></Image>
             </Link>
           </FooterContact>
         </div>

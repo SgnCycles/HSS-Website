@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import FooterImage from "../FooterImage"
@@ -8,7 +10,7 @@ const FooterDesktop = () => {
   return (
     <>
       <FooterImage />
-      <Link href={"/"}>
+      <Link onClick={() => window.scrollTo(0, 0)} href="/">
         <Image src={`/images/Logo/logo_light.png`} height={146} width={146} alt={`HSSLogo`} className="absolute left-[50%] -translate-1/2"></Image>
       </Link>
       <div className="bg-blue-900 flex justify-between pt-25 px-10 pb-10 gap-5">
@@ -34,7 +36,9 @@ const FooterDesktop = () => {
         </div>
         <div className="flex flex-col w-[25%] justify-between">
           <FooterContact title={"Kontakt"} icon={"yellow-envelope-icon.svg"}>
-            <p className="text-white pl-1 font-body font-medium text-[16px] md:text-[24px]">info@hss-scout.org</p>
+            <Link target="_blank" href={"mailto:info@hss-scout.org"}>
+              <p className="text-white pl-1 font-body font-medium text-[16px] md:text-[24px]">info@hss-scout.org</p>
+            </Link>
           </FooterContact>
           <FooterContact title={"Följ oss"} icon={"yellow-instagram-icon.svg"}>
             <Link target="_blank" href="https://www.instagram.com/hss_scout" className="text-white pl-1 font-body font-medium text-[16px] md:text-[24px]">@hss_scout</Link>
@@ -44,7 +48,7 @@ const FooterDesktop = () => {
           </FooterContact>
           <FooterContact title={"Stöds av"} icon={null}>
             <Link target="_blank" href={`https://www.postkodlotteriet.se/`}>
-              <Image src={`/images/Logo/postkodlotteriet_logo.png`} height={37} width={112} alt={`PostkodLogo`} className="md:w-77 md:h-25.25 md:items-center"></Image>
+              <Image src={`/images/Logo/postkodlotteriet_logo.svg`} height={37} width={112} alt={`PostkodLogo`} className="md:w-77 md:h-25.25 md:items-center"></Image>
             </Link>
           </FooterContact>
         </div>
