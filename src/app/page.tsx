@@ -1,6 +1,6 @@
 import AgeGroupCardHome from "@/components/cards/AgeGroupCardHome"
 import BliLedareHome from "@/components/cards/BliLedare";
-import Hero from "@/components/header/Hero";
+import Hero from "@/components/header/homeHero";
 
 export default function Home() {
   return (
