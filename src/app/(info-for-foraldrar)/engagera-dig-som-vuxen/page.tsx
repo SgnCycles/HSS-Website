@@ -36,7 +36,7 @@ const EngageraDigSomVuxenPage = () => {
         </p>
         {/* TODO: button bellow will be replaced with button element when ready */}
         <div className="border border-blue-500 bg-primary rounded-sm p-4 md:p-2 text-xl text-accent cursor-pointer mt-4 grid place-items-center font-semibold md:w-[35%] md:place-self-end">
-          <a>Kontakta oss</a>
+          <a href="mailto:info@hss-scout.org">Kontakta oss</a>
         </div>
       </div>
     </article>
