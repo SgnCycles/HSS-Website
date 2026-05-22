@@ -17,5 +17,9 @@ export type ageGroupCardContentType = {
 export type bliLedareCardContentType = {
     title: string,
     subtitle: string,
+}
+
+export type engageraDigCardContentType = {
+    title: string,
     icon: string,
 }
