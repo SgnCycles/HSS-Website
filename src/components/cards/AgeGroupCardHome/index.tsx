@@ -18,7 +18,7 @@ const AgeGroupCardHome = () => {
             <div className="flex flex-col w-full items-start pb-4 md:pb-0">
               <div className="flex flex-col md:flex-row">
                 <h3 className="font-semibold font-heading text-lg md:text-2xl text-blue-900 tracking-wide pb-2 pl-4 md:pb-0 md:pl-0">{card.title}</h3>
-                <p className={`h-7 ${card.colourSchemeSecondary} font-normal font-body pt-1 md:pt-1 pb-1 md:pb-1 pl-4 pr-4 text-sm rounded-md ml-2`}>{card.ageGroup}<span className="font-body font-bold text-sm">{card.ageRange}</span></p>
+                <p className={`h-7 ${card.colourSchemeSecondary} font-normal font-body pt-1 md:pt-1 pb-1 md:pb-1 pl-4 pr-4 text-sm rounded-md ml-2`}>{card.ageGroup}<span className="font-body font-bold text-sm pl-2">{card.ageRange}</span></p>
               </div>
               <p className="sr-only md:not-sr-only font-body pr-4 text-md md:pt-2">{card.subtitle}</p>
             </div>
