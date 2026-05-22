@@ -20,7 +20,7 @@ const BliLedareHome = () => {
           {bliLedareCardContent && bliLedareCardContent.map((card, index) => (
             <li key={index} className="flex border border-muted rounded-md pt-4 pb-4 bg-[#1A496F]">
               <div className="w-[30%] md:w-[20%] grid place-items-center">
-                <Image src={`/icons/${card.icon}`} height={30} width={30} alt="" />
+                <Image src={`/Icons/${card.icon}`} height={30} width={30} alt="" />
               </div>
               <div>
                 <h3 className="font-heading text-lg font-semibold">{card.title}</h3>
