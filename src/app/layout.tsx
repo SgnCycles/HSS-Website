@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
-import Hero from "@/components/header/Hero";
 
 export const metadata: Metadata = {
   title: "Hässelby Strands sjöscoutkår",
