@@ -3,11 +3,11 @@ import Image from "next/image"
 
 const EngageraDigSomVuxenPage = () => {
   return (
-    <article className="bg-[#FFFFFF] font-body text-grey-500 p-6 md:grid md:place-items-center">
-      <div className="md:w-[40%]">
+    <article className="bg-[#FFFFFF] font-body text-grey-500 grid place-items-center w-full pb-4 pt-4">
+      <div className="w-[90%] sm:w-[60%] lg:w-[30%]">
         <div className="flex w-full justify-center items-center pb-2">
-          <Image src={`/icons/engagera-icon.svg`} height={30} width={30} alt=""/>
-          <h1 className="font-heading text-primary text-[25px] md:text-[40px] font-extrabold pl-2 md:text-5xl">Engagera dig som vuxen</h1>
+          <Image src={`/Icons/engagera-icon.svg`} height={30} width={30} alt=""/>
+          <h1 className="font-heading text-primary text-[25px] md:text-[40px] font-extrabold pl-2 md:text-5xl text-nowrap">Engagera dig som vuxen</h1>
         </div>
         <p className="pb-4">
           Som förälder behöver du inte ta på dig ett fast uppdrag.
@@ -30,12 +30,12 @@ const EngageraDigSomVuxenPage = () => {
         <h3 className="text-primary text-center text-lg font-semibold pb-1 md:text-left md:pb-4">
           Vet du inte var du passar in?
         </h3>
-        <p className="text-base">
+        <p className="text-base text-center">
           Hör av dig så berättar vi mer om vad som behövs just nu.
           Alla bidrag räknas, stora som små.
         </p>
         {/* TODO: button bellow will be replaced with button element when ready */}
-        <div className="border border-blue-500 bg-primary rounded-sm p-4 md:p-2 text-xl text-accent cursor-pointer mt-4 grid place-items-center font-semibold md:w-[35%] md:place-self-end">
+        <div className="border border-blue-500 bg-primary rounded-sm p-4 md:p-2 text-xl text-accent cursor-pointer mt-4 grid place-items-center font-semibold w-[80%] md:w-[35%] place-self-center md:place-self-end">
           <a href="mailto:info@hss-scout.org">Kontakta oss</a>
         </div>
       </div>
