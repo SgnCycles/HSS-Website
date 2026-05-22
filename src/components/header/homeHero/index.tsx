@@ -6,7 +6,7 @@ interface HeroProps {
   img: string;
 }
 
-export default function homeHero({ img }: HeroProps) {
+export default function HomeHero({ img }: HeroProps) {
   return (
     <div
       className="bg-cover relative bg-no-repeat w-full h-[288px] md:h-screen flex items-center justify-center"
