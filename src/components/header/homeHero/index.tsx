@@ -15,7 +15,7 @@ export default function HomeHero({ img }: HeroProps) {
         backgroundPosition: "left bottom",
       }}
     >
-      <div className="hidden md:flex flex-col text-center relative -translate-y-65">
+      <div className="hidden md:flex flex-col text-center relative -translate-y-[260px]">
         <h1 className="font-body font-extrabold text-[64px] leading-none text-center">
           <span className="block text-white">Välkommen till </span>
           <span className="block text-accent">Hässelby Strand Sjöscoutkår</span>
