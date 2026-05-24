@@ -2,6 +2,22 @@ import { ageGroupCardContentType } from "@/types/types";
 
 export const ageGroupCardContent:ageGroupCardContentType[] = [
   {
+    // TODO: placeholder, data needs to be updated.
+    title: 'Familjescouter',
+    ageGroup: 'Ungascouter',
+    ageRange: 'upp till 8 år',
+    subtitle: 'Barn under åtta år tillsammans med en eller flera vuxna på ett roligt och lekfullt sätt möter scouting.',
+    info: 'Barn och vuxen deltar tillsammans i verksamheten och aktiviteterna som de får vara med på passar både stor och liten. Den vuxna deltagaren är alltid den som har ansvaret för det medföljande barnet. De vuxna i gruppen ger möjlighet att göra lite mer avancerade aktiviteter då vuxen och barn kan hjälpas åt. De vuxna är lika mycket deltagare som barnen och det är viktigt att planera verksamheten så att både barn och vuxen kan ta en aktiv del i den.',
+    meetings: 'Träffas på fredagar',
+    colourSchemeBorder: 'border-familjescouterna-primary',
+    colourSchemePrimary: 'bg-familjescouterna-primary',
+    colourSchemeSecondary: 'bg-familjescouterna-secondary',
+    icon: 'familjescouting.png',
+    image: 'aldersgroup_utmanare.png',
+    price: 'Pris: 550kr/termin',
+    apply: 'https://www.scoutnet.se/register/in/group/764'
+  },
+  {
     title: 'Sjöhumlorna',
     ageGroup: 'Spårarscouter',
     ageRange: '8-9 år',
