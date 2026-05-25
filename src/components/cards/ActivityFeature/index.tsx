@@ -42,12 +42,12 @@ const ActivityFeature = () => {
       </div>
         <p className="hidden mt-6 mb-6 text-[20px] md:block">{activityFeatureContent.infoDescFirst}</p>
         <p className="hidden mt-6 mb-6 text-[20px] md:block">{activityFeatureContent.infoDescSecond}</p>
-      <div className="mt-4 max-h-125 md:flex">
+      <div className="mt-4 xl:max-h-125 md:flex">
         <ActivityCard />
         {!isHomePage && (
           <p className="text-base font-normal m-4 font-body md:hidden">{activityFeatureContent.info}</p>
         )}
-        <Image className="h-auto w-full mt-6 object-cover md:rounded-md md:border md:border-accent md:ml-3 md:mt-0"
+        <Image className="h-auto w-full mt-6 object-cover md:rounded-md md:border md:border-accent md:ml-3 md:mt-0 xl:object-contain"
           src={"/images/Body/home_body1.png"} 
           alt="Scouts" 
           height={1000} 
