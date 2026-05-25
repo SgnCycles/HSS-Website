@@ -10,7 +10,7 @@ const FooterHeadSection = () => {
           Vi ger barn och ungdomar äventyr, sjömanskap och gemenskap vid Hässelby Strand.</p>
       </div>
       <div className="flex justify-center p-4">
-        <Image src={`/images/Logo/scouterna_logo.png`} height={113} width={170} alt={`ScouternaLogoImage`} className=""></Image>
+        <Image src="/images/Logo/scouterna_logo.png" height={113} width={170} alt="ScouternaLogoImage" className=""></Image>
       </div>
       <div className="flex justify-around text-blue-900 text-[14px]">
         <Link target="_blank" href="https://www.scoutshop.se/">Scoutshop</Link>
