@@ -8,7 +8,7 @@ const BliLedareHome = () => {
   <article className="bg-primary font-body text-background p-6 md:grid md:place-items-center">
     <div className="md:grid md:place-items-center w-full">
       <div className="flex w-full justify-center items-center">
-        <Image src={`/icons/party-leader-icon.svg`} height={30} width={30} alt=""/>
+        <Image src={`/Icons/party-leader-icon.svg`} height={30} width={30} alt=""/>
         <h2 className="font-heading text-[22px] md:text-[40px] font-extrabold pl-2 md:text-5xl"><span className="text-accent">Bli ledare - </span>vi utbildar dig!</h2>
       </div>
       <p className="text-muted text-base md:text-xl pt-4 pb-4">
@@ -20,7 +20,7 @@ const BliLedareHome = () => {
           {bliLedareCardContent && bliLedareCardContent.map((card, index) => (
             <li key={index} className="flex border border-muted rounded-md pt-4 pb-4 bg-[#1A496F]">
               <div className="w-[30%] md:w-[20%] grid place-items-center">
-                <Image src={`/icons/${card.icon}`} height={30} width={30} alt="" />
+                <Image src={`/Icons/${card.icon}`} height={30} width={30} alt="" />
               </div>
               <div>
                 <h3 className="font-heading text-lg font-semibold">{card.title}</h3>
