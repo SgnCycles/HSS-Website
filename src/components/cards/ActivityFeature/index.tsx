@@ -22,8 +22,8 @@ const ActivityFeature = () => {
           />
           <h1 className="text-2xl font-heading font-extrabold text-primary md:text-4xl">{activityFeatureContent.title}</h1>
         </div>
-        <div className="flex gap-2 p-1 justify-center h-7 md:rounded-md md:border md:ml-4 md:mt-auto md:mb-auto md:bg-secondary md:border-accent ">
-          <Image className="hidden w-4 h-4 md:block"
+        <div className="flex gap-2 pl-2 pr-2 justify-center md:rounded-md md:border md:ml-4 md:mt-auto md:mb-auto md:bg-secondary md:border-accent ">
+          <Image className="hidden mt-1 w-4 h-4 md:block"
             src={activityFeatureContent.subIcon}
             alt={activityFeatureContent.title}
             width={20}
