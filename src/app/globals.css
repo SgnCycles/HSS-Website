@@ -39,6 +39,18 @@
   --color-orange-500: #CE8C69;
   --color-orange-700: #B95C2A;
 
+    /* Age cards */
+  --color-sjohumlor-primary: #2a7636;
+  --color-sjohumlor-secondary: #d4e4d7;
+  --color-kaparna-primary: #1165ae;
+  --color-kaparna-secondary: #cee6f8;
+  --color-konvojen-primary: #aa4611;
+  --color-konvojen-secondary: #fce0d1;
+  --color-utmanare-primary: #b92e66;
+  --color-utmanare-secondary: #f4bad2;
+  --color-familjescouterna-primary: #003660;
+  --color-familjescouterna-secondary: #D9ECFF;
+
 /* Color Aliases */
   --color-background:     var(--color-white);
   --color-primary:        var(--color-blue-900);

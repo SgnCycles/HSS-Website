@@ -1,0 +1,66 @@
+import { markesaffischCardContentType, scoutUniformCardContentType } from "@/types/types";
+
+export const markesaffischCardContent:markesaffischCardContentType[] = [
+  {
+    title: "Spårarscouter",
+    age: "8-9 år",
+    subtitle: "För dig som är spårare finns fyra deltagandemärken, ett bevismärke och många intressemärken att välja bland.",
+    mobileImage: ["/images/Scoutmarken/Mobile/spararscouter_mobile1.png", "/images/Scoutmarken/Mobile/spararscouter_mobile2.png"],
+    desktopImage: "/images/Scoutmarken/Desktop/spararscouter_desktop.png",
+    // desktopImage: "/images/Scoutmarken/Desktop/upptackarscouter_desktop.png",
+    colourSchemeBorder: 'border-sjohumlor-secondary',
+    colourSchemePrimary: 'bg-sjohumlor-primary',
+    colourSchemeSecondary: 'bg-sjohumlor-secondary',
+    colourSchemeHeading: 'text-sjohumlor-primary',
+    icon: 'sjohumlor.png',
+  },
+  {
+    title: "Upptäckarscouter",
+    age: "10-11 år",
+    subtitle: "För upptäckarscouter finns sex deltagandemärken, fyra bevismärken och många intressemärken.",
+    mobileImage: ["/images/Scoutmarken/Mobile/upptackarscouter_mobile1.png", "/images/Scoutmarken/Mobile/upptackarscouter_mobile2.png", "/images/Scoutmarken/Mobile/upptackarscouter_mobile3.png" ],
+    desktopImage: "/images/Scoutmarken/Desktop/upptackarscouter_desktop.png",
+    colourSchemeBorder: 'border-kaparna-secondary',
+    colourSchemePrimary: 'bg-kaparna-primary',
+    colourSchemeSecondary: 'bg-kaparna-secondary',
+    colourSchemeHeading: 'text-kaparna-primary',
+    icon: 'kaparna.png',
+  },
+  {
+    title: "Ävetyrarscouter",
+    age: "12-14 år",
+    subtitle: "Äventyrarna har åtta äventyr som alla har sitt eget märke. Bevis- och intressemärken finns såklart också!",
+    mobileImage: ["/images/Scoutmarken/Mobile/aventyrarscout_mobile1.png", "/images/Scoutmarken/Mobile/aventyrarscout_mobile2.png", "/images/Scoutmarken/Mobile/aventyrarscout_mobile3.png"],
+    desktopImage: "/images/Scoutmarken/Desktop/aventyrarscout_desktop.png",
+    colourSchemeBorder: 'border-konvojen-secondary',
+    colourSchemePrimary: 'bg-konvojen-primary',
+    colourSchemeSecondary: 'bg-konvojen-secondary',
+    colourSchemeHeading: 'text-konvojen-primary',
+    icon: 'konvojen.png',
+  },
+  {
+    title: "Utmanarscouter",
+    age: "15+ år",
+    subtitle: "Som utmanarscout skapar ni era egna projekt. Det projekt ni gjort kan ni fira med något av märkena.",
+    mobileImage: ["/images/Scoutmarken/Mobile/utmanarscouter_mobile1.png", "/images/Scoutmarken/Mobile/utmanarscouter_mobile2.png", "/images/Scoutmarken/Mobile/utmanarscouter_mobile3.png", "/images/Scoutmarken/Mobile/utmanarscouter_mobile4.png", "/images/Scoutmarken/Mobile/utmanarscouter_mobile5.png"],
+    desktopImage: "/images/Scoutmarken/Desktop/utmanarscouter_desktop.png",
+    colourSchemeBorder: 'border-utmanare-secondary',
+    colourSchemePrimary: 'bg-utmanare-primary',
+    colourSchemeSecondary: 'bg-utmanare-secondary',
+    colourSchemeHeading: 'text-utmanare-primary',
+    icon: 'utmanare.png',
+  },
+]
+
+export const scoutUniformCardContent:scoutUniformCardContentType[] = [
+  {
+    title: "Varje märke har sin plats",
+    subtitle: "Märket för din scoutkår sätter du högst upp på vänster arm. Deltagande-, behörighets-, bevis- och intressemärken placerar du på vänster ärm.",
+    image_mobile_subtitle: "/images/Scoutmarken/Mobile/scoutmarken3_mobile.png",
+    second_subtitle: "Ert patrullmärke syr du fast på höger bröstficka tillsammans med åldersgruppsmärket.",
+    image_mobile_second_subtitle: "/images/Scoutmarken/Mobile/scoutmarken2_mobile.png",
+    third_subtitle: "Sverige-, Europa- och världsorganisationsmärkena sätter du högst upp på höger ärm. På höger arm sätter du även dina läger- och arrangemangsmärken.",
+    image_mobile_third_subtitle: "/images/Scoutmarken/Mobile/scoutmarken3_mobile.png",
+    desktopImage: "/images/Scoutmarken/Desktop/scoutmarken_desktop.png",
+  },
+]
