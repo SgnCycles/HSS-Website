@@ -19,3 +19,8 @@ export type bliLedareCardContentType = {
     subtitle: string,
     icon: string,
 }
+
+export type engageraDigCardContentType = {
+    title: string,
+    icon: string,
+}
