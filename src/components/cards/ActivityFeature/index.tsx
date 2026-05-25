@@ -32,8 +32,8 @@ const ActivityFeature = () => {
           <p className="mb-4 font-body md:mb-0 md:ml-0">{activityFeatureContent.subTitle}</p>
         </div>
       </div>
-        <p className="hidden m-6 text-2xl md:block">{activityFeatureContent.infoDescFirst}</p>
-        <p className="hidden m-6 text-2xl md:block">{activityFeatureContent.infoDescSecond}</p>
+        <p className="hidden m-6 text-[20px] md:block">{activityFeatureContent.infoDescFirst}</p>
+        <p className="hidden m-6 text-[20px] md:block">{activityFeatureContent.infoDescSecond}</p>
       <div className="mt-4 md:flex">
         <ActivityCard />
         {!isHomePage && (
