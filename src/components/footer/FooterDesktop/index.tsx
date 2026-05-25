@@ -42,7 +42,7 @@ const FooterDesktop = () => {
           <FooterContact title="Följ oss" icon="yellow-instagram-icon.svg">
             <Link target="_blank" href="https://www.instagram.com/hss_scout" className="text-white pl-1 font-body font-medium text-[16px] md:text-[20px]">@hss_scout</Link>
           </FooterContact>
-          <FooterContact title="Organisationsnr" icon={null}>
+          <FooterContact title="Org.nr" icon={null}>
             <p className="text-white font-body text-[14px] font-medium md:text-[20px]">802006-2389</p>
           </FooterContact>
           <FooterContact title="Stöds av" icon={null}>

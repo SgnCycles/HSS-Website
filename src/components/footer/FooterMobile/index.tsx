@@ -27,7 +27,7 @@ const FooterMobile = () => {
           </FooterContact>
         </div>
         <div className="flex flex-row justify-between py-3">
-          <FooterContact title="Organisationsnr" icon={null}>
+          <FooterContact title="Org.nr" icon={null}>
             <p className="text-white font-body text-[14px] font-medium">802006-2389</p>
           </FooterContact>
           <FooterContact title="Stöds av" icon={null}>
