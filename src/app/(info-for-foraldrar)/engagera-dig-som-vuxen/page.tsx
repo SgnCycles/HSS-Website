@@ -4,7 +4,7 @@ import Image from "next/image"
 const EngageraDigSomVuxenPage = () => {
   return (
     <article className="bg-[#FFFFFF] font-body text-grey-500 grid place-items-center w-full pb-4 pt-4">
-      <div className="w-[90%] sm:w-[60%] lg:w-[30%]">
+      <div className="w-[90%] sm:w-[60%] xl:w-[30%]">
         <div className="flex w-full justify-center items-center pb-2">
           <Image src={`/Icons/engagera-icon.svg`} height={30} width={30} alt=""/>
           <h1 className="font-heading text-primary text-[25px] md:text-[40px] font-extrabold pl-2 md:text-5xl text-nowrap">Engagera dig som vuxen</h1>
