@@ -47,7 +47,7 @@ const ActivityFeature = () => {
         {!isHomePage && (
           <p className="text-base font-normal m-4 font-body md:hidden">{activityFeatureContent.info}</p>
         )}
-        <Image className="h-auto w-full mt-6 object-cover md:rounded-md md:border md:border-accent md:ml-3 md:mt-0 xl:object-contain"
+        <Image className="h-auto w-full mt-6 object-cover md:rounded-md md:border md:border-accent md:ml-3 md:mt-0"
           src={"/images/Body/home_body1.png"} 
           alt="Scouts" 
           height={1000} 
