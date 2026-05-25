@@ -32,7 +32,7 @@ const ActivityFeature = () => {
           <p className="mb-4 font-body md:mb-0 md:ml-0">{activityFeatureContent.subTitle}</p>
         </div>
         {!isHomePage && (
-          <Image className="hidden absolute -z-10 -right-35 -top-15 h-auto w-75 md:block"
+          <Image className="hidden absolute -z-10 -right-35 -top-25 h-auto w-75 md:block"
             src={"/images/Backgrounds/boatBackground1.png"}
             alt="Boat"
             height={1000} 
@@ -40,9 +40,9 @@ const ActivityFeature = () => {
           />
         )}
       </div>
-        <p className="hidden m-6 text-[20px] md:block">{activityFeatureContent.infoDescFirst}</p>
-        <p className="hidden m-6 text-[20px] md:block">{activityFeatureContent.infoDescSecond}</p>
-      <div className="mt-4 md:flex">
+        <p className="hidden mt-6 mb-6 text-[20px] md:block">{activityFeatureContent.infoDescFirst}</p>
+        <p className="hidden mt-6 mb-6 text-[20px] md:block">{activityFeatureContent.infoDescSecond}</p>
+      <div className="mt-4 max-h-150 md:flex">
         <ActivityCard />
         {!isHomePage && (
           <p className="text-base font-normal m-4 font-body md:hidden">{activityFeatureContent.info}</p>
