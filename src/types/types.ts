@@ -12,3 +12,9 @@ export type ageGroupCardContentType = {
     price: string,
     apply: string
 }
+
+export type securityAndSafetyCardContentType = {
+    title : string,
+    icon: string,
+    info: string
+}
