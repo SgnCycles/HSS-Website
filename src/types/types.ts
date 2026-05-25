@@ -5,6 +5,7 @@ export type ageGroupCardContentType = {
     subtitle: string,
     info: string,
     meetings: string,
+    colourSchemeBorder: string,
     colourSchemePrimary: string,
     colourSchemeSecondary: string,
     icon: string,
