@@ -4,7 +4,7 @@ export const activityCardContent:activityCardType[] = [
   {
     icon: "/Icons/anchor-icon.svg",
     title: "Segling & båtliv",
-    info: "Vi lär ut segling, rodd, navigation och säkerhet på vattnet i en trygg och rolig moljö."
+    info: "Vi lär ut segling, rodd, navigation och säkerhet på vattnet i en trygg och rolig miljö."
   },
   {
     icon: "/Icons/fire-icon.svg",
