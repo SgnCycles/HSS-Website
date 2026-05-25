@@ -26,26 +26,26 @@ export default function Nav({ items }: NavProps) {
 
   return (
     <div
-      className="fixed flex justify-between items-center bg-cover w-full h-[181px]"
+      className="fixed flex justify-between items-center bg-cover w-full h-45.25"
       style={{ backgroundImage: "url('/images/Backgrounds/gradientHero.svg')" }}
     >
       <Link href="/">
         <Image
           src="/images/Logo/logo.png"
-          alt="HSS Scout logo"
+          alt=""
           width={214}
           height={203}
-          className="absolute w-[55px] h-[55px] md:w-[214px] md:h-[203px] top-[20px] left-[18px] md:top-[37px] md:left-[60px]"
+          className="absolute w-13.75 h-13.75 md:w-53.5 md:h-50.75 top-5 left-4.5 md:top-9.25 md:left-15"
         />
       </Link>
       {hamMenu === true ? (
         <div>
           <Image
             src="Icons/Kryss.svg"
-            alt="ham-menu"
+            alt=""
             width={28}
             height={18}
-            className="absolute flex justify-center items-center md:hidden w-[28px] h-[18px] top-[20px] right-[18px]"
+            className="absolute flex justify-center items-center md:hidden w-7 h-4.5 top-5 right-4.5"
             onClick={toggleHammenu}
           />
         </div>
@@ -53,21 +53,21 @@ export default function Nav({ items }: NavProps) {
         <div>
           <Image
             src="Icons/Hamburgare-meny.svg"
-            alt="ham-menu"
+            alt=""
             width={28}
             height={18}
-            className="absolute flex justify-center items-center md:hidden w-[28px] h-[18px] top-[20px] right-[18px]"
+            className="absolute flex justify-center items-center md:hidden w-7 h-4.5 top-5 right-4.5"
             onClick={toggleHammenu}
           />
         </div>
       )}
       {hamMenu && (
-        <div className="md:hidden flex flex-col absolute w-full h-screen left-0 top-[67px] ">
+        <div className="md:hidden flex flex-col absolute w-full h-screen left-0 top-16.75 ">
           {items.map((item, index) => {
             return (
               <div
                 key={index}
-                className="relative border-b-[#A0C1DB] border-1 border-t-0 border-r-0 border-l-0"
+                className="relative border-b-[#A0C1DB] border border-t-0 border-r-0 border-l-0"
               >
                 <button
                   className="flex justify-between w-full px-6 py-5 hover:bg-[#A0C1DB] items-center font-body font-medium cursor-pointer"
@@ -76,7 +76,7 @@ export default function Nav({ items }: NavProps) {
                   {item.title}
                   <Image
                     src="/Icons/nav-arrow.svg"
-                    alt="menu-icon"
+                    alt=""
                     width={24}
                     height={24}
                     className={`${activeIndex === index ? "rotate-180" : ""}`}
@@ -84,7 +84,7 @@ export default function Nav({ items }: NavProps) {
                 </button>
 
                 {activeIndex === index && (
-                  <div className="mr-5 mt-2  text-primary flex flex-col rounded-sm z-40 text-background font-body font-bold ">
+                  <div className="mr-5 mt-2 flex flex-col rounded-sm z-40 text-background font-body font-bold ">
                     {item.content.map((text, index) => {
                       return (
                         <Link
@@ -95,10 +95,10 @@ export default function Nav({ items }: NavProps) {
                           <span className="mr-2">
                             <Image
                               src={`${text.mobileIcon}`}
-                              alt="icon"
+                              alt=""
                               width={25}
                               height={25}
-                              className="md:w-[28px] md:h-[28px] md:px-1"
+                              className="md:w-7 md:h-7 md:px-1"
                             />
                           </span>
                           {text.text}
@@ -112,7 +112,7 @@ export default function Nav({ items }: NavProps) {
           })}
         </div>
       )}
-      <div className="hidden absolute top-[37px] left-[648px] font-body text-background md:gap[77px] md:flex md:justify-evenly md:w-[866px] md:h-[52px]">
+      <div className="hidden absolute top-9.25 left-162 font-body text-background md:gap[77px] md:flex md:justify-evenly md:w-216.5 md:h-13">
         {items.map((item, index) => {
           return (
             <div key={index} className="relative">
@@ -123,7 +123,7 @@ export default function Nav({ items }: NavProps) {
                 {item.title}
                 <Image
                   src="/Icons/nav-arrow.svg"
-                  alt="menu-icon"
+                  alt=""
                   width={24}
                   height={24}
                   className={`${activeIndex === index ? "translate-y-0.5" : ""}`}
@@ -144,7 +144,7 @@ export default function Nav({ items }: NavProps) {
                           alt="icon"
                           width={30}
                           height={30}
-                          className="md:w-[28px] md:h-[28px] md:px-1"
+                          className="md:w-7 md:h-7 md:px-1"
                         ></Image>
                         {text.text}
                       </Link>
