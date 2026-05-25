@@ -9,7 +9,7 @@ const BliLedareHome = () => {
     <div className="md:grid md:place-items-center w-full">
       <div className="flex w-full justify-center items-center">
         <Image src={`/icons/party-leader-icon.svg`} height={30} width={30} alt=""/>
-        <h2 className="font-heading text-[25px] md:text-[40px] font-extrabold pl-2 md:text-5xl"><span className="text-accent">Bli ledare - </span>vi utbildar dig!</h2>
+        <h2 className="font-heading text-[22px] md:text-[40px] font-extrabold pl-2 md:text-5xl"><span className="text-accent">Bli ledare - </span>vi utbildar dig!</h2>
       </div>
       <p className="text-muted text-base md:text-xl pt-4 pb-4">
         Du behöver inga förkunskaper.
