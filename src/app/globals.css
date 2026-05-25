@@ -16,29 +16,40 @@
   --color-brown-900: #413414;
 
   /* Yellow */
-  --color-yellow-200: #FFF4D8;
-  --color-yellow-500: #F7B309;
+  --color-yellow-200: #fff4d8;
+  --color-yellow-500: #f7b309;
 
   /* Blue */
-  --color-blue-100: #E3EDF5;
-  --color-blue-500: #0B81DD;
-  --color-blue-900: #00355F;
-  --color-blue-200: #A0C1DB;
+  --color-blue-100: #e3edf5;
+  --color-blue-500: #0b81dd;
+  --color-blue-900: #00355f;
 
   /* Green */
-  --color-green-100: #D4E4D7;
-  --color-green-500: #2A7636;
-  --color-green-700: #055A13;
+  --color-green-100: #d4e4d7;
+  --color-green-500: #2a7636;
+  --color-green-700: #055a13;
 
   /* Pink */
-  --color-pink-100: #FBE5EE;
-  --color-pink-500: #DB1A68;
-  --color-pink-700: #8E1845;
+  --color-pink-100: #fbe5ee;
+  --color-pink-500: #db1a68;
+  --color-pink-700: #8e1845;
 
   /* Orange */
-  --color-orange-100: #FCE0D1;
-  --color-orange-500: #CE8C69;
-  --color-orange-700: #B95C2A;
+  --color-orange-100: #fce0d1;
+  --color-orange-500: #ce8c69;
+  --color-orange-700: #b95c2a;
+
+  /* Age cards */
+  --color-sjohumlor-primary: #2a7636;
+  --color-sjohumlor-secondary: #d4e4d7;
+  --color-kaparna-primary: #1165ae;
+  --color-kaparna-secondary: #cee6f8;
+  --color-konvojen-primary: #aa4611;
+  --color-konvojen-secondary: #fce0d1;
+  --color-utmanare-primary: #b92e66;
+  --color-utmanare-secondary: #f4bad2;
+  --color-familjescouterna-primary: #003660;
+  --color-familjescouterna-secondary: #D9ECFF;
 
   /* Color Aliases */
   --color-background: var(--color-white);
@@ -51,9 +62,11 @@
 
   /* Border-radius */
   --radius-*: initial;
+  --radius-xs: 5px;
   --radius-sm: 10px;
   --radius-md: 20px;
   --radius-lg: 30px;
+  --radius-xl: 50px;
 
   /* Fonts */
   --font-heading: "Bricolage Grotesque", sans-serif;
