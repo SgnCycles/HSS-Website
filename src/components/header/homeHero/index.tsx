@@ -16,18 +16,18 @@ export default function HomeHero({ img }: HeroProps) {
       }}
     >
       <div className="hidden md:flex flex-col text-center relative -translate-y-[260px]">
-        <h1 className="font-body font-extrabold text-[64px] leading-none text-center">
+        <h1 className="font-heading font-extrabold text-[64px] leading-none text-center text-shadow-black text-xs">
           <span className="block text-white">Välkommen till </span>
           <span className="block text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
       </div>
       <div
-        className="hidden px-32 mt-3 md:flex justify-between items-center bg-cover w-full h-[258px] absolute bottom-0"
+        className="hidden px-32 mt-3 md:flex justify-between items-center bg-cover md:w-full w-full h-[258px] absolute bottom-0"
         style={{
           backgroundImage: "url('/images/Backgrounds/homewavy.svg')",
         }}
       >
-        <p>
+        <p className="mt-16">
           <span className="block font-bold font-body text-background">
             Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats
           </span>
@@ -37,7 +37,7 @@ export default function HomeHero({ img }: HeroProps) {
         </p>
         <Link
           href="/vad-gor-vi"
-          className="cursor-pointer pt-[19px] pr-[64px] pb-[22px] pl-[64px] font-body bg-primary rounded-sm rounded-lg rounded-lg text-accent border-accent border-2"
+          className="cursor-pointer mt-16 pt-[19px] pr-[64px] pb-[22px] pl-[64px] font-body bg-primary rounded-sm rounded-lg rounded-lg text-accent border-accent border-2"
         >
           Bli scout
         </Link>
