@@ -42,7 +42,7 @@ const ActivityFeature = () => {
       </div>
         <p className="hidden mt-6 mb-6 text-[20px] md:block">{activityFeatureContent.infoDescFirst}</p>
         <p className="hidden mt-6 mb-6 text-[20px] md:block">{activityFeatureContent.infoDescSecond}</p>
-      <div className="mt-4 max-h-150 md:flex">
+      <div className="mt-4 max-h-125 md:flex">
         <ActivityCard />
         {!isHomePage && (
           <p className="text-base font-normal m-4 font-body md:hidden">{activityFeatureContent.info}</p>
