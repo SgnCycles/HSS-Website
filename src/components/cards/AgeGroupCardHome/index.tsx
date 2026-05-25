@@ -15,7 +15,7 @@ const AgeGroupCardHome = () => {
           <h2 className="text-blue-900 font-heading text-[30px] md:text-[40px] font-extrabold pl-2 md:text-5xl">Åldersgrupper</h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="sm:w-[70%] text-base md:text-xl">Oavsett ålder finns det en plats för dig i HSS.<br/>Varje avdelning har sin egen karaktär och sina egna äventyr.</p>
+          <p className="sm:w-[70%] text-base text-center sm:text-left md:text-xl">Oavsett ålder finns det en plats för dig i HSS.<br/>Varje avdelning har sin egen karaktär och sina egna äventyr.</p>
           {/* TODO: placeholder for button */}
           <div className="hidden sm:block place-content-center">
             <a className="rounded-sm pt-3 pb-3 pl-12 pr-12 text-base text-accent cursor-pointer bg-primary" href="/aldersgrupper">Läs mer här</a>
@@ -26,7 +26,7 @@ const AgeGroupCardHome = () => {
             ageGroupCardContent.map((card, index) => (
               <li
                 key={index}
-                className={`flex flex-col justify-between w-full h-full md:min-h-40 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-md rounded-tr-md rounded-bl-xs rounded-br-xs overflow-hidden`}
+                className={`flex flex-col justify-between w-full h-full md:min-h-40 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-sm rounded-tr-sm rounded-bl-xs rounded-br-xs overflow-hidden`}
               >
                 <article className="flex">
                   <div className="flex justify-center items-center w-[30%]">
