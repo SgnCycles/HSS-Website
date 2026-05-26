@@ -20,7 +20,7 @@ const ActivityFeature = () => {
             width={20}
             height={20}
           />
-          <h1 className="text-2xl font-heading font-extrabold text-primary md:text-4xl">{activityFeatureContent.title}</h1>
+          <h2 className="text-2xl font-heading font-extrabold text-primary md:text-4xl">{activityFeatureContent.title}</h2>
         </div>
         <div className="flex gap-2 pl-2 pr-2 justify-center md:rounded-md md:border md:ml-4 md:mt-auto md:mb-auto md:bg-secondary md:border-accent ">
           <Image className="hidden mt-1 w-4 h-4 md:block"

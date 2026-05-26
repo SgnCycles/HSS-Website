@@ -13,7 +13,7 @@ const ActivityCard = () => {
               width={20}
               height={20}
             />
-            <h3 className="text-base font-heading font-semibold text-primary lg:text-[22px]">{card.title}</h3>
+            <h2 className="text-base font-heading font-semibold text-primary lg:text-[22px]">{card.title}</h2>
           </div>
           <p className="text-[15px] p-1 font-body sm:text-[18px] md:p-3">{card.info}</p>
         </div>
