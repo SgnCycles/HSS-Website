@@ -9,7 +9,7 @@ const SecurityAndSafetyCard = () => {
           <Image className="h-auto w-10 m-2" src={card.icon} alt={card.title} height={20} width={20}></Image>
           <div className="flex-1 bg-secondary border-primary border-2 rounded-md p-2">
             <h2 className="text-primary font-bold text-lg font-heading m-1 ">{card.title}</h2>
-            <p className="font-body text-sm ml-1">{card.info}</p>
+            <p className="font-body text-sm ml-1 md:text-[20px]">{card.info}</p>
           </div>
         </div>
       ))}
