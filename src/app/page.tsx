@@ -1,5 +1,6 @@
 import AgeGroupCardHome from "@/components/cards/AgeGroupCardHome"
 import BliLedareHome from "@/components/cards/BliLedare";
+import UpptäckLivetSomSjöscout from "@/components/UpptäcklivetSomSjöscout";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="">
         <AgeGroupCardHome />
         <BliLedareHome />
+        <UpptäckLivetSomSjöscout />
       </main>
     </div>
   );
