@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
+import FooterHome from "@/components/footer/FooterHome";
 
 export const metadata: Metadata = {
   title: "Hässelby Strands sjöscoutkår",
@@ -27,9 +28,9 @@ export default function RootLayout({
       lang="en" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
-      {children}
+        {children}
+        <FooterHome />
       </body>
-    
     </html>
   );
 }
