@@ -13,18 +13,18 @@ export type ageGroupCardContentType = {
     apply: string
 }
 
-export type securityAndSafetyCardContentType = {
+export type SecurityAndSafetyCardContentType = {
     title: string,
     icon: string,
     info: string
 }
 
-export type securityAndSafetyCheckType = {
+export type SecurityAndSafetyCheckType = {
     info: string,
     icon: string
 }
 
-export type securityAndSafetyInfoType = {
+export type SecurityAndSafetyInfoType = {
     title: string,
     info: string
 }
