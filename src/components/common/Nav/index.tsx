@@ -34,6 +34,14 @@ const Nav = () => {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  useEffect(() => {
+    if (hamMenu) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "initial"
+    }
+  }, [hamMenu])
+
   return (
     <nav
       ref={navRef}

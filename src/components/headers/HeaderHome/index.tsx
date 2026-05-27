@@ -8,7 +8,7 @@ const HeaderHome = () => {
       <header
         className="h-72 w-full md:h-screen bg-cover bg-no-repeat flex flex-col items-center justify-between"
         style={{
-          backgroundImage: "linear-gradient(to bottom, #00355F 0%, rgba(0,53,95,0.8) 30%, rgba(0,53,95,0.2) 60%, transparent 100%), url('/images/Hero/aldersgrupp_hero.png')",
+          backgroundImage: "linear-gradient(to bottom, #00355F 0%, rgba(0,53,95,0.8) 10%, rgba(0,53,95,0.2) 30%, transparent 100%), url('/images/Hero/aldersgrupp_hero.png')",
           backgroundPosition: "left bottom",
         }}
       >
