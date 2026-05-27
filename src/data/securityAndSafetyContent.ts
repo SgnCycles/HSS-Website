@@ -1,6 +1,6 @@
-import { securityAndSafetyCardContentType, securityAndSafetyCheckType, securityAndSafetyInfoType } from "@/types/types";
+import { SecurityAndSafetyCardContentType, SecurityAndSafetyCheckType, SecurityAndSafetyInfoType } from "@/types/types";
 
-export const securityAndSafetyCardContent:securityAndSafetyCardContentType[] = [
+export const securityAndSafetyCardContent:SecurityAndSafetyCardContentType[] = [
   {
     title: "Noggrann granskning av ledare",
     icon: "/Icons/party-leader-icon.svg",
@@ -24,7 +24,7 @@ export const securityAndSafetyCardContent:securityAndSafetyCardContentType[] = [
 
 ]
 
-export const securityAndSafetyCheckContent:securityAndSafetyCheckType[] = [
+export const securityAndSafetyCheckContent:SecurityAndSafetyCheckType[] = [
   {
     icon: "/Icons/checkbox-icon.svg",
     info: "Bakgrundskontroll på alla ledare"
@@ -43,7 +43,7 @@ export const securityAndSafetyCheckContent:securityAndSafetyCheckType[] = [
   }
 ]
 
-export const securityAndSafetyInfoContent:securityAndSafetyInfoType[] = [
+export const securityAndSafetyInfoContent:SecurityAndSafetyInfoType[] = [
   {
     title: "Trygga och transparenta rutiner",
     info: "Våra aktiviteter följer tydliga riktlinjer för att säkerställa att barn alltid är under lämplig uppsikt. Vi har också rutiner för att rapportera och hantera eventuella incidenter eller oro, så att både barn och föräldrar kan känna sig trygga"
@@ -58,7 +58,7 @@ export const securityAndSafetyInfoContent:securityAndSafetyInfoType[] = [
   }
 ]
 
-export const securityAndSafetyPopupContent:securityAndSafetyInfoType[] = [
+export const securityAndSafetyPopupContent:SecurityAndSafetyInfoType[] = [
   {
     title: "Noggrann granskning av ledare",
     info: "Alla ledare genomgår bakgrundskontroller och referenstagning innan de börjar arbeta med scouterna. Ledarna genomgår också obligatorisk utbildning i barns säkerhet och tryggt ledarskap, exempelvis genom Scouternas utbildning Scouterna Trygga Möten."
