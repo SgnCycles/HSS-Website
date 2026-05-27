@@ -13,13 +13,13 @@ export type ageGroupCardContentType = {
     apply: string
 }
 
-export type activityCardType = {
+export type ActivityCardType = {
     icon: string,
     title: string,
-    info: string,
+    info: string
 }
 
-export type activityFeatureType = {
+export type ActivityFeatureType = {
     title: string,
     subTitle: string,
     subIcon: string,

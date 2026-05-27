@@ -1,6 +1,6 @@
-import { activityFeatureType } from "@/types/types";
+import { ActivityFeatureType } from "@/types/types";
 
-export const activityFeatureContent:activityFeatureType = {
+export const activityFeatureContent:ActivityFeatureType = {
   title: "Vad gör vi i scout?",
   subTitle: "Sjöscout sedan 1954",
   icon: "/Icons/yellow-key-icon.svg",

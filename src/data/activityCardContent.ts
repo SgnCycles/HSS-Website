@@ -1,6 +1,6 @@
-import { activityCardType } from "@/types/types";
+import { ActivityCardType } from "@/types/types";
 
-export const activityCardContent:activityCardType[] = [
+export const activityCardContent:ActivityCardType[] = [
   {
     icon: "/Icons/anchor-icon.svg",
     title: "Segling & båtliv",
@@ -21,5 +21,4 @@ export const activityCardContent:activityCardType[] = [
     title: "Gemenskap",
     info: "Vi bygger självförtroende, anvarskänsla och starka vänskaper i en inkluderande grupp."
   },
-  
 ]
