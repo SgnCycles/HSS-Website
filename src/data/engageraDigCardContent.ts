@@ -1,4 +1,4 @@
-import { engageraDigCardContentType } from "@/types/types";
+import { engageraDigCardContentType } from "@/types/types"
 
 export const engageraDigCardContent:engageraDigCardContentType[] = [
   {
