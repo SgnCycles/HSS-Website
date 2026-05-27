@@ -10,9 +10,8 @@ export default function UpptäckLivetSomSjöscout() {
         alt=""
         width={59}
         height={59}
-        className="hidden md:block absolute top-10 flex justify-center items-center"
+        className="hidden md:block absolute top-10 mx-auto"
       />
-      {/* <Image src="/images/Backgrounds/lightblueInstaSection.png" alt="" width={393} height={448} className="absolute w-[393px] h-[448px] -z-10 md:w-full md:h-auto"/>  */}
       <div className="flex flex-col items-start w-full md:max-w-6xl  mx-auto  gap-6">
         <h2 className="flex gap-2 pt-4">
           <Image
@@ -70,7 +69,7 @@ export default function UpptäckLivetSomSjöscout() {
         alt=""
         width={59}
         height={59}
-        className="hidden md:block absolute bottom-0 flex justify-center items-center"
+        className="hidden md:block absolute bottom-0 mx-auto"
       />
     </section>
   );
