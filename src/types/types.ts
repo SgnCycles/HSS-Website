@@ -50,3 +50,19 @@ export type SecurityAndSafetyInfoType = {
     title: string,
     info: string
 }
+
+export type ActivityCardType = {
+    icon: string,
+    title: string,
+    info: string
+}
+
+export type ActivityFeatureType = {
+    title: string,
+    subTitle: string,
+    subIcon: string,
+    info: string,
+    infoDescFirst: string,
+    infoDescSecond: string,
+    icon: string
+}
