@@ -21,8 +21,8 @@ export type bliLedareCardContentType = {
 }
 
 export type engageraDigCardContentType = {
-  title: string,
-  icon: string,
+    title: string,
+    icon: string,
 }
 
 export type MenuItemsType = {
@@ -33,4 +33,20 @@ export type MenuItemsType = {
 export type pageHeaderImageType = {
   path: string,
   image: string,
+}
+
+export type SecurityAndSafetyCardContentType = {
+    title: string,
+    icon: string,
+    info: string
+}
+
+export type SecurityAndSafetyCheckType = {
+    info: string,
+    icon: string
+}
+
+export type SecurityAndSafetyInfoType = {
+    title: string,
+    info: string
 }
