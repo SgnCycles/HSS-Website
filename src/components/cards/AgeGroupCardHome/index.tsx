@@ -28,7 +28,7 @@ const AgeGroupCardHome = () => {
             Varje avdelning har sin egen karaktär och sina egna äventyr.
           </p>
           {/* TODO: placeholder for button */}
-          <div className="hidden sm:block place-content-center">
+          <div className="hidden sm:block place-content-center md:flex flex-wrap">
             <a
               className="rounded-sm pt-3 pb-3 pl-12 pr-12 text-base text-accent cursor-pointer bg-primary font-bold border border-[#99AEBF]"
               href="/aldersgrupper"
