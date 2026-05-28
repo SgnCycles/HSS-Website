@@ -36,7 +36,7 @@ const SecurityAndSafetyFeature = () => {
         </ul>
       </div>
       <SecurityAndSafetyCard />
-      <div >
+      <div>
         {securityAndSafetyInfoContent && securityAndSafetyInfoContent.map((box, index) => (
           <div className="p-4 md:hidden" key={index}>
             <h2 className="font-heading font-medium text-[20px] text-primary">{box.title}</h2>

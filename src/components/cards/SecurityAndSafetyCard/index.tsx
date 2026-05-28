@@ -13,7 +13,6 @@ const SecurityAndSafetyCard = () => {
           </article>
         </li>
       ))}
-
     </ul>
   )
 }

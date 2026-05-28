@@ -21,7 +21,6 @@ export const securityAndSafetyCardContent:SecurityAndSafetyCardContentType[] = [
     icon: "/Icons/dialog-icon.svg",
     info: "Föräldrar är alltid välkomna. Vi ger tydlig info om aktiviteter och säkerhetsrutiner."
   },
-
 ]
 
 export const securityAndSafetyCheckContent:SecurityAndSafetyCheckType[] = [
