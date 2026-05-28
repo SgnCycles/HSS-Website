@@ -1,24 +1,40 @@
-"use client"
-import { ageGroupCardContent } from "@/data/ageGroupCardContent"
-import Image from "next/image"
-import useIsMobile from "@/hooks/useGetMobile"
+"use client";
+import { ageGroupCardContent } from "@/data/ageGroupCardContent";
+import Image from "next/image";
+import useIsMobile from "@/hooks/useGetMobile";
 
 const AgeGroupCardHome = () => {
-
-  const isMobile = useIsMobile()
+  const isMobile = useIsMobile();
 
   return (
     <article className="grid place-items-center pt-6 pb-6">
       <div className="w-[90%] sm:w-[90%] lg:w-[60%]">
         <div className="flex justify-center sm:justify-start pt-6 pb-4">
-          <Image src={`/Icons/anchor-icon.svg`} height={25} width={25} alt="" className="pb-2"/>
-          <h2 className="text-blue-900 font-heading text-[30px] md:text-[40px] font-extrabold pl-2 md:text-5xl">Åldersgrupper</h2>
+          <Image
+            src={`/Icons/anchor-icon.svg`}
+            height={25}
+            width={25}
+            alt=""
+            className="pb-2"
+          />
+          <h2 className="text-blue-900 font-heading text-[30px] md:text-[40px] font-extrabold pl-2 md:text-5xl">
+            Åldersgrupper
+          </h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="sm:w-[70%] text-base text-center sm:text-left md:text-xl">Oavsett ålder finns det en plats för dig i HSS.<br/>Varje avdelning har sin egen karaktär och sina egna äventyr.</p>
+          <p className="sm:w-[70%] text-base text-center sm:text-left md:text-xl">
+            Oavsett ålder finns det en plats för dig i HSS.
+            <br />
+            Varje avdelning har sin egen karaktär och sina egna äventyr.
+          </p>
           {/* TODO: placeholder for button */}
           <div className="hidden sm:block place-content-center">
-            <a className="rounded-sm pt-3 pb-3 pl-12 pr-12 text-base text-accent cursor-pointer bg-primary" href="/aldersgrupper">Läs mer här</a>
+            <a
+              className="rounded-sm pt-3 pb-3 pl-12 pr-12 text-base text-accent cursor-pointer bg-primary font-bold border border-[#99AEBF]"
+              href="/aldersgrupper"
+            >
+              Läs mer här
+            </a>
           </div>
         </div>
         <ul className="flex flex-col h-auto justify-center items-center gap-6 pb-6">
@@ -70,7 +86,12 @@ const AgeGroupCardHome = () => {
         </ul>
         {/* TODO: placeholder for button */}
         <div className="flex sm:hidden items-center justify-center">
-          <a className="block w-[90%] rounded-sm p-4 text-base text-white text-center font-bold cursor-pointer bg-primary" href="/aldersgrupper">Läs mer om åldersgrupper</a>
+          <a
+            className="block w-[90%] rounded-sm p-4 text-base text-white text-center font-bold cursor-pointer bg-primary"
+            href="/aldersgrupper"
+          >
+            Läs mer om åldersgrupper
+          </a>
         </div>
       </div>
     </article>
