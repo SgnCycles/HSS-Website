@@ -3,6 +3,7 @@ import "../globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Nav from "@/components/common/Nav";
 
 export const metadata: Metadata = {
   title: "Hässelby Strands sjöscoutkår",
@@ -36,6 +37,7 @@ const messages = await getMessages();
     >
       <body className="min-h-full flex flex-col">
       <NextIntlClientProvider messages={messages}>
+      <Nav />
       {children}
       </NextIntlClientProvider>
       </body>

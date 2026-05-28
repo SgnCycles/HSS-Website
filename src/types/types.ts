@@ -12,3 +12,8 @@ export type ageGroupCardContentType = {
     price: string,
     apply: string
 }
+
+export type MenuItemsType = {
+  title: string;
+  content: { text: string; href: string; icon: string; mobileIcon: string }[];
+}

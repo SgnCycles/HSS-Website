@@ -7,8 +7,8 @@ export default function Home() {
   const t = useTranslations("home");
   return (
     <div className="">
-      <LanguageSwitcher />
-      <h1>{t("title")}</h1>
+     
+      <h1 className="flex justify-center items-center text-5xl">{t("title")}</h1>
    
       <main className="">
         <AgeGroupCardHome />
