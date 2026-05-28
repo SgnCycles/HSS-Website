@@ -13,12 +13,12 @@ export const activityCardContent:ActivityCardType[] = [
   },
   {
     icon: "/Icons/knot-icon.svg",
-    title: "Priaktiska skills",
+    title: "Praktiska skills",
     info: "Vi lär ut karta, kompass, knutar och konstruktion. Praktiska färdigheter som håller hela livet."
   },
   {
     icon: "/Icons/heart-hands-icon.svg",
     title: "Gemenskap",
-    info: "Vi bygger självförtroende, anvarskänsla och starka vänskaper i en inkluderande grupp."
+    info: "Vi bygger självförtroende, ansvarskänsla och starka vänskaper i en inkluderande grupp."
   },
 ]
