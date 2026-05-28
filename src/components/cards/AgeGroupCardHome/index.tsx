@@ -7,8 +7,8 @@ const AgeGroupCardHome = () => {
   const isMobile = useIsMobile();
 
   return (
-    <article className="grid place-items-center pt-6 pb-6">
-      <div className="w-[90%] sm:w-[90%] lg:w-[60%]">
+    <article className="grid place-items-center md:pt-6 pb-6">
+      <div className="w-[90%] sm:w-[90%] lg:w-[70%] xl:w-[60%]">
         <div className="flex justify-center sm:justify-start pt-6 pb-4">
           <Image
             src={`/Icons/anchor-icon.svg`}
@@ -28,7 +28,7 @@ const AgeGroupCardHome = () => {
             Varje avdelning har sin egen karaktär och sina egna äventyr.
           </p>
           {/* TODO: placeholder for button */}
-          <div className="hidden sm:block place-content-center">
+          <div className="hidden place-content-center md:flex flex-wrap">
             <a
               className="rounded-sm pt-3 pb-3 pl-12 pr-12 text-base text-accent cursor-pointer bg-primary font-bold border border-[#99AEBF]"
               href="/aldersgrupper"
