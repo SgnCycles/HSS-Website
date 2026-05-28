@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
-import FooterHome from "@/components/footer/FooterHome";
+import Footer from "@/components/footers/Footer";
 import Header from "@/components/headers/Header";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
-        <FooterHome />
+        <Footer />
       </body>
     </html>
   );
