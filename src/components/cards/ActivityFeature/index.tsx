@@ -11,7 +11,7 @@ const ActivityFeature = () => {
   const isHomePage = pathname === "/"
 
   return(
-    <article className="relative mt-6 mb-6 lg:w-[80%] xl:w-[60%] mx-auto font-body">
+    <article className="relative mt-6 mb-6 lg:w-[80%] xl:w-[60%] mx-auto font-body lg:mt-24">
       <div className="">
         <div className="text-center lg:flex ">
           <div className="flex gap-2 p-1 justify-center">
@@ -23,7 +23,7 @@ const ActivityFeature = () => {
             <p className="mb-4 font-body lg:mb-0 lg:ml-0">{activityFeatureContent.subTitle}</p>
           </div>
           {!isHomePage && (
-            <Image className="hidden absolute -z-10 -right-35 -top-25 h-auto w-75 lg:block" src={"/images/Backgrounds/boatBackground1.png"} alt="Boat" height={1000} width={1000} />
+            <Image className="hidden absolute -z-10 -right-35 -top-25 h-auto w-75 md:-right-20 lg:block" src={"/images/Backgrounds/boatBackground1.png"} alt="Boat" height={1000} width={1000} />
           )}
         </div>
         <p className="hidden mt-6 mb-6 text-[20px] lg:block">{activityFeatureContent.infoDescFirst}</p>
