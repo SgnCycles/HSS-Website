@@ -14,6 +14,8 @@ interface FeedProps{
 export default function InstaFeedCard() {
 
   const [apiData, setApiData] = useState<FeedProps[] >([])
+  const [like, setLike] = useState(false)
+  const [likeCount, setLikeCount] = useState(null)
 
   const url = "https://feeds.behold.so/4FiCVYtO0Wj9jbmn9bBs"
 
@@ -38,6 +40,17 @@ export default function InstaFeedCard() {
 
   }, [])
 
+  const handelLike=()=>{
+    setLike((prev)=> !prev)
+   
+  }
+
+  const handelLikeCount=()=>{
+
+
+    setLikeCount(likeCount+1)
+  }
+
   return (
 
     <div className="flex flex-col items-center w-full h-auto">
@@ -46,8 +59,9 @@ export default function InstaFeedCard() {
           <div key={post.id} className="shadow-2xl shadow-black rounded-sm">
            
             <Image src={post.mediaUrl} alt="" width={300} height={400} className="mt-6"/>
-            <div className="flex justify-start mt-3"><Heart className="mr-4"/> <MessageCircle className="mr-4" /> <Share className="mr-4"/></div>
-            <p className="mt-3">{post.caption}</p>
+            <div className="flex justify-start mt-3"><Heart className="mr-4 cursor-pointer" onClick={handelLike} fill={like? "#ef4444" : "none"} stroke={like? "#ef4444" : "currentColor"}/><p className="">{likeCount}</p> <MessageCircle className="" /> <div><Share className=""/></div></div>
+            <p className="mt-2">{likeCount}Likes</p>
+            <div className="flex justify-between items-center mt-4"><p className="">{post.caption}</p><button className="text-grey-500 font-medium">See translation</button></div>
           </div>
         )
       })}
