@@ -33,7 +33,7 @@ const FooterDesktop = () => {
               <FooterLocation 
                 title="Myset" 
                 address="Lövstaskogarna,|nära Kyrkhamn,|Hässelby" 
-                googleMapslink={`https://www.google.com/maps/place/59%C2%B023'49.7%22N+17%C2%B046'11.4%22E/@59.3971277,17.7672573,438m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d59.3971277!4d17.7698322?entry=tts&g_ep=EgoyMDI2MDUwNi4wIPu8ASoASAFQAw%3D%3D&skid=88707b4d-29c6-470d-88e3-2735d9680d76`} 
+                googleMapslink="https://maps.app.goo.gl/McVsJCFb1JEePGu96"
               />
             </ul>
           </address>
