@@ -7,8 +7,8 @@ const AgeGroupCardHome = () => {
   const isMobile = useIsMobile();
 
   return (
-    <article className="grid place-items-center pt-6 pb-6">
-      <div className="w-[90%] sm:w-[90%] lg:w-[60%]">
+    <article className="grid place-items-center md:pt-6 pb-6">
+      <div className="w-[90%] sm:w-[90%] lg:w-[70%] xl:w-[60%]">
         <div className="flex justify-center sm:justify-start pt-6 pb-4">
           <Image
             src={`/Icons/anchor-icon.svg`}
