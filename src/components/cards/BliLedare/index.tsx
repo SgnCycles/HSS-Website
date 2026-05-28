@@ -64,7 +64,7 @@ const BliLedareHome = () => {
               href="https://www.scoutnet.se/register/in/group/764"
               target="_blank"
             >
-              Anmäll ditt intresse <span className="pl-1">&#8594;</span>
+              Anmäl ditt intresse <span className="pl-1">&#8594;</span>
             </a>
             <a
               className="border border-accent rounded-sm p-4 w-[70%] text-base text-accent cursor-pointer"
