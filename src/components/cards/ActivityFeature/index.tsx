@@ -18,7 +18,7 @@ const ActivityFeature = () => {
           <h2 className="text-2xl font-heading font-extrabold text-primary md:text-4xl">{activityFeatureContent.title}</h2>
         </div>
         <div className="flex gap-2 pl-2 pr-2 justify-center md:rounded-md md:border md:ml-4 md:mt-auto md:mb-auto md:bg-secondary md:border-accent ">
-          <Image className="hidden mt-1 w-4 h-4 md:block" src={activityFeatureContent.subIcon} alt="" width={20} height={20}/>
+          <Image className="hidden mt-1 w-4 h-4 md:block" src={activityFeatureContent.subIcon} alt="" width={20} height={20} />
           <p className="mb-4 font-body md:mb-0 md:ml-0">{activityFeatureContent.subTitle}</p>
         </div>
         {!isHomePage && (
@@ -35,7 +35,7 @@ const ActivityFeature = () => {
         <Image className="h-auto w-full mt-6 object-cover object-top md:rounded-md md:border md:border-accent md:ml-3 md:mt-0" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
         {isHomePage && (
           <div className="flex justify-center m-2 md:hidden">
-            <Link className="rounded-md border bg-primary pt-4 pb-4 pr-2 pl-2 text-white text-[16px] font-body font-bold" href={"/vad-gor-vi"}>Läs mer om vad vi gör i scout</Link>
+            <Link className="rounded-md border bg-primary pt-4 pb-4 pr-2 pl-2 text-white text-[16px] font-body font-bold" href="/vad-gor-vi">Läs mer om vad vi gör i scout</Link>
           </div>
         )}
       </section>
