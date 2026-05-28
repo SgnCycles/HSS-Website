@@ -5,7 +5,7 @@ export type CommonType = {
 export type ButtonProps = {
   ariaLabel: string, 
   href: string,
-  theme: 
+  variant: 
     | 'primaryBrown'
     | 'primaryBlue'
     | 'secondary'
