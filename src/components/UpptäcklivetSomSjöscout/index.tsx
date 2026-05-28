@@ -4,7 +4,12 @@ import Link from "next/link";
 
 export default function UpptäckLivetSomSjöscout() {
   return (
+
+    <>
+    <InstaFeedCard />
     <section className="w-full relative flex flex-col justify-center gap-6 items-center pb-25 md:pt-30 px-4">
+
+    
       <Image
         src="/Icons/fe_arrow-down.svg"
         alt=""
@@ -62,7 +67,7 @@ export default function UpptäckLivetSomSjöscout() {
             </span>
           </div>
         </div>
-        <InstaFeedCard />
+      
       </div>
       <Image
         src="/Icons/fe_arrow-down.svg"
@@ -72,5 +77,10 @@ export default function UpptäckLivetSomSjöscout() {
         className="hidden md:block absolute bottom-0 mx-auto"
       />
     </section>
+    
+    
+    
+    </>
+    
   );
 }

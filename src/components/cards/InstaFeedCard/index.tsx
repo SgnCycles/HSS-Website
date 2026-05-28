@@ -1,20 +1,58 @@
-import { instaFeedProps } from "@/types/upptäckLivetSomSjöscout"
-import { instaFeed } from "@/data/upptäckLivetSomSjöscout"
+"use client"
 import Image from "next/image"
+import { useEffect, useState } from "react"
+import { Share,MessageCircle, Heart} from "lucide-react"
 
-export default function InstaFeedCard(){
+interface FeedProps{
+  id?: string,
+  caption?: string,
+  mediaUrl:string
+}
 
 
-return(
 
-  <div className="flex w-full md:gap-6 gap-2 justify-center items-center">
+export default function InstaFeedCard() {
 
-    {instaFeed.map((feed)=>{
+  const [apiData, setApiData] = useState<FeedProps[] >([])
 
-      return <Image src={feed.img} alt="" width={432} height={432} key={feed.id} className="w-30.25 h-27 md:w-full md:h-108 transition-transform hover:scale-90 duration-150"/>
-    })}
+  const url = "https://feeds.behold.so/4FiCVYtO0Wj9jbmn9bBs"
 
-  </div>
-)
+  const fetchInstaData = async () => {
+
+    const res = await fetch(url)
+
+    if(!res.ok){
+
+      console.log(`Error Occured ${res.status}`)
+    }
+
+    const data = await res.json()
+
+    setApiData(data.posts)
+
+  }
+
+  useEffect(() => {
+
+    fetchInstaData()
+
+  }, [])
+
+  return (
+
+    <div className="flex flex-col items-center w-full h-auto">
+      {apiData  && apiData.map((post) => {
+        return (
+          <div key={post.id} className="shadow-2xl shadow-black rounded-sm">
+           
+            <Image src={post.mediaUrl} alt="" width={300} height={400} className="mt-6"/>
+            <div className="flex justify-start mt-3"><Heart className="mr-4"/> <MessageCircle className="mr-4" /> <Share className="mr-4"/></div>
+            <p className="mt-3">{post.caption}</p>
+          </div>
+        )
+      })}
+    </div>
+
+  )
 
 }
