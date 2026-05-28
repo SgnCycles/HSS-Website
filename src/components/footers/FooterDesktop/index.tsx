@@ -27,12 +27,12 @@ const FooterDesktop = () => {
             <ul>
               <FooterLocation 
                 title="Ruffen" 
-                address="Hässelby strandväg,|165 65 Hässelby,|Stockholm" 
+                address="Kårlokal Ruffen,|vid Hässelby strandbad,|165 65 Hässelby" 
                 googleMapslink={`https://www.google.com/maps/place/59°21'47.8"N+17°49'19.8"E/@59.3632844,17.819599,439m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d59.3632844!4d17.8221739?entry=tts&g_ep=EgoyMDI2MDUwNi4wIPu8ASoASAFQAw%3D%3D&skid=bcbe2d02-4dc2-4735-bc14-6a5e74833589`} 
               />
               <FooterLocation 
                 title="Myset" 
-                address="Lövstaskogarna,|nära Kyrkhamn,|Hässelby" 
+                address="Hajkstugan Myset,|mellan Kyrkhamn och Gåseborg,|175 48, Järfälla" 
                 googleMapslink="https://maps.app.goo.gl/McVsJCFb1JEePGu96"
               />
             </ul>
