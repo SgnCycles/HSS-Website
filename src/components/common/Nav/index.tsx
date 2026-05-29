@@ -61,7 +61,7 @@ const Nav = () => {
           className="absolute xl:hidden flex justify-center items-center w-7 h-4 top-9 right-4"
           onClick={toggleHamMenu}
         >
-          <Image src="Icons/Kryss.svg" alt="" width={28} height={28} />
+          <Image src="/Icons/Kryss.svg" alt="" width={28} height={28} />
         </button>
       ) : (
         <button
@@ -69,7 +69,7 @@ const Nav = () => {
           onClick={toggleHamMenu}
         >
           <Image
-            src="Icons/Hamburgare-meny.svg"
+            src="/Icons/Hamburgare-meny.svg"
             alt=""
             width={28}
             height={28}
