@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
+import Footer from "@/components/footers/Footer";
+import Header from "@/components/headers/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -37,10 +39,11 @@ const messages = await getMessages();
     >
       <body className="min-h-full flex flex-col">
       <NextIntlClientProvider messages={messages}>
-      {children}
+        <Header />
+        {children}
       </NextIntlClientProvider>
+        <Footer />
       </body>
-    
     </html>
   );
 }
