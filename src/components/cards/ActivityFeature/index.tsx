@@ -33,7 +33,7 @@ const ActivityFeature = () => {
           {!isHomePage && (
             <p className="text-base font-normal m-4 font-body lg:hidden">{activityFeatureContent.info}</p>
           )}
-          <Image className="h-auto w-full mt-6 object-cover object-top lg:rounded-lg lg:border lg:border-accent lg:ml-3 lg:mt-0" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
+          <Image className="h-auto w-full mt-6 object-cover object-top md:mx-auto md:w-[80%] md:rounded-lg md:border md:border-accent lg:rounded-lg lg:border lg:border-accent lg:ml-3 lg:mt-0" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
           {isHomePage && (
             <div className="flex justify-center m-2 lg:hidden">
               <Link className="rounded-sm border w-[90%] text-center bg-primary mt-4 pt-4 pb-4 pr-2 pl-2 text-white text-[16px] font-body font-bold" href="/vad-gor-vi">Läs mer om vad vi gör i scout</Link>
