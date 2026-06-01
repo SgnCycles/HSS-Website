@@ -6,7 +6,7 @@ export default function Border({ className = "" }: CommonType) {
       className={className}
       xmlns="http://www.w3.org/2000/svg" 
       width="1920.785" 
-      height="152" 
+      height="200" 
       viewBox="0 0 1920.785 152">
       <path 
         id="Rectangle_24" 

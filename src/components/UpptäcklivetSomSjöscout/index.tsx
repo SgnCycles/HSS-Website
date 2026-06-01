@@ -1,11 +1,12 @@
 import Image from "next/image";
 import InstaFeedCard from "../cards/InstaFeedCard";
 import Link from "next/link";
+import Border from "../common/Border";
 
 export default function UpptäckLivetSomSjöscout() {
   return (
     <>
-      <section className="w-full relative flex flex-col justify-center gap-6 items-center pb-25 md:pt-30 px-4">
+      <section className="w-full relative flex flex-col justify-center gap-6 items-center pb-25 md:pt-30 ">
         <Image
           src="/Icons/fe_arrow-down.svg"
           alt=""
@@ -13,7 +14,8 @@ export default function UpptäckLivetSomSjöscout() {
           height={59}
           className="hidden md:block absolute top-10 mx-auto"
         />
-        <div className="-bg-conic-60z-50">
+        <Border className={"text-[#E9EFF8] w-full translate-y-16"}/>
+        <div className="bg-[#E9EFF8] w-full h-auto">
           <div className="flex flex-col items-start w-full md:max-w-6xl  mx-auto  gap-6">
             <h2 className="flex items-center gap-2 pt-4 text-primary md:text-4xl text-xl font-heading font-extrabold">
               <Image
@@ -72,6 +74,7 @@ export default function UpptäckLivetSomSjöscout() {
           height={59}
           className="hidden md:block absolute bottom-0 mx-auto"
         />
+      <Border className={"text-[#E9EFF8] rotate-180 w-full -translate-y-15"}/>
       </section>
     </>
   );
