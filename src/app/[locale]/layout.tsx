@@ -6,7 +6,6 @@ import Header from "@/components/headers/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
-
 export const metadata: Metadata = {
   title: "Hässelby Strands sjöscoutkår",
   description: "Välkommen till Hässelby Strand Sjöscoutkår",
