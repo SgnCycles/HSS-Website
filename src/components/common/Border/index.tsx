@@ -1,9 +1,9 @@
 import { CommonType } from "@/types/common.types"
 
-export default function Border({ className = "" }: CommonType) {
+export default function Border({ variant = "" }: CommonType) {
   return (
     <svg 
-      className={className}
+      className={`pt-4 md:pt-6 lg:pt-8 h-auto full-bleed -mb-px text-${variant}`}
       xmlns="http://www.w3.org/2000/svg" 
       width="1920.785" 
       height="200" 

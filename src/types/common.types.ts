@@ -1,3 +1,13 @@
 export type CommonType = {
-  className: string,
+  variant: string,
+}
+
+export type ButtonProps = {
+  ariaLabel: string, 
+  href: string,
+  variant: 
+    | 'primaryBrown'
+    | 'primaryBlue'
+    | 'secondary'
+  text: string,
 }
