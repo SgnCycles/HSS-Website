@@ -11,50 +11,307 @@
   --color-white: #FFFFFF;
   --color-black: #363636;
   --color-grey-300: #B6B6B6;
+  --color-grey-500: #4F4F4F;
 
   /* Brown */
   --color-brown-900: #413414;
 
   /* Yellow */
-  --color-yellow-200: #FFF4D8;
-  --color-yellow-500: #F7B309;
+  --color-yellow-200: #fff4d8;
+  --color-yellow-500: #f7b309;
 
   /* Blue */
-  --color-blue-100: #E3EDF5;
-  --color-blue-500: #0B81DD;
-  --color-blue-900: #00355F;
+  --color-blue-100: #e3edf5;
+  --color-blue-500: #0b81dd;
+  --color-blue-900: #00355f;
 
   /* Green */
-  --color-green-100: #D4E4D7;
-  --color-green-500: #2A7636;
-  --color-green-700: #055A13;
+  --color-green-100: #d4e4d7;
+  --color-green-500: #2a7636;
+  --color-green-700: #055a13;
 
   /* Pink */
-  --color-pink-100: #FBE5EE;
-  --color-pink-500: #DB1A68;
-  --color-pink-700: #8E1845;
+  --color-pink-100: #fbe5ee;
+  --color-pink-500: #db1a68;
+  --color-pink-700: #8e1845;
 
   /* Orange */
-  --color-orange-100: #FCE0D1;
-  --color-orange-500: #CE8C69;
-  --color-orange-700: #B95C2A;
+  --color-orange-100: #fce0d1;
+  --color-orange-500: #ce8c69;
+  --color-orange-700: #b95c2a;
 
-/* Color Aliases */
-  --color-background:     var(--color-white);
-  --color-primary:        var(--color-blue-900);
-  --color-primary-hover:  var(--color-brown-900);
-  --color-secondary:      var(--color-yellow-200);
-  --color-muted:          var(--color-grey-300);
-  --color-accent:         var(--color-yellow-500);
-  --color-accent-hover:   var(--color-white);
+  /* Age cards */
+  --color-sjohumlor-primary: #2a7636;
+  --color-sjohumlor-secondary: #d4e4d7;
+  --color-kaparna-primary: #1165ae;
+  --color-kaparna-secondary: #cee6f8;
+  --color-konvojen-primary: #aa4611;
+  --color-konvojen-secondary: #fce0d1;
+  --color-utmanare-primary: #b92e66;
+  --color-utmanare-secondary: #f4bad2;
+  --color-familjescouterna-primary: #003660;
+  --color-familjescouterna-secondary: #D9ECFF;
 
-/* Border-radius */
+  /* Color Aliases */
+  --color-background: var(--color-white);
+  --color-primary: var(--color-blue-900);
+  --color-primary-hover: var(--color-brown-900);
+  --color-secondary: var(--color-yellow-200);
+  --color-muted: var(--color-grey-300);
+  --color-accent: var(--color-yellow-500);
+  --color-accent-hover: var(--color-white);
+
+  /* Border-radius */
   --radius-*: initial;
+  --radius-xs: 5px;
   --radius-sm: 10px;
   --radius-md: 20px;
   --radius-lg: 30px;
+  --radius-xl: 50px;
+
+  --radius-article: var(--radius-md);
 
   /* Fonts */
   --font-heading: "Bricolage Grotesque", sans-serif;
   --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Used on sections with color background */
+@utility full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@utility container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+
+  @media (min-width: 640px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@utility section {
+  gap: 12px;
+
+  @media (min-width: 640px) {
+    gap: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 32px;
+  }
+}
+
+@utility card {
+  border-radius: inherit;
+  border-radius: var(--radius-md);
+  padding: 15px;
+
+  @media (min-width: 640px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@utility cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  @media (min-width: 640px) {
+    gap: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 18px;
+  }
+}
+
+@utility card-lg-icon {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 24px;
+
+  justify-items: center;
+  align-items: center;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@utility card-lg-icon-text {
+  grid-column: span 4 / span 4;
+  justify-self: left;
+
+  @media (min-width: 640px) {
+    grid-column: span 6 / span 6; 
+  }
+}
+
+@utility h1-icon {
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 38px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 18px;
+    width: 42px;
+  }
+}
+@utility h2-icon {
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 38px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 18px;
+    width: 42px;
+  }
+}
+
+@utility h3-icon {
+  margin-right: 10px;
+  width: 28px;
+  height: auto;
+}
+
+@utility sm-icon {
+  margin-right: 6px;
+  width: 18px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 22px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 24px;
+  }
+}
+
+@utility heading-1 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.9rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  @media (min-width: 640px) {
+    font-size: 2.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3.2rem;
+  }
+}
+
+@utility heading-2 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  @media (min-width: 640px) {
+    font-size: 2.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3.2rem;
+  }
+}
+
+@utility heading-3 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+
+  @media (min-width: 640px) {
+    font-size: 1.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.9rem;
+  }
+}
+
+@utility paragraph {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  color: inherit;
+  text-align: left;
+  margin: 0 0 16px 0;
+
+  @media (min-width: 640px) {
+    margin: 0 0 24px 0;
+    font-size: 1.2rem;
+  }
+}
+
+@utility paragraph-light {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  color: inherit;
+  text-align: left;
+  margin: 0 0 16px 0;
+
+  @media (min-width: 640px) {
+    font-size: 1.2rem;
+    margin: 0 0 24px 0;
+  }
 }
