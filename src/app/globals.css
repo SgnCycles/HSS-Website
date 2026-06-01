@@ -189,6 +189,21 @@
   }
 }
 
+@utility h1-icon {
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 38px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 18px;
+    width: 42px;
+  }
+}
 @utility h2-icon {
   margin-right: 10px;
   width: 32px;
@@ -225,6 +240,21 @@
   }
 }
 
+@utility heading-1 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.9rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  @media (min-width: 640px) {
+    font-size: 2.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3.2rem;
+  }
+}
 
 @utility heading-2 {
   color: inherit;
