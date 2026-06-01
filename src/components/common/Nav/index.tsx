@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { navItems } from "../../../data/navMenu";
+import LanguageSwitcher from "@/components/LanguageButton";
 
 const Nav = () => {
   
@@ -45,7 +46,7 @@ const Nav = () => {
   return (
     <nav
       ref={navRef}
-      className="z-50 w-full h-45 flex justify-center items-center"
+      className="z-50 w-full h-45 flex justify-between items-center"
     >
       <Link href="/">
         <Image
@@ -61,7 +62,9 @@ const Nav = () => {
           className="absolute xl:hidden flex justify-center items-center w-7 h-4 top-9 right-4"
           onClick={toggleHamMenu}
         >
+          
           <Image src="/Icons/Kryss.svg" alt="" width={28} height={28} />
+          
         </button>
       ) : (
         <button
@@ -76,6 +79,7 @@ const Nav = () => {
           />
         </button>
       )}
+      
 
       {hamMenu && (
         <div className="xl:hidden flex flex-col absolute w-full h-screen bg-background left-0 top-20 sm:top-30 overscroll-contain overflow-y-auto">
@@ -126,10 +130,12 @@ const Nav = () => {
                   </ul>
                 )}
               </ul>
+
             );
           })}
         </div>
       )}
+      
       <div className="hidden xl:flex top-9 font-body text-background md:gap[77px] md:justify-evenly md:w-216 md:h-13 xl:text-lg">
         {navItems.map((item, index) => {
           return (
@@ -173,6 +179,7 @@ const Nav = () => {
           );
         })}
       </div>
+     <LanguageSwitcher />
     </nav>
   );
 };

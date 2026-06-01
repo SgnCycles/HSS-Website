@@ -14,10 +14,10 @@ export default function LanguageSwitcher() {
     <select
       value={locale}
       onChange={(e) => switchLanguage(e.target.value)}
-      className="font-body text-sm bg-transparent cursor-pointer"
+      className="font-body text-sm bg-transparent cursor-pointer text-background"
     >
-      <option value="sv">SV</option>
-      <option value="en">EN</option>
+      <option className="bg-accent hover:blue-100" value="sv">SV</option>
+      <option className="bg-accent" value="en">EN</option>
     </select>
   );
 }
