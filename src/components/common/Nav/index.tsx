@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { navItems } from "../../../data/navMenu";
+import LanguageSwitcher from "@/components/LanguageButton";
 
 const Nav = () => {
-  
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [hamMenu, setHamMenu] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
@@ -36,16 +36,16 @@ const Nav = () => {
 
   useEffect(() => {
     if (hamMenu) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "initial"
+      document.body.style.overflow = "initial";
     }
-  }, [hamMenu])
+  }, [hamMenu]);
 
   return (
     <nav
       ref={navRef}
-      className="z-50 w-full h-45 flex justify-center items-center"
+      className="z-50 w-full h-22 md:h-30 flex justify-between items-center md:px-25 "
     >
       <Link href="/">
         <Image
@@ -53,7 +53,7 @@ const Nav = () => {
           alt=""
           width={214}
           height={203}
-          className="absolute w-13 h-13 md:w-18 md:h-18 top-4 left-4 md:top-9 md:left-15"
+          className="w-13 h-13 ml-4  md:w-18 md:h-18 "
         />
       </Link>
       {hamMenu === true ? (
@@ -86,7 +86,7 @@ const Nav = () => {
                 className="relative border-b-[#A0C1DB] border border-t-0 border-r-0 border-l-0"
               >
                 <li
-                  className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`} 
+                  className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`}
                   onClick={() => handleDropdown(index)}
                 >
                   {item.title}
@@ -130,6 +130,7 @@ const Nav = () => {
           })}
         </div>
       )}
+
       <div className="hidden xl:flex top-9 font-body text-background md:gap[77px] md:justify-evenly md:w-216 md:h-13 xl:text-lg">
         {navItems.map((item, index) => {
           return (
@@ -172,6 +173,9 @@ const Nav = () => {
             </ul>
           );
         })}
+      </div>
+      <div>
+        <LanguageSwitcher />
       </div>
     </nav>
   );
