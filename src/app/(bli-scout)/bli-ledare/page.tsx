@@ -22,10 +22,11 @@ const BliLedarePage = () => {
               height={30}
               width={30}
               alt=""
+              className="h1-icon"
             />
-            <h2 className="font-heading text-[24px] md:text-[30px] font-extrabold pl-2 text-nowrap text-primary">
+            <h1 className="heading-1">
               Bli ledare - vi utbildar dig!
-            </h2>
+            </h1>
           </div>
           <p className="paragraph-light text-grey-500">
             Du behöver inga förkunskaper. Vi skickar dig på Scouternas
@@ -116,9 +117,9 @@ const BliLedarePage = () => {
               width={30}
               alt=""
             />
-            <h2 className="font-heading text-[24px] md:text-[30px] font-extrabold pl-2 text-nowrap text-primary">
+            <h1 className="heading-1">
               Bli ledare - vi utbildar dig!
-            </h2>
+            </h1>
           </div>
           <div className="flex flex-col  paragraph-light mb-6">
             <p className="paragraph-light">
