@@ -1,7 +1,6 @@
 import { ButtonProps } from "@/types/common.types"
 import Link from "next/link"
 
-
 export default function Button({ ariaLabel, href, variant, text, download=false }: ButtonProps) {
   const variantClasses = {
     primaryBrown: "font-bold bg-brown-900 hover:bg-brown-900/70 text-white border-accent hover:border-accent/50",
