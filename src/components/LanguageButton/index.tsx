@@ -16,11 +16,11 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center rounded-lg border border-background bg-primary p-1 mr-14">
+    <div className="flex items-center rounded-lg border border-background bg-primary md:p-1 p-0.5 px-0.2 mr-14">
       <button
         type="button"
         onClick={() => switchLanguage("sv")}
-        className={`px-3 py-1 text-sm font-body font-bold transition-colors rounded-md cursor-pointer ${locale === "sv" ? "bg-background text-primary" : "text-background hover:bg-transparent"}`}
+        className={`px-3 p-0.5 py-1 text-sm font-body font-bold transition-colors rounded-md cursor-pointer ${locale === "sv" ? "bg-background text-primary" : "text-background hover:bg-transparent"}`}
       >
         SV
       </button>
@@ -28,7 +28,7 @@ export default function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => switchLanguage("en")}
-        className={`px-3 py-1 text-sm font-body font-bold transition-colors rounded-md cursor-pointer ${locale === "en" ? "bg-background text-primary" : "text-background hover:bg-transparent"}`}
+        className={`px-3 p-0.5 py-1 text-sm font-body font-bold transition-colors rounded-md cursor-pointer ${locale === "en" ? "bg-background text-primary" : "text-background hover:bg-transparent"}`}
       >
         EN
       </button>
