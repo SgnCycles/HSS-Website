@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/common/Nav";
+import Button from "@/components/buttons/Button";
 
 const HeaderHome = () => {
   return (
@@ -14,28 +15,29 @@ const HeaderHome = () => {
         }}
       >
         <Nav />
-        <h1 className="hidden sm:block font-heading text-2xl lg:text-[64px] md:text-4xl font-extrabold leading-none text-center text-shadow-black text-shadow-xs text-white xl:pb-50">
+        <h1 className="hidden md:block heading-1 text-center text-shadow-black text-shadow-xs text-white xl:pb-50">
           Välkommen till <br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
         <div
-          className="hidden sm:2-[80%] pt-12 md:flex justify-around items-center bg-cover w-full h-64"
+          className="hidden sm:2-[80%] pt-12 md:flex justify-around items-end bg-cover w-full h-64 pb-6 pr-2 pl-2"
           style={{
             backgroundImage: "url('/images/Backgrounds/homewavy.svg')",
           }}
         >
-          <p className="font-bold font-body text-lg text-background mt-10">
+          <p className="paragraph text-background w-[50%]">
             Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats
-            <br />
             att växa, lära sig sjömanskap och skapa livslånga vänner.
           </p>
-          <Link
-            href="https://www.scoutnet.se/register/in/group/764"
-            target="_blank"
-            className="cursor-pointer py-2 px-12 font-body font-bold bg-primary rounded-sm text-accent border border-[#99AEBF] mt-10"
-          >
-            Bli scout
-          </Link>
+          <div className="pb-6">
+            <Button
+              ariaLabel=""
+              href="https://www.scoutnet.se/register/in/group/764"
+              variant="primaryBlue"
+              text="Bli scout"
+              target="_blank"
+            />
+          </div>
         </div>
         <div className="sm:hidden">
           <Image
@@ -47,22 +49,24 @@ const HeaderHome = () => {
           ></Image>
         </div>
       </header>
-      <section className="sm:hidden bg-primary py-6 flex flex-col items-center gap-3">
-        <h1 className="sm:hidden text-xl lg:text-[64px] font-heading font-extrabold top-47 text-center text-white">
+      <section className="md:hidden bg-primary py-6 flex flex-col items-center gap-3">
+        <h1 className="block lg:hidden heading-1 text-center text-white">
           Välkommen till <br />
           <span className="text-accent"> Hässelby Strand Sjöscoutkår</span>
         </h1>
-        <p className="w-[90%] font-body text-sm font-medium text-background text-center left-4">
+        <p className="paragraph w-[90%] font-medium text-background text-center">
           Vi är en sjöscoutkår där barn och ungdomar får växa, lära sig
           sjömanskap och skapa vänner för livet.
         </p>
-        <Link
-          href="https://www.scoutnet.se/register/in/group/764"
-          target="_blank"
-          className="w-[90%] h-12 mt-2 cursor-pointer pt-5 pb-5 pr-16 pl-16 font-body font-semibold bg-primary rounded-sm text-accent border-accent border flex justify-center items-center"
-        >
-          Bli scout
-        </Link>
+        <div className="pb-6 w-[90%] sm:flex sm:justify-center text-xl">
+          <Button
+            ariaLabel=""
+            href="https://www.scoutnet.se/register/in/group/764"
+            variant="primaryBlue"
+            text="Bli scout"
+            target="_blank"
+          />
+        </div>
       </section>
     </>
   );

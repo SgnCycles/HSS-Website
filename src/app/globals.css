@@ -17,6 +17,7 @@
   --color-brown-900: #413414;
 
   /* Yellow */
+  --color-yellow-100: #FFFAEC;
   --color-yellow-200: #fff4d8;
   --color-yellow-500: #f7b309;
 
@@ -49,8 +50,8 @@
   --color-konvojen-secondary: #fce0d1;
   --color-utmanare-primary: #b92e66;
   --color-utmanare-secondary: #f4bad2;
-  --color-familjescouterna-primary: #003660;
-  --color-familjescouterna-secondary: #D9ECFF;
+  --color-familjescouterna-primary: #632583;
+  --color-familjescouterna-secondary: #CEC0D8;
 
   /* Color Aliases */
   --color-background: var(--color-white);
