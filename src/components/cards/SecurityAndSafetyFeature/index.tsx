@@ -58,7 +58,7 @@ const SecurityAndSafetyFeature = () => {
             </div>
             {securityAndSafetyPopupContent && securityAndSafetyPopupContent.map((box, index) => (
               <section className="p-4" key={index}>
-                <h2 className="font-heading font-medium text-[20px] text-primary">{box.title}</h2>
+                <h3 className="font-heading font-medium text-[20px] text-primary">{box.title}</h3>
                 <p className="font-body">{box.info}</p>
               </section>
             ))}
