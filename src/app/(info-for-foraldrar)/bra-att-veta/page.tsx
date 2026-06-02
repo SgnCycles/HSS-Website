@@ -77,7 +77,7 @@ const BraAttVetaPage = () => {
               src="/images/Body/braAttVeta_body1.png"
               height={800}
               width={400}
-              alt=""
+              alt="Scout jacket"
             />
           </div>
         </div>
@@ -88,7 +88,7 @@ const BraAttVetaPage = () => {
           src="/images/Body/braAttVeta_body1.png"
           height={800}
           width={400}
-          alt=""
+          alt="Scout jacket"
         />
       </div>
       <div className="sm:hidden pb-6">
