@@ -116,6 +116,7 @@ const BliLedarePage = () => {
               height={30}
               width={30}
               alt=""
+              className="h1-icon"
             />
             <h1 className="heading-1">
               Bli ledare - vi utbildar dig!

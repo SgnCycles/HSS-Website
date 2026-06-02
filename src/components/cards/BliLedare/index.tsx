@@ -13,8 +13,9 @@ const BliLedareHome = () => {
             height={30}
             width={30}
             alt=""
+            className="h2-icon"
           />
-          <h2 className="font-heading text-[24px] md:text-[30px] font-extrabold pl-2 text-nowrap">
+          <h2 className="font-heading text-[24px] md:text-[30px] font-extrabold text-nowrap">
             <span className="text-accent">Bli ledare - </span>vi utbildar dig!
           </h2>
         </div>
@@ -30,7 +31,7 @@ const BliLedareHome = () => {
                   key={index}
                   className="flex border border-muted rounded-md pt-5 pb-5 pr-5 bg-[#1A496F]"
                 >
-                  <div className="w-[30%] sm:w-[20%] grid place-items-center">
+                  <div className="min-w-20 grid place-items-center">
                     <Image
                       src={`/Icons/${card.icon}`}
                       height={30}
