@@ -72,7 +72,7 @@ const BliLedareHome = () => {
               href="/bli-ledare"
               variant="primaryBlue"
               text="Mer information här"
-              target="_blank"
+              target="_self"
             />
           </div>
         </div>

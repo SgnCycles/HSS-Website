@@ -5,7 +5,6 @@ import Button from "@/components/buttons/Button";
 import { useState } from "react";
 
 const BliLedarePage = () => {
-  
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -24,21 +23,19 @@ const BliLedarePage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="heading-1">
-              Bli ledare - vi utbildar dig!
-            </h1>
+            <h1 className="font-heading text-[24px] sm:text-[30px] text-primary font-extrabold text-nowrap md:heading-1">Bli ledare - vi utbildar dig!</h1>
           </div>
           <p className="paragraph-light text-grey-500">
             Du behöver inga förkunskaper. Vi skickar dig på Scouternas
             ledarutbildning och du får stöd av erfarna ledare från dag ett.
           </p>
           <div className="flex flex-col justify-between lg:flex-row">
-            <ul className="cards-column pb-6 md:pb-0 w-full md:pr-6">
+            <ul className="cards-column w-full md:pr-6">
               {bliLedareCardContent &&
                 bliLedareCardContent.map((card, index) => (
                   <li
                     key={index}
-                    className="flex border border-accent rounded-md pt-5 pb-5 pr-5 bg-yellow-200"
+                    className="flex border border-yellow-500 rounded-md pt-2 pb-2 pr-2 md:pt-5 md:pb-5 md:pr-5 bg-yellow-100"
                   >
                     <div className="min-w-20 grid place-items-center">
                       <Image
@@ -59,7 +56,24 @@ const BliLedarePage = () => {
                   </li>
                 ))}
             </ul>
-            <div className="flex flex-col justify-between items-center gap-6 font-bold text-lg pb-6 mt-6 lg:mt-0">
+            <div className="flex flex-col justify-between items-center gap-6 font-bold pb-6 mt-6 lg:mt-0">
+              <div className="text-primary flex flex-col lg:hidden">
+                <p className="paragraph-light">
+                  För att fler barn och unga ska få uppleva scouting behöver vi
+                  fler engagerade ledare. Som scoutledare får du utveckla ditt
+                  ledarskap, skapa minnen och göra skillnad för barn och
+                  ungdomar.
+                </p>
+                <p className="paragraph-light">
+                  Du behöver varken vara erfaren seglare eller tidigare scout.
+                  Det viktigaste är att du gillar att arbeta med unga och vill
+                  engagera dig ideellt.
+                </p>
+                <p className="paragraph-light">
+                  Vi välkomnar särskilt fler kvinnliga ledare eftersom vi idag
+                  har fler manliga ledare i kåren.
+                </p>
+              </div>
               <div className="w-screen lg:w-auto">
                 <Image
                   className="lg:rounded-md w-full lg:w-75 h-auto"
@@ -74,33 +88,17 @@ const BliLedarePage = () => {
                   ariaLabel=""
                   href="https://www.scoutnet.se/register/in/group/764"
                   variant="primaryBlue"
-                  text="Anmäl ditt intresse"
+                  text="Anmäl ditt intresse här &#8594;"
                   target="_blank"
                 />
               </div>
               <button
-                className="hidden lg:flex justify-center items-center bg-[#397DB3] text-lg font-bold text-background text-center px-16 transition-all duration-300 border rounded-sm py-2 cursor-pointer hover:bg-primary-hover hover:text-background text-nowrap min-h-17.5"
+                className="hidden lg:flex justify-center items-center bg-[#397DB3] font-bold text-background text-center px-16 transition-all duration-300 border rounded-sm py-2 cursor-pointer hover:bg-primary-hover hover:text-background text-nowrap min-h-17.5 w-full"
                 onClick={handleClick}
               >
                 <p>Mer information här</p>
               </button>
             </div>
-          </div>
-          <div className="text-primary flex flex-col lg:hidden">
-            <p className="paragraph-light">
-              För att fler barn och unga ska få uppleva scouting behöver vi fler
-              engagerade ledare. Som scoutledare får du utveckla ditt ledarskap,
-              skapa minnen och göra skillnad för barn och ungdomar.
-            </p>
-            <p className="paragraph-light">
-              Du behöver varken vara erfaren seglare eller tidigare scout. Det
-              viktigaste är att du gillar att arbeta med unga och vill engagera
-              dig ideellt.
-            </p>
-            <p className="paragraph-light">
-              Vi välkomnar särskilt fler kvinnliga ledare eftersom vi idag har
-              fler manliga ledare i kåren.
-            </p>
           </div>
           <p className="text-base font-bold text-center text-primary text-extrabold lg:hidden">
             Kåren betalar för den utbildning du behöver för att fungera bra som
@@ -118,9 +116,7 @@ const BliLedarePage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="heading-1">
-              Bli ledare - vi utbildar dig!
-            </h1>
+            <h1 className="heading-1">Bli ledare - vi utbildar dig!</h1>
           </div>
           <div className="flex flex-col  paragraph-light mb-6">
             <p className="paragraph-light">
@@ -158,10 +154,10 @@ const BliLedarePage = () => {
             </p>
             <div className="flex justify-end">
               <button
-                className="flex bg-primary text-xl font-bold text-accent text-center px-16 transition-all duration-300 border rounded-sm py-2 cursor-pointer hover:bg-primary-hover hover:text-background"
+                className="flex bg-primary font-semibold text-accent text-center px-16 transition-all duration-300 border rounded-sm py-2 cursor-pointer hover:bg-primary-hover hover:text-background"
                 onClick={handleClick}
               >
-                <p className="">Stäng</p>
+                <p>Stäng</p>
               </button>
             </div>
           </div>
