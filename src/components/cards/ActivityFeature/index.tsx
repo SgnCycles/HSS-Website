@@ -34,7 +34,7 @@ const ActivityFeature = () => {
             {!isHomePage && (
               <p className="paragraph-light lg:hidden">{activityFeatureContent.info}</p>
             )}
-            <Image className="hidden h-auto w-full mt-6 object-cover object-top md:block rounded-md border border-accent" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
+            <Image className="hidden h-auto w-full object-cover object-top mt-6 lg:mt-0 md:block rounded-md border border-accent" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
           </div>
         </div>
       </article>
