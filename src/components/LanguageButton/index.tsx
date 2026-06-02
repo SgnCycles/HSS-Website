@@ -20,7 +20,7 @@ export default function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => switchLanguage("sv")}
-        className={`px-3 py-1 text-sm font-medium transition-colors rounded-md cursor-pointer ${locale === "sv" ? "bg-background text-primary" : "text-background hover:bg-background"}`}
+        className={`px-3 py-1 text-sm font-body font-bold transition-colors rounded-md cursor-pointer ${locale === "sv" ? "bg-background text-primary" : "text-background hover:bg-transparent"}`}
       >
         SV
       </button>
@@ -28,7 +28,7 @@ export default function LanguageSwitcher() {
       <button
         type="button"
         onClick={() => switchLanguage("en")}
-        className={`px-3 py-1 text-sm font-medium transition-colors rounded-md cursor-pointer ${locale === "en" ? "bg-background text-primary" : "text-background hover:bg-background"}`}
+        className={`px-3 py-1 text-sm font-body font-bold transition-colors rounded-md cursor-pointer ${locale === "en" ? "bg-background text-primary" : "text-background hover:bg-transparent"}`}
       >
         EN
       </button>
