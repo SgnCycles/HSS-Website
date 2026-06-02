@@ -54,7 +54,7 @@ const HeaderHome = () => {
           Välkommen till <br />
           <span className="text-accent"> Hässelby Strand Sjöscoutkår</span>
         </h1>
-        <p className="paragrahp w-[90%] font-medium text-background text-center">
+        <p className="paragraph w-[90%] font-medium text-background text-center">
           Vi är en sjöscoutkår där barn och ungdomar får växa, lära sig
           sjömanskap och skapa vänner för livet.
         </p>
