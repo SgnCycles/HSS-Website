@@ -10,6 +10,7 @@ export type ButtonProps = {
     | 'primaryBlue'
     | 'secondary'
     | 'secondaryBlue'
+    | 'ternaryBlue'
   text: string,
   download?: boolean,
   target?: string,
