@@ -1,4 +1,3 @@
-import Border from "@/components/common/Border"
 import Image from "next/image"
 import Link from "next/link"
 import { vilkaArViContent, vilkaArViGamlaBatarContent, vilkaArViTextContent } from "@/data/vilkaArViCardContent"

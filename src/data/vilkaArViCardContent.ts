@@ -25,6 +25,7 @@ export const vilkaArViGamlaBatarContent: vilkaArViGamlaBatarContentType[] = [
     image: "vilkaViAr_historia_body3.png",
   }
 ]
+
 export const vilkaArViTextContent: vilkaArViTextContentType[] = [
   {
     image: "vilkaViAr_body1.png",
