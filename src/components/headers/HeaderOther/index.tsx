@@ -1,5 +1,5 @@
 "use client"
-import Nav from "@/components/common/Nav"
+import Nav from "@/components/headers/Nav"
 import { usePathname } from "next/navigation"
 import { pageHeaderImage } from "../../../data/pageBackgrounds"
 

@@ -29,6 +29,7 @@ export default function RootLayout({
       lang="sv" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
+        <a href="#main-content" className="sr-only focus:absolute h-5 focus:not-sr-only top-0 focus:bg-primary focus:text-background">hoppa till huvudinnehåll</a>
         <Header />
         {children}
         <Footer />

@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { navItems } from "../../../data/navMenu";
+import NavDesktop from "../NavDesktop";
+import ArrowAnimation from "@/components/features/ArrowAnimation";
+import Icons from "@/components/features/Icons";
 
 const Nav = () => {
   
@@ -11,20 +14,20 @@ const Nav = () => {
   const navRef = useRef<HTMLElement | null>(null);
 
   const handleDropdown = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+    setActiveIndex(activeIndex === index ? null : index)
+  }
 
   const toggleHamMenu = () => {
     setHamMenu((prev) => !prev);
-  };
+  }
 
   const closeMenu = () => {
-    setHamMenu(false);
-    setActiveIndex(null);
-  };
+    setHamMenu(false)
+    setActiveIndex(null)
+  }
 
   useEffect(() => {
-    let handler = (e: MouseEvent) => {
+    const handler = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setHamMenu(false);
         setActiveIndex(null);
@@ -45,43 +48,46 @@ const Nav = () => {
   return (
     <nav
       ref={navRef}
-      className="z-50 w-full h-45 flex justify-center items-center"
+      className="grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_3fr_1fr] gap-y-4 gap-5 w-full items-center py-4"
     >
-      <Link href="/">
+      <Link 
+        aria-label="till förstasidan" 
+        href="/"
+        className="w-14 ml-4 h-auto md:w-17 md:h-auto"
+      >
         <Image
           src="/images/Logo/logo.png"
           alt=""
-          width={214}
-          height={203}
-          className="absolute w-13 h-13 md:w-18 md:h-18 top-4 left-4 md:top-9 md:left-15"
+          width={50}
+          height={50}
+          className="w-auto h-auto transition-all duration-400 hover:rotate-6"
         />
       </Link>
+      {/* TODO: placeholder for language switch button */}
+      <div className="text-background w-fit bg-accent justify-self-end rounded-lg xl:mr-6 xl:order-3">language switch</div>
       {hamMenu === true ? (
         <button
-          className="absolute xl:hidden flex justify-center items-center w-7 h-4 top-9 right-4"
+          aria-label="stäng menyn"
+          className="xl:hidden mr-4"
           onClick={toggleHamMenu}
         >
-          <Image src="Icons/Kryss.svg" alt="" width={28} height={28} />
+          <Icons name="closeMenu" variant="text-background size-14" />
         </button>
       ) : (
         <button
-          className="absolute flex justify-center items-center xl:hidden w-7 h-4 top-9 right-4"
+          aria-label="öppna menyn"
+          className="xl:hidden mr-4"
           onClick={toggleHamMenu}
         >
-          <Image
-            src="Icons/Hamburgare-meny.svg"
-            alt=""
-            width={28}
-            height={28}
-          />
+          <Icons name="hamburgerMenu" variant="text-background size-14" />
         </button>
       )}
 
       {hamMenu && (
-        <div className="xl:hidden flex flex-col absolute w-full h-screen bg-background left-0 top-20 sm:top-30 overscroll-contain overflow-y-auto">
+        <ul className="xl:hidden z-5 col-span-full h-screen bg-background overscroll-contain overflow-y-auto">
           {navItems.map((item, index) => {
             return (
-              <ul
+              <li
                 key={index}
                 className="relative border-b-[#A0C1DB] border border-t-0 border-r-0 border-l-0"
               >
@@ -90,13 +96,7 @@ const Nav = () => {
                   onClick={() => handleDropdown(index)}
                 >
                   {item.title}
-                  <Image
-                    src="/Icons/nav-arrow.svg"
-                    alt=""
-                    width={24}
-                    height={24}
-                    className={`${activeIndex === index ? "rotate-180" : ""}`}
-                  />
+                  <ArrowAnimation isOpen={activeIndex === index} />
                 </li>
                 {activeIndex === index && (
                   <ul className="z-40 flex flex-col mr-5 mt-2 rounded-sm text-primary font-body font-bold">
@@ -121,58 +121,16 @@ const Nav = () => {
                             {text.text}
                           </Link>
                         </li>
-                      );
+                      )
                     })}
                   </ul>
                 )}
-              </ul>
+              </li>
             );
           })}
-        </div>
+        </ul>
       )}
-      <div className="hidden xl:flex top-9 font-body text-background md:gap[77px] md:justify-evenly md:w-216 md:h-13 xl:text-lg">
-        {navItems.map((item, index) => {
-          return (
-            <ul key={index} className="relative">
-              <li
-                className="flex justify-center items-center font-medium cursor-pointer"
-                onClick={() => handleDropdown(index)}
-              >
-                {item.title}
-                <Image
-                  src="/Icons/nav-arrow.svg"
-                  alt=""
-                  width={24}
-                  height={24}
-                  className={`${activeIndex === index ? "translate-y-0.5" : ""}`}
-                />
-              </li>
-              {activeIndex === index && (
-                <ul className="absolute flex flex-col left-0 mt-2 gap-1 bg-primary rounded-sm z-40 text-background font-body font-bold">
-                  {item.content.map((text, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex justify-start items-center px-5 py-5 pr-10 underline-offset-7 underline decoration-[#A0C1DB] decoration-1 whitespace-nowrap mr-3"
-                        onClick={closeMenu}
-                      >
-                        <Image
-                          src={`${text.icon}`}
-                          alt="icon"
-                          width={30}
-                          height={30}
-                          className="md:h-7 md:mr-4"
-                        ></Image>
-                        <Link href={`${text.href}`}>{text.text}</Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </ul>
-          );
-        })}
-      </div>
+      <NavDesktop closeMenu={closeMenu} />
     </nav>
   );
 };
