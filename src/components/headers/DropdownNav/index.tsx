@@ -22,6 +22,7 @@ export default function DropdownNav({
 }: DropdownNavProps) {
   return (
     <ul 
+    aria-hidden={!isOpen}
     className={`
       absolute
       justify-self-end
@@ -35,14 +36,15 @@ export default function DropdownNav({
       min-w-65
       ${
         isOpen
-          ? "not-sr-only max-h-96 opacity-100 translate-y-0"
-          : "sr-only max-h-0 opacity-0 -translate-y-5 -z-10"
+          ? "visible max-h-96 opacity-100 translate-y-0"
+          : "invisible max-h-0 opacity-0 -translate-y-5 -z-10"
       }
     `}
     >
       {content.map((text, idx) => {
         return (
           <li
+            tabIndex={isOpen ? 0 : -1 }
             key={idx}
             className={`
               group 
@@ -87,7 +89,7 @@ export default function DropdownNav({
               closeMenu();
               }}
             >
-              <Icons name={text.icon} variant="text-accent md:mr-4" />
+              <Icons name={text.icon} variant="text-accent md:mr-4" aria-hidden="true" />
               {text.text}
             </Link>
           </li>
