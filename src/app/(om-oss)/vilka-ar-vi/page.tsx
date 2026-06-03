@@ -9,7 +9,7 @@ const VilkaArViPage = () => {
       <div className="lg:bg-[url(/images/Backgrounds/blueWavyBoat1.png)] lg:bg-size-[1739px] lg:bg-no-repeat lg:bg-bottom">
         <article className="flex flex-col items-center font-body lg:m-auto lg:w-[70%] lg:px-0 ">
           <div className="flex flex-row items-center p-2.5 gap-2.5 lg:self-baseline lg:px-0 lg:py-5">
-            <Image src={`/images/Logo/logo.png`} height={74} width={78} alt="logo" className="w-7.5 h-7.5 lg:h-18.5 lg:w-19.5" />
+            <Image src={`/images/Logo/logo.png`} height={74} width={78} alt="" className="w-7.5 h-7.5 lg:h-18.5 lg:w-19.5" />
             <h1 className="font-heading text-[25px] font-semibold text-blue-900 lg:text-right lg:text-[55px]">Om HSS</h1>
           </div>
           <div className="flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent mb-5 lg:hidden">
@@ -19,12 +19,12 @@ const VilkaArViPage = () => {
             {vilkaArViTextContent && vilkaArViTextContent.map((card, index) =>
               <div key={index} className="gap-5 flex flex-col items-center">
                 <p className="px-5 pt-5 md:pb-5 md:pt-0 lg:px-0">{card.info}</p>
-                <Image src={`/images/Body/${card.image}`} height={276} width={393} alt="vilkaViAr" className="lg:hidden md:hidden w-[-webkit-fill-available]" />
+                <Image src={`/images/Body/${card.image}`} height={276} width={393} alt="vilka är vi" className="lg:hidden md:hidden w-[-webkit-fill-available]" />
               </div>
             )}
             <div className="hidden lg:flex lg:justify-center lg:gap-5 lg:pt-10 md:flex md:flex-row">
               {vilkaArViContent && vilkaArViContent.map((image, index) =>
-                <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="vilkaViAr" className="lg:rounded-md md:w-[33.33%] md:h-50 lg:h-auto" />
+                <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="vilka är vi" className="lg:rounded-md md:w-[33.33%] md:h-50 lg:h-auto" />
               )}
             </div>
             <div>
@@ -41,7 +41,7 @@ const VilkaArViPage = () => {
       </div>
       <article className="flex flex-col font-body bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:m-auto lg:w-[70%] lg:bg-size-[258px]">
         <div className="flex flex-row items-center p-5 gap-2.5 pb-0 lg:p-0">
-          <Image src={`/Icons/yellow-anchor-icon.svg`} height={30} width={30} alt="anchor" className="h-max" />
+          <Image src={`/Icons/yellow-anchor-icon.svg`} height={30} width={30} alt="" className="h-max" />
           <h2 className="font-heading text-[25px] font-semibold text-blue-900 lg:text-[40px] lg:py-5">Historien om HSS</h2>
         </div>
         <div className="p-5 gap-5 flex flex-col lg:p-0 lg:text-[20px]">
@@ -53,10 +53,10 @@ const VilkaArViPage = () => {
         </div>
         <div className="flex flex-col items-center lg:flex-row lg:gap-5 lg:justify-center md:flex-row">
           {vilkaArViGamlaBatarContent && vilkaArViGamlaBatarContent.map((image, index) =>
-            <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="historia" className="lg:max-h-65 lg:rounded-md md:w-[-webkit-fill-available] md:h-50 lg:h-auto w-[-webkit-fill-available]" />
+            <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="historia om båtar" className="lg:max-h-65 lg:rounded-md md:w-[-webkit-fill-available] md:h-50 lg:h-auto w-[-webkit-fill-available]" />
           )}
         </div>
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={29} width={350} alt="wavy-line" className="self-center lg:w-194.25" />
+        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={29} width={350} alt="" className="self-center lg:w-194.25" />
       </article >
     </section >
   )
