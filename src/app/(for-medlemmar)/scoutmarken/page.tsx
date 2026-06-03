@@ -1,12 +1,14 @@
 "use client";
-import { markesaffischCardContent, scoutUniformCardContent } from "@/data/scoutmarkenCardContent";
+import {
+  markesaffischCardContent,
+  scoutUniformCardContent,
+} from "@/data/scoutmarkenCardContent";
 import Image from "next/image";
 import Link from "next/link";
 import useIsMobile from "@/hooks/useGetMobile";
 import Button from "@/components/buttons/Button";
 
 const ScoutmarkenPage = () => {
-
   const isMobile = useIsMobile();
 
   return (
@@ -67,7 +69,7 @@ const ScoutmarkenPage = () => {
         </div>
       </article>
       <article className="container pt-0">
-        <h2 className="font-heading text-[24px] md:text-[30px] font-bold text-primary text-center pb-6">
+        <h2 className="font-heading text-[24px] md:text-[30px] font-bold text-primary text-center md:text-left pb-6">
           Specifika märken för sjöscouter
         </h2>
         <div className="sm:w-full sm:grid sm:place-items-center sm:mb-6">
@@ -100,17 +102,19 @@ const ScoutmarkenPage = () => {
           <Link
             className="underline text-primary font-semibold"
             href="https://media.scoutcontent.se/uploads/2021/03/Affisch-A3-Sjo-och-vatten-vit-bakgrund-2020-klar-1.pdf"
+            target="_blank"
           >
             Se flera sjöscoutmärken →
           </Link>
           <Link
             className="underline text-primary font-semibold"
             href="https://www.scoutshop.se/marken"
+            target="_blank"
           >
             Se alla märken is scoutshop.se &#62;&#62;
           </Link>
         </div>
-        <div className="w-full flex justify-center items-center">
+        <div className="md:hidden w-full flex justify-center items-center">
           <Image
             src="/images/Body/blue_seperator.png"
             height={100}
@@ -118,9 +122,12 @@ const ScoutmarkenPage = () => {
             alt=""
           />
         </div>
+        <div className="hidden md:flex w-full justify-center items-center">
+          <Image src="/Icons/caret_down.svg" height={25} width={25} alt="" />
+        </div>
       </article>
       <article className="w-full container pt-0 pb-0">
-        <h2 className="font-heading text-[24px] md:text-[30px] font-bold text-primary text-center pb-6">
+        <h2 className="font-heading text-[24px] md:text-[30px] font-bold text-primary text-center md:text-left pb-6">
           Märkesaffisch för din åldersgrupp
         </h2>
         {/* MOBILE VERSION */}
@@ -196,7 +203,7 @@ const ScoutmarkenPage = () => {
               </li>
             ))}
         </ul>
-        <div className="w-full mt-10 mb-10 flex justify-center items-center">
+        <div className="md:hidden w-full flex justify-center items-center">
           <Image
             src="/images/Body/blue_seperator.png"
             height={100}
@@ -204,8 +211,11 @@ const ScoutmarkenPage = () => {
             alt=""
           />
         </div>
+        <div className="hidden md:flex w-full justify-center items-center">
+          <Image src="/Icons/caret_down.svg" height={25} width={25} alt="" />
+        </div>
       </article>
-      <article className="container pt-0 pb-0">
+      <article className="container pb-0">
         {/* MOBILE VERSION */}
         {scoutUniformCardContent && (
           <div className="sm:hidden">
@@ -256,7 +266,7 @@ const ScoutmarkenPage = () => {
         {/* DESKTOP VERSION */}
         {scoutUniformCardContent && (
           <div className="hidden sm:flex sm:flex-col">
-            <h2 className="text-[30px] font-heading text-primary font-bold text-center mb-6">
+            <h2 className="text-[30px] font-heading text-primary font-bold text-center md:text-left mb-6">
               {scoutUniformCardContent[0].title}
             </h2>
             <p className="paragraph-light">
@@ -281,7 +291,7 @@ const ScoutmarkenPage = () => {
           <Button
             ariaLabel=""
             href="/pdf/nya-maerkessystemet.pdf"
-            variant="primaryBlue"
+            variant="ternaryBlue"
             text="Ladda ner PDF"
             download={true}
           />
