@@ -66,3 +66,11 @@ export type ActivityFeatureType = {
     infoDescSecond: string,
     icon: string
 }
+
+export type FaqProps = {
+
+  id:number,
+  title:string,
+  content:string
+
+}
