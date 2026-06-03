@@ -4,7 +4,7 @@ import FaqCard from "@/components/Faq";
 
 const VanligaFragorPage = () => {
   return (
-    <main className="bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-top bg-no-repeat bg-cover">
+    <main className="bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-top bg-no-repeat bg-cover" id="main-content">
       <article className="container ">
         <h1 className="heading-1">Vanliga frågor</h1>
         <p className="paragraph">
