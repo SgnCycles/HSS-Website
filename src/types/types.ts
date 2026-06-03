@@ -66,3 +66,9 @@ export type ActivityFeatureType = {
     infoDescSecond: string,
     icon: string
 }
+
+export type BlirScoutStepsType = {
+  title: string,
+  info: string,
+  step: string
+}
