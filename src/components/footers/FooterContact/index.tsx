@@ -17,7 +17,7 @@ const FooterContact = ({ title, icon, children }: FooterContactType) => {
             src={`/Icons/${icon}`}
             height={30}
             width={30}
-            className="w-3.75 h-3.75 md:w-4 md:h-4 lg:w-6.25 lg:h-6.25"
+            className="w-3.75 h-3.75 md:w-4.5 lg:w-6.25 lg:h-6.25 md:h-auto"
             alt=""
           />
         }
