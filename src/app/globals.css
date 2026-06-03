@@ -69,7 +69,249 @@
   --radius-lg: 30px;
   --radius-xl: 50px;
 
+  --radius-article: var(--radius-md);
+
   /* Fonts */
   --font-heading: "Bricolage Grotesque", sans-serif;
   --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Used on sections with color background */
+@utility full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@utility container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+
+  @media (min-width: 640px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@utility section {
+  gap: 12px;
+
+  @media (min-width: 640px) {
+    gap: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 32px;
+  }
+}
+
+@utility card {
+  border-radius: inherit;
+  border-radius: var(--radius-md);
+  padding: 15px;
+
+  @media (min-width: 640px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@utility cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  @media (min-width: 640px) {
+    gap: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 18px;
+  }
+}
+
+@utility card-lg-icon {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 24px;
+
+  justify-items: center;
+  align-items: center;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@utility card-lg-icon-text {
+  grid-column: span 4 / span 4;
+  justify-self: left;
+
+  @media (min-width: 640px) {
+    grid-column: span 6 / span 6; 
+  }
+}
+
+@utility h1-icon {
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 38px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 18px;
+    width: 42px;
+  }
+}
+@utility h2-icon {
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 38px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 18px;
+    width: 42px;
+  }
+}
+
+@utility h3-icon {
+  margin-right: 10px;
+  width: 28px;
+  height: auto;
+}
+
+@utility sm-icon {
+  margin-right: 6px;
+  width: 18px;
+  height: auto;
+  
+  @media (min-width: 640px) {
+    width: 22px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 24px;
+  }
+}
+
+@utility heading-1 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.9rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  @media (min-width: 640px) {
+    font-size: 2.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3.2rem;
+  }
+}
+
+@utility heading-2 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.9rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+
+  @media (min-width: 640px) {
+    font-size: 2.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3.2rem;
+  }
+}
+
+@utility heading-3 {
+  color: inherit;
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+
+  @media (min-width: 640px) {
+    font-size: 1.7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.9rem;
+  }
+}
+
+@utility paragraph {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  color: inherit;
+  text-align: left;
+  margin: 0 0 16px 0;
+
+  @media (min-width: 640px) {
+    margin: 0 0 24px 0;
+    font-size: 1.2rem;
+  }
+}
+
+@utility paragraph-light {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  color: inherit;
+  text-align: left;
+  margin: 0 0 16px 0;
+
+  @media (min-width: 640px) {
+    font-size: 1.2rem;
+    margin: 0 0 24px 0;
+  }
 }
