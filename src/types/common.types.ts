@@ -1,5 +1,6 @@
 export type CommonType = {
   variant: string,
+  className: string,
 }
 
 export type ButtonProps = {

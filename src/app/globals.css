@@ -50,17 +50,8 @@
   --color-konvojen-secondary: #fce0d1;
   --color-utmanare-primary: #b92e66;
   --color-utmanare-secondary: #f4bad2;
-  --color-familjescouterna-primary: #632583;
-  --color-familjescouterna-secondary: #CEC0D8;
-
-/* Color Aliases */
-  --color-background:     var(--color-white);
-  --color-primary:        var(--color-blue-900);
-  --color-primary-hover:  var(--color-brown-900);
-  --color-secondary:      var(--color-yellow-200);
-  --color-muted:          var(--color-grey-300);
-  --color-accent:         var(--color-yellow-500);
-  --color-accent-hover:   var(--color-white);
+  --color-familjescouterna-primary: #003660;
+  --color-familjescouterna-secondary: #D9ECFF;
 
   /* Color Aliases */
   --color-background: var(--color-white);
@@ -269,7 +260,7 @@
 @utility heading-2 {
   color: inherit;
   color: var(--color-primary);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-family: var(--font-heading);
   font-weight: 700;
 
