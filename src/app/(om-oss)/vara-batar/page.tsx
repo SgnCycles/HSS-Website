@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const VaraBatarPage = () => {
   return (
-    <section className="section">
+    <section className="section lg:bg-[url(/images/Backgrounds/blueWavyBoat2.png)] lg:bg-contain md:bg-hidden lg:bg-no-repeat lg:bg-top">
       <article className="container flex flex-col">
         <div className="flex lg:justify-center">
           <Image className="h2-icon" src={`/Icons/sail-boat-icon.svg`} height={30} width={30} alt="" />
@@ -17,7 +17,7 @@ const VaraBatarPage = () => {
         )}
       </div>
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center w-106.25 h-8.75 lg:w-194.25 lg:h-16" />
+        <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center" />
       </div>
       <article className="container">
         <h3 className="heading-3 text-center">Utbildningsjollar (Optimistjollar)</h3>
@@ -29,7 +29,7 @@ const VaraBatarPage = () => {
         )}
       </div>
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center w-106.25 h-8.75 lg:w-194.25 lg:h-16" />
+        <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center" />
       </div>
       <article className="container">
         <h3 className="heading-3 text-center">Tvåkronor</h3>
@@ -42,7 +42,7 @@ const VaraBatarPage = () => {
         )}
       </div>
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center w-106.25 h-8.75 lg:w-194.25 lg:h-16" />
+        <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center" />
       </div>
       <article className="container">
         <h3 className="heading-3 text-center">Följebåtar</h3>
@@ -54,7 +54,7 @@ const VaraBatarPage = () => {
         )}
       </div>
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center" />
+        <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center" />
       </div>
       <article className="container">
         <h3 className="heading-3 text-center">Albin Viggar</h3>
@@ -66,7 +66,7 @@ const VaraBatarPage = () => {
         )}
       </div>
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center" />
+        <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center" />
       </div>
       <article className="container">
         <h3 className="heading-3 text-center">H-båtar</h3>
@@ -78,7 +78,7 @@ const VaraBatarPage = () => {
         )}
       </div>
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center" />
+        <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center" />
       </div>
     </section>
   )
