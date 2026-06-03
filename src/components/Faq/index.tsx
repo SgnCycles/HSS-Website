@@ -31,13 +31,13 @@ export default function FaqCard(){
 
   },[])
 
-  return <article className="flex flex-col gap-6 container">
+  return <section className="flex flex-col gap-6">
 {faqData.map((item, index)=>{
 
     return (
-      <div className="bg-[#FFFAEC] cursor-pointer card mx-auto shadow-xl shadow-blue-100/50 " key={index} onClick={()=>handelDropdown(index)}>
+      <div className="bg-[#FFFAEC] cursor-pointer card shadow-xl shadow-blue-100/50 " key={index} onClick={()=>handelDropdown(index)}>
       <button className="flex justify-between w-full items-center">
-          {item.title}
+          <h3 className="heading-3 text-left">{item.title}</h3>
           <Image
             src="/Icons/nav-arrow.svg"
             alt=""
@@ -45,11 +45,11 @@ export default function FaqCard(){
             height={24}
           />
         </button>
-      {activeIndex === index && <div ref={dropDown}>{item.content}</div>}
+      {activeIndex === index && <div ref={dropDown}><p className="paragraph">{item.content}</p></div>}
       </div>
       )
       
   })}
 
-  </article>
+  </section>
 }
