@@ -89,11 +89,8 @@ export type ActivityFeatureType = {
   infoDescFirst: string,
   infoDescSecond: string,
   icon: string
-<<<<<<< HEAD
 }
 
 export type VaraBatarContentType = {
   image: string,
-=======
->>>>>>> feat/046-scoutmarken-page
 }
