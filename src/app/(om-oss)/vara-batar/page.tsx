@@ -19,7 +19,6 @@ const VaraBatarPage = () => {
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
         <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center w-106.25 h-8.75 lg:w-194.25 lg:h-16" />
       </div>
-
       <article className="container">
         <h3 className="heading-3 text-center">Utbildningsjollar (Optimistjollar)</h3>
         <p className="paragraph-light text-center">Apotekarne, Kausarne, Vantarne, Plopp, Cloetta, Snobben, Titanic och övningsseglar</p>
@@ -32,7 +31,6 @@ const VaraBatarPage = () => {
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
         <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center w-106.25 h-8.75 lg:w-194.25 lg:h-16" />
       </div>
-
       <article className="container">
         <h3 className="heading-3 text-center">Tvåkronor</h3>
         <p className="paragraph-light text-center">Våra tvåkronor används för utbildning och segling i större besättning → Piff och Puff</p>
@@ -46,7 +44,6 @@ const VaraBatarPage = () => {
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
         <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center w-106.25 h-8.75 lg:w-194.25 lg:h-16" />
       </div>
-
       <article className="container">
         <h3 className="heading-3 text-center">Följebåtar</h3>
         <p className="paragraph-light text-center">För säkerhet och stöd vid aktiviteter på vattnet använder vi  Tryggve IV och Ebbe</p>
@@ -59,7 +56,6 @@ const VaraBatarPage = () => {
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
         <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center" />
       </div>
-
       <article className="container">
         <h3 className="heading-3 text-center">Albin Viggar</h3>
         <p className="paragraph-light text-center">Vi har även två Albin Viggar →  Lumbago och Cephalea</p>
@@ -72,7 +68,6 @@ const VaraBatarPage = () => {
       <div className="lg:flex lg:justify-center md:flex md:justify-center">
         <Image src={`/images/Backgrounds/blueWavyLine.png`} height={64} width={777} alt="" className="self-center" />
       </div>
-
       <article className="container">
         <h3 className="heading-3 text-center">H-båtar</h3>
         <p className="paragraph-light text-center">Våra H-båtar används för längre seglingar och mer avancerad träning →  Nocke, Vendela och Goofy</p>
