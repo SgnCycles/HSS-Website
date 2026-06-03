@@ -66,3 +66,4 @@ export type ActivityFeatureType = {
     infoDescSecond: string,
     icon: string
 }
+

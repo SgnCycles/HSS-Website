@@ -6,9 +6,9 @@ import { navItems } from "../../../data/navMenu";
 import NavDesktop from "../NavDesktop";
 import ArrowAnimation from "@/components/features/ArrowAnimation";
 import Icons from "@/components/features/Icons";
+import LanguageSwitcher from "@/components/LanguageButton";
 
 const Nav = () => {
-  
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [hamMenu, setHamMenu] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
@@ -39,11 +39,11 @@ const Nav = () => {
 
   useEffect(() => {
     if (hamMenu) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "initial"
+      document.body.style.overflow = "initial";
     }
-  }, [hamMenu])
+  }, [hamMenu]);
 
   return (
     <nav
@@ -64,7 +64,9 @@ const Nav = () => {
         />
       </Link>
       {/* TODO: placeholder for language switch button */}
-      <div className="text-background w-fit bg-accent justify-self-end rounded-lg xl:mr-6 xl:order-3">language switch</div>
+      
+
+      {/* <div className="text-background w-fit bg-accent justify-self-end rounded-lg xl:mr-6 xl:order-3">language switch</div> */}
       {hamMenu === true ? (
         <button
           aria-label="stäng menyn"
@@ -92,7 +94,7 @@ const Nav = () => {
                 className="relative border-b-[#A0C1DB] border border-t-0 border-r-0 border-l-0"
               >
                 <li
-                  className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`} 
+                  className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`}
                   onClick={() => handleDropdown(index)}
                 >
                   {item.title}
@@ -131,6 +133,9 @@ const Nav = () => {
         </ul>
       )}
       <NavDesktop closeMenu={closeMenu} />
+      <LanguageSwitcher />
+      <div>
+      </div>
     </nav>
   );
 };
