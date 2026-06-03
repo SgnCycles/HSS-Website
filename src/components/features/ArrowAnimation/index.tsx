@@ -5,10 +5,10 @@ export type ArrowAnimationProps = {
 const ArrowAnimation = ({ isOpen = false }: ArrowAnimationProps) => {
   return (
     <figure 
-      role="presentation"
-      className={`group z-50 scale-50 cursor-pointer inline-block overflow-visible transition-transform duration-300 ${
-        isOpen ? "translate-y-0 xl:translate-y-4" : ""
-      }`}
+      aria-hidden
+      className={`group z-50 scale-50 cursor-pointer inline-block overflow-visible transition-transform duration-300 
+        ${ isOpen ? "translate-y-0 xl:translate-y-4" : "" }
+      `}
     >
       <svg 
         className="w-auto h-10"
@@ -20,10 +20,9 @@ const ArrowAnimation = ({ isOpen = false }: ArrowAnimationProps) => {
         <g 
           id="Group_1" 
           data-name="Group 1" 
-          className={`transition-transform duration-300 ease-out translate-x-0 translate-y-3 group-hover:translate-y-5 ${
-            isOpen ? "translate-y-5" : ""
-          }
-            `}
+          className={`transition-transform duration-300 ease-out translate-x-0 translate-y-3 group-hover:translate-y-5 
+            ${ isOpen ? "translate-y-5" : "" }
+          `}
         >
           <path 
             id="Path_1" 
@@ -54,4 +53,4 @@ const ArrowAnimation = ({ isOpen = false }: ArrowAnimationProps) => {
   )
 }
 
-export default ArrowAnimation;
+export default ArrowAnimation

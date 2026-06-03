@@ -48,58 +48,60 @@ const Nav = () => {
   return (
     <nav
       ref={navRef}
-      className="grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_3fr_1fr] gap-y-4 gap-5 w-full items-center py-4"
+      className="absolute z-10 grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_2fr_1fr] gap-y-4 gap-5 w-full items-center py-4"
     >
       <Link 
         aria-label="till förstasidan" 
         href="/"
-        className="w-14 ml-4 h-auto md:w-17 md:h-auto"
+        className="z-50 block col-start-1 ml-4"
       >
         <Image
           src="/images/Logo/logo.png"
-          alt=""
-          width={50}
-          height={50}
-          className="w-auto h-auto transition-all duration-400 hover:rotate-6"
+          alt="Hässelby Strand Sjöscoutkår logotyp"
+          width={100} 
+          height={100}
+          priority
+          className="z-50 w-14 xl:ml-10 h-auto md:w-17 object-contain transition-all duration-400 hover:rotate-6"
         />
       </Link>
-      {/* TODO: placeholder for language switch button */}
-      
-
-      {/* <div className="text-background w-fit bg-accent justify-self-end rounded-lg xl:mr-6 xl:order-3">language switch</div> */}
       {hamMenu === true ? (
         <button
-          aria-label="stäng menyn"
-          className="xl:hidden mr-4"
+          aria-label="meny"
+          aria-haspopup
+          aria-expanded="true"
+          className="xl:hidden mr-4 col-start-3"
           onClick={toggleHamMenu}
-        >
+          >
           <Icons name="closeMenu" variant="text-background size-14" />
         </button>
       ) : (
         <button
-          aria-label="öppna menyn"
-          className="xl:hidden mr-4"
+          aria-label="meny"
+          aria-haspopup
+          aria-expanded="false"
+          className="xl:hidden mr-4 col-start-3"
           onClick={toggleHamMenu}
         >
           <Icons name="hamburgerMenu" variant="text-background size-14" />
         </button>
       )}
-
       {hamMenu && (
-        <ul className="xl:hidden z-5 col-span-full h-screen bg-background overscroll-contain overflow-y-auto">
+        <ul className="xl:hidden z-50 col-span-full h-screen bg-background overscroll-contain overflow-y-auto">
           {navItems.map((item, index) => {
             return (
               <li
                 key={index}
-                className="relative border-b-[#A0C1DB] border border-t-0 border-r-0 border-l-0"
+                className="relative z-20 border-b-[#A0C1DB] border border-t-0 border-r-0 border-l-0"
               >
-                <li
+                <button
+                  aria-haspopup="true"
+                  aria-expanded={activeIndex === index}
                   className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`}
                   onClick={() => handleDropdown(index)}
                 >
                   {item.title}
                   <ArrowAnimation isOpen={activeIndex === index} />
-                </li>
+                </button>
                 {activeIndex === index && (
                   <ul className="z-40 flex flex-col mr-5 mt-2 rounded-sm text-primary font-body font-bold">
                     {item.content.map((text, index) => {
@@ -134,8 +136,6 @@ const Nav = () => {
       )}
       <NavDesktop closeMenu={closeMenu} />
       <LanguageSwitcher />
-      <div>
-      </div>
     </nav>
   );
 };

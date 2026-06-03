@@ -52,8 +52,8 @@ export default function NavDesktop({ closeMenu }: NavDesktopProps) {
               closeMenu={closeMenu} 
             />
           </ul>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
