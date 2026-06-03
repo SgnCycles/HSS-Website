@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/common/Nav";
+import { useTranslations } from "next-intl";
 import Button from "@/components/buttons/Button";
 
 const HeaderHome = () => {
+
+  const t = useTranslations("home")
   return (
     <>
       <header
@@ -15,8 +18,8 @@ const HeaderHome = () => {
         }}
       >
         <Nav />
-        <h1 className="hidden md:block heading-1 text-center text-shadow-black text-shadow-xs text-white xl:pb-50">
-          Välkommen till <br />
+        <h1 className="hidden sm:block font-heading text-2xl lg:text-[64px] md:text-4xl font-extrabold leading-none text-center text-shadow-black text-shadow-xs text-white xl:pb-50">
+          {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
         <div

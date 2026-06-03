@@ -5,7 +5,7 @@ import HeaderOther from "@/components/headers/HeaderOther"
 
 const Header = () => {
   const pathname = usePathname()
-  const isHome = pathname === "/" 
+const isHome = pathname === "/" || /^\/(sv|en)\/?$/.test(pathname)
 
   return (
     isHome ? <HeaderHome /> : <HeaderOther />
