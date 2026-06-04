@@ -33,7 +33,7 @@ export default function DropdownNav({
       backdrop-blur-xl
       rounded-sm
       p-6
-      min-w-65
+      w-max
       ${
         isOpen
           ? "visible max-h-96 opacity-100 translate-y-0"
