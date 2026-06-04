@@ -6,7 +6,7 @@ const VilkaArViPage = () => {
   return (
     <section className="lg:gap-20 flex flex-col ">
       <div className="lg:bg-[url(/images/Backgrounds/blueWavyBoat5.png)] lg:bg-size-[100%] lg:bg-no-repeat lg:bg-top">
-        <article className="flex flex-col items-center font-body lg:m-auto lg:w-[70%] lg:px-0 ">
+        <article className="flex flex-col items-center font-body lg:m-auto lg:w-[70%] lg:px-0">
           <div className="flex flex-row items-center p-2.5 gap-2.5 lg:self-baseline lg:px-0 lg:py-5">
             <Image src={`/images/Logo/logo.png`} height={74} width={78} alt="" className="w-7.5 h-7.5 lg:h-18.5 lg:w-19.5" />
             <h1 className="font-heading text-[25px] font-semibold text-blue-900 lg:text-right lg:text-[55px]">Om HSS</h1>
