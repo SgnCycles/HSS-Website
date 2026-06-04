@@ -50,8 +50,8 @@ export type engageraDigCardContentType = {
 }
 
 export type MenuItemsType = {
-  title: string;
-  content: { text: string; href: string; icon: string; mobileIcon: string }[];
+  titleKey: string;
+  content: { textKey: string; href: string; icon: string; mobileIcon: string }[];
 }
 
 export type pageHeaderImageType = {
@@ -82,13 +82,13 @@ export type ActivityCardType = {
 }
 
 export type ActivityFeatureType = {
-    title: string,
-    subTitle: string,
-    subIcon: string,
-    info: string,
-    infoDescFirst: string,
-    infoDescSecond: string,
-    icon: string
+  title: string,
+  subTitle: string,
+  subIcon: string,
+  info: string,
+  infoDescFirst: string,
+  infoDescSecond: string,
+  icon: string
 }
 
 export type VaraBatarContentType = {

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { navItems } from "../../../data/navMenu";
 import ArrowAnimation from "@/components/features/ArrowAnimation";
 import DropdownNav from "../DropdownNav";
+import { useTranslations } from "next-intl";
 
 export type NavDesktopProps = {
   closeMenu: () => void,
@@ -11,6 +12,8 @@ export type NavDesktopProps = {
 export default function NavDesktop({ closeMenu }: NavDesktopProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
+
+  const t = useTranslations("nav");
 
   const handleDropdown = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -31,8 +34,8 @@ export default function NavDesktop({ closeMenu }: NavDesktopProps) {
   }, []);
 
   return (
-    <div 
-      ref={navRef} 
+    <div
+      ref={navRef}
       className="hidden xl:flex font-body text-background justify-between xl:text-lg w-full"
     >
       {navItems.map((item, index) => {
@@ -42,14 +45,14 @@ export default function NavDesktop({ closeMenu }: NavDesktopProps) {
               className="group grid grid-cols-[auto_auto] text-bold gap-2 font-medium cursor-pointer"
               onClick={() => handleDropdown(index)}
             >
-              {item.title}
+              {t(item.titleKey)}
               <ArrowAnimation isOpen={activeIndex === index} />
             </li>
-            <DropdownNav               
-              isOpen={activeIndex === index} 
-              content={item.content} 
+            <DropdownNav
+              isOpen={activeIndex === index}
+              content={item.content}
               closeDropdown={closeDropdown}
-              closeMenu={closeMenu} 
+              closeMenu={closeMenu}
             />
           </ul>
         )
