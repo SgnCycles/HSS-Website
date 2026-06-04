@@ -6,8 +6,8 @@ import { pageHeaderImage } from "../../../data/pageBackgrounds"
 const HeaderOther = () => {
   const pathname = usePathname();
   const strippedPath = pathname.replace(/^\/(sv|en)/, "") || "/";
-const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
-const headerImage = findPage?.image ?? "aldersgrupp_hero.png";
+  const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
+  const headerImage = findPage?.image ?? "aldersgrupp_hero.png";
 
   return (
     <header

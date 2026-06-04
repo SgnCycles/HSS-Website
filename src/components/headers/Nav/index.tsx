@@ -110,18 +110,12 @@ const Nav = () => {
                           key={index}
                           className="flex justify-start items-center pr-8 pl-8 py-4 underline-offset-7 whitespace-nowrap"
                         >
-                          <Image
-                            src={`${text.mobileIcon}`}
-                            alt=""
-                            width={25}
-                            height={25}
-                            className="md:w-7 md:h-7 md:px-1 mr-4"
-                          />
                           <Link
-                            className="sm:text-xl"
+                            className="sm:text-xl flex gap-4"
                             href={`${text.href}`}
                             onClick={closeMenu}
                           >
+                            <Icons name={text.icon} />
                             {text.text}
                           </Link>
                         </li>

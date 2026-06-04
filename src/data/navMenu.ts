@@ -9,14 +9,16 @@ export const navItems:MenuItemsType[] = [
         href: "/vad-gor-vi",
         // icon: "/Icons/yellow-key.svg",
         icon: "key",
-        mobileIcon: "/Icons/key-icon.svg",
+        // mobileIcon: "/Icons/key-icon.svg",
+        mobileIcon: "key"
       },
       {
         text: "Åldersgrupper",
         href: "/aldersgrupper",
         // icon: "/Icons/yellow_children.svg",
         icon: "group",
-        mobileIcon: "/Icons/children-icon.svg",
+        // mobileIcon: "/Icons/children-icon.svg",
+        mobileIcon: "group"
       },
       {
         text: "Bli ledare",
