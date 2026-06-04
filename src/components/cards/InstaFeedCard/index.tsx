@@ -8,8 +8,7 @@ export default function InstaFeedCard() {
         return (
           <div
             key={post.id}
-            className="relative w-27 h-57 md:w-108 md:h-140 max-w-6xl"
-          >
+            className="relative flex-1 min-w-0 transition-transform hover:scale-95 duration-100 cursor-pointer">
             <Image
               src={post.img}
               alt=""

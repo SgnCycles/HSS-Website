@@ -9,9 +9,9 @@ export default function Home() {
     <div className="">
       <main className="">
         <ActivityFeature />
+        <UpptäckLivetSomSjöscout />
         <AgeGroupCardHome />
         <BliLedareHome />
-        <UpptäckLivetSomSjöscout />
       </main>
     </div>
   );
