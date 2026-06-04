@@ -1,29 +1,32 @@
-"use client"
-import Link from "next/link"
+"use client";
+import Link from "next/link";
 import Icons from "@/components/features/Icons";
+import { useTranslations } from "next-intl";
 
 export type DropdownNavProps = {
-  isOpen?: boolean,
-  isActive?: boolean,
-  closeDropdown: () => void; 
-  closeMenu: () => void;     
+  isOpen?: boolean;
+  isActive?: boolean;
+  closeDropdown: () => void;
+  closeMenu: () => void;
   content: {
-    icon: string
-    href: string,
-    text: string
-  }[]
-}
+    icon: string;
+    href: string;
+    textKey: string;
+  }[];
+};
 
-export default function DropdownNav({ 
-  isOpen = false, 
-  closeDropdown, 
-  closeMenu, 
-  content 
+export default function DropdownNav({
+  isOpen = false,
+  closeDropdown,
+  closeMenu,
+  content,
 }: DropdownNavProps) {
+  const t = useTranslations("nav");
+
   return (
-    <ul 
-    aria-hidden={!isOpen}
-    className={`
+    <ul
+      aria-hidden={!isOpen}
+      className={`
       absolute
       justify-self-end
       flex
@@ -44,7 +47,7 @@ export default function DropdownNav({
       {content.map((text, idx) => {
         return (
           <li
-            tabIndex={isOpen ? 0 : -1 }
+            tabIndex={isOpen ? 0 : -1}
             key={idx}
             className={`
               group 
@@ -60,14 +63,15 @@ export default function DropdownNav({
               duration-200 
               ease-in 
               hover:border-blue-100/80
-              ${ 
-                isOpen 
-                  ? "opacity-100 max-h-97 translate-y-0" 
-                  : "opacity-0 -translate-y-3 max-w-300 max-h-0 -z-10" 
+              ${
+                isOpen
+                  ? "opacity-100 max-h-97 translate-y-0"
+                  : "opacity-0 -translate-y-3 max-w-300 max-h-0 -z-10"
               }
             `}
           >
-            <Link href={text.href} 
+            <Link
+              href={text.href}
               className={`
                 group 
                 flex 
@@ -78,22 +82,26 @@ export default function DropdownNav({
                 opacity-0 
                 py-3  
                 cursor-pointer 
-                ${ 
-                  isOpen 
+                ${
+                  isOpen
                     ? "opacity-100 max-h-97 translate-y-0"
-                    : "sr-only opacity-0 focus:text-background -translate-y-5 -z-10" 
+                    : "sr-only opacity-0 focus:text-background -translate-y-5 -z-10"
                 }
               `}
               onClick={() => {
-              closeDropdown();
-              closeMenu();
+                closeDropdown();
+                closeMenu();
               }}
             >
-              <Icons name={text.icon} variant="text-accent md:mr-4" aria-hidden="true" />
-              {text.text}
+              <Icons
+                name={text.icon}
+                variant="text-accent md:mr-4"
+                aria-hidden="true"
+              />
+              {t(text.textKey)}
             </Link>
           </li>
-        )
+        );
       })}
     </ul>
   );
