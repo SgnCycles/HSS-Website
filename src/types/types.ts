@@ -50,13 +50,8 @@ export type engageraDigCardContentType = {
 }
 
 export type MenuItemsType = {
-  titleKey: string;
-  content: 
-  { textKey: string;
-    href: string;
-    icon: string; 
-    mobileIcon: string
-  }[];
+  title: string;
+  content: { text: string; href: string; icon: string; mobileIcon: string }[];
 }
 
 export type pageHeaderImageType = {
@@ -87,12 +82,12 @@ export type ActivityCardType = {
 }
 
 export type ActivityFeatureType = {
-    titleKey: string,
-    subTitleKey: string,
+    title: string,
+    subTitle: string,
     subIcon: string,
-    infoKey: string,
-    infoDescFirstKey: string,
-    infoDescSecondKey: string,
+    info: string,
+    infoDescFirst: string,
+    infoDescSecond: string,
     icon: string
 }
 

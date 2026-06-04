@@ -34,13 +34,14 @@ const HeaderHome = () => {
         <div className="z-5 bg-primary md:bg-primary/45">
           <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
             <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg">
-              {t('description')}
+              {t('subtitlePt1')}
+              {t('subtitlePt2')}
             </p>
             <Button 
               ariaLabel="" 
               href="https://www.scoutnet.se/register/in/group/764" 
               variant="primaryBlue" 
-              text={t('cta')} 
+              text={t('button')} 
             />
           </div>
           

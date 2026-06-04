@@ -8,11 +8,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-  const files = ["home","nav","pages/vad-gor-vi"]; 
-
-  const messages = (
-    await Promise.all(files.map((file) => import(`../../messages/${locale}/${file}.json`)))
-  ).reduce((acc, mod) => ({ ...acc, ...mod.default }), {});
-
-  return { locale, messages };
+  return {
+    locale,
+    messages: (await import(`../../messages/${locale}.json`)).default,
+  };
 });

@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import { navItems } from "../../../data/navMenu";
 import ArrowAnimation from "@/components/features/ArrowAnimation";
 import DropdownNav from "../DropdownNav";
-import { useTranslations } from "next-intl";
 
 export type NavDesktopProps = {
   closeMenu: () => void,
@@ -13,8 +12,6 @@ export default function NavDesktop({ closeMenu }: NavDesktopProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
 
-  const t = useTranslations("nav")
-  
   const handleDropdown = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   }
@@ -45,7 +42,7 @@ export default function NavDesktop({ closeMenu }: NavDesktopProps) {
               className="group grid grid-cols-[auto_auto] text-bold gap-2 font-medium cursor-pointer"
               onClick={() => handleDropdown(index)}
             >
-               {t(item.titleKey)}
+              {item.title}
               <ArrowAnimation isOpen={activeIndex === index} />
             </li>
             <DropdownNav               
