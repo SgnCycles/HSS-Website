@@ -94,3 +94,16 @@ export type ActivityFeatureType = {
 export type VaraBatarContentType = {
   image: string,
 }
+
+export type vilkaArViContentType = {
+  image: string,
+}
+
+export type vilkaArViGamlaBatarContentType = {
+  image: string,
+}
+
+export type vilkaArViTextContentType = {
+  image: string,
+  info: string
+}
