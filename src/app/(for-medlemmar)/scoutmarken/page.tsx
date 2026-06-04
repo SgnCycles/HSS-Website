@@ -111,7 +111,7 @@ const ScoutmarkenPage = () => {
             href="https://www.scoutshop.se/marken"
             target="_blank"
           >
-            Se alla märken is scoutshop.se &#62;&#62;
+            Se alla märken i scoutshop.se &#62;&#62;
           </Link>
         </div>
         <div className="md:hidden w-full flex justify-center items-center">
