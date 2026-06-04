@@ -284,8 +284,8 @@ const ScoutmarkenPage = () => {
             </div>
           </div>
         )}
-        <div className="card flex flex-col lg:flex-row lg:justify-around items-center border border-accent bg-yellow-200 rounded-sm mt-6 mb-6">
-          <p className="paragraph text-primary text-center sm:text-left mb-2 sm:mb-0">
+        <div className="card flex flex-col sm:flex-row lg:justify-around items-center border border-accent bg-yellow-200 rounded-sm mt-6 mb-6">
+          <p className="paragraph text-primary text-center sm:text-left mb-6 mr-2 sm:mb-0">
             Anvisningar för placering av de nya märkena på scoutskjortan.
           </p>
           <Button
