@@ -17,7 +17,7 @@ const HeaderHome = () => {
         }}
       >
         <Nav />
-        <h1 className="hidden sm:block font-heading text-2xl lg:text-[64px] md:text-4xl font-extrabold leading-none text-center text-shadow-black text-shadow-xs text-white xl:pb-50">
+        <h1 className="hidden heading-1 sm:block font-heading text-2xl lg:text-[64px] md:text-4xl font-extrabold leading-none text-center text-shadow-black text-shadow-xs text-white xl:pb-50">
           {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
@@ -27,7 +27,7 @@ const HeaderHome = () => {
             backgroundImage: "url('/images/Backgrounds/homewavy.svg')",
           }}
         >
-          <p className="font-bold font-body text-lg text-background mt-10 whitespace-pre-line">
+          <p className="font-bold paragraph font-body text-lg text-background mt-10 whitespace-pre-line">
             {t('description')}
           </p>
           <Link
@@ -49,11 +49,11 @@ const HeaderHome = () => {
         </div>
       </header>
       <section className="sm:hidden bg-primary py-6 flex flex-col items-center gap-3">
-        <h1 className="sm:hidden text-xl lg:text-[64px] font-heading font-extrabold top-47 text-center text-white">
+        <h1 className="sm:hidden heading-1 text-xl lg:text-[64px] font-heading font-extrabold top-47 text-center text-white">
           {t('title')}<br />
           <span className="text-accent"> Hässelby Strand Sjöscoutkår</span>
         </h1>
-        <p className="w-[90%] font-body text-sm font-medium text-background text-center left-4">
+        <p className="w-[90%] paragraph font-body text-sm font-medium text-background text-center left-4">
           {t('description')}
         </p>
         <Link
