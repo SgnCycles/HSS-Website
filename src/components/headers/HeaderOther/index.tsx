@@ -1,13 +1,13 @@
 "use client"
-import Nav from "@/components/common/Nav"
+import Nav from "@/components/headers/Nav"
 import { usePathname } from "next/navigation"
 import { pageHeaderImage } from "../../../data/pageBackgrounds"
 
 const HeaderOther = () => {
   const pathname = usePathname();
   const strippedPath = pathname.replace(/^\/(sv|en)/, "") || "/";
-const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
-const headerImage = findPage?.image ?? "aldersgrupp_hero.png";
+  const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
+  const headerImage = findPage?.image ?? "aldersgrupp_hero.png";
 
   return (
     <header
