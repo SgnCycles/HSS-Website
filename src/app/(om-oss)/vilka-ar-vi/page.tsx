@@ -4,8 +4,8 @@ import { vilkaArViContent, vilkaArViGamlaBatarContent, vilkaArViTextContent } fr
 
 const VilkaArViPage = () => {
   return (
-    <section className="lg:gap-20 flex flex-col">
-      <div className="lg:bg-[url(/images/Backgrounds/blueWavyBoat1.png)] lg:bg-size-[100%] lg:bg-no-repeat lg:bg-bottom">
+    <section className="lg:gap-20 flex flex-col ">
+      <div className="lg:bg-[url(/images/Backgrounds/blueWavyBoat5.png)] lg:bg-size-[100%] lg:bg-no-repeat lg:bg-top">
         <article className="flex flex-col items-center font-body lg:m-auto lg:w-[70%] lg:px-0 ">
           <div className="flex flex-row items-center p-2.5 gap-2.5 lg:self-baseline lg:px-0 lg:py-5">
             <Image src={`/images/Logo/logo.png`} height={74} width={78} alt="" className="w-7.5 h-7.5 lg:h-18.5 lg:w-19.5" />
@@ -26,19 +26,22 @@ const VilkaArViPage = () => {
                 <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="vilka är vi" className="lg:rounded-md md:w-[33.33%] lg:h-auto h-auto w-[-webkit-fill-available] aspect-video" />
               )}
             </div>
+            <div className="hidden md:hidden lg:flex w-full justify-center items-center lg:p-20">
+              <Image src="/Icons/caret_down.svg" height={49} width={49} alt="" />
+            </div>
             <div>
-              <h2 className="font-heading text-[20px] font-semibold text-blue-900 hidden lg:block lg:text-[30px] lg:py-5">Se andra dokument</h2>
+              <h2 className="font-heading text-[20px] font-semibold text-blue-900 hidden lg:block lg:text-[30px] lg:py-5 lg:pt-15">Se andra dokument</h2>
               <div className="flex flex-col bg-yellow-200 p-5 font-body lg:border-accent lg:rounded-md lg:bg-secondary lg:border lg:text-[20px] lg:gap-5">
                 <h2 className="font-heading text-[20px] font-semibold text-blue-900 lg:hidden">Se andra dokument</h2>
                 <Link target="_blank" href="/pdf/Stadgar-Hasselby-Strands-Sjoscoutkar-beslutad-2025-10-22-signerade.pdf" className="underline underline-offset-2 text-blue-900">Stadgar för Hässelby Strands Sjöscoutkår →</Link>
                 <Link target="_blank" href="/pdf/Verksamhetsplan-for-perioden-2025-09-01-2026-12-31.pdf" className="underline underline-offset-2 text-blue-900">Verksamhetsplan för perioden 2025-2026 →</Link>
-                <Link target="_blank" href="/pdf/HSS-karstamma-2025-10-22-protokoll-signerat" className="underline underline-offset-2 text-blue-900">HSS Kår stämma för 2025 →</Link>
+                <Link target="_blank" href="/pdf/HSS-karstamma-2025-10-22-protokoll-signerat.pdf" className="underline underline-offset-2 text-blue-900">HSS Kår stämma för 2025 →</Link>
               </div>
             </div>
           </div>
         </article>
       </div>
-      <article className="flex flex-col font-body bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:m-auto lg:w-[70%] lg:bg-size-[258px]">
+      <article className="flex flex-col font-body bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:m-auto lg:w-[70%] lg:bg-none">
         <div className="flex flex-row items-center p-5 gap-2.5 pb-0 lg:p-0">
           <Image src={`/Icons/yellow-anchor-icon.svg`} height={30} width={30} alt="" className="h-max" />
           <h2 className="font-heading text-[25px] font-semibold text-blue-900 lg:text-[40px] lg:py-5">Historien om HSS</h2>
