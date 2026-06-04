@@ -37,11 +37,12 @@ const messages = await getMessages();
       lang={locale} suppressHydrationWarning className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
-      <NextIntlClientProvider messages={messages}>
-        <Header />
-        {children}
-      </NextIntlClientProvider>
-        <Footer />
+        <a href="#main-content" className="sr-only z-50 focus:absolute h-5 focus:not-sr-only top-0 focus:bg-primary focus:text-background">hoppa till huvudinnehåll</a>
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

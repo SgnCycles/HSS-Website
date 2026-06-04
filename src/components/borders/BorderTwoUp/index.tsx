@@ -39,7 +39,7 @@ export default function BorderTwoUp({
   return (
     <div ref={containerRef} className="relative h-auto pt-20 overflow-hidden">
       <Border variant={foreground} />
-      <div ref={backgroundRef} className="pt-20 overflow-hidden">
+      <div ref={backgroundRef} className="pt-20">
         <BorderBeneath variantBackground={background} />
       </div>
     </div>

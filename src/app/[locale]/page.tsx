@@ -5,10 +5,8 @@ import BorderTwoDown from "@/components/borders/BorderTwoDown";
 import BorderSingleUp from "@/components/borders/BorderSingleUp";
 
 export default function Home() {
-
-
   return (
-    <main className="">
+    <main id="main-content" tabIndex={-1} className="focus:outline-none">
       <ActivityFeature />
       <AgeGroupCardHome />
       <BorderSingleUp variant="text-primary" />
