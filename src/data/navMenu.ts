@@ -2,22 +2,22 @@ import { MenuItemsType } from "../types/types"
 
 export const navItems:MenuItemsType[] = [
   {
-    title: "Bli scout",
+   titleKey: "becomeScout.title",
     content: [
       {
-        text: "Vad gör vi?",
+        textKey: "becomeScout.whatWeDo",
         href: "/vad-gor-vi",
         icon: "/Icons/yellow-key.svg",
         mobileIcon: "/Icons/key-icon.svg",
       },
       {
-        text: "Åldersgrupper",
+        textKey: "becomeScout.ageGroups",
         href: "/aldersgrupper",
         icon: "/Icons/yellow_children.svg",
         mobileIcon: "/Icons/children-icon.svg",
       },
       {
-        text: "Bli ledare",
+        textKey: "becomeScout.becomeLeader",
         href: "/bli-ledare",
         icon: "/Icons/yellow-hand.svg",
         mobileIcon: "/Icons/hand-icon.svg",
@@ -26,28 +26,28 @@ export const navItems:MenuItemsType[] = [
   },
 
   {
-    title: "Info för föräldrar",
+    titleKey: "parentsInfo.title",
     content: [
       {
-        text: "Trygghet & säkerhet",
+        textKey: "parentsInfo.safety",
         href: "/trygghet-och-sakerhet",
         icon: "/Icons/yellow-shield-cross-icon.svg",
         mobileIcon: "/Icons/shield-plus.svg",
       },
       {
-        text: "Engagera dig som vuxen",
+        textKey: "parentsInfo.engage",
         href: "/engagera-dig-som-vuxen",
         icon: "/Icons/hand-heart-yellow.svg",
         mobileIcon: "/Icons/hand-heart-icon.svg",
       },
       {
-        text: "Bra att veta",
+        textKey: "parentsInfo.goodToKnow",
         href: "/bra-att-veta",
         icon: "/Icons/info.svg",
         mobileIcon: "/Icons/infoblue.png",
       },
       {
-        text: "Vanliga frågor",
+        textKey: "parentsInfo.faq",
         href: "/vanliga-fragor",
         icon: "/Icons/yellowquestion.svg",
         mobileIcon: "/Icons/question-icon.svg",
@@ -55,16 +55,16 @@ export const navItems:MenuItemsType[] = [
     ],
   },
   {
-    title: "För medlemmar",
+    titleKey: "forMembers.title",
     content: [
       {
-        text: "Scoutmärken",
+        textKey: "forMembers.scoutBadges",
         href: "/scoutmarken",
         icon: "/Icons/yellow-brand.svg",
         mobileIcon: "/Icons/brand-blue-logo.svg",
       },
       {
-        text: "Året i HSS",
+        textKey: "forMembers.yearInHss",
         href: "/aret-i-hss",
         icon: "/Icons/brandHss.png",
         mobileIcon: "/Icons/hss-icon.svg",
@@ -72,28 +72,28 @@ export const navItems:MenuItemsType[] = [
     ],
   },
   {
-    title: "Om oss",
+    titleKey: "aboutUs.title",
     content: [
       {
-        text: "Vilka är vi?",
+        textKey: "aboutUs.whoAreWe",
         href: "/vilka-ar-vi",
         icon: "/Icons/brandHss.png",
         mobileIcon: "/Icons/hss-icon.svg",
       },
       {
-        text: "Våra båtar",
+        textKey: "aboutUs.ourBoats",
         href: "/vara-batar",
         icon: "/Icons/yellow-boat.svg",
         mobileIcon: "/Icons/boat-icon.svg",
       },
       {
-        text: "Våra lokaler",
+        textKey: "aboutUs.ourPremises",
         href: "/vara-lokaler",
         icon: "/Icons/yellow_house.svg",
         mobileIcon: "/Icons/house-icon.svg",
       },
       {
-        text: "Policy",
+        textKey: "aboutUs.policy",
         href: "/policy",
         icon: "/Icons/yellow-police.svg",
         mobileIcon: "/Icons/shield-star-icon.svg",

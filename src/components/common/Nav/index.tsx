@@ -4,11 +4,14 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { navItems } from "../../../data/navMenu";
 import LanguageSwitcher from "@/components/LanguageButton";
+import { useTranslations } from "next-intl";
 
 const Nav = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [hamMenu, setHamMenu] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
+
+  const t = useTranslations("nav")
 
   const handleDropdown = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -89,7 +92,7 @@ const Nav = () => {
                   className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`}
                   onClick={() => handleDropdown(index)}
                 >
-                  {item.title}
+                  {t(item.titleKey)}
                   <Image
                     src="/Icons/nav-arrow.svg"
                     alt=""
@@ -118,7 +121,7 @@ const Nav = () => {
                             href={`${text.href}`}
                             onClick={closeMenu}
                           >
-                            {text.text}
+                            {t(text.textKey)}
                           </Link>
                         </li>
                       );
@@ -139,7 +142,7 @@ const Nav = () => {
                 className="flex justify-center items-center font-medium cursor-pointer"
                 onClick={() => handleDropdown(index)}
               >
-                {item.title}
+                 {t(item.titleKey)}
                 <Image
                   src="/Icons/nav-arrow.svg"
                   alt=""
@@ -164,7 +167,7 @@ const Nav = () => {
                           height={30}
                           className="md:h-7 md:mr-4"
                         ></Image>
-                        <Link href={`${text.href}`}>{text.text}</Link>
+                        <Link href={`${text.href}`}>{t(text.textKey)}</Link>
                       </li>
                     );
                   })}

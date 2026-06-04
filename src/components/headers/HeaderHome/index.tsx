@@ -27,17 +27,15 @@ const HeaderHome = () => {
             backgroundImage: "url('/images/Backgrounds/homewavy.svg')",
           }}
         >
-          <p className="font-bold font-body text-lg text-background mt-10">
-            Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats
-            <br />
-            att växa, lära sig sjömanskap och skapa livslånga vänner.
+          <p className="font-bold font-body text-lg text-background mt-10 whitespace-pre-line">
+            {t('description')}
           </p>
           <Link
             href="https://www.scoutnet.se/register/in/group/764"
             target="_blank"
             className="cursor-pointer py-2 px-12 font-body font-bold bg-primary rounded-sm text-accent border border-[#99AEBF] mt-10"
           >
-            Bli scout
+          {t('cta')}
           </Link>
         </div>
         <div className="sm:hidden">
@@ -52,19 +50,18 @@ const HeaderHome = () => {
       </header>
       <section className="sm:hidden bg-primary py-6 flex flex-col items-center gap-3">
         <h1 className="sm:hidden text-xl lg:text-[64px] font-heading font-extrabold top-47 text-center text-white">
-          Välkommen till <br />
+          {t('title')}<br />
           <span className="text-accent"> Hässelby Strand Sjöscoutkår</span>
         </h1>
         <p className="w-[90%] font-body text-sm font-medium text-background text-center left-4">
-          Vi är en sjöscoutkår där barn och ungdomar får växa, lära sig
-          sjömanskap och skapa vänner för livet.
+          {t('description')}
         </p>
         <Link
           href="https://www.scoutnet.se/register/in/group/764"
           target="_blank"
           className="w-[90%] h-12 mt-2 cursor-pointer pt-5 pb-5 pr-16 pl-16 font-body font-semibold bg-primary rounded-sm text-accent border-accent border flex justify-center items-center"
         >
-          Bli scout
+          {t('cta')}
         </Link>
       </section>
     </>
