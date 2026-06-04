@@ -6,7 +6,7 @@ export type BorderHeroProps = {
 
 export default function BorderHero({ children }: BorderHeroProps) {
   return (
-    <div className="relative hidden  w-full max-h-auto md:grid grid-cols-1 grid-rows-1 overflow-hidden">
+    <div className="relative hidden w-full max-h-auto md:grid grid-cols-1 grid-rows-3 overflow-hidden">
       <div className="col-start-1 row-start-1 w-full h-full pointer-events-none select-none">
         <svg 
           className="w-full h-full" 
@@ -27,7 +27,7 @@ export default function BorderHero({ children }: BorderHeroProps) {
           />
         </svg>
       </div>
-      <div className="col-start-1 row-start-1 z-10 flex items-end xl:items-center justify-center w-full h-full">
+      <div className="col-start-1 row-start-3 z-10 flex items-end xl:items-center justify-center w-full h-full">
         <div className="container px-6 pt-25 w-full">
           {children}
         </div>

@@ -1,17 +1,17 @@
 import AgeGroupCardHome from "@/components/cards/AgeGroupCardHome";
 import BliLedareHome from "@/components/cards/BliLedare";
 import ActivityFeature from "@/components/cards/ActivityFeature";
-import BorderHero from "@/components/common/BorderHero";
+import BorderTwoDown from "@/components/borders/BorderTwoDown";
+import BorderSingleUp from "@/components/borders/BorderSingleUp";
 
 export default function Home() {
-
-
   return (
     <main id="main-content" tabIndex={-1} className="focus:outline-none">
       <ActivityFeature />
       <AgeGroupCardHome />
+      <BorderSingleUp variant="text-primary" />
       <BliLedareHome />
-      <BorderHero>testing</BorderHero>
+      <BorderTwoDown foreground="text-primary" background="text-blue-100" />
     </main>
   );
 }

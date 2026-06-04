@@ -1,5 +1,8 @@
 {
   "home": {
-    "title": "Välkommen till"
+    "title": "Välkommen till",
+    "subtitlePt1": "Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats att växa, ",
+    "subtitlePt2": "lära sig sjömanskap och skapa livslånga vänner.",
+    "button": "Bli scout"
   }
 }

@@ -48,7 +48,7 @@ const Nav = () => {
   return (
     <nav
       ref={navRef}
-      className="absolute z-10 grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_2fr_1fr] gap-y-4 gap-5 w-full items-center py-4"
+      className="absolute z-10 grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_2fr_1fr] gap-x-4 md:gap-x-8 gap-5 w-full items-center py-4"
     >
       <Link 
         aria-label="till förstasidan" 
@@ -69,7 +69,7 @@ const Nav = () => {
           aria-label="meny"
           aria-haspopup
           aria-expanded="true"
-          className="xl:hidden mr-4 col-start-3"
+          className="xl:hidden mr-4 col-start-3 place-items-center"
           onClick={toggleHamMenu}
           >
           <Icons name="closeMenu" variant="text-background size-14" />

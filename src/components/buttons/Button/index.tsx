@@ -10,7 +10,7 @@ export default function Button({ ariaLabel, href, variant, text }: ButtonProps) 
   }
   return ( 
     <Link 
-      className={` ${variantClasses[variant]} text-center px-[64px] w-full sm:w-max transition-all duration-300 border-1 inline-flex items-center justify-center rounded-sm py-2 min-h-[70px]`}
+      className={` ${variantClasses[variant]} max-h-min text-center px-[64px] w-full sm:w-max transition-all duration-300 border-1 inline-flex items-center justify-center rounded-sm py-2 min-h-[65px]`}
       href={href}
       aria-label={ariaLabel}
     >

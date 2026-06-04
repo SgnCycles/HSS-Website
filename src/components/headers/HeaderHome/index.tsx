@@ -1,63 +1,50 @@
+'use client'
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/components/buttons/Button";
-import Border from "@/components/common/Border";
 import Nav from "../Nav";
-import BorderHero from "@/components/common/BorderHero";
+import BorderTwoUp from "@/components/borders/BorderTwoUp";
+
 
 const HeaderHome = () => {
 
   const t = useTranslations("home")
+
   return (
     <header
-      className="bg-primary relative max-h-screen h-160 md:h-screen flex flex-col"
+      className="bg-primary relative max-h-screen h-180 md:h-screen flex flex-col"
     >
       <Nav />
       <section className="grid grid-cols-1 grid-rows-[1fr_auto_auto] w-full h-full relative overflow-hidden items-end">
         <Image 
-          className="row-start-1 row-end-2 md:row-end-4 w-full h-full object-cover bg-linear-to-bl from-primary to-blue-100" 
+          className="row-start-1 row-end-2 md:row-end-4 w-screen h-full object-cover bg-linear-to-bl from-primary to-blue-100" 
           src={'/images/Hero/aldersgrupp_hero.png'} 
           alt=""  
           fill
           priority
-          fetchPriority="high"
           style={{
+            objectPosition: "right bottom",
             WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)',
             maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)'
           }}
         />
-        <h1 className="z-5 p-4 bg-primary md:bg-transparent md:row-start-1 md:self-center row-start-2 heading-1 text-shadow-black text-shadow-xs text-center text-white ">
+        <h1 className="z-5 p-4 bg-primary md:bg-transparent md:row-start-1 row-start-2 heading-1 text-shadow-black text-shadow-xs text-center text-white ">
           {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
-        <BorderHero >
-          <div className="z-5 h-min justify-items-center grid grid-cols-[1fr_auto] gap-12">
-            <p className="paragraph text-white font-bold justify-self-start">
-              Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats
-              
-              att växa, lära sig sjömanskap och skapa livslånga vänner.
+        <BorderTwoUp foreground="text-primary md:text-primary/40" background="text-blue-100/50 md:text-blue-100/40" />
+        <div className="z-5 bg-primary md:bg-[#7895AD]/50 ">
+          <div className="container md:pb-10 pt-2 z-5 h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
+            <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start">
+              {t('subtitlePt1')}
+              {/* <br className="hidden md:block" /> */}
+              {t('subtitlePt2')}
             </p>
             <Button 
               ariaLabel="" 
               href="https://www.scoutnet.se/register/in/group/764" 
               variant="primaryBlue" 
-              text="Bli scout" 
-            />
-          </div>
-        </BorderHero>
-        <Border variant="text-primary md:hidden"/>
-        <div className="bg-primary md:hidden">
-          <div className="container z-5 h-min justify-items-center grid grid-rows-[auto_auto] md:grid-rows-[auto] md:grid-cols-[1fr_auto] ">
-            <p className="paragraph text-white text-center md:text-left text-white md:text-primary md:justify-self-start">
-              Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats
-              <br className="hidden md:block" />
-              att växa, lära sig sjömanskap och skapa livslånga vänner.
-            </p>
-            <Button 
-              ariaLabel="" 
-              href="https://www.scoutnet.se/register/in/group/764" 
-              variant="primaryBlue" 
-              text="Bli scout" 
+              text={t('button')} 
             />
           </div>
         </div>
