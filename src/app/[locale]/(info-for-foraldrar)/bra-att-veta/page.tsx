@@ -66,7 +66,7 @@ const BraAttVetaPage = () => {
             </p>
             <h3 className="hidden sm:flex font-heading text-[18px] md:text-[20px] text-primary font-bold text-nowrap pb-6 lg:pb-0">
               Du kan självklart också mejla:
-              <a href="mailto:hsstrojan@hss-scout.org" className="underline pl-2">
+              <a href="mailto:info@hss-scout.org" className="underline pl-2">
                 hsstrojan@hss-scout.org
               </a>
             </h3>
