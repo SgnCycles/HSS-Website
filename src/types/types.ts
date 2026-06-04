@@ -27,7 +27,12 @@ export type engageraDigCardContentType = {
 
 export type MenuItemsType = {
   titleKey: string;
-  content: { textKey: string; href: string; icon: string; mobileIcon: string }[];
+  content: 
+  { textKey: string;
+    href: string;
+    icon: string; 
+    mobileIcon: string
+  }[];
 }
 
 export type pageHeaderImageType = {

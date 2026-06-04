@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 const HeaderHome = () => {
 
-  const t = useTranslations("home")
+  const t = useTranslations("home");
   return (
     <>
       <header
