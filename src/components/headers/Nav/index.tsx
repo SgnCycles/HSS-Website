@@ -118,7 +118,7 @@ const Nav = () => {
                             href={`${text.href}`}
                             onClick={closeMenu}
                           >
-                            <Icons name={text.icon} />
+                            <Icons name={text.mobileIcon} />
                             {t(text.textKey)}
                           </Link>
                         </li>

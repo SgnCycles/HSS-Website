@@ -37,11 +37,10 @@ export default function DropdownNav({
       rounded-sm
       p-6
       w-max
-      ${
-        isOpen
+      ${isOpen
           ? "visible max-h-96 opacity-100 translate-y-0"
           : "invisible max-h-0 opacity-0 -translate-y-5 -z-10"
-      }
+        }
     `}
     >
       {content.map((text, idx) => {
@@ -63,10 +62,9 @@ export default function DropdownNav({
               duration-200 
               ease-in 
               hover:border-blue-100/80
-              ${
-                isOpen
-                  ? "opacity-100 max-h-97 translate-y-0"
-                  : "opacity-0 -translate-y-3 max-w-300 max-h-0 -z-10"
+              ${isOpen
+                ? "opacity-100 max-h-97 translate-y-0"
+                : "opacity-0 -translate-y-3 max-w-300 max-h-0 -z-10"
               }
             `}
           >
@@ -82,10 +80,9 @@ export default function DropdownNav({
                 opacity-0 
                 py-3  
                 cursor-pointer 
-                ${
-                  isOpen
-                    ? "opacity-100 max-h-97 translate-y-0"
-                    : "sr-only opacity-0 focus:text-background -translate-y-5 -z-10"
+                ${isOpen
+                  ? "opacity-100 max-h-97 translate-y-0"
+                  : "sr-only opacity-0 focus:text-background -translate-y-5 -z-10"
                 }
               `}
               onClick={() => {
