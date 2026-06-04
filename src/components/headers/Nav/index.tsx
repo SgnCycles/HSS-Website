@@ -7,6 +7,7 @@ import NavDesktop from "../NavDesktop";
 import ArrowAnimation from "@/components/features/ArrowAnimation";
 import Icons from "@/components/features/Icons";
 import LanguageSwitcher from "@/components/LanguageButton";
+import { useTranslations } from "next-intl";
 
 const Nav = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -14,17 +15,19 @@ const Nav = () => {
   const navRef = useRef<HTMLElement | null>(null);
 
   const handleDropdown = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index)
-  }
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const t = useTranslations("nav");
 
   const toggleHamMenu = () => {
     setHamMenu((prev) => !prev);
-  }
+  };
 
   const closeMenu = () => {
-    setHamMenu(false)
-    setActiveIndex(null)
-  }
+    setHamMenu(false);
+    setActiveIndex(null);
+  };
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -50,15 +53,15 @@ const Nav = () => {
       ref={navRef}
       className="absolute z-10 grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_2fr_1fr] gap-x-4 md:gap-x-8 gap-y-2 w-full items-center py-4"
     >
-      <Link 
-        aria-label="till förstasidan" 
+      <Link
+        aria-label="till förstasidan"
         href="/"
         className="z-50 block col-start-1 ml-4"
       >
         <Image
           src="/images/Logo/logo.png"
           alt="Hässelby Strand Sjöscoutkår logotyp"
-          width={100} 
+          width={100}
           height={100}
           priority
           className="z-50 w-14 xl:ml-10 h-auto md:w-17 object-contain transition-all duration-400 hover:rotate-6"
@@ -71,7 +74,7 @@ const Nav = () => {
           aria-expanded="true"
           className="xl:hidden mr-4 col-start-3 place-items-center"
           onClick={toggleHamMenu}
-          >
+        >
           <Icons name="closeMenu" variant="text-background size-14" />
         </button>
       ) : (
@@ -99,7 +102,7 @@ const Nav = () => {
                   className={`w-full flex items-center justify-between sm:text-2xl px-6 py-5 hover:bg-[#A0C1DB] font-body font-medium cursor-pointer ${activeIndex === index ? "bg-blue-100" : ""}`}
                   onClick={() => handleDropdown(index)}
                 >
-                  {item.title}
+                  {t(item.titleKey)}
                   <ArrowAnimation isOpen={activeIndex === index} />
                 </button>
                 {activeIndex === index && (
@@ -116,10 +119,10 @@ const Nav = () => {
                             onClick={closeMenu}
                           >
                             <Icons name={text.icon} />
-                            {text.text}
+                            {t(text.textKey)}
                           </Link>
                         </li>
-                      )
+                      );
                     })}
                   </ul>
                 )}
