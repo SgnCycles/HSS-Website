@@ -1,6 +1,6 @@
 import { CommonType } from "@/types/common.types"
 
-export default function BorderSingleUp({ variant = "text-primary" }: CommonType) {
+export default function BorderSingleUp({ variant = "" }: CommonType) {
   return (
     <svg 
       className={`h-auto -mb-px full-bleed ${variant}`}
