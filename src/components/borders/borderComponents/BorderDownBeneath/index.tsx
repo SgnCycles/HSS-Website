@@ -3,7 +3,7 @@ import { VariantType } from "@/types/common.types"
 export default function BorderDownBeneath({ variantBackground = "" }: VariantType) {
   return (
     <svg 
-      className={`absolute -mt4 pb-4 z-1 md:pb-8 lg:pb-9 h-auto full-bleed ${variantBackground}`}
+      className={`relative  pb-4 -z-1 md:pb-8 lg:pb-9 h-auto full-bleed ${variantBackground}`}
       xmlns="http://www.w3.org/2000/svg" 
       width="1920.201" 
       height="238.682" 

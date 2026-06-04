@@ -31,15 +31,15 @@ export default function BorderTwoDown({
         trigger: containerRef.current, 
         start: "top bottom",           
         end: "bottom top",             
-        scrub: 1,                      
+        scrub: 2,                      
       },
     });
   }, { scope: containerRef })
 
   return (
-    <div ref={containerRef} className="relative h-auto pb-20 overflow-hidden">
+    <div ref={containerRef} className="relative z-2 h-auto overflow-hidden">
       <BorderDown variant={foreground} />
-      <div ref={backgroundRef} className="pb-20">
+      <div ref={backgroundRef} className="z-1 pb-10 xl:pb-10">
         <BorderDownBeneath variantBackground={background} />
       </div>
     </div>
