@@ -1,18 +1,15 @@
-'use client'
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Button from "@/components/buttons/Button";
 import Nav from "../Nav";
 import BorderTwoUp from "@/components/borders/BorderTwoUp";
 
-
 const HeaderHome = () => {
-
   const t = useTranslations("home")
 
   return (
     <header
-      className="bg-primary relative max-h-screen h-180 md:h-screen flex flex-col"
+      className="bg-primary relative max-h-screen h-185 md:h-screen flex flex-col"
     >
       <Nav />
       <section className="grid grid-cols-1 grid-rows-[1fr_auto_auto] w-full h-full relative overflow-hidden items-end">
@@ -32,12 +29,12 @@ const HeaderHome = () => {
           {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
-        <BorderTwoUp foreground="text-primary md:text-primary/40" background="text-blue-100/50 md:text-blue-100/40" />
-        <div className="z-5 bg-primary md:bg-[#7895AD]/50 ">
-          <div className="container md:pb-10 pt-2 z-5 h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
-            <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start">
+        <BorderTwoUp foreground="text-primary md:text-primary/45" background="text-blue-100/30 md:text-blue-100/45" />
+        <div className="z-5 bg-primary md:bg-blue-100/45">
+        <div className="z-5 bg-primary md:bg-primary/45">
+          <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
+            <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg">
               {t('subtitlePt1')}
-              {/* <br className="hidden md:block" /> */}
               {t('subtitlePt2')}
             </p>
             <Button 
@@ -47,6 +44,8 @@ const HeaderHome = () => {
               text={t('button')} 
             />
           </div>
+          
+        </div>
         </div>
       </section>
     </header>

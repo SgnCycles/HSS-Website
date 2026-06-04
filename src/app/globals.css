@@ -113,6 +113,33 @@
   }
 }
 
+@utility containerHero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 95%;
+
+  @media (min-width: 640px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1274px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @utility section {
   gap: 12px;
 
@@ -259,7 +286,7 @@
 @utility heading-2 {
   color: inherit;
   color: var(--color-primary);
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-family: var(--font-heading);
   font-weight: 700;
 
