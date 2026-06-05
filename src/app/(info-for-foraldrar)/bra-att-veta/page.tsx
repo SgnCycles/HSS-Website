@@ -45,7 +45,7 @@ const BraAttVetaPage = () => {
             width={30}
             alt=""
           />
-          <h2 className="text-[24px] md:text-[30px] font-bold text-primary">
+          <h2 className="heading-2">
             Vad är det som skiljer HSS från andra scoutkårer?
           </h2>
         </div>
@@ -64,7 +64,7 @@ const BraAttVetaPage = () => {
               Tröjorna köps enklast på kårdiscot i november eller på
               sommaravslutningen i juni.
             </p>
-            <h3 className="hidden sm:flex font-heading text-[18px] md:text-[20px] text-primary font-bold text-nowrap pb-6 lg:pb-0">
+            <h3 className="hidden sm:flex heading-3">
               Du kan självklart också mejla:
               <a href="mailto:hsstrojan@hss-scout.org" className="underline pl-2">
                 hsstrojan@hss-scout.org
@@ -97,7 +97,7 @@ const BraAttVetaPage = () => {
         </h3>
         <Button
           ariaLabel=""
-          href="mailto:info@hss-scout.org"
+          href="mailto:hsstrojan@hss-scout.org"
           variant="primaryBlue"
           text="hsstrojan@hss-scout.org"
         />
