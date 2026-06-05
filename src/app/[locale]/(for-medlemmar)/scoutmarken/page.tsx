@@ -1,5 +1,8 @@
 "use client";
-import { markesaffischCardContent, scoutUniformCardContent } from "@/data/scoutmarkenCardContent";
+import {
+  markesaffischCardContent,
+  scoutUniformCardContent,
+} from "@/data/scoutmarkenCardContent";
 import Image from "next/image";
 import Link from "next/link";
 import useIsMobile from "@/hooks/useGetMobile";

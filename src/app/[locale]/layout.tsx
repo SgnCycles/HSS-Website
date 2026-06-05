@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
 import Footer from "@/components/footers/Footer";
 import Header from "@/components/headers/Header";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Hässelby Strands sjöscoutkår",
@@ -19,19 +21,28 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}>) 
+{
+
+const { locale } = await params;
+const messages = await getMessages();
   return (
     <html
-      lang="sv" className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
+      lang={locale} suppressHydrationWarning className={`h-full antialiased ${bricolageGrotesque.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-full flex flex-col">
-        <Header />
-        {children}
-        <Footer />
+        <a href="#main-content" className="sr-only z-50 focus:absolute h-5 focus:not-sr-only top-0 focus:bg-primary focus:text-background">hoppa till huvudinnehåll</a>
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -17,6 +17,7 @@
   --color-brown-900: #413414;
 
   /* Yellow */
+  --color-yellow-100: #FFFAEC;
   --color-yellow-200: #fff4d8;
   --color-yellow-500: #f7b309;
 
@@ -49,8 +50,17 @@
   --color-konvojen-secondary: #fce0d1;
   --color-utmanare-primary: #b92e66;
   --color-utmanare-secondary: #f4bad2;
-  --color-familjescouterna-primary: #003660;
-  --color-familjescouterna-secondary: #D9ECFF;
+  --color-familjescouterna-primary: #632583;
+  --color-familjescouterna-secondary: #CEC0D8;
+
+/* Color Aliases */
+  --color-background:     var(--color-white);
+  --color-primary:        var(--color-blue-900);
+  --color-primary-hover:  var(--color-brown-900);
+  --color-secondary:      var(--color-yellow-200);
+  --color-muted:          var(--color-grey-300);
+  --color-accent:         var(--color-yellow-500);
+  --color-accent-hover:   var(--color-white);
 
   /* Color Aliases */
   --color-background: var(--color-white);
@@ -107,6 +117,33 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@utility containerHero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 95%;
+
+  @media (min-width: 640px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1274px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -243,12 +280,12 @@
 @utility heading-1 {
   color: inherit;
   color: var(--color-primary);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-family: var(--font-heading);
   font-weight: 700;
 
   @media (min-width: 640px) {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
 
   @media (min-width: 1024px) {
@@ -259,7 +296,7 @@
 @utility heading-2 {
   color: inherit;
   color: var(--color-primary);
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-family: var(--font-heading);
   font-weight: 700;
 

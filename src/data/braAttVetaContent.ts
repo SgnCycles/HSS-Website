@@ -1,0 +1,3 @@
+export const scoutEquipment:string[] = [ "Scoutdräkt (T-shirt, piké eller scoutskjorta med halsduk)", "Liggunderlag", "Sovsäck", "Ett par vandringsskor, stövlar eller kängor", "Matbestick", "Något att äta från, t.ex som tallrik eller kåsa", "Vattenflaska", "Regnkläder"]
+
+export const scoutEquipmentStore:string[] = ["HSS-tröja: Klassisk  collegetröja: 350:-", "HSS-T-shirt: Outslitlig och oumbärlig: 150:-", "HSS-keps: Ett måste i skogen och till sjöss: 150:-", "HSS-paketet: Fyndpris på rubbet: 550:-"]

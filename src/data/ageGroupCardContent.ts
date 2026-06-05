@@ -12,7 +12,7 @@ export const ageGroupCardContent:ageGroupCardContentType[] = [
     colourSchemeBorder: 'border-familjescouterna-primary',
     colourSchemePrimary: 'bg-familjescouterna-primary',
     colourSchemeSecondary: 'bg-familjescouterna-secondary',
-    icon: 'familjescouting.png',
+    icon: 'familjescout_logo.png',
     image: 'aldersgroup_utmanare.png',
     price: 'Pris: 550kr/termin',
     apply: 'https://www.scoutnet.se/register/in/group/764'
