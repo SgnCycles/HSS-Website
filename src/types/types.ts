@@ -97,6 +97,14 @@ export type ActivityFeatureType = {
     icon: string
 }
 
+export type FaqProps = {
+
+  id:number,
+  title:string,
+  content:string
+
+}
+
 export type VaraBatarContentType = {
   image: string,
 }
