@@ -5,7 +5,8 @@ import Nav from "../Nav";
 import BorderTwoUp from "@/components/borders/BorderTwoUp";
 
 const HeaderHome = () => {
-  const t = useTranslations("home")
+  
+  const t = useTranslations("home");
 
   return (
     <header
@@ -21,15 +22,20 @@ const HeaderHome = () => {
           priority
           style={{
             objectPosition: "right bottom",
-            WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)',
-            maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)'
+            WebkitMaskImage:
+              "linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
+            maskImage:
+              "linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
           }}
         />
         <h1 className="z-5 p-4 md:pb-50 lg:pb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 heading-1 text-shadow-black text-shadow-xs text-center text-white ">
           {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
-        <BorderTwoUp foreground="text-primary md:text-primary/45" background="text-blue-100/30 md:text-blue-100/45" />
+        <BorderTwoUp
+          foreground="text-primary md:text-primary/45"
+          background="text-blue-100/30 md:text-blue-100/45"
+        />
         <div className="z-5 bg-primary md:bg-blue-100/45">
           <div className="z-5 bg-primary md:bg-primary/45">
             <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
@@ -43,12 +49,11 @@ const HeaderHome = () => {
                 text={t('cta')}
               />
             </div>
-
           </div>
         </div>
       </section>
     </header>
-  )
-}
+  );
+};
 
 export default HeaderHome;
