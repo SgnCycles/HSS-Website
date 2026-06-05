@@ -109,3 +109,9 @@ export type vilkaArViTextContentType = {
   image: string,
   info: string
 }
+
+export type FaqProps = {
+  id:number,
+  title:string,
+  content:string
+}
