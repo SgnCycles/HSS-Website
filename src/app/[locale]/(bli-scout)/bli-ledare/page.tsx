@@ -23,7 +23,7 @@ const BliLedarePage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="font-heading text-[24px] sm:text-[30px] text-primary font-extrabold text-nowrap md:heading-1">Bli ledare - vi utbildar dig!</h1>
+            <h1 className="heading-1">Bli ledare - vi utbildar dig!</h1>
           </div>
           <p className="paragraph-light text-grey-500">
             Du behöver inga förkunskaper. Vi skickar dig på Scouternas
@@ -46,7 +46,7 @@ const BliLedarePage = () => {
                       />
                     </div>
                     <div>
-                      <h3 className="font-heading text-[18px] md:text-[20px] font-semibold text-primary">
+                      <h3 className="heading-3">
                         {card.title}
                       </h3>
                       <p className="text-base text-wrap text-grey-500">
