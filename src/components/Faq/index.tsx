@@ -5,7 +5,6 @@ import { useState, useRef, useEffect } from "react";
 
 export default function FaqCard() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [content, setContent] = useState<boolean>(false);
   const dropDown = useRef<HTMLDivElement | null>(null);
 
   const handelDropdown = (index: number) => {
@@ -15,7 +14,7 @@ export default function FaqCard() {
     let handlar = (e: MouseEvent) => {
       if (dropDown.current && !dropDown.current.contains(e.target as Node)) {
         setActiveIndex(null);
-        setContent(false)
+       
       }
     };
     document.addEventListener("mousedown", handlar);
@@ -23,7 +22,7 @@ export default function FaqCard() {
   }, []);
 
   return (
-    <section className="flex flex-col gap-6 ref={dropDown}">
+    <section className="flex flex-col gap-6" ref={dropDown}>
       {faqData.map((item, index) => {
         return (
           <div
