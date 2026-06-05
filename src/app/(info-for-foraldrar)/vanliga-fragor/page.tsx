@@ -7,7 +7,7 @@ const VanligaFragorPage = () => {
       className="bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-top bg-no-repeat bg-cover"
       id="main-content"
     >
-      <article className="container ">
+      <article className="container">
         <h1 className="heading-1">Vanliga frågor</h1>
         <p className="paragraph">
           Här hittar du svar på de vanligaste frågorna om medlemskap, fakturor
