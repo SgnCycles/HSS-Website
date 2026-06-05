@@ -96,3 +96,16 @@ export type ActivityFeatureType = {
   infoDescSecondKey: string,
   icon: string
 }
+
+export type vilkaArViContentType = {
+  image: string,
+}
+
+export type vilkaArViGamlaBatarContentType = {
+  image: string,
+}
+
+export type vilkaArViTextContentType = {
+  image: string,
+  info: string
+}
