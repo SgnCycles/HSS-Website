@@ -1,10 +1,12 @@
 import Button from "@/components/buttons/Button";
 import FaqCard from "@/components/Faq";
 
-
 const VanligaFragorPage = () => {
   return (
-    <main className="bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-top bg-no-repeat bg-cover" id="main-content">
+    <main
+      className="bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-top bg-no-repeat bg-cover"
+      id="main-content"
+    >
       <article className="container ">
         <h1 className="heading-1">Vanliga frågor</h1>
         <p className="paragraph">
@@ -22,7 +24,7 @@ const VanligaFragorPage = () => {
             <Button
               ariaLabel={"mail button"}
               href={"mailto:info@hss-scout.org"}
-              variant={"primaryBrown"}
+              variant={"primaryBlue"}
               text={"Maila oss"}
             />
           </div>
