@@ -69,7 +69,7 @@ const ScoutmarkenPage = () => {
         </div>
       </article>
       <article className="container pt-0">
-        <h2 className="font-heading text-[24px] md:text-[30px] font-bold text-primary text-center md:text-left pb-6">
+        <h2 className="heading-2">
           Specifika märken för sjöscouter
         </h2>
         <div className="sm:w-full sm:grid sm:place-items-center sm:mb-6">
@@ -106,13 +106,6 @@ const ScoutmarkenPage = () => {
           >
             Se flera sjöscoutmärken →
           </Link>
-          <Link
-            className="underline text-primary font-semibold"
-            href="https://www.scoutshop.se/marken"
-            target="_blank"
-          >
-            Se alla märken i scoutshop.se &#62;&#62;
-          </Link>
         </div>
         <div className="md:hidden w-full flex justify-center items-center">
           <Image
@@ -127,7 +120,7 @@ const ScoutmarkenPage = () => {
         </div>
       </article>
       <article className="w-full container pt-0 pb-0">
-        <h2 className="font-heading text-[24px] md:text-[30px] font-bold text-primary text-center md:text-left pb-6">
+        <h2 className="heading-2">
           Märkesaffisch för din åldersgrupp
         </h2>
         {/* MOBILE VERSION */}
@@ -219,7 +212,7 @@ const ScoutmarkenPage = () => {
         {/* MOBILE VERSION */}
         {scoutUniformCardContent && (
           <div className="sm:hidden">
-            <h2 className="font-heading text-primary text-[24px] md:text-[30px] font-bold text-center mb-4">
+            <h2 className="heading-2">
               {scoutUniformCardContent[0].title}
             </h2>
             <div className="grid place-items-center">
@@ -266,7 +259,7 @@ const ScoutmarkenPage = () => {
         {/* DESKTOP VERSION */}
         {scoutUniformCardContent && (
           <div className="hidden sm:flex sm:flex-col">
-            <h2 className="text-[30px] font-heading text-primary font-bold text-center md:text-left mb-6">
+            <h2 className="heading-2">
               {scoutUniformCardContent[0].title}
             </h2>
             <p className="paragraph-light">
