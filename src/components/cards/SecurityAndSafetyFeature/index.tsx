@@ -24,7 +24,7 @@ const SecurityAndSafetyFeature = () => {
             <Image className="h1-icon" src={"/Icons/yellow-shield-cross-icon.svg"} alt="" height={40} width={40} />
             <h1 className="heading-1 text-primary">Säkerhet & trygghet</h1>
           </div>
-          <p className="pb-4 pt-0 paragraph-light text-center max-w-lg lg:text-left lg:text-lg lg:p-0 lg:pl-6">På HSS är barnens trygghet, inkludering och glädje alltid vår högsta prioritet.</p>
+          <p className="pb-4 pt-0 paragraph-light text-center max-w-lg lg:text-left lg:p-0 lg:pl-6">På HSS är barnens trygghet, inkludering och glädje alltid vår högsta prioritet.</p>
         </section>
         <div className="mt-auto">
           <ul className="flex flex-col mb-4 ">
@@ -54,12 +54,12 @@ const SecurityAndSafetyFeature = () => {
           <div className="absolute w-full h-full bg-black/40 backdrop-blur-sm" onClick={() => setPopup(false)}></div>
           <article className="bg-background p-6 z-10 w-[80%]">
             <div className="text-center">
-              <h2 className="font-heading font-bold text-primary text-[30px] m-4">Trygghet och inkludering på HSS</h2>
+              <h2 className="heading-2 m-4">Trygghet och inkludering på HSS</h2>
             </div>
             {securityAndSafetyPopupContent && securityAndSafetyPopupContent.map((box, index) => (
-              <section className="p-4" key={index}>
-                <h3 className="font-heading font-medium text-[20px] text-primary">{box.title}</h3>
-                <p className="font-body">{box.info}</p>
+              <section className="p-2" key={index}>
+                <h3 className="heading-3 text-primary">{box.title}</h3>
+                <p className="paragraph-light text-[18px]">{box.info}</p>
               </section>
             ))}
             <div className="flex justify-end">
