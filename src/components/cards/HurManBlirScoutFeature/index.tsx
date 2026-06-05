@@ -41,7 +41,7 @@ const HurManBlirScoutFeature = () => {
               </div>
             </div>
             <Button ariaLabel="link" variant="primaryBrown" href="/aldersgrupper" text="Läs mer om åldersgrupper" />
-            <Link href={"https://www.scoutnet.se/register/in/group/764"} target="_blank" className="font-bold bg-primary hover:bg-primary-hover text-accent hover:text-accent-hover border-accent hover:border-accent/50 text-center px-[42px] w-[80%] sm:w-max transition-all duration-300 border inline-flex items-center justify-center rounded-sm py-2 min-h-[70px]">Ansök om att bli scout! →</Link>
+            <Link href={"https://www.scoutnet.se/register/in/group/764"} target="_blank" className="font-bold bg-primary hover:bg-primary-hover text-accent hover:text-accent-hover border-accent hover:border-accent/50 text-center px-10.5 w-[80%] sm:w-max transition-all duration-300 border inline-flex items-center justify-center rounded-sm py-2 min-h-17.5">Ansök om att bli scout! →</Link>
           </div>
         </div>
       </div>
