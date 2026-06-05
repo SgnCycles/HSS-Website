@@ -14,7 +14,6 @@ export default function FaqCard() {
     let handlar = (e: MouseEvent) => {
       if (dropDown.current && !dropDown.current.contains(e.target as Node)) {
         setActiveIndex(null);
-       
       }
     };
     document.addEventListener("mousedown", handlar);
