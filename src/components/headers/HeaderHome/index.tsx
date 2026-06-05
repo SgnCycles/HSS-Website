@@ -5,7 +5,7 @@ import Nav from "../Nav";
 import BorderTwoUp from "@/components/borders/BorderTwoUp";
 
 const HeaderHome = () => {
-  
+
   const t = useTranslations("home");
 
   return (
@@ -26,7 +26,7 @@ const HeaderHome = () => {
               "linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
           }}
         />
-        <h1 className="z-5 p-4 md:pb-50 lg:pb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 heading-1 text-shadow-black text-shadow-xs text-center text-white ">
+        <h1 className="z-5 p-4 md:pb-50 lg:pb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 text-xl sm:text-6xl font-heading font-extrabold text-shadow-black text-shadow-xs text-center text-white ">
           {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>

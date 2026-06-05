@@ -51,10 +51,11 @@ export type engageraDigCardContentType = {
 
 export type MenuItemsType = {
   titleKey: string;
-  content: 
-  { textKey: string;
+  content:
+  {
+    textKey: string;
     href: string;
-    icon: string; 
+    icon: string;
     mobileIcon: string
   }[];
 }

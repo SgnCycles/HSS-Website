@@ -4,7 +4,6 @@ import Button from "@/components/buttons/Button";
 
 const BliLedareHome = () => {
   return (
-    //TODO: a background wavy image will be applied later
     <section className="bg-primary font-body text-background grid place-items-center">
       <article className="container">
         <div className="flex w-full justify-center md:justify-start items-center pb-6">
@@ -15,8 +14,8 @@ const BliLedareHome = () => {
             alt=""
             className="h2-icon"
           />
-          <h2 className="font-heading text-[24px] md:text-[30px] font-extrabold text-nowrap">
-            <span className="text-accent">Bli ledare - </span>vi utbildar dig!
+          <h2 className="heading-2 text-white">
+            <span className="text-accent">Bli ledare - </span><span>vi utbildar dig!</span>
           </h2>
         </div>
         <p className="paragraph-light text-muted">
@@ -40,7 +39,7 @@ const BliLedareHome = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="font-heading text-[18px] md:text-[20px] font-semibold">
+                    <h3 className="heading-3 text-white">
                       {card.title}
                     </h3>
                     <p className="text-base text-wrap">

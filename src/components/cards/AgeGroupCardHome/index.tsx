@@ -19,7 +19,7 @@ const AgeGroupCardHome = () => {
             alt=""
             className="pb-2"
           />
-          <h2 className="text-blue-900 font-heading text-[24px] md:text-[30px] font-extrabold pl-2 md:text-5xl">
+          <h2 className="heading-2">
             Åldersgrupper
           </h2>
         </div>
