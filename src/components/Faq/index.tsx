@@ -26,7 +26,7 @@ export default function FaqCard() {
       {faqData.map((item, index) => {
         return (
           <div
-            className="bg-[#FFFAEC] cursor-pointer card shadow-xl shadow-blue-100/50 "
+            className="bg-secondary border border-accent  cursor-pointer card shadow-xl shadow-blue-100/50 "
             key={index}
             onClick={() => handelDropdown(index)}
           >

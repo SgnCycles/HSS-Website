@@ -14,7 +14,7 @@ const VanligaFragorPage = () => {
           och ledarskap i HSS.
         </p>
         <FaqCard />
-        <section className="bg-[#EEEEEE] card mt-6">
+        <section className="bg-[#EEEEEE] border border-grey-300 card mt-6">
           <h4 className="heading-3">Hittade du inte svaret?</h4>
           <p className="paragraph">
             Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper
