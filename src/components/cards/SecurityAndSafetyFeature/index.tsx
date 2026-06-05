@@ -41,7 +41,7 @@ const SecurityAndSafetyFeature = () => {
       <div className="flex flex-col justify-center items-center">
         {securityAndSafetyInfoContent && securityAndSafetyInfoContent.map((box, index) => (
           <div className="pb-2 pt-2 w-[90%] lg:hidden" key={index}>
-            <h2 className="heading-3">{box.title}</h2>
+            <h2 className="heading-2">{box.title}</h2>
             <p className="paragraph-light">{box.info}</p>
           </div>
         ))}

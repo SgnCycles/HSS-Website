@@ -5,7 +5,7 @@ import Nav from "../Nav";
 import BorderTwoUp from "@/components/borders/BorderTwoUp";
 
 const HeaderHome = () => {
-  
+
   const t = useTranslations("home");
 
   return (
@@ -16,7 +16,7 @@ const HeaderHome = () => {
       <section className="grid grid-cols-1 grid-rows-[1fr_auto_auto] w-full h-full relative overflow-hidden items-end">
         <Image
           className="row-start-1 row-end-2 md:row-end-4 w-screen h-full object-cover bg-linear-to-bl from-primary to-blue-100"
-          src={'/images/Hero/aldersgrupp_hero.png'}
+          src={"/images/Hero/aldersgrupp_hero.png"}
           alt=""
           fill
           priority
@@ -28,7 +28,7 @@ const HeaderHome = () => {
               "linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
           }}
         />
-        <h1 className="z-5 p-4 md:pb-50 lg:pb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 heading-1 text-shadow-black text-shadow-xs text-center text-white ">
+        <h1 className="z-5 p-4 md:pb-50 lg:pb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 text-xl sm:text-6xl font-heading font-extrabold text-shadow-black text-shadow-xs text-center text-white ">
           {t('title')}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
