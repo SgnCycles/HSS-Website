@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <main id="main-content" tabIndex={-1} className="focus:outline-none">
       <ActivityFeature />
-      
       <BorderSingleUp variant="text-yellow-100" />
       <AgeGroupCardHome />
       <BorderSingleUp variant="text-primary bg-yellow-100" />
