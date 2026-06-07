@@ -102,7 +102,7 @@ const AgeGroupPage = () => {
                       >
                         <div className="flex justify-between pb-4">
                           <div className="flex flex-col justify-start">
-                            <h3 className="heading-3"> {card.title}</h3>
+                            <h3 className="heading-3">{card.title}</h3>
                             <p
                               className={`h-7 ${card.colourSchemeTertiary} font-normal font-body pt-1 md:pt-1 pb-1 md:pb-1 pl-2 pr-2 text-sm rounded-md`}
                             >
@@ -130,7 +130,7 @@ const AgeGroupPage = () => {
                       </div>
                       <div>
                         <Image
-                          src={`/images/body/${card.image}`}
+                          src={`/images/Body/${card.image}`}
                           height={1200}
                           width={800}
                           alt={card.title}
@@ -214,7 +214,7 @@ const AgeGroupPage = () => {
                       <div className="agegroup-card-expanded">
                         <div className="agegroup-card-image w-64 aspect-square overflow-hidden rounded-md mr-6">
                           <Image
-                            src={`/images/body/${card.image}`}
+                            src={`/images/Body/${card.image}`}
                             height={800}
                             width={400}
                             alt={card.title}
