@@ -33,8 +33,8 @@ const AgeGroupPage = () => {
             </div>
             <div className="flex sm:justify-between">
               <p className="paragraph-light">
-                Oavsett ålder finns det en plats för dig i HSS. Varje avdelning
-                har sin egen karaktär och sina egna äventyr.
+                Oavsett ålder finns det en plats för dig i HSS.
+                Varje avdelning har sin egen karaktär och sina egna äventyr.
               </p>
             </div>
           </div>
