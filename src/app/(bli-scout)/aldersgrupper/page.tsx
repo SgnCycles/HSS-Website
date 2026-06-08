@@ -16,7 +16,7 @@ const AgeGroupPage = () => {
   return (
     <main
       id="main-content"
-      className="md:bg-[url('/images/Backgrounds/blueWavyBoat2.png')] md:bg-cover md:bg-top-right"
+      className="md:bg-[url('/images/Backgrounds/blueWavyBoat2.png')] md:bg-no-repeat md:bg-size-[100%_auto]"
     >
       <section className="font-body">
         <article className="md:container md:flex flex-col">
@@ -253,13 +253,13 @@ const AgeGroupPage = () => {
                           className={`agegroup-card-buttons flex justify-end gap-4 h-fit`}
                         >
                           <button
-                            className={`font-bold ${card.colourSchemeAccentSurface} ${card.colourSchemeHover} hover:border hover:border-accent text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 cursor-pointer`}
+                            className={`font-bold ${card.colourSchemeAccentSurface} ${card.colourSchemeHover} hover:border-2 hover:border-accent text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 cursor-pointer`}
                             onClick={() => handleClick(index)}
                           >
                             Stäng
                           </button>
                           <button
-                            className={`font-bold ${card.colourSchemeAccent} text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 ${card.colourSchemeHover} hover:border hover:border-accent cursor-pointer`}
+                            className={`font-bold ${card.colourSchemeAccent} text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 ${card.colourSchemeHover} hover:border-2 hover:border-accent cursor-pointer`}
                           >
                             <Link
                               href="https://www.scoutnet.se/register/in/group/764"
