@@ -54,6 +54,7 @@ const Nav = () => {
       className="absolute z-10 grid grid-cols-[4fr_auto_auto] grid-rows-[auto_auto] auto-rows-max xl:grid-cols-[1fr_2fr_1fr] gap-x-4 md:gap-x-8 gap-y-2 w-full items-center py-4"
     >
       <Link
+        onClick={() => window.scrollTo(0, 0)}
         aria-label="till förstasidan"
         href="/"
         className="z-50 block col-start-1 ml-4"
