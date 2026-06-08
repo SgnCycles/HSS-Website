@@ -69,52 +69,55 @@ export type SecurityAndSafetyCardContentType = {
   title: string,
   icon: string,
   info: string
-  }
-  
-  export type SecurityAndSafetyCheckType = {
+}
+
+export type SecurityAndSafetyCheckType = {
   info: string,
   icon: string
-  }
-  
-  export type SecurityAndSafetyInfoType = {
+}
+
+export type SecurityAndSafetyInfoType = {
   title: string,
   info: string
-  }
-  
-  export type ActivityCardType = {
+}
+
+export type ActivityCardType = {
   icon: string,
   title: string,
   info: string
-  }
-  
-  export type ActivityFeatureType = {
-      titleKey: string,
-      subTitleKey: string,
-      subIcon: string,
-      infoKey: string,
-      infoDescFirstKey: string,
-      infoDescSecondKey: string,
-      icon: string
-  }
-  
-  export type FaqProps = {
-    id:number,
-    title:string,
-    content:string
-  }
-  
-  export type VaraBatarContentType = {
-    image: string,
-    // titleKey: string,
-    // subTitleKey: string,
-    // subIcon: string,
-    // infoKey: string,
-    // infoDescFirstKey: string,
-    // infoDescSecondKey: string,
-    // icon: string
-  }
-  
-  export type vilkaArViContentType = {
+}
+
+export type ActivityFeatureType = {
+    titleKey: string,
+    subTitleKey: string,
+    subIcon: string,
+    infoKey: string,
+    infoDescFirstKey: string,
+    infoDescSecondKey: string,
+    icon: string
+}
+
+export type FaqProps = {
+
+  id:number,
+  title:string,
+  content:string
+
+}
+
+export type VaraBatarContentType = {
+  image: string,
+}
+
+export type vilkaArViContentType = {
+  image: string,
+}
+
+export type vilkaArViGamlaBatarContentType = {
+  image: string,
+}
+
+export type vilkaArViTextContentType = {
   image: string,
   info: string
-  }
+}
