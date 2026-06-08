@@ -115,3 +115,15 @@ export type FaqProps = {
   title:string,
   content:string
 }
+
+export type RegisterInfoProps={
+
+  id:number,
+  infoContent:string
+}
+
+export type CollectedInfoProps={
+
+  id:number,
+  information:string
+}
