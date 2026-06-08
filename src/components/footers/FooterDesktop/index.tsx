@@ -9,7 +9,7 @@ const FooterDesktop = () => {
   return (
     <footer className="hidden md:block">
       <FooterImage />
-      <Link onClick={() => window.scrollTo(0, 0)} href="/" aria-label="tillbaka till startsidan">
+      <Link href="/#nav-content" aria-label="tillbaka till startsidan">
         <Image
           src="/images/Logo/logo_light.png"
           height={146}
