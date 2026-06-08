@@ -111,7 +111,16 @@ export type vilkaArViTextContentType = {
 }
 
 export type FaqProps = {
-  id:number,
-  title:string,
-  content:string
+  id: number,
+  title: string,
+  content: string
+}
+
+export type aretIHssContentType = {
+  title: string,
+  icon: string,
+  months: {
+    subtitle: string,
+    info: string
+  }[]
 }
