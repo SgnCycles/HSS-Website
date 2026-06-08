@@ -88,25 +88,13 @@ export type ActivityCardType = {
 }
 
 export type ActivityFeatureType = {
-    titleKey: string,
-    subTitleKey: string,
-    subIcon: string,
-    infoKey: string,
-    infoDescFirstKey: string,
-    infoDescSecondKey: string,
-    icon: string
-}
-
-export type FaqProps = {
-
-  id:number,
-  title:string,
-  content:string
-
-}
-
-export type VaraBatarContentType = {
-  image: string,
+  titleKey: string,
+  subTitleKey: string,
+  subIcon: string,
+  infoKey: string,
+  infoDescFirstKey: string,
+  infoDescSecondKey: string,
+  icon: string
 }
 
 export type vilkaArViContentType = {
@@ -120,4 +108,10 @@ export type vilkaArViGamlaBatarContentType = {
 export type vilkaArViTextContentType = {
   image: string,
   info: string
+}
+
+export type FaqProps = {
+  id:number,
+  title:string,
+  content:string
 }
