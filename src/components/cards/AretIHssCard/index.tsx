@@ -14,7 +14,7 @@ const AretiHssCard = (content: aretIHssContentType) => {
       {months && months.map((month, index) => {
         const information = month.info.split('|')
         return (
-          <div key={index} >
+          <div key={index}>
             <p className="paragraph-light font-bold text-blue-900 mb-0">{month.subtitle}</p>
             {information && information.map((info, index) => {
               return (
