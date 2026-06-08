@@ -105,13 +105,13 @@ export type SecurityAndSafetyCardContentType = {
   
   export type VaraBatarContentType = {
     image: string,
-    titleKey: string,
-    subTitleKey: string,
-    subIcon: string,
-    infoKey: string,
-    infoDescFirstKey: string,
-    infoDescSecondKey: string,
-    icon: string
+    // titleKey: string,
+    // subTitleKey: string,
+    // subIcon: string,
+    // infoKey: string,
+    // infoDescFirstKey: string,
+    // infoDescSecondKey: string,
+    // icon: string
   }
   
   export type vilkaArViContentType = {
