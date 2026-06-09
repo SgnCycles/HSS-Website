@@ -6,7 +6,7 @@ import BorderSingleUp from "@/components/borders/BorderSingleUp";
 
 export default function Home() {
   return (
-    <main id="main-content" tabIndex={-1} className="focus:outline-none">
+    <main id="main-content">
       <ActivityFeature />
       <BorderSingleUp variant="text-yellow-100" />
       <AgeGroupCardHome />
