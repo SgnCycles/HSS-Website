@@ -44,23 +44,38 @@
   /* Age cards */
   --color-sjohumlor-primary: #2a7636;
   --color-sjohumlor-secondary: #d4e4d7;
+  --color-sjohumlor-tertiary: #B2CEB7;
+  --color-sjohumlor-accent: #1c5a13;
+  --color-sjohumlor-accent-secondary: #9BBDA1;
+  --color-sjohumlor-surface: #5d9867;
+
   --color-kaparna-primary: #1165ae;
   --color-kaparna-secondary: #cee6f8;
+  --color-kaparna-tertiary: #A8CDEB;
+  --color-kaparna-accent: #00355F;
+  --color-kaparna-accent-secondary: #91BCD5;
+  --color-kaparna-surface: #3F698B;
+
   --color-konvojen-primary: #aa4611;
   --color-konvojen-secondary: #fce0d1;
+  --color-konvojen-tertiary: #FAC7AC;
+  --color-konvojen-accent: #B95C2A;
+  --color-konvojen-accent-secondary: #E3B696;
+  --color-konvojen-surface: #CD845C;
+
   --color-utmanare-primary: #b92e66;
   --color-utmanare-secondary: #f4bad2;
+  --color-utmanare-tertiary: #F1A8C5;
+  --color-utmanare-accent: #8E1845;
+  --color-utmanare-accent-secondary: #DA97AF;
+  --color-utmanare-surface: #B96A88;
+
   --color-familjescouterna-primary: #632583;
   --color-familjescouterna-secondary: #CEC0D8;
-
-/* Color Aliases */
-  --color-background:     var(--color-white);
-  --color-primary:        var(--color-blue-900);
-  --color-primary-hover:  var(--color-brown-900);
-  --color-secondary:      var(--color-yellow-200);
-  --color-muted:          var(--color-grey-300);
-  --color-accent:         var(--color-yellow-500);
-  --color-accent-hover:   var(--color-white);
+  --color-familjescouterna-tertiary: #AA90B8;
+  --color-familjescouterna-accent: #43145C;
+  --color-familjescouterna-accent-secondary: #937FA2;
+  --color-familjescouterna-surface: #836395;
 
   /* Color Aliases */
   --color-background: var(--color-white);
@@ -367,4 +382,28 @@
     font-size: 1.2rem;
     margin: 0 0 24px 0;
   }
+}
+
+@utility agegroup-card-expanded {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+@utility agegroup-card-image {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+@utility agegroup-card-block-one {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+@utility agegroup-card-block-two {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+@utility agegroup-card-buttons {
+ grid-area: 3 / 1 / 4 / 4;
 }
