@@ -3,7 +3,7 @@ import { CommonType } from "@/types/common.types"
 export default function BorderSingleUp({ variant = "" }: CommonType) {
   return (
     <svg 
-      className={`h-auto -mb-px full-bleed ${variant}`}
+      className={`h-auto -mb-px w-full ${variant}`}
       xmlns="http://www.w3.org/2000/svg" 
       width="1920.785" 
       height="152" 
