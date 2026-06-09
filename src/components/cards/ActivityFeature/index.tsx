@@ -8,8 +8,7 @@ import { useTranslations } from "next-intl"
 import Button from "@/components/buttons/Button"
 
 const ActivityFeature = () => {
-  const t = useTranslations('vad-gor-vi')
-
+ 
   const pathname = usePathname()
   const isHomePage = pathname === "/" || pathname === "/sv" || pathname === "/en"
   const t = useTranslations('vad-gor-vi')
