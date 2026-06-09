@@ -37,7 +37,7 @@ const ActivityFeature = () => {
             {!isHomePage && (
               <p className="paragraph-light pt-6 lg:hidden">{t('infoKey')}</p>
             )}
-            <Image className="hidden h-auto w-full object-cover object-top mt-6 lg:mt-0 md:block rounded-md border border-accent" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
+            <Image className="hidden h-auto w-full object-cover object-top mt-6 lg:mt-0 md:block lg:max-w-87.5 rounded-md border border-accent" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
           </div>
         </div>
       </article>
