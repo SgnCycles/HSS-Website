@@ -5,6 +5,7 @@ import { registerInfo } from "@/data/registerInformation";
 import { collectedInformation } from "@/data/collectedInformation";
 import GDPR from "@/components/gdpr";
 import { useState } from "react";
+import BorderSingleDown from "@/components/borders/BorderSingleDown";
 
 const PolicyPage = () => {
   const [gdpr, setGdpr] = useState<boolean>(false);
@@ -13,16 +14,8 @@ const PolicyPage = () => {
     setGdpr((prev) => !prev);
   };
   return (
-    <main>
-      <section className="flex flex-col gap-10">
-        <Image
-          src="/images/Backgrounds/blueWavyBoat5.png"
-          alt=""
-          width={1800}
-          height={700}
-          priority
-          className="object-cover object-bottom -z-10 absolute w-full h-[450px]"
-        />
+    <main id="main-content">
+      <section className="bg-blue-100">
         <div className="container">
           <div className="flex">
             <Image
@@ -59,7 +52,9 @@ const PolicyPage = () => {
             className="mx-auto mt-6"
           />
         </div>
-
+      </section>
+      <BorderSingleDown variant="text-blue-100" />
+      <section>
         <div className="flex flex-col md:flex-row container">
           <div>
             <div className="flex">
@@ -103,87 +98,74 @@ const PolicyPage = () => {
             />
           </div>
         </div>
-
-        <section className="relative overflow-hidden min-h-[500px] relative">
-          <Image
-            src="/images/Backgrounds/yellowWavyLine.png"
-            alt=""
-            width={1800}
-            height={690}
-            className="object-cover object-center -z-10 absolute w-full h-[450px]"
-          />
-          <Image
-            src="/images/Backgrounds/yellowWavyLine.png"
-            alt=""
-            width={1800}
-            height={690}
-            className="object-cover object-bottom -z-10 absolute w-full h-[450px]"
-          />
-          <div className="container">
-            <div className="flex">
-              <Image
-                src={"/Icons/camera-icon.svg"}
-                alt={""}
-                width={30}
-                height={30}
-                className="h2-icon"
-              />
-              <h2 className="heading-2">Våra fotopolicy</h2>
-            </div>
-            <p className="paragraph-light">
-              Vi fotograferar våra aktiviteter och använder bilderna på vår
-              hemsida och i sociala medier för att göra reklam för vår
-              verksamhet. Vi publicerar aldrig namn på våra scouter. Genom att
-              vara medlem i HSS samtycker man till detta. Om ditt barn av någon
-              anledning inte får vara med på bild så kontakta ledarna så att de
-              får kännedom om det.<br></br>
-              Om ditt barn av någon anledning inte får vara med på bild så
-              kontakta ledarna så att de får kännedom om det.
-            </p>
-        
-              
-            <div className="text-end">
-              <Button
-                ariaLabel={"mail button"}
-                href={"mailto:info@hss-scout.org"}
-                variant={"primaryBlue"}
-                text={"Kontakta oss"}
-              />
-            </div>
-            <Image
-              src={"/Icons/caret_down.svg"}
-              alt={""}
-              width={30}
-              height={30}
-              className="mx-auto mt-6"
-            />
-          </div>
-        </section>
+      </section>
+      <BorderSingleDown variant="text-white bg-yellow-100" />
+      <section className="relative bg-yellow-100">
         <div className="container">
           <div className="flex">
             <Image
-              src={"/Icons/document-icon.svg"}
+              src={"/Icons/camera-icon.svg"}
               alt={""}
               width={30}
               height={30}
+              className="h2-icon"
             />
-            <h2 className="heading-2">Så hanterar vi dina uppgifter</h2>
+            <h2 className="heading-2">Våra fotopolicy</h2>
           </div>
           <p className="paragraph-light">
-            HSS värnar om din integritet. Här förklarar vi vilka uppgifter vi
-            samlar in, varför vi gör det och hur länge de sparas.
+            Vi fotograferar våra aktiviteter och använder bilderna på vår
+            hemsida och i sociala medier för att göra reklam för vår verksamhet.
+            Vi publicerar aldrig namn på våra scouter. Genom att vara medlem i
+            HSS samtycker man till detta. Om ditt barn av någon anledning inte
+            får vara med på bild så kontakta ledarna så att de får kännedom om
+            det.<br></br>
+            Om ditt barn av någon anledning inte får vara med på bild så
+            kontakta ledarna så att de får kännedom om det.
           </p>
 
-          <h4 className="heading-4">Scoutnet — medlemsregistret</h4>
-          <p className="paragraph-light">
-            Scoutnet är Scouternas gemensamma medlemsregister. Där samlar vi in
-            uppgifter om varje medlem för att veta vilka våra medlemmar är, nå
-            ut med information, registrera närvaro, hantera fakturering och se
-            avdelnings- och patrulltillhörighet.
-          </p>
+          <div className="text-end">
+            <Button
+              ariaLabel={"mail button"}
+              href={"mailto:info@hss-scout.org"}
+              variant={"primaryBlue"}
+              text={"Kontakta oss"}
+            />
+          </div>
+          <Image
+            src={"/Icons/caret_down.svg"}
+            alt={""}
+            width={30}
+            height={30}
+            className="mx-auto mt-6"
+          />
         </div>
+      </section>
+      <BorderSingleDown variant="text-yellow-100" />
+      <div className="container">
+        <div className="flex">
+          <Image
+            src={"/Icons/document-icon.svg"}
+            alt={""}
+            width={30}
+            height={30}
+          />
+          <h2 className="heading-2">Så hanterar vi dina uppgifter</h2>
+        </div>
+        <p className="paragraph-light">
+          HSS värnar om din integritet. Här förklarar vi vilka uppgifter vi
+          samlar in, varför vi gör det och hur länge de sparas.
+        </p>
 
-        <div className="container">
+        <h4 className="heading-4">Scoutnet — medlemsregistret</h4>
+        <p className="paragraph-light">
+          Scoutnet är Scouternas gemensamma medlemsregister. Där samlar vi in
+          uppgifter om varje medlem för att veta vilka våra medlemmar är, nå ut
+          med information, registrera närvaro, hantera fakturering och se
+          avdelnings- och patrulltillhörighet.
+        </p>
+      </div>
+
+      <div className="container">
         <div className="bg-blue-100 border card border-blue-500 rounded-sm">
           <h4 className="heading-4 mb-3">Uppgifter vi registrerar</h4>
           <ul className="pl-5">
@@ -218,50 +200,48 @@ const PolicyPage = () => {
             />
           </div>
         </div>
-        </div>
-        {gdpr && <GDPR handelGdpr={handelGdpr} />}
-        
-        <div className="container">
-         <div className="card bg-yellow-100 border border-accent">
+      </div>
+      {gdpr && <GDPR handelGdpr={handelGdpr} />}
+
+      <div className="container">
+        <div className="card bg-yellow-100 border border-accent">
           <p className="paragraph-light">
             🔒 Endast ledare och styrelse inom HSS har tillgång till registret.
             Information kan inte laddas ned från hemsidan. Relevanta uppgifter
             delas med kommunen för bidragsrapportering.
           </p>
         </div>
-        </div>
-        
+      </div>
 
-        <div className="container">
-          <div className="flex">
-            <Image
-              src={"/Icons/blue-tent-icon.svg"}
-              alt={""}
-              width={30}
-              height={30}
-              className="h3-icon"
-            />
-            <h3 className="heading-3">Hajker och läge</h3>
-          </div>
-          <p>
-            Inför hajker och läger samlar ledarna in kompletterande uppgifter
-            via mejl eller webbformulär. Detta för att kunna planera och
-            genomföra aktiviteten på ett säkert sätt.
-          </p>
+      <div className="container">
+        <div className="flex">
+          <Image
+            src={"/Icons/blue-tent-icon.svg"}
+            alt={""}
+            width={30}
+            height={30}
+            className="h3-icon"
+          />
+          <h3 className="heading-3">Hajker och läge</h3>
         </div>
-        <div className="bg-blue-100 card border border-blue-500 container">
-          <h3 className="heading-4 mb-3">Uppgifter som samlas in</h3>
-          <ul className="pl-5">
-            {collectedInformation.map((item) => {
-              return (
-                <li className="list-disc" key={item.id}>
-                  <p className="paragraph-light">{item.information}</p>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
+        <p>
+          Inför hajker och läger samlar ledarna in kompletterande uppgifter via
+          mejl eller webbformulär. Detta för att kunna planera och genomföra
+          aktiviteten på ett säkert sätt.
+        </p>
+      </div>
+      <div className="bg-blue-100 card border border-blue-500 container">
+        <h3 className="heading-4 mb-3">Uppgifter som samlas in</h3>
+        <ul className="pl-5">
+          {collectedInformation.map((item) => {
+            return (
+              <li className="list-disc" key={item.id}>
+                <p className="paragraph-light">{item.information}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </main>
   );
 };
