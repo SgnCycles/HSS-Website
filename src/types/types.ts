@@ -4,10 +4,24 @@ export type ageGroupCardContentType = {
   ageRange: string,
   subtitle: string,
   info: string,
+  info_block_one: string,
+  info_block_two: string,
+  info_block_three: string,
+  info_block_four: string,
+  info_block_five: string,
+  info_block_six: string,
   meetings: string,
   colourSchemeBorder: string,
+  colourSchemeBorderSecondary: string,
+  colourSchemeBorderTertiary: string,
   colourSchemePrimary: string,
   colourSchemeSecondary: string,
+  colourSchemeTertiary: string,
+  colourSchemeAccent: string,
+  colourSchemeAccentSecondary: string,
+  colourSchemeAccentSurface: string,
+  colourSchemeHover: string,
+  colourSchemeActive: string,
   icon: string,
   image: string,
   price: string,
@@ -95,6 +109,21 @@ export type ActivityFeatureType = {
   infoDescFirstKey: string,
   infoDescSecondKey: string,
   icon: string
+}
+
+export type VaraBatarContentType = {
+  image: string,
+  alt: string
+}
+
+export type varaBatarCardContentType = {
+  title: string,
+  description: string,
+  waveImage: string
+  boatImage: {
+    image: string,
+    alt: string
+  }[]
 }
 
 export type vilkaArViContentType = {
