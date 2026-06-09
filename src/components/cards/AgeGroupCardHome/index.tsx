@@ -1,12 +1,9 @@
 "use client";
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
-import useIsMobile from "@/hooks/useGetMobile";
 import Button from "@/components/buttons/Button";
 
 const AgeGroupCardHome = () => {
-
-  const isMobile = useIsMobile();
 
   return (
     <section className="bg-yellow-100 grid place-items-center">
@@ -24,7 +21,7 @@ const AgeGroupCardHome = () => {
           </h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="paragraph-light">
+          <p className="paragraph-light text-center sm:text-left">
             Oavsett ålder finns det en plats för dig i HSS.
             <br />
             Varje avdelning har sin egen karaktär och sina egna äventyr.
@@ -49,9 +46,10 @@ const AgeGroupCardHome = () => {
                   <div className="flex justify-center items-center w-[30%]">
                     <Image
                       src={`/images/Agegroup/${card.icon}`}
-                      height={isMobile ? 70 : 90}
-                      width={isMobile ? 70 : 90}
+                      height={60}
+                      width={60}
                       alt={`${card.title} emblem`}
+                      className="w-15 h-auto md:w-22.5"
                     ></Image>
                   </div>
                   <div className="flex flex-col w-full items-start pb-4 md:pb-0">
