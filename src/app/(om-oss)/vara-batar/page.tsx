@@ -5,31 +5,29 @@ import VaraBatarCard from "@/components/cards/VaraBatarCard"
 
 const VaraBatarPage = () => {
   return (
-    <main id="main-content">
-      <section className="container">
-        <div className="flex flex-col">
-          <div className="flex lg:justify-center">
-            <Image className="h2-icon" src={`/Icons/sail-boat-icon.svg`} height={30} width={30} alt="" />
-            <h2 className="heading-2">Vår nuvarande flotta</h2>
-          </div>
-          <p className="paragraph-light">HSS är en av de mest ambitiösa sjöscoutkårer i Sverige. Vi har en bred och varierad flotta som används för både utbildning, segling och säkerhet på vattnet. Våra båtar ger scouter möjlighet att utvecklas från nybörjare till erfarna seglare.</p>
-          <div className="lg:flex lg:justify-center lg:gap-5 lg:flex-wrap">
-            {varaBatarContent && varaBatarContent.map((image, index) =>
-              <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="våra båtar" className="h-auto w-[-webkit-fill-available] lg:rounded-md lg:w-[30%]" />
-            )}
-          </div>
-          <div className="lg:flex lg:justify-center md:flex md:justify-center">
-            <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center lg:w-auto" />
-          </div>
+    <main id="main-content" className="lg:bg-[url(/images/Backgrounds/blueWavyBoat2.png)] lg:bg-contain md:bg-hidden lg:bg-no-repeat lg:bg-top">
+      <section className="container flex flex-col items-center">
+        <div className="flex lg:justify-center">
+          <Image className="h1-icon" src={`/Icons/sail-boat-icon.svg`} height={30} width={30} alt="" />
+          <h1 className="heading-1">Vår nuvarande flotta</h1>
         </div>
-      </section>
-      <section className="container flex flex-col gap-[40px]">
+        <p className="paragraph-light">HSS är en av de mest ambitiösa sjöscoutkårer i Sverige. Vi har en bred och varierad flotta som används för både utbildning, segling och säkerhet på vattnet. Våra båtar ger scouter möjlighet att utvecklas från nybörjare till erfarna seglare.</p>
+        <div className="w-screen lg:w-full ml-0 lg:flex lg:justify-center lg:gap-5 lg:flex-row lg:flex-wrap flex flex-col gap-1">
+          {varaBatarContent && varaBatarContent.map((image, index) =>
+            <Image key={index} src={`/images/Body/${image.image}`} height={424} width={452} alt="våra båtar" className="h-auto w-auto object-cover lg:rounded-md lg:w-[30%]" />
+          )}
+        </div>
+        <div className="lg:flex lg:justify-center md:flex md:justify-center">
+          <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center lg:w-auto" />
+        </div>
+      </section >
+      < ul className="container flex flex-col gap-10" >
         {varaBatarCardContent && varaBatarCardContent.map((content, index) => {
           return (
             <VaraBatarCard key={index} {...content} />
           )
         })}
-      </section>
+      </ul >
     </main >
   )
 }
