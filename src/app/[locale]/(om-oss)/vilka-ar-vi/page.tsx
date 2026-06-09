@@ -47,7 +47,7 @@ const VilkaArViPage = () => {
         </div>
         <div className="flex flex-col items-center lg:flex-row lg:gap-5 lg:justify-center md:flex-row self-center lg:w-full w-screen md:w-auto gap-1 md:gap-2">
           {vilkaArViGamlaBatarContent && vilkaArViGamlaBatarContent.map((image, index) =>
-            <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="historia om båtar" className="lg:max-h-65 lg:rounded-md md:rounded-md md:w-[33.33%] h-auto w-[-webkit-fill-available] object-cover md:h-50" />
+            <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="historia om båtar" className="lg:h-60 lg:rounded-md md:rounded-md md:w-[33.33%] h-auto w-[-webkit-fill-available] object-cover md:h-50" />
           )}
         </div>
         <Image src={`/images/Backgrounds/blueWavyLine.png`} height={29} width={350} alt="" className="self-center lg:w-194.25 md:hidden" />
