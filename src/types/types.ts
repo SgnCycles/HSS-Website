@@ -111,6 +111,21 @@ export type ActivityFeatureType = {
   icon: string
 }
 
+export type VaraBatarContentType = {
+  image: string,
+  alt: string
+}
+
+export type varaBatarCardContentType = {
+  title: string,
+  description: string,
+  waveImage: string
+  boatImage: {
+    image: string,
+    alt: string
+  }[]
+}
+
 export type vilkaArViContentType = {
   image: string,
 }
@@ -125,7 +140,7 @@ export type vilkaArViTextContentType = {
 }
 
 export type FaqProps = {
-  id:number,
-  title:string,
-  content:string
+  id: number,
+  title: string,
+  content: string
 }
