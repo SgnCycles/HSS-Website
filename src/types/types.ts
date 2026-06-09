@@ -135,7 +135,6 @@ export type vilkaArViGamlaBatarContentType = {
 }
 
 export type vilkaArViTextContentType = {
-  image: string,
   info: string
 }
 
@@ -152,4 +151,13 @@ export type aretIHssContentType = {
     subtitle: string,
     info: string
   }[]
+}
+
+export type historyHSSContentType = {
+  info: string
+}
+
+export type vilkaArViTextContentMobileType = {
+  image: string,
+  info: string
 }
