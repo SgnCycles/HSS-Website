@@ -2,7 +2,7 @@ import { ActivityFeatureType } from "@/types/types";
 
 export const activityFeatureContent:ActivityFeatureType = {
   titleKey: "Vad gör vi i scout?",
-  subTitleKey: "Sjöscout sedan 1954",
+  subTitleKey: "Sjöscout sedan 1959",
   icon: "/Icons/yellow-key-icon.svg",
   subIcon: "/Icons/anchor-icon.svg",
   infoKey: "Scouterna ger barn och unga möjlighet att uppleva äventyr tillsammans, utvecklas som individer och lära av varandras olikheter. Vår verksamhet bygger på gemenskap, mångfald och att alla ska kunna vara med utifrån sina förutsättningar.",
