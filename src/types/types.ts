@@ -14,6 +14,30 @@ export type ageGroupCardContentType = {
   apply: string
 }
 
+export type markesaffischCardContentType = {
+  title: string,
+  age: string,
+  subtitle: string,
+  mobileImage: string[],
+  desktopImage: string,
+  colourSchemeBorder: string,
+  colourSchemePrimary: string,
+  colourSchemeSecondary: string
+  colourSchemeHeading: string,
+  icon: string,
+}
+
+export type scoutUniformCardContentType = {
+  title: string,
+  subtitle: string,
+  image_mobile_subtitle: string,
+  second_subtitle: string,
+  image_mobile_second_subtitle: string,
+  third_subtitle: string,
+  image_mobile_third_subtitle: string,
+  desktopImage: string,
+}
+
 export type bliLedareCardContentType = {
   title: string,
   subtitle: string,
@@ -26,8 +50,14 @@ export type engageraDigCardContentType = {
 }
 
 export type MenuItemsType = {
-  title: string;
-  content: { text: string; href: string; icon: string; mobileIcon: string }[];
+  titleKey: string;
+  content:
+  {
+    textKey: string;
+    href: string;
+    icon: string;
+    mobileIcon: string
+  }[];
 }
 
 export type pageHeaderImageType = {
@@ -58,12 +88,12 @@ export type ActivityCardType = {
 }
 
 export type ActivityFeatureType = {
-  title: string,
-  subTitle: string,
+  titleKey: string,
+  subTitleKey: string,
   subIcon: string,
-  info: string,
-  infoDescFirst: string,
-  infoDescSecond: string,
+  infoKey: string,
+  infoDescFirstKey: string,
+  infoDescSecondKey: string,
   icon: string
 }
 
@@ -80,4 +110,23 @@ export type varaBatarCardContentType = {
     image: string,
     alt: string
   }[]
+}
+
+export type vilkaArViContentType = {
+  image: string,
+}
+
+export type vilkaArViGamlaBatarContentType = {
+  image: string,
+}
+
+export type vilkaArViTextContentType = {
+  image: string,
+  info: string
+}
+
+export type FaqProps = {
+  id: number,
+  title: string,
+  content: string
 }
