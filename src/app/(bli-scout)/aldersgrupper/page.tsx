@@ -1,13 +1,10 @@
 "use client";
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
-import useIsMobile from "@/hooks/useGetMobile";
 import Link from "next/link";
 import { useState } from "react";
 
 const AgeGroupPage = () => {
-  
-  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState<number | null>(null);
   const handleClick = (index: number) => {
     setIsOpen(isOpen === index ? null : index);
@@ -33,8 +30,8 @@ const AgeGroupPage = () => {
             </div>
             <div className="flex sm:justify-between">
               <p className="paragraph-light">
-                Oavsett ålder finns det en plats för dig i HSS.
-                Varje avdelning har sin egen karaktär och sina egna äventyr.
+                Oavsett ålder finns det en plats för dig i HSS. Varje avdelning
+                har sin egen karaktär och sina egna äventyr.
               </p>
             </div>
           </div>
@@ -61,67 +58,42 @@ const AgeGroupPage = () => {
                         height={15}
                         width={15}
                         alt="Expand the age card"
-                        className={`transition-transform duration-300 ${isOpen === index ? "rotate-180" : "rotate-0"}`}
+                        className={`h-3 w-auto sm:h-4 transition-transform duration-300 ${isOpen === index ? "rotate-180" : "rotate-0"}`}
                       />
                     </button>
                   </div>
-                  <div className="flex md:pt-5 md:pb-5 md:pr-5">
-                    {isOpen !== index && (
-                      <div
-                        className={`flex w-full justify-between items-start p-3 border ${card.colourSchemeBorderSecondary}`}
+                  <div
+                    className={`flex w-full justify-between items-start p-3 border ${isOpen === index ? card.colourSchemeBorderTertiary : card.colourSchemeBorderSecondary} ${isOpen === index ? card.colourSchemeSecondary : ""}`}
+                  >
+                    <div className="flex flex-col gap-2 md:flex-row">
+                      <h3 className="heading-3">{card.title}</h3>
+                      <p
+                        className={`h-7 ${isOpen === index ? card.colourSchemeTertiary : card.colourSchemeSecondary} font-normal pt-1 md:pt-1 pb-1 pl-4 pr-4 text-sm rounded-md md:ml-2`}
                       >
-                        <div className="flex flex-col md:flex-row">
-                          <h3 className="heading-3">{card.title}</h3>
-                          <p
-                            className={`h-7 ${card.colourSchemeSecondary} font-normal pt-1 md:pt-1 pb-1 md:pb-1 pl-4 pr-4 text-sm rounded-md md:ml-2`}
-                          >
-                            {card.ageGroup}
-                            <span className="font-bold text-sm pl-2">
-                              {card.ageRange}
-                            </span>
-                          </p>
-                        </div>
-                        <div className="min-w-20 grid place-items-center">
-                          <Image
-                            src={`/images/Agegroup/${card.icon}`}
-                            height={isMobile ? 70 : 90}
-                            width={isMobile ? 70 : 90}
-                            alt={`${card.title} emblem`}
-                          ></Image>
-                        </div>
-                        <p className="sr-only md:not-sr-only paragraph-light">
-                          {card.subtitle}
-                        </p>
-                      </div>
-                    )}
+                        {card.ageGroup}
+                        <span className="font-bold text-sm pl-2">
+                          {card.ageRange}
+                        </span>
+                      </p>
+                    </div>
+                    <div className="min-w-20 min-h-20 grid place-items-center bg-white rounded-full">
+                      <Image
+                        src={`/images/Agegroup/${card.icon}`}
+                        height={60}
+                        width={60}
+                        alt={`${card.title} emblem`}
+                        className="w-15 h-auto"
+                      />
+                    </div>
+                    <p className="sr-only md:not-sr-only paragraph-light">
+                      {card.subtitle}
+                    </p>
                   </div>
                   {isOpen === index && (
                     <div>
                       <div
                         className={`${card.colourSchemeSecondary} card rounded-none`}
                       >
-                        <div className="flex justify-between pb-4">
-                          <div className="flex flex-col justify-start">
-                            <h3 className="heading-3">{card.title}</h3>
-                            <p
-                              className={`h-7 ${card.colourSchemeTertiary} font-normal font-body pt-1 md:pt-1 pb-1 md:pb-1 pl-2 pr-2 text-sm rounded-md`}
-                            >
-                              {card.ageGroup}
-                              <span className="font-body font-bold text-sm pl-2">
-                                {card.ageRange}
-                              </span>
-                            </p>
-                          </div>
-
-                          <div className="w-20 h-20 grid place-items-center bg-white rounded-full">
-                            <Image
-                              src={`/images/Agegroup/${card.icon}`}
-                              height={isMobile ? 60 : 90}
-                              width={isMobile ? 60 : 90}
-                              alt={`${card.title} emblem`}
-                            ></Image>
-                          </div>
-                        </div>
                         <div className="paragraph-light cards-column">
                           <p>{card.subtitle}</p>
                           <p>{card.info}</p>
@@ -141,7 +113,10 @@ const AgeGroupPage = () => {
                         <button
                           className={`font-bold ${card.colourSchemeAccent} text-background text-center px-16 w-full transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 ${card.colourSchemeActive}`}
                         >
-                          <Link href="https://www.scoutnet.se/register/in/group/764">
+                          <Link
+                            href="https://www.scoutnet.se/register/in/group/764"
+                            target="_blank"
+                          >
                             Ansök om plats
                           </Link>
                         </button>
@@ -163,16 +138,15 @@ const AgeGroupPage = () => {
                     <div className="flex justify-center items-center w-[30%]">
                       <Image
                         src={`/images/Agegroup/${card.icon}`}
-                        height={isMobile ? 70 : 90}
-                        width={isMobile ? 70 : 90}
+                        height={90}
+                        width={90}
                         alt={`${card.title} emblem`}
-                      ></Image>
+                        className="w-22.5 h-auto"
+                      />
                     </div>
                     <div className="flex flex-col w-full items-start pb-4 md:pb-0">
                       <div className="flex flex-col justify-center items-center md:flex-row">
-                        <h3 className="heading-3">
-                          {card.title}
-                        </h3>
+                        <h3 className="heading-3">{card.title}</h3>
                         <p
                           className={`h-7 ${card.colourSchemeSecondary} font-normal text-sm pt-1 md:pt-1 pb-1 md:pb-1 pl-4 pr-4 ml-2 rounded-md`}
                         >
@@ -203,7 +177,7 @@ const AgeGroupPage = () => {
                         height={15}
                         width={15}
                         alt="Expand the age card"
-                        className={`ml-2 transition-transform duration-300 ${isOpen === index ? "rotate-180" : "rotate-0"}`}
+                        className={`h-3 w-auto ml-2 transition-transform duration-300 ${isOpen === index ? "rotate-180" : "rotate-0"}`}
                       />
                     </button>
                   </div>
@@ -225,7 +199,7 @@ const AgeGroupPage = () => {
                           <div className="flex flex-col">
                             <h3 className="heading-3"> {card.title}</h3>
                             <p
-                              className={`h-7 ${card.colourSchemeTertiary} font-normal pt-1 md:pt-1 pb-1 md:pb-1 pl-2 pr-2 text-sm rounded-md w-fit`}
+                              className={`h-7 ${card.colourSchemeTertiary} font-normal pt-1 md:pt-1 pb-1 md:pb-1 pl-4 pr-4 text-sm rounded-md w-fit`}
                             >
                               {card.ageGroup}
                               <span className="font-body font-bold text-sm pl-2">

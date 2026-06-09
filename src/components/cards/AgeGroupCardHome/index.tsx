@@ -27,15 +27,6 @@ const AgeGroupCardHome = () => {
             <br />
             Varje avdelning har sin egen karaktär och sina egna äventyr.
           </p>
-          {/* TODO: placeholder for button */}
-          <div className="hidden place-content-center md:flex flex-wrap">
-            <a
-              className="rounded-sm pt-3 pb-3 pl-12 pr-12 text-base text-accent cursor-pointer bg-primary font-bold border border-[#99AEBF]"
-              href="/aldersgrupper"
-            >
-              Läs mer här
-            </a>
-          </div>
         </div>
         <ul className="flex flex-col h-auto justify-center items-center gap-6 pb-6">
           {ageGroupCardContent &&
@@ -84,15 +75,6 @@ const AgeGroupCardHome = () => {
               </li>
             ))}
         </ul>
-        {/* TODO: placeholder for button */}
-        <div className="flex sm:hidden items-center justify-center">
-          <a
-            className="block w-[90%] rounded-sm p-4 text-base text-white text-center font-bold cursor-pointer bg-primary"
-            href="/aldersgrupper"
-          >
-            Läs mer om åldersgrupper
-          </a>
-        </div>
       </div>
     </article>
   );
