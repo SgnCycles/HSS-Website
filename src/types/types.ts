@@ -69,4 +69,15 @@ export type ActivityFeatureType = {
 
 export type VaraBatarContentType = {
   image: string,
+  alt: string
+}
+
+export type varaBatarCardContentType = {
+  title: string,
+  description: string,
+  waveImage: string
+  boatImage: {
+    image: string,
+    alt: string
+  }[]
 }
