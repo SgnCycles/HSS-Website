@@ -8,7 +8,7 @@ const EngageraDigSomVuxenPage = () => {
     <main id="main-content" className="md:bg-[url(/images/Backgrounds/boatBackground1.png)] bg-no-repeat bg-top-right bg-size-[auto_200px]">
       <section className="container">
         <article>
-          <div className="flex w-full justify-center items-center pb-6">
+          <div className="flex w-full justify-center items-center md:justify-start pb-6">
             <Image
               src={`/Icons/engagera-icon.svg`}
               height={30}
@@ -25,7 +25,7 @@ const EngageraDigSomVuxenPage = () => {
             tillfällig hjälp är ovärderlig för kårens vardag.
           </p>
           <div className="flex justify-center items-center">
-            <ul className="cards-column pb-6">
+            <ul className="cards-column pb-6 md:w-[70%]">
               {engageraDigCardContent &&
                 engageraDigCardContent.map((card, index) => (
                   <li
@@ -45,10 +45,10 @@ const EngageraDigSomVuxenPage = () => {
             </ul>
           </div>
         </article>
-        <article className="card md:bg-yellow-200 md:border md:border-accent">
-          <h3 className="heading-3 text-center md:text-left">
+        <article className="card sm:bg-yellow-200 md:border sm:border-accent">
+          <h2 className="heading-3 text-center md:text-left">
             Vet du inte var du passar in?
-          </h3>
+          </h2>
           <p className="paragraph-light">
             Hör av dig så berättar vi mer om vad som behövs just nu. Alla bidrag
             räknas, stora som små.
