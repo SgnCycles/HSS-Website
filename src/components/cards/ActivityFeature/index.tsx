@@ -5,11 +5,12 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
+import Button from "@/components/buttons/Button"
 
 const ActivityFeature = () => {
 
   const pathname = usePathname()
-  const isHomePage = pathname === "/"
+  const isHomePage = pathname === "/" || pathname === "/sv" || pathname === "/en"
   const t = useTranslations('vad-gor-vi')
 
   return(
@@ -40,9 +41,16 @@ const ActivityFeature = () => {
           </div>
         </div>
       </article>
+      <Image className="h-auto w-full card pl-0 pr-0 pt-0 rounded-none object-cover object-top lg:rounded-md lg:border lg:border-accent lg:mt-0 md:hidden" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
       {isHomePage && (
-        <div className="flex justify-center m-2 lg:hidden">
-          <Link className="rounded-sm border w-[90%] text-center bg-primary mt-4 pt-4 pb-4 pr-2 pl-2 text-white text-[16px] font-body font-bold" href="/vad-gor-vi">{t('readMoreKey')}</Link>
+        <div className="flex justify-center container lg:hidden">
+          <Button
+            ariaLabel=""
+            href="/vad-gor-vi"
+            variant="secondaryBlue"
+            text={`${t('readMoreKey')}→`}
+            target="_self"
+          />
         </div>
       )}
     </div>
