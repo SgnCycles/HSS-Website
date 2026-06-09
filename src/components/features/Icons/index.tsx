@@ -54,7 +54,6 @@ export default function Icons({ name, size = 24, variant = "text-primary" }: Ico
     )
   }
   else {
-    console.log(IconComponent.name)
     return (
       <figure className="inline-grid place-items-center">
         <IconComponent size={size} className={variant} />
