@@ -39,8 +39,8 @@ export type scoutUniformCardContentType = {
 }
 
 export type bliLedareCardContentType = {
-  title: string,
-  subtitle: string,
+  titleKey: string,
+  subtitleKey: string,
   icon: string,
 }
 
@@ -82,9 +82,10 @@ export type SecurityAndSafetyInfoType = {
 }
 
 export type ActivityCardType = {
+ 
   icon: string,
-  title: string,
-  info: string
+  titleKey: string,
+  infoKey: string
 }
 
 export type ActivityFeatureType = {

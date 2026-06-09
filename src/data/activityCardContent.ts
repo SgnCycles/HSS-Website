@@ -3,22 +3,22 @@ import { ActivityCardType } from "@/types/types";
 export const activityCardContent:ActivityCardType[] = [
   {
     icon: "/Icons/anchor-icon.svg",
-    title: "Segling & båtliv",
-    info: "Vi lär ut segling, rodd, navigation och säkerhet på vattnet i en trygg och rolig miljö."
+    titleKey: "sailing.title",
+    infoKey: "sailing.info"
   },
   {
     icon: "/Icons/fire-icon.svg",
-    title: "Läger & friluftsliv",
-    info: "Lägereldar, tältning, naturkunskap och äventyr i skog och skärgård."
+    titleKey: "camping.title",
+    infoKey: "camping.info"
   },
   {
     icon: "/Icons/knot-icon.svg",
-    title: "Praktiska skills",
-    info: "Vi lär ut karta, kompass, knutar och konstruktion. Praktiska färdigheter som håller hela livet."
+    titleKey: "skills.title",
+    infoKey: "skills.info"
   },
   {
     icon: "/Icons/heart-hands-icon.svg",
-    title: "Gemenskap",
-    info: "Vi bygger självförtroende, ansvarskänsla och starka vänskaper i en inkluderande grupp."
+    titleKey: "community.title",
+    infoKey: "community.info"
   },
 ]

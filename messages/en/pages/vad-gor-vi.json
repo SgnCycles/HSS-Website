@@ -6,5 +6,23 @@
   "infoDescFirstKey": "The Scouts give children and young people from all parts of society the chance to experience adventures together while growing as individuals. This means that every day we contribute to an open society characterized by diversity and respect, something that is more relevant than ever.",
   "infoDescSecondKey": "What makes the Scouts unique is that we do and experience things together. We learn from and value our differences. Our activities are built on the idea that everyone in the group should be able to participate on their own terms.",
   "readMoreKey":"Read more about what we do in scouts"
+},
+"activityCards": {
+  "sailing": {
+    "title": "Sailing & Boating",
+    "info": "We teach sailing, rowing, navigation and water safety in a safe and fun environment."
+  },
+  "camping": {
+    "title": "Camps & Outdoor Life",
+    "info": "Campfires, tenting, nature skills and adventures in forests and the archipelago."
+  },
+  "skills": {
+    "title": "Practical Skills",
+    "info": "We teach maps, compass, knots and construction. Practical skills that last a lifetime."
+  },
+  "community": {
+    "title": "Community",
+    "info": "We build confidence, responsibility and strong friendships in an inclusive group."
+  }
 }
 }

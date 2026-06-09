@@ -6,5 +6,23 @@
   "infoDescFirstKey": "Scouterna ger barn och unga från alla delar av samhället chansen att få uppleva äventyr tillsammans och samtidigt växa som individer. Det innebär att vi varje dag bidrar till ett öppet samhälle präglat av mångfald och respekt, något som är mer aktuellt än någonsin.",
   "infoDescSecondKey": "Något som gör Scouterna unikt är att vi gör och upplever saker tillsammans. Vi lär av och värdesätter våra olikheter. Vår verksamhet bygger på att alla i gruppen ska kunna vara med utifrån sina förutsättningar.",
   "readMoreKey":"Läs mer om vad vi gör i scout"
+  },
+  "activityCards": {
+  "sailing": {
+    "title": "Segling & båtliv",
+    "info": "Vi lär ut segling, rodd, navigation och säkerhet på vattnet i en trygg och rolig miljö."
+  },
+  "camping": {
+    "title": "Läger & friluftsliv",
+    "info": "Lägereldar, tältning, naturkunskap och äventyr i skog och skärgård."
+  },
+  "skills": {
+    "title": "Praktiska skills",
+    "info": "Vi lär ut karta, kompass, knutar och konstruktion. Praktiska färdigheter som håller hela livet."
+  },
+  "community": {
+    "title": "Gemenskap",
+    "info": "Vi bygger självförtroende, ansvarskänsla och starka vänskaper i en inkluderande grupp."
   }
+}
 }

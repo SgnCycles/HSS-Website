@@ -1,7 +1,9 @@
 import { activityCardContent } from "@/data/activityCardContent"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 const ActivityCard = () => {
+  const t = useTranslations('activityCards')
   return(
     <ul className="flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:gap-3">
       {activityCardContent && activityCardContent.map((card, index) => (
@@ -9,10 +11,10 @@ const ActivityCard = () => {
           <div className="flex gap-2 pl-4 pt-4">
             <Image className="w-auto h-auto" src={card.icon} alt="" width={20} height={20}/>
             <div className="lg:flex lg:items-center lg:min-h-14">
-              <h2 className="text-base font-heading font-semibold text-primary lg:text-[22px]">{card.title}</h2>
+              <h2 className="text-base font-heading font-semibold text-primary lg:text-[22px]">{t(card.titleKey)}</h2>
             </div>
           </div>
-          <p className="text-[15px] pl-4 pb-4 font-body sm:text-[18px]">{card.info}</p>
+          <p className="text-[15px] pl-4 pb-4 font-body sm:text-[18px]">{t(card.infoKey)}</p>
         </li>
       ))}
     </ul>
