@@ -49,9 +49,9 @@ const EngageraDigSomVuxenPage = () => {
           <h2 className="heading-3 text-center md:text-left">
             Vet du inte var du passar in?
           </h2>
-          <p className="paragraph-light">
-            Hör av dig så berättar vi mer om vad som behövs just nu. Alla bidrag
-            räknas, stora som små.
+          <p className="paragraph-light text-center md:text-left">
+            Hör av dig så berättar vi mer om vad som behövs just nu.
+            Alla bidrag räknas, stora som små.
           </p>
           <div className="flex justify-end">
             <Button
