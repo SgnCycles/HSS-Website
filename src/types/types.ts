@@ -144,3 +144,12 @@ export type FaqProps = {
   title: string,
   content: string
 }
+
+export type aretIHssContentType = {
+  title: string,
+  icon: string,
+  months: {
+    subtitle: string,
+    info: string
+  }[]
+}

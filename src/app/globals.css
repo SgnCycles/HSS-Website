@@ -198,7 +198,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  
+
   @media (min-width: 640px) {
     gap: 16px;
   }
@@ -237,7 +237,7 @@
   justify-self: left;
 
   @media (min-width: 640px) {
-    grid-column: span 6 / span 6; 
+    grid-column: span 6 / span 6;
   }
 }
 
@@ -245,7 +245,7 @@
   margin-right: 10px;
   width: 32px;
   height: auto;
-  
+
   @media (min-width: 640px) {
     width: 38px;
     margin-right: 18px;
@@ -256,11 +256,12 @@
     width: 42px;
   }
 }
+
 @utility h2-icon {
   margin-right: 10px;
   width: 32px;
   height: auto;
-  
+
   @media (min-width: 640px) {
     width: 38px;
     margin-right: 18px;
@@ -282,7 +283,7 @@
   margin-right: 6px;
   width: 18px;
   height: auto;
-  
+
   @media (min-width: 640px) {
     width: 22px;
   }
@@ -405,5 +406,5 @@
 }
 
 @utility agegroup-card-buttons {
- grid-area: 3 / 1 / 4 / 4;
+  grid-area: 3 / 1 / 4 / 4;
 }
