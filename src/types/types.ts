@@ -13,6 +13,7 @@ export type ageGroupCardContentType = {
   meetings: string,
   colourSchemeBorder: string,
   colourSchemeBorderSecondary: string,
+  colourSchemeBorderTertiary: string,
   colourSchemePrimary: string,
   colourSchemeSecondary: string,
   colourSchemeTertiary: string,
