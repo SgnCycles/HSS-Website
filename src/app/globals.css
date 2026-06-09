@@ -294,7 +294,7 @@
 @utility heading-1 {
   color: inherit;
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: var(--font-heading);
   font-weight: 700;
 
