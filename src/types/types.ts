@@ -66,19 +66,19 @@ export type pageHeaderImageType = {
 }
 
 export type SecurityAndSafetyCardContentType = {
-  title: string,
+  titleKey: string,
   icon: string,
-  info: string
+  infoKey: string
 }
 
 export type SecurityAndSafetyCheckType = {
-  info: string,
+  infoKey: string,
   icon: string
 }
 
 export type SecurityAndSafetyInfoType = {
-  title: string,
-  info: string
+  titleKey: string,
+  infoKey: string
 }
 
 export type ActivityCardType = {

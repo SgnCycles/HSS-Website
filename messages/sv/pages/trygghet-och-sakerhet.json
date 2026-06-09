@@ -1,0 +1,70 @@
+{
+  "securityPopup": {
+    "leaderScreening": {
+      "title": "Noggrann granskning av ledare",
+      "info": "Alla ledare genomgår bakgrundskontroller och referenstagning innan de börjar arbeta med scouterna. Ledarna genomgår också obligatorisk utbildning i barns säkerhet och tryggt ledarskap, exempelvis genom Scouternas utbildning Scouterna Trygga Möten."
+    },
+    "safeRoutines": {
+      "title": "Trygga och transparenta rutiner",
+      "info": "Våra aktiviteter följer tydliga riktlinjer för att säkerställa att barn alltid är under lämplig uppsikt. Vi har också rutiner för att rapportera och hantera eventuella incidenter eller oro, så att både barn och föräldrar kan känna sig trygga."
+    },
+    "inclusiveScouting": {
+      "title": "Inkluderande och modern scouting",
+      "info": "Våra program välkomnar barn med olika bakgrund, trosuppfattning och förutsättningar. Traditionella scoutmetoder har utvecklats för att fokusera på samarbete, respekt, personlig utveckling och friluftsupplevelser, snarare än religion eller hierarkiska strukturer."
+    },
+    "openCommunication": {
+      "title": "Öppen kommunikation",
+      "info": "Föräldrar är alltid välkomna att ställa frågor och besöka våra möten. Vi strävar efter att ge tydlig information om aktiviteter, säkerhetsrutiner och hur föräldrar kan vara delaktiga i verksamheten."
+    }
+  },
+  "security-and-safety-info": {
+    "safe-transparent-routines": {
+      "title": "Trygga och transparenta rutiner",
+      "info": "Våra aktiviteter följer tydliga riktlinjer för att säkerställa att barn alltid är under lämplig uppsikt. Vi har också rutiner för att rapportera och hantera eventuella incidenter eller oro, så att både barn och föräldrar kan känna sig trygga."
+    },
+    "inclusive-modern-scouting": {
+      "title": "Inkluderande och modern scouting",
+      "info": "Våra program välkomnar barn med olika bakgrund, trosuppfattning och förutsättningar. Traditionella scoutmetoder har utvecklats för att fokusera på samarbete, respekt, personlig utveckling och friluftsupplevelser, snarare än religion eller hierarkiska strukturer."
+    },
+    "open-communication": {
+      "title": "Öppen kommunikation",
+      "info": "Föräldrar är alltid välkomna att ställa frågor och besöka våra möten. Vi strävar efter att ge tydlig information om aktiviteter, säkerhetsrutiner och hur föräldrar kan vara delaktiga i verksamheten."
+    }
+  },
+  "security-and-safety-checks": {
+    "checks": {
+      "background-checks": "Bakgrundskontroll på alla ledare",
+      "safety-training": "Obligatorisk säkerhetsutbildning",
+      "incident-reporting": "Tydliga rutiner för incidentrapportering",
+      "parent-visits": "Öppet för föräldrar att besöka möten"
+    }
+  },
+  "security-and-safety-cards": {
+   
+      "leader-screening": {
+        "title": "Noggrann granskning av ledare",
+        "info": "Bakgrundskontroller, referenstagning och obligatorisk utbildning i Scouternas Trygga Möten."
+      },
+      "life-jackets-required": {
+        "title": "Flytvästar är alltid obligatoriska",
+        "info": "Klara riktlinjer för uppsikt och rutiner vid incidenter. Flytvästar är alltid obligatoriska vid aktiviteter på vattnet."
+      },
+      "safety-training": {
+        "title": "Utbildning i säkerhet",
+        "info": "Obligatorisk kurs i Trygga Möten och barnsskydd."
+      },
+      "safe-community": {
+        "title": "Trygg gemenskap",
+        "info": "Föräldrar är alltid välkomna. Vi ger tydlig info om aktiviteter och säkerhetsrutiner."
+      }
+    },
+    "security-and-safety-page":{
+
+    "page-title":"Säkerhet & trygghet",
+    "sub-title":"På HSS är barnens trygghet, inkludering och glädje alltid vår högsta prioritet.",
+    "cta":"Läs mer här",
+    "close-cta":"Stäng",
+    "popup-title":"Trygghet och inkludering på HSS"
+  }
+  
+}
