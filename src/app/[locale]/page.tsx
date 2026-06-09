@@ -6,10 +6,11 @@ import BorderSingleUp from "@/components/borders/BorderSingleUp";
 
 export default function Home() {
   return (
-    <main id="main-content" tabIndex={-1} className="focus:outline-none">
+    <main id="main-content">
       <ActivityFeature />
+      <BorderSingleUp variant="text-yellow-100" />
       <AgeGroupCardHome />
-      <BorderSingleUp variant="text-primary" />
+      <BorderSingleUp variant="text-primary bg-yellow-100" />
       <BliLedareHome />
       <BorderTwoDown foreground="text-primary" background="text-blue-100" />
     </main>

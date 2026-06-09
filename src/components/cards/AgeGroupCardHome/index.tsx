@@ -9,7 +9,7 @@ const AgeGroupCardHome = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="grid place-items-center">
+    <section className="bg-yellow-100 grid place-items-center">
       <article className="container">
         <div className="flex justify-center sm:justify-start pt-6 pb-4">
           <Image
@@ -43,7 +43,7 @@ const AgeGroupCardHome = () => {
             ageGroupCardContent.map((card, index) => (
               <li
                 key={index}
-                className={`flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-sm rounded-tr-sm rounded-bl-xs rounded-br-xs overflow-hidden`}
+                className={`bg-background flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-sm rounded-tr-sm rounded-bl-xs rounded-br-xs overflow-hidden`}
               >
                 <div className="flex md:pt-5 md:pb-5 md:pr-5">
                   <div className="flex justify-center items-center w-[30%]">
