@@ -80,6 +80,7 @@ const HurManBlirScoutFeature = () => {
               variant="primaryBrown"
               href="/aldersgrupper"
               text="Läs mer om åldersgrupper"
+              target="_self"
             />
             <Link
               href="https://www.scoutnet.se/register/in/group/764"
