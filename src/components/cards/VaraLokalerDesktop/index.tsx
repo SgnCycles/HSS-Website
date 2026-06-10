@@ -30,7 +30,7 @@ const VaraLokalerDesktop = () => {
         </div>
       </article >
       <article className="container flex gap-5 items-center">
-        <div className="bg-blue-100 border border-blue-500 rounded-md p-5 w-[35%] h-[582px] flex gap-2.5 flex-col justify-center">
+        <div className="bg-blue-100 border border-blue-500 rounded-md p-5 w-[35%] h-145.5 flex gap-2.5 flex-col justify-center">
           <h3 className="heading-3">Om stugan</h3>
           <h3 className="heading-4">Storlek:</h3>
           <p className="paragraph-light">170 kvm</p>
@@ -41,8 +41,8 @@ const VaraLokalerDesktop = () => {
           <h3 className="heading-4">Max personer:</h3>
           <p className="paragraph-light">Servering för upp till 30</p>
         </div>
-        <div className="h-[582px] w-[75%]">
-          <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-[582px] w-[723px] rounded-md object-cover" />
+        <div className="h-145.5 w-[75%]">
+          <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-145.5 w-180.75 rounded-md object-cover" />
         </div>
       </article>
       <article className="">

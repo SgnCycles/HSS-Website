@@ -23,7 +23,7 @@ const VaraLokalerMobile = () => {
           text="Hitta hit →"
         />
         <div className="w-screen mt-5 self-center">
-          <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-auto w-auto" />
+          <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-auto md:w-[-webkit-fill-available]" />
         </div>
       </article >
       <article className="bg-blue-100">
@@ -31,9 +31,7 @@ const VaraLokalerMobile = () => {
           <h3 className="heading-4">Storlek:</h3>
           <p className="paragraph-light">170 kvm</p>
           <h3 className="heading-4">Kapacitet:</h3>
-          <p className="paragraph-light">~40 golvplatser</p>
-          <p className="paragraph-light">· 30 madrasser</p>
-          <p className="paragraph-light">· 4 sängar</p>
+          <p className="paragraph-light">~40 golvplatser <br></br>· 30 madrasser <br></br>· 4 sängar</p>
           <h3 className="heading-4">Uppvärmning:</h3>
           <p className="paragraph-light">El · vedspis · brasa · element</p>
           <h3 className="heading-4">Max personer:</h3>
@@ -59,7 +57,7 @@ const VaraLokalerMobile = () => {
           <p className="paragraph-light">Beläget i Lövstaskogarna nära Kyrkhamn. Naturen runt stugan bjuder på friluftsliv, hajker och äventyr direkt utanför dörren.</p>
         </div>
       </article>
-      <article className="">
+      <article>
         <div className="container flex flex-col justify-center">
           <h2 className="heading-3">Boka Myset</h2>
           <p className="paragraph-light">Vi hyr gärna ut till scoutkårer, skolklasser och andra grupper.</p>
@@ -71,12 +69,12 @@ const VaraLokalerMobile = () => {
             text="Skicka bokningsförfrågan →"
           />
           <div className="w-screen mt-5 self-center">
-            <Image src="/images/Body/varaLokaler_body2.png" height={324} width={400} alt="Myset" className="object-cover h-60 w-auto" />
+            <Image src="/images/Body/varaLokaler_body2.png" height={324} width={400} alt="Våra lokaler" className="object-cover h-60 md:w-[-webkit-fill-available]" />
           </div>
         </div>
       </article>
-      <article className="container flex flex-col justify-center items-center pb-0">
-        <div className="">
+      <article className="container flex flex-col justify-center items-center pb-0 md:pb-[30px]">
+        <div>
           <h2 className="heading-3">Ruffen</h2>
           <div className="text-base font-body flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent text-center self-center mt-2 mb-2">
             <p>Scoutkårens klubbhus</p>
@@ -99,7 +97,7 @@ const VaraLokalerMobile = () => {
       </article>
       <article>
         <div className="w-screen">
-          <Image src="/images/Body/varaLokaler_body3.png" height={324} width={400} alt="Myset" className="h-auto w-auto" />
+          <Image src="/images/Body/varaLokaler_body3.png" height={324} width={400} alt="Ruffen" className="h-auto md:w-[-webkit-fill-available]" />
         </div>
         <div className="container">
           <div>
