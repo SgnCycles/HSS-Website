@@ -36,7 +36,6 @@ export default function UpptäckLivetSomSjöscout() {
                   @hss_scout
                 </span>
               </p>
-
               <Link
                 href="https://www.instagram.com/hss_scout/"
                 rel="noopener noreferrer"
