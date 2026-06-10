@@ -161,3 +161,9 @@ export type vilkaArViTextContentMobileType = {
   image: string,
   info: string
 }
+
+export type BlirScoutStepsType = {
+  title: string,
+  info: string,
+  step: string
+}
