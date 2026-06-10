@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const HurManBlirScoutFeature = () => {
   return (
-    <div className="full-bleed bg-primary">
+    <div className="bg-primary">
       <div className="container">
-        <div className="section flex md:ml-6">
+        <div className="flex">
           <Image
-            className="h-auto w-auto mt-auto mb-auto md:h-10"
-            src={"/Icons/yellow-two-people-icon.svg"}
+            className="h2-icon"
+            src="/Icons/yellow-two-people-icon.svg"
             height={50}
             width={50}
             alt=""
@@ -23,12 +23,12 @@ const HurManBlirScoutFeature = () => {
           Det är enkelt att komma igång! Fyra steg och du är en del av vår
           kårfamilj.
         </p>
-        <div className="md:flex">
+        <div className="md:flex justify-between">
           <div className="section">
             <HurManBlirScoutSteps />
           </div>
           <div className="section gap-4 flex flex-col items-center">
-            <div className="card border border-accent flex flex-col justify-center bg-[#00000033] items-center text-white mt-4">
+            <div className="card border border-accent flex flex-col justify-center bg-[#00000033] items-center text-white mt-4 md:mt-0">
               <ul className="border-b">
                 <div className="flex">
                   <h3 className="heading-3 text-white">
@@ -38,7 +38,7 @@ const HurManBlirScoutFeature = () => {
                 <div className="flex">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
-                    src={"/Icons/yellow-check-icon.svg"}
+                    src="/Icons/yellow-check-icon.svg"
                     height={50}
                     width={50}
                     alt=""
@@ -48,7 +48,7 @@ const HurManBlirScoutFeature = () => {
                 <div className="flex">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
-                    src={"/Icons/yellow-check-icon.svg"}
+                    src="/Icons/yellow-check-icon.svg"
                     height={50}
                     width={50}
                     alt=""
@@ -58,7 +58,7 @@ const HurManBlirScoutFeature = () => {
                 <div className="flex">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
-                    src={"/Icons/yellow-check-icon.svg"}
+                    src="/Icons/yellow-check-icon.svg"
                     height={50}
                     width={50}
                     alt=""
@@ -68,7 +68,7 @@ const HurManBlirScoutFeature = () => {
                   </li>
                 </div>
               </ul>
-              <div className="flex gap-2">
+              <div className="flex gap-2 mt-4">
                 <p>Har du frågor?</p>
                 <Link className="underline" href="/vanliga-fragor">
                   Besök FAQ
