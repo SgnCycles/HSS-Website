@@ -1,7 +1,6 @@
 import { CollectedInfoProps } from "@/types/types"
 
 export const collectedInformation:CollectedInfoProps[]=[
-
   {id:1,
   information:"Namn och föräldrars telefonnummer under hajken"},
   {id:2,

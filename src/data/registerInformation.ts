@@ -1,7 +1,6 @@
 import { RegisterInfoProps } from "@/types/types";
 
 export const registerInfo:RegisterInfoProps[]=[
-
   {id:1,
   infoContent:"Namn, personnummer och adress"},
   {id:2,
@@ -16,5 +15,4 @@ export const registerInfo:RegisterInfoProps[]=[
   infoContent:"Ev. uppgifter om syskon och föräldrars roll i kåren"},
   {id:7,
   infoContent:"För ledare: genomförda utbildningar och roll i kåren"},
-
 ]
