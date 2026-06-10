@@ -23,7 +23,7 @@ const VaraLokalerMobile = () => {
           text="Hitta hit →"
         />
         <div className="w-screen mt-5 self-center">
-          <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-auto md:w-[-webkit-fill-available]" />
+          <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-auto md:w-[-webkit-fill-available] w-[-webkit-fill-available]" />
         </div>
       </article >
       <article className="bg-blue-100">
@@ -69,11 +69,11 @@ const VaraLokalerMobile = () => {
             text="Skicka bokningsförfrågan →"
           />
           <div className="w-screen mt-5 self-center">
-            <Image src="/images/Body/varaLokaler_body2.png" height={324} width={400} alt="Våra lokaler" className="object-cover h-60 md:w-[-webkit-fill-available]" />
+            <Image src="/images/Body/varaLokaler_body2.png" height={324} width={400} alt="Våra lokaler" className="object-cover h-60 md:w-[-webkit-fill-available] w-[-webkit-fill-available]" />
           </div>
         </div>
       </article>
-      <article className="container flex flex-col justify-center items-center pb-0 md:pb-[30px]">
+      <article className="container flex flex-col justify-center items-center pb-0 md:pb-7.5">
         <div>
           <h2 className="heading-3">Ruffen</h2>
           <div className="text-base font-body flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent text-center self-center mt-2 mb-2">
@@ -97,7 +97,7 @@ const VaraLokalerMobile = () => {
       </article>
       <article>
         <div className="w-screen">
-          <Image src="/images/Body/varaLokaler_body3.png" height={324} width={400} alt="Ruffen" className="h-auto md:w-[-webkit-fill-available]" />
+          <Image src="/images/Body/varaLokaler_body3.png" height={324} width={400} alt="Ruffen" className="h-auto md:w-[-webkit-fill-available] w-[-webkit-fill-available]" />
         </div>
         <div className="container">
           <div>
