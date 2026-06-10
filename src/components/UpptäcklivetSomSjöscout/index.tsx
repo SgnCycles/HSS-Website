@@ -10,8 +10,8 @@ export default function UpptäckLivetSomSjöscout() {
           <Image
             src="/Icons/fe_arrow-down.svg"
             alt=""
-            width={59}
-            height={59}
+            width={35}
+            height={35}
             className="hidden md:block top-10 mx-auto"
           />
           <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
@@ -61,8 +61,8 @@ export default function UpptäckLivetSomSjöscout() {
           <Image
             src="/Icons/fe_arrow-down.svg"
             alt=""
-            width={59}
-            height={59}
+            width={35}
+            height={35}
             className="hidden md:block bottom-0 mx-auto"
           />
         </div>
