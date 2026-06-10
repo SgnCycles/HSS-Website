@@ -40,7 +40,7 @@ export default function GDPR({ handelGdpr }: { handelGdpr: () => void }) {
           personuppgifter för andra ändamål som i så fall specificeras här
           nedan. Kårspecifik information kring personuppgiftshantering
         </p>
-        <div className="flex justify-end ">
+        <div className="flex justify-end">
           <button
             className="bg-primary text-accent px-6 py-3 rounded-sm font-bold"
             onClick={handelGdpr}
