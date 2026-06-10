@@ -10,7 +10,7 @@ const VilkaArViCardDesktop = () => {
           <p key={index} className="paragraph-light">{info.info}</p>
         )}
       </div>
-      <div className="hidden lg:flex lg:justify-center lg:gap-5 md:flex md:flex-row md:gap-2">
+      <div className="hidden lg:flex lg:justify-center lg:gap-5 md:flex md:justify-center md:flex-row md:gap-2">
         {vilkaArViContent && vilkaArViContent.map((image, index) =>
           <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="vilka är vi" className="lg:rounded-md md:rounded-md md:h-50 md:w-[33.33%] lg:h-auto h-auto w-auto object-cover" />
         )}
