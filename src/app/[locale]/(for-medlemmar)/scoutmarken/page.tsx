@@ -25,7 +25,7 @@ const ScoutmarkenPage = () => {
           <h1 className="heading-1">Scoutmärken</h1>
           <div className="grid place-items-center ml-4">
             <p
-              className={`border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md`}
+              className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md"
             >
               Varje märken berättar en historia
             </p>
@@ -86,7 +86,7 @@ const ScoutmarkenPage = () => {
           />
         </div>
         <p className="paragraph-light">
-          Bevis- och behörighetsmärkena blir ett tecken på vad scouterna kan och
+          Bevis - och behörighetsmärkena blir ett tecken på vad scouterna kan och
           bidrar till säkerheten.
         </p>
         <div className="mt-6 mb-6 sm:hidden">
@@ -116,11 +116,11 @@ const ScoutmarkenPage = () => {
           />
         </div>
         <div className="hidden md:flex w-full justify-center items-center">
-          <Image src="/Icons/caret_down.svg" height={25} width={25} alt="" />
+          <Image src="/Icons/caret_down.svg" height={35} width={35} alt="" />
         </div>
       </article>
       <article className="w-full container pt-0 pb-0">
-        <h2 className="heading-2">
+        <h2 className="heading-2 text-center mb-6 md:text-left">
           Märkesaffisch för din åldersgrupp
         </h2>
         {/* MOBILE VERSION */}
@@ -205,7 +205,7 @@ const ScoutmarkenPage = () => {
           />
         </div>
         <div className="hidden md:flex w-full justify-center items-center">
-          <Image src="/Icons/caret_down.svg" height={25} width={25} alt="" />
+          <Image src="/Icons/caret_down.svg" height={35} width={35} alt="" />
         </div>
       </article>
       <article className="container pb-0">

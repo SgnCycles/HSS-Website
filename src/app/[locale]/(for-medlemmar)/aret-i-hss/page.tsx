@@ -11,7 +11,7 @@ const AretiHssPage = () => {
             <Image className="h2-icon" src={`/Icons/yellow-calendar-icon.svg`} height={30} width={30} alt="" />
             <h1 className="heading-2">Året i HSS</h1>
           </div>
-          <div className="text-base font-body flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent text-center self-center lg:ml-4">
+          <div className="text-base font-body flex gap-2 pl-4 pr-4 pt-1 pb-1 justify-center rounded-md w-fit border bg-secondary border-accent text-center self-center lg:ml-4">
             <p>Återkommande aktiviteter och traditioner</p>
           </div>
         </div>

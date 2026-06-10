@@ -27,7 +27,7 @@ const VilkaArViPage = () => {
               )}
             </div>
             <div className="hidden md:hidden lg:flex w-full justify-center items-center lg:p-20">
-              <Image src="/Icons/caret_down.svg" height={49} width={49} alt="" />
+              <Image src="/Icons/caret_down.svg" height={35} width={35} alt="" />
             </div>
             <div>
               <h2 className="heading-2 hidden lg:block lg:py-5 lg:pt-15">Se andra dokument</h2>
