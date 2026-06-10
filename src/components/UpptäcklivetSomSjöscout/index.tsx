@@ -29,7 +29,7 @@ export default function UpptäckLivetSomSjöscout() {
             </h2>
 
             <div className="flex flex-col md:flex-row items-center gap-6 w-full order-1 md:order-2">
-              <p className="paragraph flex-1 order-1 md:order-2">
+              <p className="paragraph flex-1 order-1 md:order-2 mb-0">
                 Kliv in i vår vardag, läger, segling, knutar och kamratskap. Se
                 våra äventyr, vänskap och minnen som vi skapar tillsammans.{" "}
                 <span className="paragraph text-accent font-extrabold flex-1">
