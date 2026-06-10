@@ -17,7 +17,7 @@ const EngageraDigSomVuxenPage = () => {
               className="h1-icon"
             />
             <h1 className="heading-1">
-              Engagera dig som vuxen
+              Engagera dig <span className="hidden sm:inline-block">som vuxen</span>
             </h1>
           </div>
           <p className="paragraph-light">
