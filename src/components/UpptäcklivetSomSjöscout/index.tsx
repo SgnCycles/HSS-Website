@@ -54,7 +54,6 @@ export default function UpptäckLivetSomSjöscout() {
                 </h3>
               </Link>
             </div>
-
             <div className="w-full order-2 md:order-3">
               <InstaFeedCard />
             </div>
