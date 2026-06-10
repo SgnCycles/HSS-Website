@@ -29,7 +29,7 @@ const SecurityAndSafetyFeature = () => {
               height={40}
               width={40}
             />
-            <h1 className="heading-1 text-primary">Säkerhet & trygghet</h1>
+            <h1 className="heading-1 text-primary">Trygghet & säkerhet</h1>
           </div>
           <p className="pb-4 pt-0 paragraph-light text-center max-w-lg lg:text-left lg:p-0 lg:pl-6">
             På HSS är barnens trygghet, inkludering och glädje alltid vår högsta
