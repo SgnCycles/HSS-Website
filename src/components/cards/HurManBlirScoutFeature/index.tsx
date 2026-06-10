@@ -31,7 +31,7 @@ const HurManBlirScoutFeature = () => {
             <div className="card border border-accent flex flex-col justify-center bg-[#00000033] items-center text-white mt-4 md:mt-0">
               <ul className="border-b">
                 <div className="flex">
-                  <h3 className="heading-3 text-white">
+                  <h3 className="heading-3 text-white mb-4 m-auto">
                     Terminavgift inkluderar
                   </h3>
                 </div>
