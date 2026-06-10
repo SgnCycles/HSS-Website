@@ -76,8 +76,8 @@ export const navItems: MenuItemsType[] = [
       {
         textKey: "aboutUs.whoAreWe",
         href: "/vilka-ar-vi",
-        icon: "/Icons/brandHss.png",
-        mobileIcon: "/Icons/brand-blue-logo.svg",
+        icon: "/Icons/hss_logo_light.svg",
+        mobileIcon: "/Icons/hss-icon.svg",
       },
       {
         textKey: "aboutUs.ourBoats",

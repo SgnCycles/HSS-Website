@@ -58,9 +58,7 @@ export default function DropdownNav({
               cursor-pointer 
               border-b-2 
               border-transparent 
-              transition-all 
               duration-200 
-              ease-in 
               hover:border-blue-100/80
               ${isOpen
                 ? "opacity-100 max-h-97 translate-y-0"

@@ -29,17 +29,9 @@ const ActivityFeature = () => {
               />
               <h2 className="heading-2">{t("titleKey")}</h2>
             </div>
-            <div className="flex gap-2 pl-2 pr-2 justify-center lg:rounded-lg lg:border lg:ml-4 lg:mt-auto lg:mb-auto lg:bg-secondary lg:border-accent">
-              <Image
-                className="hidden mt-1 w-4 h-4 lg:block"
-                src={activityFeatureContent.subIcon}
-                alt=""
-                width={20}
-                height={20}
-              />
-              <p className="mb-4 text-base font-body lg:mb-0 lg:ml-0">
-                {t("subTitleKey")}
-              </p>
+            <div className="flex gap-2 pl-4 pr-4 pt-1 pb-1 justify-center lg:rounded-lg lg:border lg:ml-4 lg:mt-auto lg:mb-auto lg:bg-secondary lg:border-accent">
+              <Image className="hidden mt-1 w-4 h-4 lg:block" src={activityFeatureContent.subIcon} alt="" width={20} height={20} />
+              <p className="mb-4 text-base font-body lg:mb-0 lg:ml-0">{t('subTitleKey')}</p>
             </div>
             {!isHomePage && (
               <Image
