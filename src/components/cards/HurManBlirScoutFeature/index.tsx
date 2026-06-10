@@ -10,7 +10,7 @@ const HurManBlirScoutFeature = () => {
         <div className="flex">
           <Image
             className="h2-icon"
-            src={"/Icons/yellow-two-people-icon.svg"}
+            src="/Icons/yellow-two-people-icon.svg"
             height={50}
             width={50}
             alt=""
@@ -38,7 +38,7 @@ const HurManBlirScoutFeature = () => {
                 <div className="flex">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
-                    src={"/Icons/yellow-check-icon.svg"}
+                    src="/Icons/yellow-check-icon.svg"
                     height={50}
                     width={50}
                     alt=""
@@ -48,7 +48,7 @@ const HurManBlirScoutFeature = () => {
                 <div className="flex">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
-                    src={"/Icons/yellow-check-icon.svg"}
+                    src="/Icons/yellow-check-icon.svg"
                     height={50}
                     width={50}
                     alt=""
@@ -58,7 +58,7 @@ const HurManBlirScoutFeature = () => {
                 <div className="flex">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
-                    src={"/Icons/yellow-check-icon.svg"}
+                    src="/Icons/yellow-check-icon.svg"
                     height={50}
                     width={50}
                     alt=""
