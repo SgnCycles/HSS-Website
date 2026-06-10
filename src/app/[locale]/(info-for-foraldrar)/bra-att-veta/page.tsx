@@ -39,7 +39,7 @@ const BraAttVetaPage = () => {
       <article className="container">
         <div className="w-full flex justify-center sm:justify-start items-center pb-2 sm:pb-6">
           <Image
-            className="h2-icon hidden sm:flex"
+            className="h2-icon hidden sm:flex place-self-start pt-3 lg:pt-1"
             src="/images/Logo/logo.png"
             height={30}
             width={30}
@@ -50,7 +50,7 @@ const BraAttVetaPage = () => {
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row lg:pb-6">
-          <div className="w-full flex flex-col justify-between sm:pr-4">
+          <div className="w-full flex flex-col justify-between md:pr-4 pb-6 md:pb-0">
             <p className="paragraph-light">
               Självklart våra supersnygga, praktiska och slitstarka HSS-tröjor!
             </p>
@@ -64,9 +64,9 @@ const BraAttVetaPage = () => {
               Tröjorna köps enklast på kårdiscot i november eller på
               sommaravslutningen i juni.
             </p>
-            <h3 className="hidden sm:flex heading-3">
+            <h3 className="hidden sm:flex flex-col heading-4">
               Du kan självklart också mejla:
-              <a href="mailto:hsstrojan@hss-scout.org" className="underline pl-2">
+              <a href="mailto:hsstrojan@hss-scout.org" className="underline">
                 hsstrojan@hss-scout.org
               </a>
             </h3>
@@ -92,7 +92,7 @@ const BraAttVetaPage = () => {
         />
       </div>
       <div className="sm:hidden pb-6">
-        <h3 className="font-heading text-[20px] text-primary font-bold text-center pb-6 md:pb-0">
+        <h3 className="heading-3 text-center pb-6 md:pb-0">
           Du kan självklart också mejla:
         </h3>
         <Button
