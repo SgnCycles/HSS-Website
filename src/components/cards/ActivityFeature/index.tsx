@@ -41,7 +41,7 @@ const ActivityFeature = () => {
           </div>
         </div>
       </article>
-      <Image className="h-auto w-full card pl-0 pr-0 pt-0 rounded-none object-cover object-top lg:rounded-md lg:border lg:border-accent lg:mt-0 md:hidden" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
+      <Image className="h-auto pb-0 w-full card pl-0 pr-0 pt-0 rounded-none object-cover object-top lg:rounded-md lg:border lg:border-accent lg:mt-0 md:hidden" src={"/images/Body/home_body1.png"} alt="" height={1000} width={1000} />
       {isHomePage && (
         <div className="flex justify-center container lg:hidden">
           <Button

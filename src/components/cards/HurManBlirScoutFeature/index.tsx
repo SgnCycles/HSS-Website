@@ -87,7 +87,7 @@ const HurManBlirScoutFeature = () => {
               target="_blank"
               className="font-bold bg-primary hover:bg-primary-hover text-accent hover:text-accent-hover border-accent hover:border-accent/50 text-center px-10.5 w-[80%] sm:w-max transition-all duration-300 border inline-flex items-center justify-center rounded-sm py-2 min-h-17.5"
             >
-              Ansök om att bli scout! →
+              Ansök om att bli scout!<span className="hidden md:block">→</span>
             </Link>
           </div>
         </div>
