@@ -20,4 +20,3 @@ const VilkaArViCardDesktop = () => {
 }
 
 export default VilkaArViCardDesktop
-

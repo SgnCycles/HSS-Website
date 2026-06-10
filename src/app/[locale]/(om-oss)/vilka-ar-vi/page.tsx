@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { vilkaArViGamlaBatarContent } from "@/data/vilkaArViCardContent";
 import BorderSingleDown from "@/components/borders/BorderSingleDown";
-import { historyHSS } from '@/data/vilkaArViCardContent'
+import { historyHSS } from "@/data/vilkaArViCardContent";
 import VilkaArViCardDesktop from "@/components/cards/VilkaArViDesktop";
 import VilkaArViCardMobile from "@/components/cards/VilkaArViMobile";
 
@@ -12,7 +12,7 @@ const VilkaArViPage = () => {
       <section className="flex flex-col lg:bg-blue-100 lg:bg-[url(/images/Backgrounds/boat-white-transparent.png)] lg:bg-size-[398px] lg:bg-no-repeat lg:bg-top-right">
         <article className="flex flex-col items-center pb-0">
           <div className="justify-center container pb-0 flex flex-row items-center lg:justify-start">
-            <Image src={`/images/Logo/logo.png`} height={74} width={78} alt="" className="h1-icon" />
+            <Image src="/images/Logo/logo.png" height={74} width={78} alt="" className="h1-icon" />
             <h1 className="heading-1 text-blue-900">Om HSS</h1>
           </div>
           <div className="text-base font-body flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent lg:hidden">
@@ -37,7 +37,7 @@ const VilkaArViPage = () => {
       </section>
       <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
         <div className="flex flex-row items-center">
-          <Image src={`/Icons/yellow-anchor-icon.svg`} height={30} width={30} alt="" className="h2-icon" />
+          <Image src="/Icons/yellow-anchor-icon.svg" height={30} width={30} alt="" className="h2-icon" />
           <h2 className="heading-2">Historien om HSS</h2>
         </div>
         <div className="flex flex-col">
@@ -50,7 +50,7 @@ const VilkaArViPage = () => {
             <Image key={index} src={`/images/Body/${image.image}`} height={276} width={393} alt="historia om båtar" className="lg:h-60 lg:rounded-md md:rounded-md md:w-[33.33%] h-auto w-[-webkit-fill-available] object-cover md:h-50" />
           )}
         </div>
-        <Image src={`/images/Backgrounds/blueWavyLine.png`} height={29} width={350} alt="" className="self-center lg:w-194.25 md:hidden" />
+        <Image src="/images/Backgrounds/blueWavyLine.png" height={29} width={350} alt="" className="self-center lg:w-194.25 md:hidden" />
       </section >
     </main >
   )
