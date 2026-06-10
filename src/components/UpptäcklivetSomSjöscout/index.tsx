@@ -40,14 +40,14 @@ export default function UpptäckLivetSomSjöscout() {
               <Link
                 href="https://www.instagram.com/hss_scout/"
                 rel="noopener noreferrer"
-                className="flex justify-center items-center w-full md:w-60 p-2 bg-primary rounded-sm order-3 md:order-1"
+                className="flex md:justify-around justify-center items-center w-full md:w-55 p-2 bg-primary rounded-sm order-3 md:order-1"
               >
                 <Image
                   src="/Icons/skill-icons_instagram.svg"
                   alt=""
                   width={40}
                   height={40}
-                  className="w-10 h-10 p-2 md:p-0"
+                  className="w-10 h-10 pr-2"
                 />
                 <h3 className="heading-3 text-accent">
                   Följ oss<span className="pl-1">&#8594;</span>
