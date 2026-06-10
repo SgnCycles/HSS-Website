@@ -19,8 +19,8 @@ const PolicyPage = () => {
         <div className="container">
           <div className="flex">
             <Image
-              src={"/Icons/anchor-icon.svg"}
-              alt={""}
+              src="/Icons/anchor-icon.svg"
+              alt=""
               width={30}
               height={30}
               className="h1-icon"
@@ -38,15 +38,15 @@ const PolicyPage = () => {
           </p>
           <div className="text-end">
             <Button
-              ariaLabel={"read pdf"}
-              href={"/pdf/Bilaga 20251012 HSS Trygga möten policy Beslutad.pdf"}
+              ariaLabel="read pdf"
+              href="/pdf/Bilaga-20251012-HSS-Trygga-moten-policy-Beslutad.pdf"
               variant={"primaryBlue"}
-              text={"Läs hela  PDF"}
+              text="Läs hela  PDF"
             />
           </div>
           <Image
-            src={"/Icons/caret_down.svg"}
-            alt={""}
+            src="/Icons/caret_down.svg"
+            alt=""
             width={30}
             height={30}
             className="mx-auto mt-6"
@@ -59,8 +59,8 @@ const PolicyPage = () => {
           <div>
             <div className="flex">
               <Image
-                src={"/Icons/check-icon.svg"}
-                alt={""}
+                src="/Icons/check-icon.svg"
+                alt=""
                 width={30}
                 height={30}
                 className="h2-icon"
@@ -84,17 +84,17 @@ const PolicyPage = () => {
           </div>
           <div className="">
             <Image
-              src={"/images/Body/policy_body1.png"}
-              alt={""}
+              src="/images/Body/policy_body1.png"
+              alt=""
               width={300}
               height={300}
               className="rounded-sm w-full h-auto mb-6"
             />
             <Button
-              ariaLabel={"read pdf"}
-              href={"/pdf/HSS-Flytvastpolicy-2025-Beslutad.pdf"}
+              ariaLabel="read pdf"
+              href="/pdf/HSS-Flytvastpolicy-2025-Beslutad.pdf"
               variant={"primaryBlue"}
-              text={"Läs hela  PDF"}
+              text="Läs hela  PDF"
             />
           </div>
         </div>
@@ -104,8 +104,8 @@ const PolicyPage = () => {
         <div className="container">
           <div className="flex">
             <Image
-              src={"/Icons/camera-icon.svg"}
-              alt={""}
+              src="/Icons/camera-icon.svg"
+              alt=""
               width={30}
               height={30}
               className="h2-icon"
@@ -192,17 +192,13 @@ const PolicyPage = () => {
             </p>
           </div>
           <div className="text-end" onClick={handelGdpr}>
-            <Button
-              ariaLabel={"contact"}
-              href={"mailto:info"}
-              variant={"primaryBlue"}
-              text={"Läs hela GDPR"}
-            />
+            <button className="bg-primary text-accent px-6 py-3 rounded-sm cursor-pointer font-bold">
+              Läs hela GDPR
+            </button>
           </div>
         </div>
       </div>
       {gdpr && <GDPR handelGdpr={handelGdpr} />}
-
       <div className="container">
         <div className="card bg-yellow-100 border border-accent">
           <p className="paragraph-light">
@@ -224,7 +220,7 @@ const PolicyPage = () => {
           />
           <h3 className="heading-3">Hajker och läge</h3>
         </div>
-        <p>
+        <p className="paragraph-light">
           Inför hajker och läger samlar ledarna in kompletterande uppgifter via
           mejl eller webbformulär. Detta för att kunna planera och genomföra
           aktiviteten på ett säkert sätt.
