@@ -14,7 +14,7 @@ interface FeedProps {
   username: string;
 }
 
-export default function InstaFeedCard() {
+export default function InstaSection() {
   const [apiData, setApiData] = useState<FeedProps[]>([]);
   const [userName, setUserName] = useState("");
 

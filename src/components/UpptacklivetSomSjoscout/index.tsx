@@ -1,19 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import InstaFeedCard from "../cards/InstaFeedCard";
+import InstaFeedCard from "../cards/InstaSection";
 
 export default function UpptäckLivetSomSjöscout() {
   return (
-    <main id="main-content">
+    
       <section className=" bg-blue-100">
         <div className="container">
-          <Image
-            src="/Icons/caret_down.svg"
-            alt=""
-            width={35}
-            height={35}
-            className="hidden md:block mb-6 mx-auto"
-          />
           <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
             <h2 className="flex heading-2 items-center justify-between">
               <Image
@@ -66,6 +59,6 @@ export default function UpptäckLivetSomSjöscout() {
           />
         </div>
       </section>
-    </main>
+    
   );
 }

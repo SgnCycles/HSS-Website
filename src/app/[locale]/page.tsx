@@ -9,8 +9,9 @@ export default function Home() {
   return (
     <main id="main-content">
       <ActivityFeature />
+      <BorderSingleUp variant="text-blue-100" />
       <UpptäckLivetSomSjöscout/>
-      <BorderSingleUp variant="text-yellow-100" />
+      <BorderSingleUp variant="text-yellow-100 bg-blue-100" />
       <AgeGroupCardHome />
       <BorderSingleUp variant="text-primary bg-yellow-100" />
       <BliLedareHome />
