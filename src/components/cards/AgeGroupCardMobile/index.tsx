@@ -20,14 +20,14 @@ const AgeGroupPageMobile = () => {
             className="flex flex-col justify-between md:min-h-30 bg-background"
           >
             <div
-              className={`flex justify-between ${card.colourSchemePrimary} font-body text-white font-bold`}
+              className={`flex justify-between ${card.colourSchemePrimary} font-body text-white font-bold cursor-pointer`}
+              onClick={() => handleClick(index)}
             >
               <p className="place-content-center text-left pl-4 h-8">
                 {card.meetings}
               </p>
               <button
-                className="flex justify-between items-center pr-4 cursor-pointer"
-                onClick={() => handleClick(index)}
+                className="flex justify-between items-center pr-4"
               >
                 <Image
                   src="/Icons/caret_down_white.svg"

@@ -17,7 +17,7 @@ const AgeGroupPageDesktop = () => {
         ageGroupCardContent.map((card, index) => (
           <li
             key={index}
-            className={`flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-sm rounded-tr-sm rounded-bl-xs rounded-br-xs overflow-hidden bg-background`}
+            className={`flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-md rounded-tr-md rounded-bl-xs rounded-br-xs overflow-hidden bg-background`}
           >
             <div className="flex md:pt-5 md:pb-5 md:pr-5">
               <div className="flex justify-center items-center w-[30%]">
@@ -47,15 +47,14 @@ const AgeGroupPageDesktop = () => {
               </div>
             </div>
             <div
-              className={`flex justify-center sm:justify-between ${card.colourSchemePrimary} text-white font-bold`}
+              className={`flex justify-center sm:justify-between ${card.colourSchemePrimary} text-white font-bold cursor-pointer`}
+              onClick={() => handleClick(index)}
             >
               <p className="place-content-center text-left pl-4 h-8">
                 {card.meetings}
               </p>
               <button
-                className="flex justify-between items-center pr-4 cursor-pointer"
-                onClick={() => handleClick(index)}
-              >
+                className="flex justify-between items-center pr-4"              >
                 Läs mer
                 <Image
                   src="/Icons/caret_down_white.svg"
