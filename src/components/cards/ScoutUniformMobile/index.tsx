@@ -6,7 +6,7 @@ const ScoutUniformMobile = () => {
     <>
       {scoutUniformCardContent && (
         <div className="sm:hidden">
-          <h2 className="heading-2">{scoutUniformCardContent[0].title}</h2>
+          <h2 className="heading-2 text-center">{scoutUniformCardContent[0].title}</h2>
           <div className="grid place-items-center">
             <p className="paragraph-light">
               {scoutUniformCardContent[0].subtitle}

@@ -9,7 +9,7 @@ const SpecificaMarken = () => {
 
   return (
     <article className="container pt-0">
-      <h2 className="heading-2">Specifika märken för sjöscouter</h2>
+      <h2 className="heading-2 text-center xl:text-left">Specifika märken för sjöscouter</h2>
       <div className="sm:w-full sm:grid sm:place-items-center sm:mb-6">
         <Image
           className="w-full h-auto"
