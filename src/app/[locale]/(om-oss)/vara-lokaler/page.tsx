@@ -1,6 +1,6 @@
-import VaraLokalerDesktop from "@/components/cards/VaraLokalerDesktop"
-import VaraLokalerMobile from "@/components/cards/VaraLokalerMobile"
-import Image from "next/image"
+import VaraLokalerDesktop from "@/components/cards/VaraLokalerDesktop";
+import VaraLokalerMobile from "@/components/cards/VaraLokalerMobile";
+import Image from "next/image";
 
 const VaraLokalerPage = () => {
   return (
@@ -12,7 +12,7 @@ const VaraLokalerPage = () => {
         </div>
         <p className="paragraph-light text-center">Upptäck våra lokaler vid vattnet och ute i skogen.</p>
       </section>
-      <section className="">
+      <section>
         <VaraLokalerMobile />
         <VaraLokalerDesktop />
       </section>

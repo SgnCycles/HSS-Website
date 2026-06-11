@@ -2,7 +2,6 @@ import Image from "next/image";
 import Button from "@/components/buttons/Button";
 import Link from "next/link";
 
-
 const VaraLokalerDesktop = () => {
   return (
     <section className="hidden lg:flex lg:flex-col">
@@ -19,7 +18,7 @@ const VaraLokalerDesktop = () => {
             <h3 className="heading-4">📍Koordinater</h3>
             <p className="paragraph-light">59.3971277, 17.7698322</p>
           </div>
-          <div className="">
+          <div>
             <Button
               ariaLabel="Google Maps"
               href="https://www.google.com/maps/place/Scoutstugan+Myset/@59.3971277,17.7672573,559m/data=!3m1!1e3!4m6!3m5!1s0x465fa128809e851d:0xb0d426cb47615c42!8m2!3d59.3970258!4d17.7705506!16s%2Fg%2F11p52y22tg?entry=tts&g_ep=EgoyMDI2MDUyNS4wIPu8ASoASAFQAw%3D%3D&skid=749da01d-6040-4b4d-9ded-2e8b24d9c127"
@@ -28,24 +27,24 @@ const VaraLokalerDesktop = () => {
             />
           </div>
         </div>
-      </article >
+      </article>
       <article className="container flex gap-5 items-center">
         <div className="bg-blue-100 border border-blue-500 rounded-md p-5 w-[35%] h-145.5 flex gap-2.5 flex-col justify-center">
           <h3 className="heading-3">Om stugan</h3>
-          <h3 className="heading-4">Storlek:</h3>
+          <h4 className="heading-4">Storlek:</h4>
           <p className="paragraph-light">170 kvm</p>
-          <h3 className="heading-4">Kapacitet:</h3>
+          <h4 className="heading-4">Kapacitet:</h4>
           <p className="paragraph-light">~40 golvplatser <br></br>· 30 madrasser <br></br>· 4 sängar</p>
-          <h3 className="heading-4">Uppvärmning:</h3>
+          <h4 className="heading-4">Uppvärmning:</h4>
           <p className="paragraph-light">El · vedspis · brasa · element</p>
-          <h3 className="heading-4">Max personer:</h3>
+          <h4 className="heading-4">Max personer:</h4>
           <p className="paragraph-light">Servering för upp till 30</p>
         </div>
         <div className="h-145.5 w-[75%]">
           <Image src="/images/Body/varaLokaler_body1.png" height={324} width={400} alt="Myset" className="h-145.5 w-180.75 rounded-md object-cover" />
         </div>
       </article>
-      <article className="">
+      <article>
         <div className="container flex flex-col justify-center">
           <h2 className="heading-3">Boka Myset</h2>
           <p className="paragraph-light">Vi hyr gärna ut till scoutkårer, skolklasser och andra grupper.</p>
@@ -100,18 +99,18 @@ const VaraLokalerDesktop = () => {
       <article className="container flex gap-5 items-center">
         <div className="bg-blue-100 border border-blue-500 rounded-md p-5 w-90 h-125 flex gap-2.5 flex-col justify-center">
           <h3 className="heading-3">Om stugan</h3>
-          <h3 className="heading-4">Aktivt sedan:</h3>
+          <h4 className="heading-4">Aktivt sedan:</h4>
           <p className="paragraph-light">År 1959</p>
-          <h3 className="heading-4">Läge:</h3>
+          <h4 className="heading-4">Läge:</h4>
           <p className="paragraph-light">Nere vid vattnet <br></br>Hässelby Strand, nära bryggor och båtar</p>
-          <h3 className="heading-4">Användning:</h3>
+          <h4 className="heading-4">Användning:</h4>
           <p className="paragraph-light mb-0">Möten & lägerförberedelser <br></br>Alla avdelningar håller till här</p>
         </div>
-        <div className="">
+        <div>
           <Image src="/images/Body/varaLokaler_body3.png" height={516} width={625} alt="Ruffen" className="object-cover w-auto rounded-md" />
         </div>
       </article>
-      <article className="">
+      <article>
         <div className="container flex self-stretch justify-between">
           <div>
             <div className="flex">

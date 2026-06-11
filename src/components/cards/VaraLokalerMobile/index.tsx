@@ -2,12 +2,11 @@ import Image from "next/image";
 import Button from "@/components/buttons/Button";
 import Link from "next/link";
 
-
 const VaraLokalerMobile = () => {
   return (
     <section className="block lg:hidden md:flex md:flex-col">
       <article className="container flex flex-col justify-center pb-0">
-        <div className="">
+        <div>
           <h2 className="heading-3">Myset</h2>
           <div className="text-base font-body flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent text-center self-center mt-2 mb-2">
             <p>Vår scoutstuga i skogen</p>
@@ -87,11 +86,11 @@ const VaraLokalerMobile = () => {
       <article className="bg-blue-100">
         <div className="container">
           <h3 className="heading-3">Om stugan</h3>
-          <h3 className="heading-4">Aktivt sedan:</h3>
+          <h4 className="heading-4">Aktivt sedan:</h4>
           <p className="paragraph-light">År 1959</p>
-          <h3 className="heading-4">Läge:</h3>
+          <h4 className="heading-4">Läge:</h4>
           <p className="paragraph-light">Nere vid vattnet <br></br>Hässelby Strand, nära bryggor och båtar</p>
-          <h3 className="heading-4">Användning:</h3>
+          <h4 className="heading-4">Användning:</h4>
           <p className="paragraph-light">Möten & lägerförberedelser <br></br>Alla avdelningar håller till här</p>
         </div>
       </article>
