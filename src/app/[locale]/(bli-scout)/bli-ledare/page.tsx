@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const BliLedarePage = () => {
   return (
-    <main id="main_section">
+    <main id="main-content">
       <section className="bg-background font-body text-background grid place-items-center">
         <BliLedareMainSection />
       </section>

@@ -1,4 +1,4 @@
-import Button from "../buttons/Button";
+import CloseButton from "../buttons/CloseButton";
 
 export default function GDPR({ handelGdpr }: { handelGdpr: () => void }) {
   return (
@@ -57,12 +57,11 @@ export default function GDPR({ handelGdpr }: { handelGdpr: () => void }) {
           Kårspecifik information kring personuppgiftshantering
         </p>
         <div className="flex justify-end">
-          <button
-            className="bg-primary cursor-pointer text-accent px-6 py-3 rounded-sm font-bold"
+          <CloseButton
+            ariaLabel=""
+            text="Stäng"
             onClick={handelGdpr}
-          >
-            Stäng
-          </button>
+          />
         </div>
       </div>
     </div>
