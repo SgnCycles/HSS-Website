@@ -167,3 +167,15 @@ export type BlirScoutStepsType = {
   info: string,
   step: string
 }
+
+export type RegisterInfoProps={
+
+  id:number,
+  infoContent:string
+}
+
+export type CollectedInfoProps={
+
+  id:number,
+  information:string
+}
