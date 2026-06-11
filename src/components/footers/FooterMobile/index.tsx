@@ -43,6 +43,7 @@ const FooterMobile = () => {
           <FooterContact title="Stöds av" icon={null}>
             <Link target="_blank" aria-label="postkodlotteriet hemsida" href="https://www.postkodlotteriet.se/">
               <Image
+                className="w-full h-auto"
                 src="/images/Logo/postkodlotteriet_logo.svg"
                 height={37}
                 width={112}
