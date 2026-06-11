@@ -148,6 +148,7 @@ const PolicyPage = () => {
             alt={""}
             width={30}
             height={30}
+            className="h2-icon"
           />
           <h2 className="heading-2">Så hanterar vi dina uppgifter</h2>
         </div>
