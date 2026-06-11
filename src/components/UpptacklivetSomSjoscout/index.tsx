@@ -8,19 +8,21 @@ export default function UpptäckLivetSomSjöscout() {
     <section className=" bg-blue-100">
       <div className="container">
         <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
-          <h2 className="flex heading-2 items-center justify-between">
-            <Image
-              src="/Icons/yellow-instagram-icon.svg"
-              alt=""
-              width={41}
-              height={41}
-              className="h2-icon"
-            />
-            <span className="font-bold md:heading-2 hidden sm:flex items-center">
-              Upptäck livet som sjöscout
-            </span>
-            <span className="flex sm:hidden">Livet som sjöscout</span>
-          </h2>
+          <div className="self-center">
+            <h2 className="flex heading-2 items-center justify-between">
+              <Image
+                src="/Icons/yellow-instagram-icon.svg"
+                alt=""
+                width={41}
+                height={41}
+                className="h2-icon"
+              />
+              <span className="font-bold md:heading-2 hidden sm:flex items-center">
+                Upptäck livet som sjöscout
+              </span>
+              <span className="flex sm:hidden">Livet som sjöscout</span>
+            </h2>
+          </div>
           <div className="flex flex-col md:flex-row items-center gap-6 w-full order-1 md:order-2">
             <p className="paragraph flex-1 order-1 md:order-2 mb-0">
               Kliv in i vår vardag, läger, segling, knutar och kamratskap. Se
