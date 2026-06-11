@@ -7,7 +7,7 @@ import {
   securityAndSafetyPopupContent,
 } from "@/data/securityAndSafetyContent";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReadMoreButton from "@/components/buttons/ReadMoreButton";
 
 const SecurityAndSafetyFeature = () => {
@@ -16,6 +16,14 @@ const SecurityAndSafetyFeature = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "initial"
+    }
+  },[isOpen])
 
   return (
     <article className="flex flex-col items-center self-center container">
