@@ -33,7 +33,7 @@ const BraAttVetaPage = () => {
           href="https://www.scouterna.se/scout-ledare-kar/jag-ar-scout/scoutklader/"
           target="_blank"
         >
-          Läs mer om scoutdräkten här &#62;&#62;
+          Läs mer om scoutdräkten här →
         </Link>
       </article>
       <article className="container">

@@ -9,9 +9,6 @@ const VadGorViPage = () => {
     <main id="main-content">
       <ActivityFeature />
       <div className="hidden md:block">
-        <div className="hidden justify-center lg:flex">
-          <Image src="/Icons/caret_down.svg" height={35} width={35} alt="" />
-        </div>
         <BorderSingleUp variant="text-primary" />
       </div>
       <HurManBlirScoutFeature />

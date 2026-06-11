@@ -44,13 +44,6 @@ const PolicyPage = () => {
               text="Läs hela  PDF"
             />
           </div>
-          <Image
-            src="/Icons/caret_down.svg"
-            alt=""
-            width={30}
-            height={30}
-            className="mx-auto mt-6"
-          />
         </div>
       </section>
       <BorderSingleDown variant="text-blue-100" />
@@ -131,13 +124,6 @@ const PolicyPage = () => {
               text={"Kontakta oss"}
             />
           </div>
-          <Image
-            src={"/Icons/caret_down.svg"}
-            alt={""}
-            width={30}
-            height={30}
-            className="mx-auto mt-6"
-          />
         </div>
       </section>
       <BorderSingleDown variant="text-yellow-100" />

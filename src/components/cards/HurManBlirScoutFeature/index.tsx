@@ -35,7 +35,7 @@ const HurManBlirScoutFeature = () => {
                     Terminavgift inkluderar
                   </h3>
                 </div>
-                <div className="flex">
+                <div className="flex items-center">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
                     src="/Icons/yellow-check-icon.svg"
@@ -45,7 +45,7 @@ const HurManBlirScoutFeature = () => {
                   />
                   <li className="paragraph-light">Veckomöten & aktiviteter</li>
                 </div>
-                <div className="flex">
+                <div className="flex items-center">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
                     src="/Icons/yellow-check-icon.svg"
@@ -55,7 +55,7 @@ const HurManBlirScoutFeature = () => {
                   />
                   <li className="paragraph-light">Försäkring via Scouterna</li>
                 </div>
-                <div className="flex">
+                <div className="flex items-center">
                   <Image
                     className="h-auto w-auto mb-4 mr-1.5 md:h-5"
                     src="/Icons/yellow-check-icon.svg"
@@ -91,8 +91,8 @@ const HurManBlirScoutFeature = () => {
             </Link>
           </div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 

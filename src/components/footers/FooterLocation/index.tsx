@@ -20,7 +20,7 @@ const FooterLocation = ({ title, address, googleMapslink }: FooterLocationType) 
           width={15}
           alt=""
           role="presentation"
-          className="md:w-5 md:h-[25.51px]"
+          className="md:w-5 md:h-[25.51px] w-auto h-auto"
         />
         <h3 className="font-body text-white font-bold pl-1 text-[16px] md:text-[22px]">{title}</h3>
       </div>
