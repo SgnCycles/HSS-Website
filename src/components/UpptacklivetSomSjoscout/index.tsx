@@ -27,7 +27,7 @@ export default function UpptäckLivetSomSjöscout() {
             <p className="paragraph flex-1 order-1 md:order-2 mb-0">
               Kliv in i vår vardag, läger, segling, knutar och kamratskap. Se
               våra äventyr, vänskap och minnen som vi skapar tillsammans.{" "}
-              <span className="paragraph text-accent font-extrabold flex-1">
+              <span className="paragraph text-primary font-extrabold flex-1">
                 @hss_scout
               </span>
             </p>
