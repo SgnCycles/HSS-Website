@@ -31,13 +31,6 @@ const PolicyIntro = () => {
             text="Läs hela  PDF"
           />
         </div>
-        <Image
-          src="/Icons/caret_down.svg"
-          alt=""
-          width={30}
-          height={30}
-          className="mx-auto mt-6"
-        />
       </article>
     </section>
   );

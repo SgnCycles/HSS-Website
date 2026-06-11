@@ -51,9 +51,6 @@ const ScoutmarkenPage = () => {
               alt=""
             />
           </div>
-          <div className="hidden md:flex w-full justify-center items-center">
-            <Image src="/Icons/caret_down.svg" height={35} width={35} alt="" />
-          </div>
         </article>
         <article className="container pb-0">
           <ScoutUniformMobile />

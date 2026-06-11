@@ -33,15 +33,6 @@ const VilkaArViPage = () => {
           </div>
           <VilkaArViCardDesktop />
           <VilkaArViCardMobile />
-          <div className="hidden md:hidden lg:flex w-full justify-center items-center lg:pt-20">
-            <Image
-              src="/Icons/caret_down.svg"
-              height={30}
-              width={30}
-              alt=""
-              className="h-auto w-auto"
-            />
-          </div>
         </article>
       </section>
       <BorderSingleDown variant="text-blue-100 lg:block hidden" />
