@@ -37,7 +37,7 @@ const ScoutmarkenPage = () => {
       <ScoutmarkenIntro />
       <SpecificaMarken />
       <article className="w-full container pt-0 pb-0">
-        <h2 className="heading-2 text-center mb-6 md:text-left">
+        <h2 className="heading-2 text-center mb-6 xl:text-left">
           Märkesaffisch för din åldersgrupp
         </h2>
         <MarkesaffischCardMobile />

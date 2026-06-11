@@ -6,7 +6,7 @@ const ScoutUniformDesktop = () => {
     <>
       {scoutUniformCardContent && (
         <div className="hidden sm:flex sm:flex-col">
-          <h2 className="heading-2">{scoutUniformCardContent[0].title}</h2>
+          <h2 className="heading-2 text-center xl:text-left">{scoutUniformCardContent[0].title}</h2>
           <p className="paragraph-light">
             {scoutUniformCardContent[0].subtitle}
             {scoutUniformCardContent[0].second_subtitle}
