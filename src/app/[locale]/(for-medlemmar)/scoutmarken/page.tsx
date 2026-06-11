@@ -69,7 +69,7 @@ const ScoutmarkenPage = () => {
         </div>
       </article>
       <article className="container pt-0">
-        <h2 className="heading-2">
+        <h2 className="heading-2 text-center mb-6 md:text-left">
           Specifika märken för sjöscouter
         </h2>
         <div className="sm:w-full sm:grid sm:place-items-center sm:mb-6">
@@ -212,7 +212,7 @@ const ScoutmarkenPage = () => {
         {/* MOBILE VERSION */}
         {scoutUniformCardContent && (
           <div className="sm:hidden">
-            <h2 className="heading-2">
+            <h2 className="heading-2 text-center mb-6 md:text-left">
               {scoutUniformCardContent[0].title}
             </h2>
             <div className="grid place-items-center">
