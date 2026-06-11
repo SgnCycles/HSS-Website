@@ -44,6 +44,7 @@ const AgeGroupPage = () => {
                   className="flex flex-col justify-between md:min-h-30 bg-background"
                 >
                   <div
+                    onClick={() => handleClick(index)}
                     className={`flex justify-between ${card.colourSchemePrimary} font-body text-white font-bold`}
                   >
                     <p className="place-content-center text-left pl-4 h-8">
@@ -51,7 +52,6 @@ const AgeGroupPage = () => {
                     </p>
                     <button
                       className="flex justify-between items-center pr-4 cursor-pointer"
-                      onClick={() => handleClick(index)}
                     >
                       <Image
                         src="/Icons/caret_down_white.svg"
@@ -162,14 +162,14 @@ const AgeGroupPage = () => {
                     </div>
                   </div>
                   <div
-                    className={`flex justify-center sm:justify-between ${card.colourSchemePrimary} text-white font-bold`}
+                    onClick={() => handleClick(index)}
+                    className={`flex justify-center sm:justify-between ${card.colourSchemePrimary} text-white font-bold cursor-pointer`}
                   >
                     <p className="place-content-center text-left pl-4 h-8">
                       {card.meetings}
                     </p>
                     <button
                       className="flex justify-between items-center pr-4 cursor-pointer"
-                      onClick={() => handleClick(index)}
                     >
                       Läs mer
                       <Image

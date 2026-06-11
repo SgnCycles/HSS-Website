@@ -32,6 +32,7 @@ const AgeGroupCardHome = () => {
               href="/aldersgrupper"
               variant="primaryBlue"
               text="Läs mer här"
+              target="_self"
             />
           </div>
         </div>
@@ -87,6 +88,7 @@ const AgeGroupCardHome = () => {
             href="/aldersgrupper"
             variant="secondaryBlue"
             text="Läs mer om åldersgrupper"
+            target="_self"
           />
         </div>
       </article>
