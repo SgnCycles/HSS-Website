@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BliLedareBenefitCard = () => {
   return (
-    <>
+    <ul className="cards-column w-full lg:pr-6">
       {bliLedareCardContent &&
         bliLedareCardContent.map((card, index) => (
           <li
@@ -26,7 +26,7 @@ const BliLedareBenefitCard = () => {
             </div>
           </li>
         ))}
-    </>
+    </ul>
   );
 };
 
