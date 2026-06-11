@@ -32,6 +32,7 @@ export default function UpptäckLivetSomSjöscout() {
               </span>
             </p>
             <Link
+              target="blank"
               href="https://www.instagram.com/hss_scout/"
               rel="noopener noreferrer"
               className="flex md:justify-around justify-center items-center w-full md:w-55 p-2 bg-primary rounded-sm order-3 md:order-1"
