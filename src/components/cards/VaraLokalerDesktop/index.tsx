@@ -84,6 +84,9 @@ const VaraLokalerDesktop = () => {
             <p className="paragraph-light">Beläget i Lövstaskogarna nära Kyrkhamn. Naturen runt stugan bjuder på friluftsliv, hajker och äventyr direkt utanför dörren.</p>
           </div>
         </div>
+        <div className="flex justify-center">
+          <Image src={`/images/Backgrounds/wavyLineTransparent.png`} height={64} width={777} alt="" className="self-center w-auto h-auto" />
+        </div>
       </article>
       <article className="container flex flex-col justify-center pb-0 items-start">
         <div className="flex gap-2 items-center">
