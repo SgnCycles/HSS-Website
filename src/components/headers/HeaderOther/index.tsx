@@ -1,7 +1,7 @@
-"use client"
-import Nav from "@/components/headers/Nav"
-import { usePathname } from "next/navigation"
-import { pageHeaderImage } from "../../../data/pageBackgrounds"
+"use client";
+import Nav from "@/components/headers/Nav";
+import { usePathname } from "next/navigation";
+import { pageHeaderImage } from "../../../data/pageBackgrounds";
 
 const HeaderOther = () => {
   const pathname = usePathname();
@@ -18,16 +18,16 @@ const HeaderOther = () => {
       }}
     >
       <Nav />
-      {pathname === "/vad-gor-vi" ? (
-        <h1 className="hidden xl:block w-full font-heading font-extrabold text-xs md:text-[40px] text-center text-shadow-black text-white pb-6">
-          Välkommen till HSS
+      {(pathname === "/vad-gor-vi" ||
+        pathname === "/sv/vad-gor-vi" ||
+        pathname === "/en/vad-gor-vi") && (
+        <h1 className="block heading-1 text-center text-shadow-black text-white pb-6">
+          Välkommen till HSS<br className="md:hidden"></br>
           <span className="text-accent"> och äventyret</span>
         </h1>
-      ) : (
-        ""
       )}
     </header>
-  )
-}
+  );
+};
 
-export default HeaderOther
+export default HeaderOther;
