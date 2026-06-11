@@ -27,7 +27,7 @@ const AgeGroupPageMobile = () => {
                 {card.meetings}
               </p>
               <button
-                className="flex justify-between items-center pr-4"
+                className="flex justify-between items-center pr-4 cursor-pointer"
               >
                 <Image
                   src="/Icons/caret_down_white.svg"
