@@ -74,7 +74,7 @@ const VaraLokalerDesktop = () => {
                 onClick={() => handleClick}
               ></div>
               <article className="bg-background p-6 z-10 w-[80%]">
-                <Image src="/images/body/myset_plan.png" height={1000} width={1000} alt="Planlösning av Myset" className="w-[80%] h-auto"/>
+                <Image src="/images/Body/myset_plan.png" height={1000} width={1000} alt="Planlösning av Myset" className="w-[80%] h-auto"/>
                 <div className="flex justify-end">
                   <CloseButton
                     ariaLabel="Close the window"
