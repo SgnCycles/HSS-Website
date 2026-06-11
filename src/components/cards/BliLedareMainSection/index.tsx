@@ -36,9 +36,7 @@ const BliLedareMainSection = () => {
             ledarutbildning och du får stöd av erfarna ledare från dag ett.
           </p>
           <div className="flex flex-col justify-between lg:flex-row">
-            <ul className="cards-column w-full md:pr-6">
-              <BliLedareBenefitCard />
-            </ul>
+            <BliLedareBenefitCard />
             <BliLedareContentCardMobile />
             <div className="hidden lg:flex flex-col justify-between items-center lg:w-auto">
               <Image
