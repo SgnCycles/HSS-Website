@@ -37,7 +37,7 @@ const HeaderHome = () => {
         <div className="z-5 bg-primary md:bg-blue-100/45">
           <div className="z-5 bg-primary md:bg-primary/45">
             <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
-              <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg">
+              <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg sm:whitespace-pre-line">
                 {t('description')}
               </p>
               <Button

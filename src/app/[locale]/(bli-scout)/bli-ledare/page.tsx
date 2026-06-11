@@ -3,6 +3,8 @@ import Image from "next/image";
 import { bliLedareCardContent } from "@/data/bliLedareCardContent";
 import Button from "@/components/buttons/Button";
 import { useState } from "react";
+import CloseButton from "@/components/buttons/CloseButton";
+import ReadMoreButton from "@/components/buttons/ReadMoreButton";
 
 const BliLedarePage = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -23,7 +25,9 @@ const BliLedarePage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="heading-1">Bli ledare - vi utbildar dig!</h1>
+            <h1 className="heading-1">
+              Bli ledare <span className="hidden sm:inline-block">- vi utbildar dig!</span>
+            </h1>
           </div>
           <p className="paragraph-light text-grey-500">
             Du behöver inga förkunskaper. Vi skickar dig på Scouternas
@@ -46,9 +50,7 @@ const BliLedarePage = () => {
                       />
                     </div>
                     <div>
-                      <h3 className="heading-3">
-                        {card.title}
-                      </h3>
+                      <h3 className="heading-3">{card.title}</h3>
                       <p className="text-base text-wrap text-grey-500">
                         {card.subtitle}
                       </p>
@@ -56,7 +58,7 @@ const BliLedarePage = () => {
                   </li>
                 ))}
             </ul>
-            <div className="flex flex-col justify-between items-center gap-6 font-bold pb-6 mt-6 lg:mt-0">
+            <div className="flex flex-col justify-between items-center gap-6 font-bold mt-6 mb-6 md:mb-0 lg:mt-0">
               <div className="text-primary flex flex-col lg:hidden">
                 <p className="paragraph-light">
                   För att fler barn och unga ska få uppleva scouting behöver vi
@@ -92,12 +94,12 @@ const BliLedarePage = () => {
                   target="_blank"
                 />
               </div>
-              <button
-                className="hidden lg:flex justify-center items-center bg-[#397DB3] font-bold text-background text-center px-16 transition-all duration-300 border rounded-sm py-2 cursor-pointer hover:bg-primary-hover hover:text-background text-nowrap min-h-17.5 w-full"
+              <ReadMoreButton
+                ariaLabel="Open to read more"
+                variant="secondaryBlue"
+                text="Mer information här"
                 onClick={handleClick}
-              >
-                <p>Mer information här</p>
-              </button>
+              />
             </div>
           </div>
           <p className="text-base font-bold text-center text-primary text-extrabold lg:hidden">
@@ -153,12 +155,11 @@ const BliLedarePage = () => {
               som scoutledare.
             </p>
             <div className="flex justify-end">
-              <button
-                className="flex bg-primary font-semibold text-accent text-center px-16 transition-all duration-300 border rounded-sm py-2 cursor-pointer hover:bg-primary-hover hover:text-background"
+              <CloseButton
+                ariaLabel="Close the window"
+                text="Stäng"
                 onClick={handleClick}
-              >
-                <p>Stäng</p>
-              </button>
+              />
             </div>
           </div>
         </article>
