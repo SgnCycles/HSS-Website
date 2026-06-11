@@ -60,7 +60,7 @@ const VaraLokalerMobile = () => {
         <div className="container flex flex-col justify-center">
           <h2 className="heading-3">Boka Myset</h2>
           <p className="paragraph-light">Vi hyr gärna ut till scoutkårer, skolklasser och andra grupper.</p>
-          <Link target="_blank" href="" className="paragraph-light underline underline-offset-2 text-blue-900">Se planlösning →</Link>
+          <Link target="_blank" href="/pdf/myset_plan.pdf" className="paragraph-light underline underline-offset-2 text-blue-900">Se planlösning →</Link>
           <Button
             ariaLabel="skicka bokningsförfrågan"
             href="mailto:myset.hss.scout@gmail.com"

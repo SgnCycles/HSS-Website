@@ -1,8 +1,26 @@
+"use client"
+
 import Image from "next/image";
 import Button from "@/components/buttons/Button";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import CloseButton from "@/components/buttons/CloseButton";
 
 const VaraLokalerDesktop = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "initial"
+    }
+  },[isOpen])
+
   return (
     <section className="hidden lg:flex lg:flex-col">
       <article className="container flex flex-col justify-center pb-0 items-start">
@@ -48,7 +66,25 @@ const VaraLokalerDesktop = () => {
         <div className="container flex flex-col justify-center">
           <h2 className="heading-3">Boka Myset</h2>
           <p className="paragraph-light">Vi hyr gärna ut till scoutkårer, skolklasser och andra grupper.</p>
-          <Link target="_blank" href="" className="paragraph-light underline underline-offset-2 text-blue-900">Se planlösning →</Link>
+          <button onClick={handleClick} className="paragraph-light underline underline-offset-2 text-blue-900 cursor-pointer">Se planlösning →</button>
+          {isOpen && (
+            <div className="fixed w-full h-full z-50 top-0 left-0 flex items-center justify-center">
+              <div
+                className="absolute w-full h-full bg-black/40 backdrop-blur-sm"
+                onClick={() => handleClick}
+              ></div>
+              <article className="bg-background p-6 z-10 w-[80%]">
+                <Image src="/images/Body/myset_plan.png" height={1000} width={1000} alt="Planlösning av Myset" className="w-[80%] h-auto"/>
+                <div className="flex justify-end">
+                  <CloseButton
+                    ariaLabel="Close the window"
+                    text="Stäng"
+                    onClick={handleClick}
+                  />
+                </div>
+              </article>
+            </div>
+          )}
           <Button
             ariaLabel="skicka bokningsförfrågan"
             href="mailto:myset.hss.scout@gmail.com"
