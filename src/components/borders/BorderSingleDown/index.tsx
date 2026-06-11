@@ -4,6 +4,7 @@ export default function BorderSingleDown({ variant= "" }: CommonType) {
   return (
     <svg 
       className={`pt-4 z-2 md:pt-6 lg:pt-8 h-auto w-full rotate-180 -mt-px ${variant}`}
+      aria-hidden
       xmlns="http://www.w3.org/2000/svg" 
       width="1920.785" 
       height="152" 
