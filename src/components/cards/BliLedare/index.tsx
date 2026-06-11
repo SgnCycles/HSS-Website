@@ -15,7 +15,7 @@ const BliLedareHome = () => {
             className="h2-icon"
           />
           <h2 className="heading-2 text-white">
-            <span className="text-accent">Bli ledare - </span><span>vi utbildar dig!</span>
+            <span className="text-accent">Bli ledare </span><span className="hidden sm:inline-block">- vi utbildar dig!</span>
           </h2>
         </div>
         <p className="paragraph-light text-muted">

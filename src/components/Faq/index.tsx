@@ -31,7 +31,7 @@ export default function FaqCard() {
           >
             <button className="flex justify-between w-full items-center">
               <h3 className="heading-3 text-left">{item.title}</h3>
-              <Image src="/Icons/nav-arrow.svg" alt="" width={24} height={24} />
+              <Image src="/Icons/nav-arrow.svg" alt="" width={24} height={24} className={`cursor-pointer transition-transform duration-300 ${activeIndex === index ? "rotate-180" : "rotate-0"}`} />
             </button>
              {activeIndex === index && (
               <div>
