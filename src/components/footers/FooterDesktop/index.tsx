@@ -129,7 +129,7 @@ const FooterDesktop = () => {
               @hss_scout
             </Link>
           </FooterContact>
-          <FooterContact title={t("org_nr")} icon={null}>
+          <FooterContact title="Org.nr" icon={null}>
             <p className="text-white font-body text-[14px] font-medium md:text-[20px]">
               802006-2389
             </p>
