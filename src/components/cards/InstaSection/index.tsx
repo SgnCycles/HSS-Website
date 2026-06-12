@@ -70,13 +70,10 @@ export default function InstaSection() {
                   <span className="pl-1.5">{post.commentsCount}</span>
                 </div>
               </Link>
-              <div className="mt-4 px-2">
+              <div className="mt-4 px-2 pb-4.5">
                 <p className="text-sm line-clamp-2">
                   <span className="font-bold">{userName}</span> {post.caption}
                 </p>
-                <button className="mt-2 text-sm text-grey-500 font-medium pb-3.5">
-                  See translation
-                </button>
               </div>
             </div>
           );
