@@ -4,8 +4,10 @@ import { registerInfo } from "@/data/registerInformation";
 import GDPR from "@/components/gdpr";
 import { useState } from "react";
 import ReadMoreButton from "@/components/buttons/ReadMoreButton";
+import { useTranslations } from "next-intl";
 
 const PolicyGdpr = () => {
+  const t = useTranslations('policy')
   const [gdpr, setGdpr] = useState<boolean>(false);
 
   const handelGdpr = () => {
@@ -16,12 +18,12 @@ const PolicyGdpr = () => {
     <section>
       <article className="container">
         <div className="bg-blue-100 border card border-blue-500 rounded-sm">
-          <h4 className="heading-4 mb-3">Uppgifter vi registrerar</h4>
+          <h4 className="heading-4 mb-3">{t(`gdpr.title`)}</h4>
           <ul className="pl-5">
             {registerInfo.map((info) => {
               return (
-                <li key={info.id} className="list-disc">
-                  <p className="paragraph-light">{info.infoContent}</p>
+                <li key={info.id} className="list-disc paragraph-light">
+                  {t(`gdpr.${info.id}.text`)}
                 </li>
               );
             })}
@@ -35,16 +37,14 @@ const PolicyGdpr = () => {
               className="w-8 h-8 mr-2 mt-0.5"
             />
             <p className="paragraph-light">
-              Uppgifter om syskon och föräldrar används för att erbjuda
-              syskonförtur och prioritera barn vars föräldrar har en roll i
-              kåren. Vi skriver aldrig in hälsouppgifter i Scoutnet.
+              {t(`gdpr.paragraph`)}
             </p>
           </div>
           <div className=" flex justify-end">
             <ReadMoreButton
               ariaLabel=""
               variant="primaryBlue"
-              text="Läs hela GDPR"
+              text={t(`gdpr.button`)}
               onClick={handelGdpr}
             />
           </div>

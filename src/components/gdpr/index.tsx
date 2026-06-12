@@ -1,65 +1,43 @@
+import { useTranslations } from "next-intl";
 import CloseButton from "../buttons/CloseButton";
+import Link from "next/link";
 
 export default function GDPR({ handelGdpr }: { handelGdpr: () => void }) {
+  const t = useTranslations(`policy.gdpr.popUp`)
   return (
     <div className="bg-background fixed inset-0 w-screen mx-auto overflow-y-auto z-50">
       <div className="container">
         <p className="paragraph-light ">
-          Vi är måna om att du ska känna dig trygg i dina kontakter med oss.
-          Därför vill vi berätta om vår hantering av personuppgifter och om den
-          nya dataskyddsförordningen (GDPR) som gäller i hela EU från och med
-          den 25 maj 2018.
+          {t(`paragraph1`)}
         </p>
         <p className="paragraph-light">
-          Scouterna (802006-2942) är tillsammans med din lokala scoutkår
-          gemensamt personuppgiftsansvarig för de uppgifter du lämnar till oss.
+          {t(`paragraph2`)}
         </p>
         <p className="paragraph-light">
-          De personuppgifter vi samlar in och behandlar är framför allt sådana
-          som du själv uppger till oss (som personnummer, namn, adress,
-          e-postadress, telefonnummer) när du ansöker om medlemskap.
+          {t(`paragraph3`)}
         </p>
         <p className="paragraph-light">
-          Vi behöver dessa uppgifter för att hantera din medlemsansökan och
-          administrera ditt medlemskap hos oss. Dessutom skickar vi dig
-          medlemstidning, nyhetsbrev, erbjudandet från scoutshopen, erbjudanden
-          om deltaganden i olika aktiviteter som t.ex. läger, kurser och
-          arrangemang. Dina uppgifter behöver behandlas av oss för att vi ska
-          kunna fullgöra våra skyldigheter gentemot dig som medlem.
+          {t(`paragraph4`)}
         </p>
         <p className="paragraph-light">
-          Vi delar inte dina personuppgifter med andra, utom när vi har ett
-          avtal med en tredje part. Det kan vara företag som förmedlar
-          betalningar, trycker och skickar vår medlemstidning, beviljar bidrag
-          till oss, eller på annat sätt är viktiga för vår verksamhet.
+          {t(`paragraph5`)}
         </p>
         <p className="paragraph-light">
-          Du har rätt att begära tillgång till, rättelse eller under vissa
-          förutsättningar radering av personuppgifter eller begränsning av
-          behandling som rör dig. Tänk då på att det kan innebära att vi inte
-          kan fullgöra våra förpliktelser gentemot dig som medlem. Du har vidare
-          rätt att invända mot behandlingen. Som medlem med en registrerad
-          e-postadress, kan du skapa en inloggning och logga in i
-          medlemssystemet Scoutnet och kontrollera att vi har rätt uppgifter om
-          dig. Då kan du också korrigera dina uppgifter om någonting ändrats,
-          t.ex. om byter adress m.m.
+          {t(`paragraph6`)}
         </p>
         <p className="paragraph-light">
-          Om du har frågor om vår behandling av personuppgifter är du välkommen
-          att kontakta oss på scoutnet@scouterna.se
+          {t(`paragraph7`)} <Link className="text-blue-500 transition-all duration-100 hover:text-accent" href="emailto:scoutnet@scouterna.se">scoutnet@scouterna.se</Link> 
         </p>
         <p className="paragraph-light">
-          Utöver detta kan din lokala scoutkår behöva behandla dina
-          personuppgifter för andra ändamål som i så fall specificeras här
-          nedan.{" "}
+          {t(`paragraph8`)}
         </p>
         <p className="paragraph-light">
-          Kårspecifik information kring personuppgiftshantering
+          {t(`paragraph9`)}
         </p>
         <div className="flex justify-end">
           <CloseButton
             ariaLabel=""
-            text="Stäng"
+            text={t(`closeBtn`)}
             onClick={handelGdpr}
           />
         </div>
