@@ -169,7 +169,6 @@ export type BlirScoutStepsType = {
 }
 
 export type RegisterInfoProps = {
-
   id: number,
   infoContent: string
 }

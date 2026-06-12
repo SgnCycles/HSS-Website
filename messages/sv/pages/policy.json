@@ -1,0 +1,59 @@
+{
+  "policy": {
+    "pageTitle": "Trygga Möten",
+    "subTitle": "Hajker och läger",
+    "pdfButton": "Läs hela PDF",
+    "contactKey": "Kontakta oss",
+    "paragraph1": "Endast ledare och styrelse inom HSS har tillgång till registret. Information kan inte laddas ned från hemsidan. Relevanta uppgifter delas med kommunen för bidragsrapportering.",
+    "paragraph2": "Inför hajker och läger samlar ledarna in kompletterande uppgifter via mejl eller webbformulär. Detta för att kunna planera och genomföra aktiviteten på ett säkert sätt.",
+    "safeMeetingsParagraph": "Scouterna centralt initierade arbetet med Trygga Möten 2005 för att stärka ledare i att agera när barn och unga far illa. Målet är att ha en bred kunskap om potentiella risker för att förebygga diskriminering och övergrepp. Hässelby Strands Sjöscoutkår arbetar fortsatt aktivt för att alla medlemmar ska känna sig trygga i verksamheten, och styrelsen har därför antagit denna policy den 12 oktober 2025.",
+    "lifejacket": {
+      "title": "HSS flytväst policy",
+      "paragraph1": "Det finns tydliga riktlinjer för vilken typ av flytväst som ska användas i kårens verksamhet.",
+      "paragraph2": "Grundregeln är att flytväst alltid ska bäras på bryggor och i båtar. Scouter utan godkänd simkunnighet (200 m) ska ha räddningsväst (minst 90 N), medan simkunniga scouter kan använda seglarväst (minst 45 N).",
+      "paragraph3": "Policyn innehåller också specifika krav på grenrem och avråder från uppblåsbara flytvästar på grund av praktiska säkerhetsrisker."
+    },
+    "photo": {
+      "title": "Vår fotopolicy",
+      "paragraph1": "Vi fotograferar våra aktiviteter och använder bilderna på vår hemsida och i sociala medier för att göra reklam för vår verksamhet. Vi publicerar aldrig namn på våra scouter. Genom att vara medlem i HSS samtycker man till detta.",
+      "paragraph2": "Om ditt barn av någon anledning inte får vara med på bild så kontakta ledarna så att de får kännedom om det."
+    },
+    "info": {
+      "title": "Så hanterar vi dina uppgifter",
+      "subTitle": "Scoutnet — medlemsregistret",
+      "paragraph1": "HSS värnar om din integritet. Här förklarar vi vilka uppgifter vi samlar in, varför vi gör det och hur länge de sparas.",
+      "paragraph2": "Scoutnet är Scouternas gemensamma medlemsregister. Där samlar vi in uppgifter om varje medlem för att veta vilka våra medlemmar är, nå ut med information, registrera närvaro, hantera fakturering och se avdelnings- och patrulltillhörighet."
+    },
+    "gdpr": {
+      "title": "Uppgifter vi registrerar",
+      "1": {"text": "Namn, personnummer och adress"},
+      "2": {"text": "Telefonnummer (minst en vårdnadshavares för omyndig scout)"},
+      "3": {"text": "E-postadress (minst en vårdnadshavares adress för omyndig scout)"},
+      "4": {"text": "Avdelning, patrull och startdatum"},
+      "5": {"text": "Medlemsavgift och ev. utmärkelser"},
+      "6": {"text": "Ev. uppgifter om syskon och vårdnadshavares roll i kåren"},
+      "7": {"text": "För ledare: genomförda utbildningar och roll i kåren"},
+      "paragraph": "Uppgifter om syskon och vårdnadshavare används för att erbjuda syskonförtur och prioritera barn vars vårdnadshavare har en roll i kåren. Vi skriver aldrig in hälsouppgifter i Scoutnet.",
+      "button": "Läs hela GDPR",
+      "popUp": {
+        "paragraph1": "Vi är måna om att du ska känna dig trygg i dina kontakter med oss. Därför vill vi berätta om vår hantering av personuppgifter och om den nya dataskyddsförordningen (GDPR) som gäller i hela EU från och med den 25 maj 2018.",
+        "paragraph2": "Scouterna (802006-2942) är tillsammans med din lokala scoutkår gemensamt personuppgiftsansvarig för de uppgifter du lämnar till oss.",
+        "paragraph3": "De personuppgifter vi samlar in och behandlar är framför allt sådana som du själv uppger till oss (som personnummer, namn, adress, e-postadress, telefonnummer) när du ansöker om medlemskap.",
+        "paragraph4": "Vi behöver dessa uppgifter för att hantera din medlemsansökan och administrera ditt medlemskap hos oss. Dessutom skickar vi dig medlemstidning, nyhetsbrev, erbjudandet från scoutshopen, erbjudanden om deltaganden i olika aktiviteter som t.ex. läger, kurser och arrangemang. Dina uppgifter behöver behandlas av oss för att vi ska kunna fullgöra våra skyldigheter gentemot dig som medlem.",
+        "paragraph5": "Vi delar inte dina personuppgifter med andra, utom när vi har ett avtal med en tredje part. Det kan vara företag som förmedlar betalningar, trycker och skickar vår medlemstidning, beviljar bidrag till oss, eller på annat sätt är viktiga för vår verksamhet.",
+        "paragraph6": "Du har rätt att begära tillgång till, rättelse eller under vissa förutsättningar radering av personuppgifter eller begränsning av behandling som rör dig. Tänk då på att det kan innebära att vi inte kan fullgöra våra förpliktelser gentemot dig som medlem. Du har vidare rätt att invända mot behandlingen. Som medlem med en registrerad e-postadress, kan du skapa en inloggning och logga in i medlemssystemet Scoutnet och kontrollera att vi har rätt uppgifter om dig. Då kan du också korrigera dina uppgifter om någonting ändrats, t.ex. om byter adress m.m.",
+        "paragraph7": "Om du har frågor om vår behandling av personuppgifter är du välkommen att kontakta oss på",
+        "paragraph8": "Utöver detta kan din lokala scoutkår behöva behandla dina personuppgifter för andra ändamål som i så fall specificeras här nedan.",
+        "paragraph9": "Kårspecifik information kring personuppgiftshantering",
+        "closeBtn": "Stäng"
+      }
+    },
+    "gatheredInfo": {
+      "title": "Uppgifter som samlas in",
+      "1": { "text": "Namn och föräldrars telefonnummer under hajken" },
+      "2": { "text": "Matrelaterade faktorer — allergier och preferenser" },
+      "3": { "text": "Hälsouppgifter — medicinering och diagnoser" },
+      "4": { "text": "Övrig information relevant för planering och omsorg" }
+    }
+  }
+}
