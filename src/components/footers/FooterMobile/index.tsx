@@ -40,7 +40,7 @@ const FooterMobile = () => {
           </FooterContact>
         </div>
         <div className="grid grid-cols-[3fr_2fr] md:grid-cols-[2fr_1fr] justify-between py-3">
-          <FooterContact title={t('org_nr')}  icon={null}>
+          <FooterContact title="Org.nr" icon={null}>
             <p className="text-white font-body text-[14px] font-medium">802006-2389</p>
           </FooterContact>
           <FooterContact title={t('supported_by')} icon={null}>
