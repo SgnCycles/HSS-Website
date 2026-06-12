@@ -4,8 +4,11 @@ import Link from "next/link";
 import FooterImage from "../FooterImage"
 import FooterLocation from "../FooterLocation";
 import FooterContact from "../FooterContact";
+import { useTranslations } from "next-intl";
 
 const FooterDesktop = () => {
+
+  const t = useTranslations('footer')
   return (
     <footer className="hidden md:block">
       <FooterImage />
@@ -21,7 +24,7 @@ const FooterDesktop = () => {
       <div className="bg-blue-900 flex justify-between pt-25 px-10 pb-10 gap-5">
         <section aria-labelledby="footer-location" className="flex flex-col w-[25%] justify-between">
           <h2 id="footer-location" className="font-heading text-yellow-500 font-bold text-[26px]">
-            Våra lokaler
+            {t('our_premises')}
           </h2>
           <address className="not-italic">
             <ul>
@@ -44,9 +47,9 @@ const FooterDesktop = () => {
             Hässelby Strands Sjöscoutkår
           </h2>
           <p className="font-body text-grey-300 text-[22px]">
-            En stolt del av Scouterna sedan 1959.
+           {t('footer_about_description_1')}
             <br />
-            Vi ger barn och ungdomar äventyr, sjömanskap och <br></br>gemenskap vid Hässelby Strand.
+           {t('footer_about_description_2')}
           </p>
           <div className="w-69.75">
             <Image
@@ -74,7 +77,7 @@ const FooterDesktop = () => {
 
         <section aria-labelledby="footer-contact" className="flex flex-col w-[25%] justify-between">
           <h2 id="footer-contact" className="sr-only">
-            Kontaktinformation
+           {t('contact_information')}
           </h2>
           <FooterContact title="Kontakt" icon="yellow-envelope-icon.svg">
             <Link target="_blank" href="mailto:info@hss-scout.org">
