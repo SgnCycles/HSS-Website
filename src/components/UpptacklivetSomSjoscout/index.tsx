@@ -4,11 +4,10 @@ import InstaFeedCard from "../cards/InstaSection";
 
 export default function UpptäckLivetSomSjöscout() {
   return (
-
     <section className=" bg-blue-100">
       <div className="container">
         <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
-          <div className="self-center lg:self-baseline">
+          <div className="self-center lg:self-baseline pb-0 xl:pb-6">
             <h2 className="flex heading-2 items-center justify-between">
               <Image
                 src="/Icons/yellow-instagram-icon.svg"
@@ -26,10 +25,14 @@ export default function UpptäckLivetSomSjöscout() {
           <div className="flex flex-col md:flex-row items-center gap-6 w-full order-1 md:order-2">
             <p className="paragraph flex-1 order-1 md:order-2 mb-0">
               Kliv in i vår vardag, läger, segling, knutar och kamratskap. Se
-              våra äventyr, vänskap och minnen som vi skapar tillsammans.{" "}
-              <span className="paragraph text-primary font-extrabold flex-1">
+              våra äventyr, vänskap och minnen som vi skapar tillsammans.
+              <Link
+                className="paragraph text-primary font-extrabold flex-1"
+                href="https://www.instagram.com/hss_scout/"
+                target="_blank"
+              >
                 @hss_scout
-              </span>
+              </Link>
             </p>
             <Link
               target="blank"
@@ -44,9 +47,9 @@ export default function UpptäckLivetSomSjöscout() {
                 height={40}
                 className="w-10 h-10 pr-2"
               />
-              <h3 className="heading-3 text-accent">
+              <p className="heading-3 text-accent">
                 Följ oss<span className="pl-1">&#8594;</span>
-              </h3>
+              </p>
             </Link>
           </div>
           <div className="w-full order-2 md:order-3">
@@ -55,6 +58,5 @@ export default function UpptäckLivetSomSjöscout() {
         </div>
       </div>
     </section>
-
   );
 }

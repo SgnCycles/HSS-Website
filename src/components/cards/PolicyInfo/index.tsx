@@ -4,7 +4,7 @@ const PolicyInfo = () => {
   return (
     <section className="container">
       <article>
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/document-icon.svg"
             alt=""
@@ -19,7 +19,7 @@ const PolicyInfo = () => {
           samlar in, varför vi gör det och hur länge de sparas.
         </p>
         <h4 className="heading-4">Scoutnet — medlemsregistret</h4>
-        <p className="paragraph-light">
+        <p className="paragraph-light mb-0">
           Scoutnet är Scouternas gemensamma medlemsregister. Där samlar vi in
           uppgifter om varje medlem för att veta vilka våra medlemmar är, nå ut
           med information, registrera närvaro, hantera fakturering och se

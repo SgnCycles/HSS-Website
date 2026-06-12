@@ -3,31 +3,31 @@ import { pageHeaderImageType } from "../types/types"
 export const pageHeaderImage: pageHeaderImageType[] = [
   {
     path: "/vad-gor-vi",
-    image: "bliScout_hero.png"
+    image: "bliScout_hero.jpg"
   },
   {
     path: "/aldersgrupper",
-    image: "aldersgrupp_hero.png"
+    image: "aldersgrupp_hero.JPG"
   },
   { 
     path: "/bli-ledare",
-    image: "bliLedare_hero.png"
+    image: "bliLedare_hero.jpeg",
   },
   { 
     path: "/trygghet-och-sakerhet",
-    image: "sakerhet&trygghet_hero.png"
+    image: "sakerhet&trygghet_hero.JPEG"
   },
   { 
     path: "/engagera-dig-som-vuxen",
-    image: "engageraDig_hero.png"
+    image: "engageraDig_hero.JPEG"
   },
   { 
     path: "/bra-att-veta",
-    image: "braAttVeta_hero.png"
+    image: "braAttVeta_hero.jpg"
   },
   { 
     path: "/vanliga-fragor",
-    image: "faq_hero.png"
+    image: "faq_hero.jpg"
   },
   { 
     path: "/scoutmarken",
@@ -35,15 +35,15 @@ export const pageHeaderImage: pageHeaderImageType[] = [
   },
   { 
     path: "/aret-i-hss",
-    image: "aretiHss_hero.png"
+    image: "aretiHss_hero.JPEG"
   },
   { 
     path: "vilka-ar-vi",
-    image: "vilkaArVi_hero.png"
+    image: "vilkaArVi_hero.jpg"
   },
   { 
     path: "/vara-batar",
-    image: "varBattar_hero.png"
+    image: "varaBattar_hero.JPEG"
   },
   { 
     path: "/vara-lokaler",
@@ -51,6 +51,6 @@ export const pageHeaderImage: pageHeaderImageType[] = [
   },
   { 
     path: "/policy",
-    image: "policy_hero.png"
+    image: "policy_hero.jpg"
   },
 ]

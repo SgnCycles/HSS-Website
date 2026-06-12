@@ -14,7 +14,7 @@ const HeaderHome = () => {
       <section className="grid grid-cols-1 grid-rows-[1fr_auto_auto] w-full h-full relative overflow-hidden items-end">
         <Image
           className="row-start-1 row-end-2 md:row-end-4 w-screen h-full object-cover bg-linear-to-bl from-primary to-blue-100"
-          src={"/images/Hero/home_hero_v3.JPEG"}
+          src={"/images/Hero/header_home_hero.JPEG"}
           alt=""
           fill
           priority
