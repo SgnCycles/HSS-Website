@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import AgeGroupPageMobile from "@/components/cards/AgeGroupCardMobile";
 import AgeGroupPageDesktop from "@/components/cards/AgeGroupCardDesktop";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "HSS - Åldersgrupper",
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
 };
 
 const AgeGroupPage = () => {
+
+  const t = useTranslations("aldersgrupper");
+
   return (
     <main
       id="main-content"
@@ -26,12 +30,11 @@ const AgeGroupPage = () => {
                 alt=""
                 className="h1-icon"
               />
-              <h1 className="heading-1">Åldersgrupper</h1>
+              <h1 className="heading-1">{t("title")}</h1>
             </div>
             <div className="flex sm:justify-between pb-6">
               <p className="paragraph-light">
-                Oavsett ålder finns det en plats för dig i HSS. Varje avdelning
-                har sin egen karaktär och sina egna äventyr.
+                {t("intro")}
               </p>
             </div>
           </div>

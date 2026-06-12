@@ -1,0 +1,91 @@
+{
+  "aldersgrupper": {
+    "title": "Age Groups",
+    "intro": "Whatever your age, there is a place for you at HSS. Each section has its own character and its own adventures.",
+    "readMore": "Read more",
+    "readMoreHere": "Read more",
+    "close": "Close",
+    "apply": "Apply",
+    "groups": {
+      "sjohumlorna": {
+        "title": "Sjöhumlorna",
+        "ageGroup": "Trail Scouts",
+        "ageRange": "8-9 years",
+        "subtitle": "Knots, nature skills, and dinghy sailing. Whittling with a knife or putting a bandage on someone who got hurt.",
+        "info": "At the age of 8, when starting Year 2, you can join HSS. We meet every week and go on overnights, hikes, and camps. Children learn knots, nature skills, and seamanship in a playful way. In Scouts you learn by doing things for real — for example whittling with a knife, applying bandages, and working together in patrols where everyone has a say. We also sail Optimist dinghies and two-kronor boats together.",
+        "info_block_one": "At the age of 8, when starting Year 2, you can join HSS.",
+        "info_block_two": "We meet every week and go on overnights, both short hikes and longer camps. Children learn knots, basic nature skills, and seamanship in a playful way.",
+        "info_block_three": "You learn something new almost every day in Scouts — it is always fun, but sometimes also very useful to know. Like whittling with a knife or putting a bandage on someone who got hurt. Unlike at school, we don't read books about knives and bandages — we learn by doing, by trying everything for real instead.",
+        "info_block_four": "While we do that, we work together in patrols — small groups where everyone has a say. That is smart, because together you can always help each other come up with even more fun things to do. We sail Optimist dinghies and two-kronor boats.",
+        "info_block_five": "",
+        "info_block_six": "",
+        "meetings": "Meets on Mondays",
+        "price": "Price: 750 SEK/term"
+      },
+
+      "kaparna": {
+        "title": "Kaparna",
+        "ageGroup": "Explorer Scouts",
+        "ageRange": "10-11 years",
+        "subtitle": "Water safety, knife skills, and basic first aid. The level of challenge increases.",
+        "info": "In Kaparna you start at the age of 10 and stay for two years until it is time for the next step. The difficulty of tasks increases in Kaparna. Scouts learn to sail an Optimist and get to try sailing a two-kronor boat and a keelboat. A fully trained Explorer Scout can, among other things, handle a knife, light and extinguish small fires, sail an Optimist independently, and apply basic first aid and water safety. The Kaparna section meets on Tuesdays at our clubhouse Ruffen at Hässelby Strandbad. As a scout you always do your best, but it doesn't matter if things go wrong — that is why we reflect on how things went so we can do better next time.",
+        "info_block_one": "In Kaparna you start at the age of 10 and stay for two years until it is time for the next step.",
+        "info_block_two": "The difficulty of tasks increases in Kaparna. Scouts learn to sail an Optimist and get to try sailing a two-kronor boat and a keelboat.",
+        "info_block_three": "A fully trained Explorer Scout can, among other things, handle a knife, light and extinguish small fires, sail an Optimist independently, and apply basic first aid and water safety.",
+        "info_block_four": "The Kaparna section meets on Tuesdays at our clubhouse Ruffen at Hässelby Strandbad.",
+        "info_block_five": "As a scout you always do your best, but it doesn't matter if things go wrong — that is why we reflect on how things went so we can do better next time.",
+        "info_block_six": "",
+        "meetings": "Meets on Tuesdays",
+        "price": "Price: 850 SEK/term"
+      },
+
+      "konvojen": {
+        "title": "Konvojen",
+        "ageGroup": "Adventure Scouts",
+        "ageRange": "12-14 years",
+        "subtitle": "Serious archipelago sailing, winter hiking in tents, and the legendary ice-hole swim that no one escapes.",
+        "info": "At the age of 12 the doors open to the Adventure Scouts. Over three exciting years you learn useful skills in seamanship and nature. This is where sailing gets serious, heading out into the archipelago in summer. When we are not sailing we practise navigation and take part in traditional land scout activities. In winter, when it is coldest, we go on a proper winter hike sleeping in tents. Another highlight is the traditional ice-hole swim that no patrol scout escapes… Konvojen meets on Thursdays.",
+        "info_block_one": "At the age of 12 the doors open to the Adventure Scouts. Over three exciting years you learn useful skills in seamanship and nature.",
+        "info_block_two": "This is where sailing gets serious, heading out into the archipelago in summer. When we are not sailing we practise navigation and take part in traditional land scout activities.",
+        "info_block_three": "In winter, when it is coldest, we go on a proper winter hike sleeping in tents.",
+        "info_block_four": "Another highlight is the traditional ice-hole swim that no patrol scout escapes…",
+        "info_block_five": "Konvojen meets on Thursdays.",
+        "info_block_six": "",
+        "meetings": "Meets on Thursdays",
+        "price": "Price: 850 SEK/term"
+      },
+
+      "utmanare": {
+        "title": "Utmanare",
+        "ageGroup": "Challenger Scouts",
+        "ageRange": "15+ years",
+        "subtitle": "Sailing independently, making your own decisions, and growing into a leader.",
+        "info": "For Challengers, who are typically in Year 9 and upper secondary school, friends and community matter a great deal. In Scouts, Challengers face bigger tasks in an increasingly international context. Scouts try out the adult role and everyone has space to explore and find their place. As a Challenger Scout you take on great responsibility while it is still perfectly fine to be silly or simply be yourself. Challenger Scouts decide for themselves what they want to do. To make things happen it is useful to run them as projects. A project can be anything from going on a mountain hike to learning to dance salsa. There are also ten challenges, each with its own badge, which work like projects with specific themes.",
+        "info_block_one": "For Challengers, who are typically in Year 9 and upper secondary school, friends and community matter a great deal.",
+        "info_block_two": "In Scouts, Challengers face bigger tasks in an increasingly international context. Scouts try out the adult role and everyone has space to explore and find their place.",
+        "info_block_three": "Challenger Scouts decide for themselves what they want to do. To make things happen it is useful to run them as projects.",
+        "info_block_four": "A project can be anything from going on a mountain hike to learning to dance salsa. There are also ten challenges, each with its own badge, which work like projects with specific themes.",
+        "info_block_five": "",
+        "info_block_six": "",
+        "meetings": "Meets on Tuesdays or Wednesdays",
+        "price": "Price: 850 SEK/term"
+      },
+
+      "familjescouter": {
+        "title": "Familjescouter",
+        "ageGroup": "Young Scouts",
+        "ageRange": "up to 8 years",
+        "subtitle": "Children under eight together with one or more adults experience scouting in a fun and playful way.",
+        "info": "Child and adult take part in activities together, and everything is suited to both big and small. The adult participant is always responsible for the child they have brought along. Having adults in the group makes it possible to do slightly more advanced activities, since adult and child can help each other. The adults are just as much participants as the children, and it is important to plan activities so that both can take an active part.",
+        "info_block_one": "Child and adult take part in activities together, and everything is suited to both big and small.",
+        "info_block_two": "The adult participant is always responsible for the child they have brought along.",
+        "info_block_three": "Having adults in the group makes it possible to do slightly more advanced activities, since adult and child can help each other. The adults are just as much participants as the children, and it is important to plan activities so that both can take an active part.",
+        "info_block_four": "The person joining alongside the child can be a parent, grandparent, relative, family friend, or any other person the child feels comfortable with.",
+        "info_block_five": "In Family Scouting it is the relationship between the child and the adult that should be given space to grow. Each group can set its own guidelines on whether more than one child per adult is allowed and whether older siblings may also be included.",
+        "info_block_six": "",
+        "meetings": "Meets on Fridays",
+        "price": "Price: 550 SEK/term"
+      }
+    }
+  }
+}
