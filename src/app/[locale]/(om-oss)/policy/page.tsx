@@ -7,6 +7,7 @@ import PolicyInfo from "@/components/cards/PolicyInfo";
 import PolicyGdpr from "@/components/cards/PolicyGdpr";
 import PolicyGatheredInfo from "@/components/cards/PolicyGatheredInfo";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "HSS - Policy",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 const PolicyPage = () => {
-
+  const t = useTranslations('policy')
   return (
     <main id="main-content">
       <PolicyIntro />
@@ -28,10 +29,8 @@ const PolicyPage = () => {
       <PolicyGdpr />
       <section className="container">
         <div className="card bg-yellow-100 border border-accent">
-          <p className="paragraph-light">
-            🔒 Endast ledare och styrelse inom HSS har tillgång till registret.
-            Information kan inte laddas ned från hemsidan. Relevanta uppgifter
-            delas med kommunen för bidragsrapportering.
+          <p className="paragraph-light mb-0">
+            🔒 {t(`paragraph1`)}
           </p>
         </div>
       </section>
@@ -44,12 +43,10 @@ const PolicyPage = () => {
             height={30}
             className="h3-icon"
           />
-          <h3 className="heading-3">Hajker och läge</h3>
+          <h3 className="heading-3">{t('subTitle')}</h3>
         </div>
         <p className="paragraph-light">
-          Inför hajker och läger samlar ledarna in kompletterande uppgifter via
-          mejl eller webbformulär. Detta för att kunna planera och genomföra
-          aktiviteten på ett säkert sätt.
+          {t(`paragraph2`)}
         </p>
       </section>
       <PolicyGatheredInfo />

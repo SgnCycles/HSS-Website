@@ -18,7 +18,7 @@ const BliLedareMainSection = () => {
     <>
       {!isOpen && (
         <article className="container">
-          <div className="flex w-full justify-center md:justify-start items-center pb-6">
+          <div className="flex w-full justify-center lg:justify-start items-center pb-6">
             <Image
               src={`/Icons/bliledare_blue.svg`}
               height={30}

@@ -1,0 +1,28 @@
+{
+  "VaraBatarPage": {
+    "title": "Vår nuvarande flotta",
+    "info": "HSS är en av de mest ambitiösa sjöscoutkårer i Sverige. Vi har en bred och varierad flotta som används för både utbildning, segling och säkerhet på vattnet. Våra båtar ger scouter möjlighet att utvecklas från nybörjare till erfarna seglare."
+  },
+  "VaraBatarCard": {
+    "utbildningsjollar": {
+      "title": "Utbildningsjollar (Optimistjollar)",
+      "info": "Apotekarne, Kausarne, Vantarne, Plopp, Cloetta, Snobben, Titanic och övningsseglar"
+    },
+    "tvåkronor": {
+      "title": "Tvåkronor",
+      "info": "Våra tvåkronor används för utbildning och segling i större besättning → Piff och Puff"
+    },
+    "följebåtar": {
+      "title": "Följebåtar",
+      "info": "För säkerhet och stöd vid aktiviteter på vattnet använder vi Tryggve IV och Ebbe"
+    },
+    "viggar": {
+      "title": "Albin Viggar",
+      "info": "Vi har även två Albin Viggar → Lumbago och Cephalea"
+    },
+    "h": {
+      "title": "H-båtar",
+      "info": "Våra H-båtar används för längre seglingar och mer avancerad träning → Nocke, Vendela och Goofy"
+    }
+  }
+}
