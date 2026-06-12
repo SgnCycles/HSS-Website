@@ -14,7 +14,7 @@ const AgeGroupCardHome = () => {
             height={25}
             width={25}
             alt=""
-            className="pb-2"
+            className="h2-icon"
           />
           <h2 className="heading-2">
             Åldersgrupper
@@ -32,6 +32,7 @@ const AgeGroupCardHome = () => {
               href="/aldersgrupper"
               variant="primaryBlue"
               text="Läs mer här"
+              target="_self"
             />
           </div>
         </div>
@@ -40,7 +41,7 @@ const AgeGroupCardHome = () => {
             ageGroupCardContent.map((card, index) => (
               <li
                 key={index}
-                className={`bg-background flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-sm rounded-tr-sm rounded-bl-xs rounded-br-xs overflow-hidden`}
+                className={`bg-background flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-md rounded-tr-md rounded-bl-xs rounded-br-xs overflow-hidden`}
               >
                 <div className="flex md:pt-5 md:pb-5 md:pr-5">
                   <div className="flex justify-center items-center w-[30%]">
@@ -87,6 +88,7 @@ const AgeGroupCardHome = () => {
             href="/aldersgrupper"
             variant="secondaryBlue"
             text="Läs mer om åldersgrupper"
+            target="_self"
           />
         </div>
       </article>

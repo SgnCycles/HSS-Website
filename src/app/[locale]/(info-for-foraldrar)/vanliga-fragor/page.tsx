@@ -1,6 +1,12 @@
 import Button from "@/components/buttons/Button";
 import FaqCard from "@/components/Faq";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+ title: "HSS - Vanliga frågor",
+ description: "Vanliga frågor om scouting - lär dig mer om hur verksamheten fungerar, vad scouter gör, hur du blir medlem och hur trygghet och gemenskap skapas.",
+};
 
 const VanligaFragorPage = () => {
   return (

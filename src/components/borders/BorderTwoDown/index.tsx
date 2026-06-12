@@ -37,7 +37,7 @@ export default function BorderTwoDown({
   }, { scope: containerRef })
 
   return (
-    <div ref={containerRef} className="relative z-2 h-auto overflow-hidden">
+    <div ref={containerRef} aria-hidden className="relative z-2 h-auto overflow-hidden">
       <BorderDown variant={foreground} />
       <div ref={backgroundRef} className="z-1 pb-10 xl:pb-10">
         <BorderDownBeneath variantBackground={background} />

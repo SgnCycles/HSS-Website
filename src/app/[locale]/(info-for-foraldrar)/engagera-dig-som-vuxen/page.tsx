@@ -1,11 +1,20 @@
 import Button from "@/components/buttons/Button";
 import { engageraDigCardContent } from "@/data/engageraDigCardContent";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "HSS - Engagera dig",
+  description:
+    "Som förälder behöver du inget fast uppdrag – även tillfällig hjälp är värdefull för kårens verksamhet och barnens scoutupplevelse.",
+};
 
 const EngageraDigSomVuxenPage = () => {
-
   return (
-    <main id="main-content" className="md:bg-[url(/images/Backgrounds/boatBackground1.png)] bg-no-repeat bg-top-right bg-size-[auto_200px]">
+    <main
+      id="main-content"
+      className="md:bg-[url(/images/Backgrounds/boatBackground1.png)] bg-no-repeat bg-top-right bg-size-[auto_200px]"
+    >
       <section className="container">
         <article>
           <div className="flex w-full justify-center items-center md:justify-start pb-6">
@@ -17,7 +26,8 @@ const EngageraDigSomVuxenPage = () => {
               className="h1-icon"
             />
             <h1 className="heading-1">
-              Engagera dig <span className="hidden sm:inline-block">som vuxen</span>
+              Engagera dig{" "}
+              <span className="hidden sm:inline-block">som vuxen</span>
             </h1>
           </div>
           <p className="paragraph-light">
@@ -50,8 +60,8 @@ const EngageraDigSomVuxenPage = () => {
             Vet du inte var du passar in?
           </h2>
           <p className="paragraph-light text-center md:text-left">
-            Hör av dig så berättar vi mer om vad som behövs just nu.
-            Alla bidrag räknas, stora som små.
+            Hör av dig så berättar vi mer om vad som behövs just nu. Alla bidrag
+            räknas, stora som små.
           </p>
           <div className="flex justify-end">
             <Button

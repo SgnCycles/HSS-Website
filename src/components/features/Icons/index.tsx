@@ -43,7 +43,7 @@ export default function Icons({ name, size = 24, variant = "text-primary" }: Ico
   if (IconComponent === null) {
     const sizeNum: number = parseInt(size.toString());
     return (
-      <Image src={name} alt={name} width={sizeNum} height={sizeNum} className="xl:mr-3" />
+      <Image src={name} alt="" width={sizeNum} height={sizeNum} className="xl:mr-3" />
     )
   }
   else {
