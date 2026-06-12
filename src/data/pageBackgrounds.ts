@@ -3,7 +3,7 @@ import { pageHeaderImageType } from "../types/types"
 export const pageHeaderImage: pageHeaderImageType[] = [
   {
     path: "/vad-gor-vi",
-    image: "bliScout_hero.jpg"
+    image: "bliScout_hero.JPG"
   },
   {
     path: "/aldersgrupper",
