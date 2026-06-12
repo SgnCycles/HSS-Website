@@ -3,6 +3,7 @@ import { varaBatarCardContent } from "@/data/varaBatarCardContent";
 import Image from "next/image";
 import VaraBatarCard from "@/components/cards/VaraBatarCard";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "HSS - Våra båtar",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 const VaraBatarPage = () => {
+  const t = useTranslations('VaraBatarPage')
   return (
     <main
       id="main-content"
@@ -25,14 +27,9 @@ const VaraBatarPage = () => {
             width={30}
             alt=""
           />
-          <h1 className="heading-1">Vår nuvarande flotta</h1>
+          <h1 className="heading-1">{t('title')}</h1>
         </div>
-        <p className="paragraph-light">
-          HSS är en av de mest ambitiösa sjöscoutkårer i Sverige. Vi har en bred
-          och varierad flotta som används för både utbildning, segling och
-          säkerhet på vattnet. Våra båtar ger scouter möjlighet att utvecklas
-          från nybörjare till erfarna seglare.
-        </p>
+        <p className="paragraph-light">{t('info')}</p>
         <div className="w-screen lg:w-full ml-0 lg:flex lg:justify-center lg:gap-5 lg:flex-row lg:flex-wrap flex flex-col gap-1">
           {varaBatarContent &&
             varaBatarContent.map((image, index) => (
