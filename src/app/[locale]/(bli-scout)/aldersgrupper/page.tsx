@@ -18,7 +18,7 @@ const AgeGroupPage = () => {
       <section className="font-body">
         <article className="md:container md:flex flex-col">
           <div className="container pb-0 pt-0">
-            <div className="flex justify-center sm:justify-start pt-6 pb-4 md:pt-0 md:pb-0">
+            <div className="flex w-full justify-center lg:justify-start items-center pb-6 pt-6 lg:pt-0">
               <Image
                 src="/Icons/anchor-icon.svg"
                 height={25}
@@ -28,7 +28,7 @@ const AgeGroupPage = () => {
               />
               <h1 className="heading-1">Åldersgrupper</h1>
             </div>
-            <div className="flex sm:justify-between">
+            <div className="flex sm:justify-between pb-6">
               <p className="paragraph-light">
                 Oavsett ålder finns det en plats för dig i HSS. Varje avdelning
                 har sin egen karaktär och sina egna äventyr.

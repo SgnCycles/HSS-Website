@@ -29,7 +29,7 @@ const PolicyPage = () => {
       <PolicyGdpr />
       <section className="container">
         <div className="card bg-yellow-100 border border-accent">
-          <p className="paragraph-light">
+          <p className="paragraph-light mb-0">
             🔒 {t(`paragraph1`)}
           </p>
         </div>
@@ -43,7 +43,7 @@ const PolicyPage = () => {
             height={30}
             className="h3-icon"
           />
-          <h3 className="heading-3"></h3>
+          <h3 className="heading-3">{t('subTitle')}</h3>
         </div>
         <p className="paragraph-light">
           {t(`paragraph2`)}

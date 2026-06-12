@@ -7,7 +7,7 @@ const PolicyIntro = () => {
   return (
     <section className="bg-blue-100">
       <article className="container">
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/anchor-icon.svg"
             alt=""

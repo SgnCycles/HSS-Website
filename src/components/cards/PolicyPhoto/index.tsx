@@ -8,7 +8,7 @@ const PolicyPhoto = () => {
   return (
     <section className="relative bg-yellow-100">
       <article className="container">
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/camera-icon.svg"
             alt=""
@@ -23,7 +23,6 @@ const PolicyPhoto = () => {
           <br />
           {p('paragraph2')}
         </p>
-
         <div className="text-end">
           <Button
             ariaLabel=""

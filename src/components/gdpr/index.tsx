@@ -26,7 +26,7 @@ export default function GDPR({ handelGdpr }: { handelGdpr: () => void }) {
           {t(`paragraph6`)}
         </p>
         <p className="paragraph-light">
-          {t(`paragraph7`)} <Link className="text-blue-500 transition-all duration-100 hover:text-accent" href="emailto:scoutnet@scouterna.se">scoutnet@scouterna.se</Link> 
+          {t(`paragraph7`)} <Link rel="noopener noreferrer" target="_blank" className="text-blue-500 transition-all duration-100 hover:text-accent" href="mailto:scoutnet@scouterna.se?subject=GDPR">scoutnet@scouterna.se</Link> 
         </p>
         <p className="paragraph-light">
           {t(`paragraph8`)}

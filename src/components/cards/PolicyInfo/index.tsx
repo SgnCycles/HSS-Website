@@ -6,7 +6,7 @@ const PolicyInfo = () => {
   return (
     <section className="container">
       <article>
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/document-icon.svg"
             alt=""
@@ -20,7 +20,7 @@ const PolicyInfo = () => {
           {t('paragraph1')}
         </p>
         <h4 className="heading-4">{t('subTitle')}</h4>
-        <p className="paragraph-light">
+        <p className="paragraph-light mb-0">
           {t('paragraph2')}
         </p>
       </article>

@@ -17,7 +17,7 @@ const EngageraDigSomVuxenPage = () => {
     >
       <section className="container">
         <article>
-          <div className="flex w-full justify-center items-center md:justify-start pb-6">
+          <div className="flex w-full justify-center items-center lg:justify-start pb-6">
             <Image
               src={`/Icons/engagera-icon.svg`}
               height={30}
@@ -35,7 +35,7 @@ const EngageraDigSomVuxenPage = () => {
             tillfällig hjälp är ovärderlig för kårens vardag.
           </p>
           <div className="flex justify-center items-center">
-            <ul className="cards-column pb-6 md:w-[70%]">
+            <ul className="cards-column pb-6 md:w-[70%] mb-6">
               {engageraDigCardContent &&
                 engageraDigCardContent.map((card, index) => (
                   <li

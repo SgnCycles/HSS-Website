@@ -8,7 +8,7 @@ const VaraBatarCard = (content: varaBatarCardContentType) => {
   return (
     <li>
       <section className="flex flex-col items-center">
-        <h2 className="heading-3 text-center">{title}</h2>
+        <h2 className="heading-3 text-center pb-6">{title}</h2>
         <p className="paragraph-light text-center">{description}</p>
         <div className="w-screen lg:w-full ml-0 lg:flex lg:justify-center lg:gap-5 lg:flex-row lg:flex-wrap flex flex-col gap-1">
           {boatImage && boatImage.map((boat, index) =>

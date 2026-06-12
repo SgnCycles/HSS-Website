@@ -7,8 +7,8 @@ const PolicyLifejackets = () => {
   return (
     <section>
       <article className="flex flex-col md:flex-row container">
-        <div>
-          <div className="flex justify-center md:justify-start">
+        <div className="flex flex-col justify-between">
+          <div className="flex justify-center md:justify-start pb-6">
             <Image
               src="/Icons/check-icon.svg"
               alt=""
@@ -28,9 +28,9 @@ const PolicyLifejackets = () => {
             {t(`lifejacket.paragraph3`)}
           </p>
         </div>
-        <div className="">
+        <div className="pl-6 grid place-items-center">
           <Image
-            src="/images/Body/policy_body1.png"
+            src="/images/Body/policy_lifejacket.png"
             alt=""
             width={300}
             height={300}

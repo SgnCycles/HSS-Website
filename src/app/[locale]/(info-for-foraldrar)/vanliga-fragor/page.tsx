@@ -15,7 +15,7 @@ const VanligaFragorPage = () => {
       id="main-content"
     >
       <article className="container">
-        <div className="flex justify-center sm:justify-start pt-6 pb-4 md:pt-0 md:pb-0">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/yellowquestion.svg"
             height={25}
