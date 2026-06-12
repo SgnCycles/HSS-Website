@@ -7,7 +7,7 @@ export default function UpptäckLivetSomSjöscout() {
     <section className=" bg-blue-100">
       <div className="container">
         <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
-          <div className="self-center lg:self-baseline pb-0 xl:pb-6">
+          <div className="self-center lg:self-baseline pb-0">
             <h2 className="flex heading-2 items-center justify-between">
               <Image
                 src="/Icons/yellow-instagram-icon.svg"
