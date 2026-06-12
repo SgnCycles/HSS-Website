@@ -1,0 +1,28 @@
+{
+  "VaraBatarPage": {
+    "title": "Our current fleet",
+    "info": "HSS is one of the most ambitious sea scout corps in Sweden. We have a wide and varied fleet that is used for both education, sailing and safety on the water. Our boats give scouts the opportunity to develop from beginners to experienced sailors."
+  },
+  "VaraBatarCard": {
+    "utbildningsjollar": {
+      "title": "Training dinghies (Optimist dinghies)",
+      "info": "Apotekarne, Kausarne, Vantarne, Plopp, Cloetta, Snobben, Titanic and practice sails"
+    },
+    "tvåkronor": {
+      "title": "Two Crowns",
+      "info": "Our Two Crowns boats are used for training and sailing in larger crews → Piff and Puff"
+    },
+    "följebåtar": {
+      "title": "Safety boat",
+      "info": "For safety and support during activities on the water we use Tryggve IV and Ebbe"
+    },
+    "viggar": {
+      "title": "Albin Viggar",
+      "info": "We also have two Albin Viggars → Lumbago and Cephalea"
+    },
+    "h": {
+      "title": "H-boats",
+      "info": "Our H-boats are used for longer sailings and more advanced training → Nocke, Vendela and Goofy"
+    }
+  }
+}
