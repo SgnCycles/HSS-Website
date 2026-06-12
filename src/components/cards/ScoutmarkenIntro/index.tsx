@@ -3,7 +3,7 @@ import Button from "@/components/buttons/Button";
 
 const ScoutmarkenIntro = () => {
   return (
-    <article className="container pb-0">
+    <article className="container pb-0 pt-0">
       <p className="paragraph-light">
         Ett märke är så mycket mer än en tygbit. Det visar att du lärt dig
         något, att du varit med om något speciellt eller att du tillhör en viss

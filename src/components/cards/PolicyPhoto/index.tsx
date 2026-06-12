@@ -5,7 +5,7 @@ const PolicyPhoto = () => {
   return (
     <section className="relative bg-yellow-100">
       <article className="container">
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/camera-icon.svg"
             alt=""
@@ -18,7 +18,9 @@ const PolicyPhoto = () => {
         <p className="paragraph-light">
           Vi fotograferar våra aktiviteter och använder bilderna på vår hemsida
           och i sociala medier för att göra reklam för vår verksamhet. Vi
-          publicerar aldrig namn på våra scouter. Genom att vara medlem i HSS
+          publicerar aldrig namn på våra scouter.
+          <br></br>
+          Genom att vara medlem i HSS
           samtycker man till detta. Om ditt barn av någon anledning inte får
           vara med på bild så kontakta ledarna så att de får kännedom om det.
           <br></br>

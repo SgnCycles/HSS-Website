@@ -15,7 +15,7 @@ const BraAttVetaPage = () => {
     <main id="main-content">
       <section className="grid place-items-center bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-cover sm:bg-top-right font-body pb-6">
         <article className="container">
-          <div className="flex justify-center sm:justify-start items-center pb-2 sm:pb-6">
+          <div className="flex justify-center lg:justify-start items-center pb-6">
             <Image
               src="/Icons/yellow-information.svg"
               height={30}
@@ -53,7 +53,7 @@ const BraAttVetaPage = () => {
               width={30}
               alt=""
             />
-            <h2 className="heading-2">
+            <h2 className="heading-2 pb-6">
               Vad är det som skiljer HSS från andra scoutkårer?
             </h2>
           </div>

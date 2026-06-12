@@ -19,7 +19,7 @@ const ScoutmarkenPage = () => {
     <main id="main-content">
       <section className="grid place-items-center font-body">
         <div className="flex justify-center lg:justify-start items-center flex-wrap container pb-0">
-          <div className="flex justify-center sm:justify-start pt-6 pb-4 md:pt-0 md:pb-0">
+          <div className="flex justify-center sm:justify-start pb-6">
             <Image
               src="/Icons/yellow-anchor-icon.svg"
               height={30}
@@ -29,7 +29,7 @@ const ScoutmarkenPage = () => {
             />
             <h1 className="heading-1">Scoutmärken</h1>
           </div>
-          <div className="grid place-items-center ml-4">
+          <div className="grid place-items-center ml-4 pb-6">
             <p className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md">
               Varje märken berättar en historia
             </p>

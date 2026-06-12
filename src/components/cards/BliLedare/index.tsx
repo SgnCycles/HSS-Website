@@ -6,7 +6,7 @@ const BliLedareHome = () => {
   return (
     <section className="bg-primary font-body text-background grid place-items-center">
       <article className="container">
-        <div className="flex w-full justify-center md:justify-start items-center pb-6">
+        <div className="flex w-full justify-center lg:justify-start items-center pb-0 md:pb-6">
           <Image
             src={`/Icons/party-leader-icon.svg`}
             height={30}

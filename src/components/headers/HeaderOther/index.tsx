@@ -7,14 +7,14 @@ const HeaderOther = () => {
   const pathname = usePathname();
   const strippedPath = pathname.replace(/^\/(sv|en)/, "") || "/";
   const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
-  const headerImage = findPage?.image ?? "aldersgrupp_hero.png";
+  const headerImage = findPage?.image ?? "vilkaArVi_hero.jpg";
 
   return (
     <header
       className="h-72 w-full md:h-125 flex flex-col items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(to bottom, #00355F 0%, rgba(0,53,95,0.8) 10%, rgba(0,53,95,0.2) 30%, transparent 100%), url(/images/Hero/${headerImage})`,
-        backgroundPosition: "right",
+        backgroundPosition: "bottom",
       }}
     >
       <Nav />
