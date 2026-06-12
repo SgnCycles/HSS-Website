@@ -79,12 +79,12 @@ const FooterDesktop = () => {
           <h2 id="footer-contact" className="sr-only">
            {t('contact_information')}
           </h2>
-          <FooterContact title="Kontakt" icon="yellow-envelope-icon.svg">
+          <FooterContact title={t('contact_information')} icon="yellow-envelope-icon.svg">
             <Link target="_blank" href="mailto:info@hss-scout.org">
               <p className="text-white pl-2 font-body font-medium text-[16px] md:text-[20px]">info@hss-scout.org</p>
             </Link>
           </FooterContact>
-          <FooterContact title="Följ oss" icon="yellow-instagram-icon.svg">
+          <FooterContact title={t('follow_us')} icon="yellow-instagram-icon.svg">
             <Link
               target="_blank"
               href="https://www.instagram.com/hss_scout"
@@ -94,10 +94,10 @@ const FooterDesktop = () => {
               @hss_scout
             </Link>
           </FooterContact>
-          <FooterContact title="Org.nr" icon={null}>
+          <FooterContact title={t('org_nr')} icon={null}>
             <p className="text-white font-body text-[14px] font-medium md:text-[20px]">802006-2389</p>
           </FooterContact>
-          <FooterContact title="Stöds av" icon={null}>
+          <FooterContact title={t('supported_by')} icon={null}>
             <Link target="_blank" aria-label="postkodlotteriets hemsida" href="https://www.postkodlotteriet.se/">
               <Image
                 src="/images/Logo/postkodlotteriet_logo.svg"
