@@ -2,8 +2,8 @@ import { varaBatarCardContentType } from "@/types/types";
 
 export const varaBatarCardContent: varaBatarCardContentType[] = [
   {
-    title: "Utbildningsjollar (Optimistjollar)",
-    description: "Apotekarne, Kausarne, Vantarne, Plopp, Cloetta, Snobben, Titanic och övningsseglar",
+    titleKey: "utbildningsjollar.title",
+    infoKey: "utbildningsjollar.info",
     waveImage: "wavyLineTransparent.png",
     boatImage: [
       {
@@ -17,8 +17,8 @@ export const varaBatarCardContent: varaBatarCardContentType[] = [
     ]
   },
   {
-    title: "Tvåkronor",
-    description: "Våra tvåkronor används för utbildning och segling i större besättning → Piff och Puff",
+    titleKey: "tvåkronor.title",
+    infoKey: "tvåkronor.info",
     waveImage: "wavyLineTransparent.png",
     boatImage: [
       {
@@ -32,8 +32,8 @@ export const varaBatarCardContent: varaBatarCardContentType[] = [
     ]
   },
   {
-    title: "Följebåtar",
-    description: "För säkerhet och stöd vid aktiviteter på vattnet använder vi Tryggve IV och Ebbe",
+    titleKey: "följebåtar.title",
+    infoKey: "följebåtar.info",
     waveImage: "wavyLineTransparent.png",
     boatImage: [
       {
@@ -47,8 +47,8 @@ export const varaBatarCardContent: varaBatarCardContentType[] = [
     ]
   },
   {
-    title: "Albin Viggar",
-    description: "Vi har även två Albin Viggar → Lumbago och Cephalea",
+    titleKey: "viggar.title",
+    infoKey: "viggar.info",
     waveImage: "wavyLineTransparent.png",
     boatImage: [
       {
@@ -62,8 +62,8 @@ export const varaBatarCardContent: varaBatarCardContentType[] = [
     ]
   },
   {
-    title: "H-båtar",
-    description: "Våra H-båtar används för längre seglingar och mer avancerad träning → Nocke, Vendela och Goofy",
+    titleKey: "h.title",
+    infoKey: "h.info",
     waveImage: "wavyLineTransparent.png",
     boatImage: [
       {
