@@ -1,0 +1,59 @@
+{
+  "policy": {
+    "pageTitle": "Trygga Möten",
+    "subTitle": "Hikes and camps",
+    "pdfButton": "Read full PDF",
+    "contactKey": "Contact ous",
+    "paragraph1": "Only HSS leaders and board members have access to the register. Information cannot be downloaded from the website. Relevant information is shared with the municipality for grant reporting.",
+    "paragraph2": "Before hikes and camps, leaders collect additional information via email or web form in order to plan and carry out the activity safely.",
+    "safeMeetingsParagraph": "Scouterna centrally initiated the work with Trygga Möten (Safe Gatherings) in 2005 to strengthen leaders in acting when children and young people are in harm's way. The goal is to have a broad knowledge of potential risks to prevent discrimination and abuse. Hässelby Strand's Sea Scout Association continues to work actively to ensure that all members feel safe in the activities, and the board has therefore adopted this policy on October 12, 2025.",
+    "lifejacket": {
+      "title": "HSS lifejacket policy",
+      "paragraph1": "There are clear guidelines for what type of life jacket should be used in the corps' activities.",
+      "paragraph2": "The basic rule is that life jackets should always be worn on piers and in boats. Scouts without approved swimming skills (200 m) should wear a life jacket (at least 90 N), while Scouts who can swim can use a life jacket (at least 45 N).",
+      "paragraph3": "The policy also includes specific requirements for crotch straps and discourages inflatable life jackets due to practical safety risks."
+    },
+    "photo": {
+      "title": "Our photo policy",
+      "paragraph1": "We photograph our activities and use the images on our website and in social media to advertise our activities. We never publish the names of our scouts. By being a member of HSS you agree to this.",
+      "paragraph2": "If for some reason your child is not allowed to be in the picture, please contact the leaders so that they are aware of it."
+    },
+    "info": {
+      "title": "How we handle your data",
+      "subTitle": "Scoutnet — membership register",
+      "paragraph1": "HSS protects your privacy. Here we explain what information we collect, why we do it and how long it is stored.",
+      "paragraph2": "Scoutnet is Scouternas joint membership register. There we collect information about each member to know who our members are, reach out with information, register attendance, handle billing and see department and patrol affiliation."
+    },
+    "gdpr": {
+      "title": "Data we collect",
+      "1": {"text": "Name, social security number and address"},
+      "2": {"text": "Telephone number (at least one parent's number for minor scouts)"},
+      "3": {"text": "Email address (at least one parent's address for minor scouts)"},
+      "4": {"text": "Department, patrol and start date"},
+      "5": {"text": "Membership fee and any awards"},
+      "6": {"text": "Information about siblings and parents' role in the union"},
+      "7": {"text": "For leaders: completed training and role in the union"},
+      "paragraph": "Information about siblings and parents is used to offer sibling preference and prioritize children whose parents have a role in the corps. We never enter health information into Scoutnet.",
+      "button": "Read about GDPR",
+      "popUp": {
+        "paragraph1": "We want you to feel secure in your interactions with us. That's why we want to tell you about our handling of personal data and the new General Data Protection Regulation (GDPR) that applies throughout the EU from May 25, 2018.",
+        "paragraph2": "Scouterna (802006-2942) are, together with your local scout corps, jointly responsible for the personal data you provide to us.",
+        "paragraph3": "The personal data we collect and process is primarily that which you provide to us (such as social security number, name, address, email address, telephone number) when you apply for membership.",
+        "paragraph4": "We need this information to handle your membership application and administer your membership with us. In addition, we send you the membership magazine, newsletter, the offer from the scout shop, offers for participation in various activities such as camps, courses and events. Your information needs to be processed by us so that we can fulfill our obligations towards you as a member.",
+        "paragraph5": "We do not share your personal information with others, except when we have an agreement with a third party. These may be companies that process payments, print and send our membership magazine, grant grants to us, or are otherwise important to our operations.",
+        "paragraph6": "You have the right to request access to, correction or under certain conditions deletion of personal data or restriction of processing concerning you. Please note that this may mean that we cannot fulfill our obligations towards you as a member. You also have the right to object to the processing. As a member with a registered email address, you can create a login and log in to the Scoutnet membership system and check that we have the correct information about you. You can then also correct your information if something has changed, e.g. if you change your address, etc.",
+        "paragraph7": "If you have any questions about our processing of personal data, please contact us at",
+        "paragraph8": "In addition to this, your local scout corps may need to process your personal data for other purposes, which are specified below.",
+        "paragraph9": "Union-specific information regarding personal data processing",
+        "closeBtn": "Close"
+      }
+    },
+    "gatheredInfo": {
+      "title": "Data collected",
+      "1": { "text": "Name and phone number of parents during the hike" },
+      "2": { "text": "Food-related factors — allergies and preferences" },
+      "3": { "text": "Health information — medication and diagnoses" },
+      "4": { "text": "Other information relevant to planning and care" }
+    }
+  }
+}

@@ -1,12 +1,8 @@
-import { CollectedInfoProps } from "@/types/types"
+import { IdProp } from "@/types/common.types"
 
-export const collectedInformation:CollectedInfoProps[]=[
-  {id:1,
-  information:"Namn och föräldrars telefonnummer under hajken"},
-  {id:2,
-  information:"Matrelaterade faktorer — allergier och preferenser"},
-  {id:3,
-  information:"Hälsouppgifter — medicinering och diagnoser"},
-  {id:4,
-  information:"Övrig information relevant för planering och omsorg"}
+export const collectedInformation: IdProp[]=[
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 }
 ]
