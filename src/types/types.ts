@@ -117,8 +117,8 @@ export type VaraBatarContentType = {
 }
 
 export type varaBatarCardContentType = {
-  title: string,
-  description: string,
+  titleKey: string,
+  infoKey: string,
   waveImage: string
   boatImage: {
     image: string,
@@ -168,14 +168,14 @@ export type BlirScoutStepsType = {
   step: string
 }
 
-export type RegisterInfoProps={
+export type RegisterInfoProps = {
 
-  id:number,
-  infoContent:string
+  id: number,
+  infoContent: string
 }
 
-export type CollectedInfoProps={
+export type CollectedInfoProps = {
 
-  id:number,
-  information:string
+  id: number,
+  information: string
 }
