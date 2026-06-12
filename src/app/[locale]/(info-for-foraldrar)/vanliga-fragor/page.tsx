@@ -2,6 +2,7 @@ import Button from "@/components/buttons/Button";
 import FaqCard from "@/components/Faq";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
  title: "HSS - Vanliga frågor",
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
 };
 
 const VanligaFragorPage = () => {
+
+const t = useTranslations("vanliga-fragor")
   return (
     <main
       className="md:bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-top bg-no-repeat bg-cover"
@@ -23,18 +26,16 @@ const VanligaFragorPage = () => {
             alt=""
             className="h1-icon"
           />
-          <h1 className="heading-1">Vanliga frågor</h1>
+          <h1 className="heading-1">{t('faq_title')}</h1>
         </div>
         <p className="paragraph">
-          Här hittar du svar på de vanligaste frågorna om medlemskap, fakturor
-          och ledarskap i HSS.
+         {t('faq_description')}
         </p>
         <FaqCard />
         <section className="bg-[#EEEEEE] border border-grey-300 card mt-6">
           <h4 className="heading-3">Hittade du inte svaret?</h4>
           <p className="paragraph">
-            Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper
-            dig rätt.
+            {t('contact_description')}
           </p>
           <div className="flex justify-end">
             <Button
