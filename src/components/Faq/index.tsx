@@ -21,7 +21,7 @@ export default function FaqCard() {
     return () => document.removeEventListener("mousedown", handlar);
   }, []);
 
-  const t = useTranslations('vanliga-fragor')
+  const t = useTranslations("vanliga-fragor");
 
   return (
     <section className="flex flex-col gap-6" ref={dropDown}>
@@ -34,9 +34,15 @@ export default function FaqCard() {
           >
             <button className="flex justify-between w-full items-center">
               <h3 className="heading-3 text-left">{t(item.titleKey)}</h3>
-              <Image src="/Icons/nav-arrow.svg" alt="" width={24} height={24} className={`cursor-pointer transition-transform duration-300 ${activeIndex === index ? "rotate-180" : "rotate-0"}`} />
+              <Image
+                src="/Icons/nav-arrow.svg"
+                alt=""
+                width={24}
+                height={24}
+                className={`cursor-pointer transition-transform duration-300 ${activeIndex === index ? "rotate-180" : "rotate-0"}`}
+              />
             </button>
-             {activeIndex === index && (
+            {activeIndex === index && (
               <div>
                 <p className="paragraph">{t(item.contentKey)}</p>
               </div>
