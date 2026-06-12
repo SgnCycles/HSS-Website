@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Button from "@/components/buttons/Button";
+import { useTranslations } from "next-intl";
 
 const PolicyPhoto = () => {
+  const t = useTranslations(`policy`) 
+  const p = useTranslations(`policy.photo`) 
   return (
     <section className="relative bg-yellow-100">
       <article className="container">
@@ -13,27 +16,19 @@ const PolicyPhoto = () => {
             height={30}
             className="h2-icon"
           />
-          <h2 className="heading-2">Våra fotopolicy</h2>
+          <h2 className="heading-2">{p('title')}</h2>
         </div>
         <p className="paragraph-light">
-          Vi fotograferar våra aktiviteter och använder bilderna på vår hemsida
-          och i sociala medier för att göra reklam för vår verksamhet. Vi
-          publicerar aldrig namn på våra scouter.
-          <br></br>
-          Genom att vara medlem i HSS
-          samtycker man till detta. Om ditt barn av någon anledning inte får
-          vara med på bild så kontakta ledarna så att de får kännedom om det.
-          <br></br>
-          Om ditt barn av någon anledning inte får vara med på bild så kontakta
-          ledarna så att de får kännedom om det.
+          {p('paragraph1')}
+          <br />
+          {p('paragraph2')}
         </p>
-
         <div className="text-end">
           <Button
-            ariaLabel="mail button"
+            ariaLabel=""
             href="mailto:info@hss-scout.org"
             variant="primaryBlue"
-            text="Kontakta oss"
+            text={t('contactKey')}
           />
         </div>
       </article>

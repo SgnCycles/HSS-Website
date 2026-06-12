@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const PolicyInfo = () => {
+  const t = useTranslations(`policy.info`)
   return (
     <section className="container">
       <article>
@@ -12,18 +14,14 @@ const PolicyInfo = () => {
             height={30}
             className="h2-icon"
           />
-          <h2 className="heading-2"><span className="hidden sm:flex">Så hanterar vi dina uppgifter</span><span className="flex sm:hidden">GDPR</span></h2>
+          <h2 className="heading-2"><span className="hidden sm:flex">{t('title')}</span><span className="flex sm:hidden">GDPR</span></h2>
         </div>
         <p className="paragraph-light">
-          HSS värnar om din integritet. Här förklarar vi vilka uppgifter vi
-          samlar in, varför vi gör det och hur länge de sparas.
+          {t('paragraph1')}
         </p>
-        <h4 className="heading-4">Scoutnet — medlemsregistret</h4>
+        <h4 className="heading-4">{t('subTitle')}</h4>
         <p className="paragraph-light mb-0">
-          Scoutnet är Scouternas gemensamma medlemsregister. Där samlar vi in
-          uppgifter om varje medlem för att veta vilka våra medlemmar är, nå ut
-          med information, registrera närvaro, hantera fakturering och se
-          avdelnings- och patrulltillhörighet.
+          {t('paragraph2')}
         </p>
       </article>
     </section>

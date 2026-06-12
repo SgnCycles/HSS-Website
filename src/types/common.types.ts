@@ -2,6 +2,10 @@ export type CommonType = {
   variant: string,
 }
 
+export type IdProp = {
+  id: number
+}
+
 export type VariantType = {
   variantBackground: string,
 }
