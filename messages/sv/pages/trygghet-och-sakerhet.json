@@ -40,31 +40,28 @@
     }
   },
   "security-and-safety-cards": {
-   
-      "leader-screening": {
-        "title": "Noggrann granskning av ledare",
-        "info": "Bakgrundskontroller, referenstagning och obligatorisk utbildning i Scouternas Trygga Möten."
-      },
-      "life-jackets-required": {
-        "title": "Flytvästar är alltid obligatoriska",
-        "info": "Klara riktlinjer för uppsikt och rutiner vid incidenter. Flytvästar är alltid obligatoriska vid aktiviteter på vattnet."
-      },
-      "safety-training": {
-        "title": "Utbildning i säkerhet",
-        "info": "Obligatorisk kurs i Trygga Möten och barnsskydd."
-      },
-      "safe-community": {
-        "title": "Trygg gemenskap",
-        "info": "Föräldrar är alltid välkomna. Vi ger tydlig info om aktiviteter och säkerhetsrutiner."
-      }
+    "leader-screening": {
+      "title": "Noggrann granskning av ledare",
+      "info": "Bakgrundskontroller, referenstagning och obligatorisk utbildning i Scouternas Trygga Möten."
     },
-    "security-and-safety-page":{
-
-    "page-title":"Säkerhet & trygghet",
-    "sub-title":"På HSS är barnens trygghet, inkludering och glädje alltid vår högsta prioritet.",
-    "cta":"Läs mer här",
-    "close-cta":"Stäng",
-    "popup-title":"Trygghet och inkludering på HSS"
+    "life-jackets-required": {
+      "title": "Flytvästar är alltid obligatoriska",
+      "info": "Klara riktlinjer för uppsikt och rutiner vid incidenter. Flytvästar är alltid obligatoriska vid aktiviteter på vattnet."
+    },
+    "safety-training": {
+      "title": "Utbildning i säkerhet",
+      "info": "Obligatorisk kurs i Trygga Möten och barnsskydd."
+    },
+    "safe-community": {
+      "title": "Trygg gemenskap",
+      "info": "Föräldrar är alltid välkomna. Vi ger tydlig info om aktiviteter och säkerhetsrutiner."
+    }
+  },
+  "security-and-safety-page": {
+    "page-title": "Säkerhet & trygghet",
+    "sub-title": "På HSS är barnens trygghet, inkludering och glädje alltid vår högsta prioritet.",
+    "cta": "Läs mer här",
+    "close-cta": "Stäng",
+    "popup-title": "Trygghet och inkludering på HSS"
   }
-  
 }
