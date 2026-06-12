@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import InstaFeedCard from "../cards/InstaSection";
+import { useTranslations } from "next-intl";
 
 export default function UpptäckLivetSomSjöscout() {
+
+
+  const t = useTranslations('home')
   return (
     <section className=" bg-blue-100">
       <div className="container">
@@ -17,15 +21,14 @@ export default function UpptäckLivetSomSjöscout() {
                 className="h2-icon"
               />
               <span className="font-bold md:heading-2 hidden sm:flex items-center">
-                Upptäck livet som sjöscout
+                {t('discover_title')}
               </span>
               <span className="flex sm:hidden">Livet som sjöscout</span>
             </h2>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-6 w-full order-1 md:order-2">
             <p className="paragraph flex-1 order-1 md:order-2 mb-0">
-              Kliv in i vår vardag, läger, segling, knutar och kamratskap. Se
-              våra äventyr, vänskap och minnen som vi skapar tillsammans.
+              {t('ig_description')}
               <Link
                 className="paragraph text-primary font-extrabold flex-1"
                 href="https://www.instagram.com/hss_scout/"
@@ -48,7 +51,7 @@ export default function UpptäckLivetSomSjöscout() {
                 className="w-10 h-10 pr-2"
               />
               <p className="heading-3 text-accent">
-                Följ oss<span className="pl-1">&#8594;</span>
+              {t('follow_us')}<span className="pl-1">&#8594;</span>
               </p>
             </Link>
           </div>
