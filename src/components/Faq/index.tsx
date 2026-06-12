@@ -1,5 +1,6 @@
 "use client";
 import { faqData } from "@/data/faq";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
@@ -20,6 +21,8 @@ export default function FaqCard() {
     return () => document.removeEventListener("mousedown", handlar);
   }, []);
 
+  const t = useTranslations('vanliga-fragor')
+
   return (
     <section className="flex flex-col gap-6" ref={dropDown}>
       {faqData.map((item, index) => {
@@ -30,12 +33,12 @@ export default function FaqCard() {
             onClick={() => handelDropdown(index)}
           >
             <button className="flex justify-between w-full items-center">
-              <h3 className="heading-3 text-left">{item.title}</h3>
+              <h3 className="heading-3 text-left">{t(item.titleKey)}</h3>
               <Image src="/Icons/nav-arrow.svg" alt="" width={24} height={24} className={`cursor-pointer transition-transform duration-300 ${activeIndex === index ? "rotate-180" : "rotate-0"}`} />
             </button>
              {activeIndex === index && (
               <div>
-                <p className="paragraph">{item.content}</p>
+                <p className="paragraph">{t(item.contentKey)}</p>
               </div>
             )}
           </div>

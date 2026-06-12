@@ -33,7 +33,7 @@ const t = useTranslations("vanliga-fragor")
         </p>
         <FaqCard />
         <section className="bg-[#EEEEEE] border border-grey-300 card mt-6">
-          <h4 className="heading-3">Hittade du inte svaret?</h4>
+          <h4 className="heading-3">{t('not_found')}</h4>
           <p className="paragraph">
             {t('contact_description')}
           </p>
@@ -42,7 +42,7 @@ const t = useTranslations("vanliga-fragor")
               ariaLabel="mail button"
               href="mailto:info@hss-scout.org"
               variant="primaryBlue"
-              text="Maila oss"
+              text={t('email_us')}
             />
           </div>
         </section>

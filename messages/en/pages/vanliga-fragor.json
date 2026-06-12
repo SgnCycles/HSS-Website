@@ -2,6 +2,38 @@
   "vanliga-fragor": {
     "faq_title": "Frequently asked questions",
     "faq_description": "Here you will find answers to the most common questions about membership, invoices and leadership in HSS.",
-    "contact_description": "Get in touch with us directly. We respond within a couple of days and will help you out."
+    "contact_description": "Get in touch with us directly. We respond within a couple of days and will help you out.",
+    "not_found": "Didn't find the answer?",
+    "email_us": "Email us",
+    "faq": {
+      "scout-uniform": {
+        "title": "Why do we have a scout uniform?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      },
+      "new-leader": {
+        "title": "I'm a new scout leader! Which training should I take first?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      },
+      "lost-invoice": {
+        "title": "I've lost my invoice. What do I do?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      },
+      "membership-fee": {
+        "title": "What is included in my membership fee?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      },
+      "invoice-address": {
+        "title": "How do I change my invoice address?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      },
+      "wrong-amount": {
+        "title": "My invoice has the wrong amount. What do I do?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      },
+      "contact-details": {
+        "title": "How do I change my contact details?",
+        "content": "Get in touch with us directly. We respond within a couple of days and will help you out."
+      }
+    }
   }
 }
