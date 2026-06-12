@@ -8,7 +8,7 @@ const AgeGroupCardHome = () => {
   return (
     <section className="bg-yellow-100 grid place-items-center">
       <article className="container">
-        <div className="flex justify-center sm:justify-start pt-6 pb-4">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src={`/Icons/anchor-icon.svg`}
             height={25}
@@ -21,7 +21,7 @@ const AgeGroupCardHome = () => {
           </h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="paragraph-light text-center sm:text-left">
+          <p className="paragraph-light text-center sm:text-left mb-0">
             Oavsett ålder finns det en plats för dig i HSS.
             <br />
             Varje avdelning har sin egen karaktär och sina egna äventyr.

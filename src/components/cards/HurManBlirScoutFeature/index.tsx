@@ -7,7 +7,7 @@ const HurManBlirScoutFeature = () => {
   return (
     <div className="bg-primary">
       <div className="container">
-        <div className="flex">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             className="h2-icon"
             src="/Icons/yellow-two-people-icon.svg"

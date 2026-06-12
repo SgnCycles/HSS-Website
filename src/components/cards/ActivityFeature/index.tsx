@@ -18,7 +18,7 @@ const ActivityFeature = () => {
     <div>
       <article className="font-body container">
         <div>
-          <div className="text-center lg:flex">
+          <div className="text-center lg:flex pb-0 md:pb-6">
             <div className="flex p-1 justify-center">
               <Image
                 className="h2-icon"

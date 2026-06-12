@@ -17,7 +17,7 @@ const VaraBatarPage = () => {
       className="lg:bg-[url(/images/Backgrounds/blueWavyBoat2.png)] lg:bg-contain md:bg-hidden lg:bg-no-repeat lg:bg-top"
     >
       <section className="container flex flex-col items-center">
-        <div className="flex lg:justify-center">
+        <div className="flex w-full justify-center lg:justify-start pb-6">
           <Image
             className="h1-icon"
             src={`/Icons/sail-boat-icon.svg`}

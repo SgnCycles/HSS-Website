@@ -18,7 +18,7 @@ const VilkaArViPage = () => {
     <main id="main-content">
       <section className="flex flex-col lg:bg-blue-100 lg:bg-[url(/images/Backgrounds/boat-white-transparent.png)] lg:bg-size-[398px] lg:bg-no-repeat lg:bg-top-right">
         <article className="flex flex-col items-center pb-0">
-          <div className="justify-center container pb-0 flex flex-row items-center lg:justify-start">
+          <div className="justify-center container flex flex-row items-center lg:justify-start">
             <Image
               src="/images/Logo/logo.png"
               height={74}
@@ -26,9 +26,9 @@ const VilkaArViPage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="heading-1 text-blue-900">Om HSS</h1>
+            <h1 className="heading-1">Om HSS</h1>
           </div>
-          <div className="text-base font-body flex gap-2 pl-2 pr-2 justify-center rounded-md w-fit border bg-secondary border-accent lg:hidden">
+          <div className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md lg:hidden mb-6">
             <p>Scoutkåren bildades 1959</p>
           </div>
           <VilkaArViCardDesktop />
@@ -37,7 +37,7 @@ const VilkaArViPage = () => {
       </section>
       <BorderSingleDown variant="text-blue-100 lg:block hidden" />
       <section className="lg:container md:container">
-        <h2 className="heading-2 hidden lg:block">Se andra dokument</h2>
+        <h2 className="heading-2 hidden lg:block pb-6">Se andra dokument</h2>
         <div className="flex flex-col bg-yellow-200 p-5 mb-0 font-body lg:paragraph-light lg:text-blue-900 text-blue-900 lg:border-accent lg:rounded-md lg:bg-secondary lg:border lg:gap-5 md:rounded-md md:border-accent md:border">
           <h2 className="heading-2 lg:hidden">Se andra dokument</h2>
           <Link
@@ -64,7 +64,7 @@ const VilkaArViPage = () => {
         </div>
       </section>
       <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center justify-center lg:justify-start pb-6">
           <Image
             src="/Icons/yellow-anchor-icon.svg"
             height={30}

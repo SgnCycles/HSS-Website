@@ -28,7 +28,7 @@ const PolicyPage = () => {
       <PolicyGdpr />
       <section className="container">
         <div className="card bg-yellow-100 border border-accent">
-          <p className="paragraph-light">
+          <p className="paragraph-light mb-0">
             🔒 Endast ledare och styrelse inom HSS har tillgång till registret.
             Information kan inte laddas ned från hemsidan. Relevanta uppgifter
             delas med kommunen för bidragsrapportering.
@@ -44,7 +44,7 @@ const PolicyPage = () => {
             height={30}
             className="h3-icon"
           />
-          <h3 className="heading-3">Hajker och läge</h3>
+          <h3 className="heading-3">Hajker och läger</h3>
         </div>
         <p className="paragraph-light">
           Inför hajker och läger samlar ledarna in kompletterande uppgifter via

@@ -66,11 +66,11 @@ export default function InstaSection() {
                   <p className="p-2.5">
                     Likes <span>{post.likeCount}</span>
                   </p>
-                  <MessageCircle className="" />{" "}
+                  <MessageCircle />
                   <span className="pl-1.5">{post.commentsCount}</span>
                 </div>
               </Link>
-              <div className="mt-4 px-2 ">
+              <div className="mt-4 px-2">
                 <p className="text-sm line-clamp-2">
                   <span className="font-bold">{userName}</span> {post.caption}
                 </p>
