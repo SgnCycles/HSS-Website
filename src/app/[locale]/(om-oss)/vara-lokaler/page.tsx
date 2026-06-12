@@ -15,9 +15,9 @@ const VaraLokalerPage = () => {
   return (
     <main id="main-content">
       <section className="container flex flex-col justify-center items-center pb-0 lg:items-start">
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-6">
           <Image
-            className="h2-icon"
+            className="h1-icon"
             src="/Icons/house-heart-icon.svg"
             height={30}
             width={30}
