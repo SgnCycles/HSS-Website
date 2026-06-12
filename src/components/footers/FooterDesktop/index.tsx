@@ -1,18 +1,21 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import FooterImage from "../FooterImage"
+import FooterImage from "../FooterImage";
 import FooterLocation from "../FooterLocation";
 import FooterContact from "../FooterContact";
 import { useTranslations } from "next-intl";
 
 const FooterDesktop = () => {
-
-  const t = useTranslations('footer')
+  const t = useTranslations("footer");
   return (
     <footer className="hidden md:block">
       <FooterImage />
-      <Link href="/#nav-content" onClick={() => window.scrollTo(0, 0)} aria-label="tillbaka till startsidan">
+      <Link
+        href="/#nav-content"
+        onClick={() => window.scrollTo(0, 0)}
+        aria-label="tillbaka till startsidan"
+      >
         <Image
           src="/images/Logo/logo_light.png"
           height={146}
@@ -22,9 +25,15 @@ const FooterDesktop = () => {
         />
       </Link>
       <div className="bg-blue-900 flex justify-between pt-25 px-10 pb-10 gap-5">
-        <section aria-labelledby="footer-location" className="flex flex-col w-[25%] justify-between">
-          <h2 id="footer-location" className="font-heading text-yellow-500 font-bold text-[26px]">
-            {t('our_premises')}
+        <section
+          aria-labelledby="footer-location"
+          className="flex flex-col w-[25%] justify-between"
+        >
+          <h2
+            id="footer-location"
+            className="font-heading text-yellow-500 font-bold text-[26px]"
+          >
+            {t("our_premises")}
           </h2>
           <address className="not-italic">
             <ul>
@@ -42,14 +51,20 @@ const FooterDesktop = () => {
           </address>
         </section>
 
-        <section aria-labelledby="footer-about" className="flex flex-col text-center px-4 justify-between w-[60%] items-center">
-          <h2 id="footer-about" className="font-heading text-yellow-500 font-extrabold text-[32px]">
+        <section
+          aria-labelledby="footer-about"
+          className="flex flex-col text-center px-4 justify-between w-[60%] items-center"
+        >
+          <h2
+            id="footer-about"
+            className="font-heading text-yellow-500 font-extrabold text-[32px]"
+          >
             Hässelby Strands Sjöscoutkår
           </h2>
           <p className="font-body text-grey-300 text-[22px]">
-           {t('footer_about_description_1')}
+            {t("footer_about_description_1")}
             <br />
-           {t('footer_about_description_2')}
+            {t("footer_about_description_2")}
           </p>
           <div className="w-69.75">
             <Image
@@ -63,28 +78,48 @@ const FooterDesktop = () => {
           <nav>
             <ul className="flex flex-col items-center text-yellow-500 text-[24px]">
               <li>
-                <Link target="_blank" href="https://www.scouternasfolkhogskola.se/">Scouternas folkhögskola</Link>
+                <Link
+                  target="_blank"
+                  href="https://www.scouternasfolkhogskola.se/"
+                >
+                  Scouternas folkhögskola
+                </Link>
               </li>
               <li>
-                <Link target="_blank" href="https://www.scoutshop.se/">Scoutshop</Link>
+                <Link target="_blank" href="https://www.scoutshop.se/">
+                  Scoutshop
+                </Link>
               </li>
               <li>
-                <Link target="_blank" href="https://www.scoutnet.se/f/login">Scoutnet</Link>
+                <Link target="_blank" href="https://www.scoutnet.se/f/login">
+                  Scoutnet
+                </Link>
               </li>
             </ul>
           </nav>
         </section>
 
-        <section aria-labelledby="footer-contact" className="flex flex-col w-[25%] justify-between">
+        <section
+          aria-labelledby="footer-contact"
+          className="flex flex-col w-[25%] justify-between"
+        >
           <h2 id="footer-contact" className="sr-only">
-           {t('contact_information')}
+            {t("contact_information")}
           </h2>
-          <FooterContact title={t('contact_information')} icon="yellow-envelope-icon.svg">
+          <FooterContact
+            title={t("contact_information")}
+            icon="yellow-envelope-icon.svg"
+          >
             <Link target="_blank" href="mailto:info@hss-scout.org">
-              <p className="text-white pl-2 font-body font-medium text-[16px] md:text-[20px]">info@hss-scout.org</p>
+              <p className="text-white pl-2 font-body font-medium text-[16px] md:text-[20px]">
+                info@hss-scout.org
+              </p>
             </Link>
           </FooterContact>
-          <FooterContact title={t('follow_us')} icon="yellow-instagram-icon.svg">
+          <FooterContact
+            title={t("follow_us")}
+            icon="yellow-instagram-icon.svg"
+          >
             <Link
               target="_blank"
               href="https://www.instagram.com/hss_scout"
@@ -94,11 +129,17 @@ const FooterDesktop = () => {
               @hss_scout
             </Link>
           </FooterContact>
-          <FooterContact title={t('org_nr')} icon={null}>
-            <p className="text-white font-body text-[14px] font-medium md:text-[20px]">802006-2389</p>
+          <FooterContact title={t("org_nr")} icon={null}>
+            <p className="text-white font-body text-[14px] font-medium md:text-[20px]">
+              802006-2389
+            </p>
           </FooterContact>
-          <FooterContact title={t('supported_by')} icon={null}>
-            <Link target="_blank" aria-label="postkodlotteriets hemsida" href="https://www.postkodlotteriet.se/">
+          <FooterContact title={t("supported_by")} icon={null}>
+            <Link
+              target="_blank"
+              aria-label="postkodlotteriets hemsida"
+              href="https://www.postkodlotteriet.se/"
+            >
               <Image
                 src="/images/Logo/postkodlotteriet_logo.svg"
                 height={37}
@@ -111,7 +152,7 @@ const FooterDesktop = () => {
         </section>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default FooterDesktop
+export default FooterDesktop;

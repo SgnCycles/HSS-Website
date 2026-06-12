@@ -1,15 +1,12 @@
 {
-
-  "footer":{
-
-      "our_premises":"Våra lokaler",
-      "footer_about_description_1": "En stolt del av Scouterna sedan 1959.",
-      "footer_about_description_2": "Vi ger barn och ungdomar äventyr, sjömanskap och gemenskap vid Hässelby Strand.",
-      "contact_information": "Kontaktinformation",
-      "find_us": "Hitta hit",
-      "follow_us": "Följ oss",
-      "supported_by": "Stöds av",
-      "org_nr": "Org.nr"
-      
+  "footer": {
+    "our_premises": "Våra lokaler",
+    "footer_about_description_1": "En stolt del av Scouterna sedan 1959.",
+    "footer_about_description_2": "Vi ger barn och ungdomar äventyr, sjömanskap och gemenskap vid Hässelby Strand.",
+    "contact_information": "Kontaktinformation",
+    "find_us": "Hitta hit",
+    "follow_us": "Följ oss",
+    "supported_by": "Stöds av",
+    "org_nr": "Org.nr"
   }
 }
