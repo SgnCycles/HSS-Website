@@ -9,7 +9,7 @@ const FooterDesktop = () => {
   return (
     <footer className="hidden md:block">
       <FooterImage />
-      <Link onClick={() => window.scrollTo(0, 0)} href="/" aria-label="tillbaka till startsidan">
+      <Link href="/#nav-content" onClick={() => window.scrollTo(0, 0)} aria-label="tillbaka till startsidan">
         <Image
           src="/images/Logo/logo_light.png"
           height={146}
@@ -39,22 +39,24 @@ const FooterDesktop = () => {
           </address>
         </section>
 
-        <section aria-labelledby="footer-about" className="flex flex-col text-center px-4 justify-between w-[60%]">
+        <section aria-labelledby="footer-about" className="flex flex-col text-center px-4 justify-between w-[60%] items-center">
           <h2 id="footer-about" className="font-heading text-yellow-500 font-extrabold text-[32px]">
             Hässelby Strands Sjöscoutkår
           </h2>
-          <p className="font-body text-grey-300 text-[24px]">
+          <p className="font-body text-grey-300 text-[22px]">
             En stolt del av Scouterna sedan 1959.
             <br />
-            Vi ger barn och ungdomar äventyr, sjömanskap och gemenskap vid Hässelby Strand.
+            Vi ger barn och ungdomar äventyr, sjömanskap och <br></br>gemenskap vid Hässelby Strand.
           </p>
-          <Image
-            className="flex place-self-center justify-center p-4"
-            src="/images/Logo/scouterna_logo_white.png"
-            height={54}
-            width={279}
-            alt="Scouterna logga"
-          />
+          <div className="w-69.75">
+            <Image
+              className="flex place-self-center justify-center p-4 w-auto h-auto"
+              src="/images/Logo/scouterna_logo_white.png"
+              height={54}
+              width={279}
+              alt="Scouterna logga"
+            />
+          </div>
           <nav>
             <ul className="flex flex-col items-center text-yellow-500 text-[24px]">
               <li>

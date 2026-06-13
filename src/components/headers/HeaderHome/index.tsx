@@ -14,7 +14,7 @@ const HeaderHome = () => {
       <section className="grid grid-cols-1 grid-rows-[1fr_auto_auto] w-full h-full relative overflow-hidden items-end">
         <Image
           className="row-start-1 row-end-2 md:row-end-4 w-screen h-full object-cover bg-linear-to-bl from-primary to-blue-100"
-          src={"/images/Hero/aldersgrupp_hero.png"}
+          src={"/images/Hero/header_home_hero.JPEG"}
           alt=""
           fill
           priority
@@ -37,7 +37,7 @@ const HeaderHome = () => {
         <div className="z-5 bg-primary md:bg-blue-100/45">
           <div className="z-5 bg-primary md:bg-primary/45">
             <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
-              <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg">
+              <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg sm:whitespace-pre-line">
                 {t('description')}
               </p>
               <Button

@@ -4,10 +4,24 @@ export type ageGroupCardContentType = {
   ageRange: string,
   subtitle: string,
   info: string,
+  info_block_one: string,
+  info_block_two: string,
+  info_block_three: string,
+  info_block_four: string,
+  info_block_five: string,
+  info_block_six: string,
   meetings: string,
   colourSchemeBorder: string,
+  colourSchemeBorderSecondary: string,
+  colourSchemeBorderTertiary: string,
   colourSchemePrimary: string,
   colourSchemeSecondary: string,
+  colourSchemeTertiary: string,
+  colourSchemeAccent: string,
+  colourSchemeAccentSecondary: string,
+  colourSchemeAccentSurface: string,
+  colourSchemeHover: string,
+  colourSchemeActive: string,
   icon: string,
   image: string,
   price: string,
@@ -98,6 +112,21 @@ export type ActivityFeatureType = {
   icon: string
 }
 
+export type VaraBatarContentType = {
+  image: string,
+  alt: string
+}
+
+export type varaBatarCardContentType = {
+  titleKey: string,
+  infoKey: string,
+  waveImage: string
+  boatImage: {
+    image: string,
+    alt: string
+  }[]
+}
+
 export type vilkaArViContentType = {
   image: string,
 }
@@ -107,12 +136,44 @@ export type vilkaArViGamlaBatarContentType = {
 }
 
 export type vilkaArViTextContentType = {
-  image: string,
   info: string
 }
 
 export type FaqProps = {
-  id:number,
-  title:string,
-  content:string
+  id: number,
+  title: string,
+  content: string
+}
+
+export type aretIHssContentType = {
+  title: string,
+  icon: string,
+  months: {
+    subtitle: string,
+    info: string
+  }[]
+}
+
+export type historyHSSContentType = {
+  info: string
+}
+
+export type vilkaArViTextContentMobileType = {
+  image: string,
+  info: string
+}
+
+export type BlirScoutStepsType = {
+  titleKey: string;
+  infoKey: string;
+  step: string;
+}
+
+export type RegisterInfoProps = {
+  id: number,
+}
+
+export type CollectedInfoProps = {
+  id: number,
+  information: string
 }

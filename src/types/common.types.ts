@@ -2,6 +2,10 @@ export type CommonType = {
   variant: string,
 }
 
+export type IdProp = {
+  id: number
+}
+
 export type VariantType = {
   variantBackground: string,
 }
@@ -23,4 +27,19 @@ export type ButtonProps = {
   text: string,
   download?: boolean,
   target?: string,
+}
+
+export type CloseButtonProps = {
+  ariaLabel: string,
+  text: string,
+  onClick: () => void
+}
+
+export type ReadMoreButtonProps = {
+  ariaLabel: string,
+  variant: 
+    | 'primaryBlue'
+    | 'secondaryBlue'
+  text: string,
+  onClick: () => void
 }

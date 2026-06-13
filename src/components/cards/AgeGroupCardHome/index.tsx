@@ -1,30 +1,27 @@
 "use client";
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
-import useIsMobile from "@/hooks/useGetMobile";
 import Button from "@/components/buttons/Button";
 
 const AgeGroupCardHome = () => {
 
-  const isMobile = useIsMobile();
-
   return (
-    <section className="grid place-items-center">
+    <section className="bg-yellow-100 grid place-items-center">
       <article className="container">
-        <div className="flex justify-center sm:justify-start pt-6 pb-4">
+        <div className="flex justify-center lg:justify-start pb-6">
           <Image
             src={`/Icons/anchor-icon.svg`}
             height={25}
             width={25}
             alt=""
-            className="pb-2"
+            className="h2-icon"
           />
           <h2 className="heading-2">
             Åldersgrupper
           </h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="paragraph-light">
+          <p className="paragraph-light text-center sm:text-left mb-0">
             Oavsett ålder finns det en plats för dig i HSS.
             <br />
             Varje avdelning har sin egen karaktär och sina egna äventyr.
@@ -35,6 +32,7 @@ const AgeGroupCardHome = () => {
               href="/aldersgrupper"
               variant="primaryBlue"
               text="Läs mer här"
+              target="_self"
             />
           </div>
         </div>
@@ -43,15 +41,16 @@ const AgeGroupCardHome = () => {
             ageGroupCardContent.map((card, index) => (
               <li
                 key={index}
-                className={`flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-sm rounded-tr-sm rounded-bl-xs rounded-br-xs overflow-hidden`}
+                className={`bg-background flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-md rounded-tr-md rounded-bl-xs rounded-br-xs overflow-hidden`}
               >
                 <div className="flex md:pt-5 md:pb-5 md:pr-5">
                   <div className="flex justify-center items-center w-[30%]">
                     <Image
                       src={`/images/Agegroup/${card.icon}`}
-                      height={isMobile ? 70 : 90}
-                      width={isMobile ? 70 : 90}
+                      height={60}
+                      width={60}
                       alt={`${card.title} emblem`}
+                      className="w-15 h-auto md:w-22.5"
                     ></Image>
                   </div>
                   <div className="flex flex-col w-full items-start pb-4 md:pb-0">
@@ -89,6 +88,7 @@ const AgeGroupCardHome = () => {
             href="/aldersgrupper"
             variant="secondaryBlue"
             text="Läs mer om åldersgrupper"
+            target="_self"
           />
         </div>
       </article>

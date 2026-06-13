@@ -18,7 +18,7 @@ const ActivityCard = () => {
         </li>
       ))}
     </ul>
-  )
-}
+  );
+};
 
-export default ActivityCard
+export default ActivityCard;

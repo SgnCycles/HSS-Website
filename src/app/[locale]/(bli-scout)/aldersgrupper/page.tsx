@@ -1,9 +1,50 @@
-const AldersGrupperPage = () => {
-  return (
-    <>
-    <h1>Placeholder: This is "Ålders Grupper" page</h1>
-    </>
-  )
-}
+import Image from "next/image";
+import type { Metadata } from "next";
+import AgeGroupPageMobile from "@/components/cards/AgeGroupCardMobile";
+import AgeGroupPageDesktop from "@/components/cards/AgeGroupCardDesktop";
 
-export default AldersGrupperPage
+export const metadata: Metadata = {
+  title: "HSS - Åldersgrupper",
+  description:
+    "Hitta rätt scoutgrupp i HSS. Segling, hajker, naturkunskap, ledarskap och äventyr för barn, ungdomar och familjer i alla åldrar.",
+};
+
+const AgeGroupPage = () => {
+  return (
+    <main
+      id="main-content"
+      className="md:bg-[url('/images/Backgrounds/blueWavyBoat2.png')] md:bg-no-repeat md:bg-size-[100%_auto]"
+    >
+      <section className="font-body">
+        <article className="md:container md:flex flex-col">
+          <div className="container pb-0 pt-0">
+            <div className="flex w-full justify-center lg:justify-start items-center pb-6 pt-6 lg:pt-0">
+              <Image
+                src="/Icons/anchor-icon.svg"
+                height={25}
+                width={25}
+                alt=""
+                className="h1-icon"
+              />
+              <h1 className="heading-1">Åldersgrupper</h1>
+            </div>
+            <div className="flex sm:justify-between pb-6">
+              <p className="paragraph-light">
+                Oavsett ålder finns det en plats för dig i HSS. Varje avdelning
+                har sin egen karaktär och sina egna äventyr.
+              </p>
+            </div>
+          </div>
+          <ul className="flex flex-col md:hidden">
+            <AgeGroupPageMobile />
+          </ul>
+          <ul className="hidden md:flex flex-col h-auto justify-center items-center gap-6 pb-6">
+            <AgeGroupPageDesktop />
+          </ul>
+        </article>
+      </section>
+    </main>
+  );
+};
+
+export default AgeGroupPage;
