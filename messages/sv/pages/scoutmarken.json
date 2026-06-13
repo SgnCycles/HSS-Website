@@ -1,0 +1,18 @@
+{
+  "scoutmarken": {
+    "title": "Scoutmärken",
+    "subTitle": "Varje märke berättar en historia",
+    "paragraph": "Ett märke är så mycket mer än en tygbit. Det visar att du lärt dig något, att du varit med om något speciellt eller att du tillhör en viss patrull eller scoutkår.",
+    "quali": {
+      "title": "Behörighetsmärken",
+      "info": "Att lära dig hantera en båt är ett spännande lärande som aldrig tar slut. Märket kan användas för att visa vilken båt du får ta ut. Förutsättningarna i scoutkårer ser olika ut. Kriterierna behöver anpassas utifrån vilka båtar kåren har, vilka vatten som finns i närområdet och hur verksamheten är upplagd. Nedan finns förslag på kriterier för att underlätta vid gemensamma utfärder mellan kårer. Behörighetsmärkena är inte specificerade utifrån åldersgrupp eftersom åldersgrupp beror på förutsättningarna lokalt. Scoutkåren kan vid behov själva skapa ytterligare märken som Båtfyran, Båtfemman osv med samma utseende.",
+      "1": { "text": ""}, 
+      "2": { "text": ""}, 
+      "3": { "text": ""} 
+    },
+    "interest": {
+      "title": "Intressemärken",
+      "text": "Här ser du några märken som handlar om scouting på sjö och vatten."
+    }
+  }
+}

@@ -1,16 +1,18 @@
 import BorderSingleDown from "@/components/borders/BorderSingleDown"
 import BorderSingleUp from "@/components/borders/BorderSingleUp"
 import { scoutBadges } from "@/data/scoutBadges"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 const ScoutBadgesWater = () => {
+  const t = useTranslations('scoutmarken')
   return (
     <section className="bg-blue-100">
       <BorderSingleUp variant="text-blue-100 bg-white" />
       <div className="container section">
-      <h2 className="heading-2 text-center">Intressemärken</h2>
+      <h2 className="heading-2 text-center">{t(`interest.title`)}</h2>
       <p className="paragraph-light text-center">
-      Här ser du några märken som handlar om scouting på sjö och vatten.
+        {t(`interest.text`)}
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-15">
         {scoutBadges && scoutBadges.map((badge) =>
