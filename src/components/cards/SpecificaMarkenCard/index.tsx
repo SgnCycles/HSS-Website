@@ -9,8 +9,19 @@ const SpecificaMarken = () => {
 
   return (
     <article className="container pt-0">
-      <h2 className="heading-2 text-center xl:text-left">Specifika märken för sjöscouter</h2>
+      <h2 className="heading-2 text-center xl:text-left">Behörighetsmärken</h2>
       <div className="sm:w-full sm:grid sm:place-items-center sm:mb-6">
+      <p className="paragraph-light">
+      Att lära dig hantera en båt är ett spännande lärande som aldrig tar slut.
+Märket kan användas för att visa vilken båt du får ta ut. Förutsättningarna i scoutkårer
+ser olika ut. Kriterierna behöver anpassas utifrån vilka båtar kåren har, vilka vatten som finns
+i närområdet och hur verksamheten är upplagd. Nedan finns förslag på kriterier
+för att underlätta vid gemensamma utfärder mellan kårer.
+Behörighetsmärkena är inte specificerade utifrån åldersgrupp eftersom åldersgrupp beror
+på förutsättningarna lokalt. Scoutkåren kan vid behov själva skapa ytterligare märken
+som Båtfyran, Båtfemman osv med samma utseende. 
+      </p>
+      <Image src="/badges/batettan.svg" alt="" width={50} height={50} />
         <Image
           className="w-full h-auto"
           src={
@@ -23,10 +34,6 @@ const SpecificaMarken = () => {
           alt="Sjöscoutmärken"
         />
       </div>
-      <p className="paragraph-light">
-        Bevis - och behörighetsmärkena blir ett tecken på vad scouterna kan och
-        bidrar till säkerheten.
-      </p>
       <div className="mt-6 mb-6 sm:hidden">
         <Image
           className="w-full h-auto"

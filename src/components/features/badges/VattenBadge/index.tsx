@@ -1,0 +1,32 @@
+export type IconsProps = {
+  className: string,
+  size: number | string
+}
+
+const VattenBadge = ({ size, className }: IconsProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className={className} width={size} height="auto" viewBox="0 0 104.249 104.217">
+      <g id="Artwork_4" data-name="Artwork 4" transform="translate(52.125 52.109)">
+        <g id="Artwork_4-2" data-name="Artwork 4" transform="translate(-52.124 -52.109)">
+          <g id="Group_44" data-name="Group 44" clipPath="url(#clip-path)">
+            <path id="Path_52" data-name="Path 52" d="M101.347,52.312a49.285,49.285,0,1,0-49.3,49.3c11.861.091,21.8-.519,29.239-1.189C91.56,99.54,94.853,98.686,97.475,96c2.744-2.866,3.384-6.434,3.75-21.16.122-5.854.244-13.506.122-22.531" transform="translate(0 0)" fill="#57a1d4"/>
+            <rect id="Rectangle_41" data-name="Rectangle 41" width="20.839" height="4.407" transform="translate(23.85 9.861)" fill="#bf0001"/>
+            <rect id="Rectangle_42" data-name="Rectangle 42" width="4.406" height="20.839" transform="translate(32.066 11.402)" fill="#bf0001"/>
+            <path id="Path_53" data-name="Path 53" d="M41.653,25.52H26.886V20.534a.366.366,0,0,1,.365-.365H41.288a.366.366,0,0,1,.365.365Z" transform="translate(0 0)" fill="#840004"/>
+            <path id="Path_54" data-name="Path 54" d="M56.2,33.363H44.971V44.169h9.416a1.81,1.81,0,0,1,1.81,1.81V55.4H67V42.517a9.153,9.153,0,0,0-9.153-9.154Z" transform="translate(0 0)" fill="#bf0001"/>
+            <path id="Path_55" data-name="Path 55" d="M49.679,12.065a4.013,4.013,0,1,1-4.013-4.013,4.013,4.013,0,0,1,4.013,4.013" transform="translate(0 0)" fill="#bf0001"/>
+            <rect id="Rectangle_43" data-name="Rectangle 43" width="15.344" height="13.954" transform="translate(6.676 31.789)" fill="#bf0001"/>
+            <path id="Path_56" data-name="Path 56" d="M50.086,38.661A15.816,15.816,0,1,0,34.27,54.477,15.816,15.816,0,0,0,50.086,38.661" transform="translate(0 0)" fill="#840004"/>
+            <path id="Path_57" data-name="Path 57" d="M69.071,59.172H54.129a.293.293,0,0,1-.293-.293V54.114a.294.294,0,0,1,.293-.293H69.071a.293.293,0,0,1,.293.293v4.765a.293.293,0,0,1-.293.293" transform="translate(0 0)" fill="#840004"/>
+            <path id="Path_58" data-name="Path 58" d="M70.616,80.543a9.015,9.015,0,0,1-18.031,0c0-4.979,9.015-18.21,9.015-18.21s9.016,13.231,9.016,18.21" transform="translate(0 0)" fill="#1d1932"/>
+            <path id="Path_59" data-name="Path 59" d="M68.793,77.933a3.088,3.088,0,1,1-3.088-3.088,3.088,3.088,0,0,1,3.088,3.088" transform="translate(0 0)" fill="#8acadd"/>
+            <path id="Path_60" data-name="Path 60" d="M104.121,52.045a52.06,52.06,0,1,0-52.077,52.076c12.528.1,23.027-.547,30.885-1.256,10.854-.934,14.332-1.836,17.1-4.67,2.9-3.027,3.574-6.795,3.961-22.35.129-6.184.258-14.267.129-23.8M52.044,96.07A44.009,44.009,0,1,1,96.069,52.045,44.058,44.058,0,0,1,52.044,96.07m42.093.644a4.927,4.927,0,1,1,4.927-4.928,4.949,4.949,0,0,1-4.927,4.928" fill="#183449"/>
+          </g>
+        </g>
+      </g>
+</svg>
+
+  )
+}
+
+export default VattenBadge

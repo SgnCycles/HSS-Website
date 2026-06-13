@@ -7,6 +7,7 @@ import MarkesaffischCardMobile from "@/components/cards/MarkesaffischCardMobile"
 import SpecificaMarken from "@/components/cards/SpecificaMarkenCard";
 import ScoutmarkenIntro from "@/components/cards/ScoutmarkenIntro";
 import type { Metadata } from "next";
+import ScoutBadgesWater from "@/components/cards/ScoutBadgesWater";
 
 export const metadata: Metadata = {
   title: "HSS - Scoutmärken",
@@ -52,6 +53,7 @@ const ScoutmarkenPage = () => {
             />
           </div>
         </article>
+        <ScoutBadgesWater />
         <article className="container pb-0">
           <ScoutUniformMobile />
           <ScoutUniformDesktop />
