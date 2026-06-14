@@ -2,76 +2,76 @@ import { SecurityAndSafetyCardContentType, SecurityAndSafetyCheckType, SecurityA
 
 export const securityAndSafetyCardContent:SecurityAndSafetyCardContentType[] = [
   {
-    title: "Noggrann granskning av ledare",
+    titleKey: "leader-screening.title",
     icon: "/Icons/party-leader-icon.svg",
-    info: "Bakgrundskontroller, referenstagning och obligatorisk utbildning i Scouternas Trygga Möten."
+    infoKey: "leader-screening.info"
   },
   {
-    title: "Flytvästar är alltid obligatoriska",
+    titleKey: "life-jackets-required.title",
     icon: "/Icons/check-icon.svg",
-    info: "Klara riktlinjer för uppsikt och rutiner vid incidenter. Flytvästar är alltid obligatoriska vid aktiviteter på vattnet."
+    infoKey: "life-jackets-required.info"
   },
   {
-    title: "Utbildning i säkerhet",
+    titleKey: "safety-training.title",
     icon: "/Icons/two-people-icon.svg",
-    info: "Obligatorisk kurs i Trygga Möten och barnsskydd."
+    infoKey: "safety-training.info"
   },
   {
-    title: "Trygg gemenskap",
+    titleKey: "safe-community.title",
     icon: "/Icons/dialog-icon.svg",
-    info: "Föräldrar är alltid välkomna. Vi ger tydlig info om aktiviteter och säkerhetsrutiner."
+    infoKey: "safe-community.info"
   },
 ]
 
 export const securityAndSafetyCheckContent:SecurityAndSafetyCheckType[] = [
   {
     icon: "/Icons/checkbox-icon.svg",
-    info: "Bakgrundskontroll på alla ledare"
+    infoKey: "checks.background-checks"
   },
   {
     icon: "/Icons/checkbox-icon.svg",
-    info: "Obligatorisk säkerhetsutbildning"
+    infoKey: "checks.safety-training"
   },
   {
     icon: "/Icons/checkbox-icon.svg",
-    info: "Tydliga rutiner för incidentrapportering"
+    infoKey: "checks.incident-reporting"
   },
   {
     icon: "/Icons/checkbox-icon.svg",
-    info: "Öppet för föräldrar att besöka möten"
+    infoKey: "checks.parent-visits"
   }
 ]
 
 export const securityAndSafetyInfoContent:SecurityAndSafetyInfoType[] = [
   {
-    title: "Trygga och transparenta rutiner",
-    info: "Våra aktiviteter följer tydliga riktlinjer för att säkerställa att barn alltid är under lämplig uppsikt. Vi har också rutiner för att rapportera och hantera eventuella incidenter eller oro, så att både barn och föräldrar kan känna sig trygga"
+    titleKey: "safe-transparent-routines.title",
+    infoKey: "safe-transparent-routines.info"
   },
   {
-    title: "Inkluderande och modern scouting",
-    info: "Våra program välkomnar barn med olika bakgrund, trosuppfattning och förutsättningar. Traditionella scoutmetoder har utvecklats för att fokusera på samarbete, respekt, personlig utveckling och friluftsupplevelser, snarare än religion eller hierarkiska strukturer."
+    titleKey: "inclusive-modern-scouting.title",
+    infoKey: "inclusive-modern-scouting.info"
   },
   {
-    title: "Öppen kommunikation",
-    info: "Föräldrar är alltid välkomna att ställa frågor och besöka våra möten. Vi strävar efter att ge tydlig information om aktiviteter, säkerhetsrutiner och hur föräldrar kan vara delaktiga i verksamheten."
+    titleKey: "open-communication.title",
+    infoKey: "open-communication.info"
   }
 ]
 
 export const securityAndSafetyPopupContent:SecurityAndSafetyInfoType[] = [
   {
-    title: "Noggrann granskning av ledare",
-    info: "Alla ledare genomgår bakgrundskontroller och referenstagning innan de börjar arbeta med scouterna. Ledarna genomgår också obligatorisk utbildning i barns säkerhet och tryggt ledarskap, exempelvis genom Scouternas utbildning Scouterna Trygga Möten."
+    titleKey: "leaderScreening.title",
+    infoKey: "leaderScreening.info"
   },
   {
-    title: "Trygga och transparenta rutiner",
-    info: "Våra aktiviteter följer tydliga riktlinjer för att säkerställa att barn alltid är under lämplig uppsikt. Vi har också rutiner för att rapportera och hantera eventuella incidenter eller oro, så att både barn och föräldrar kan känna sig trygga."
+    titleKey: "safeRoutines.title",
+    infoKey: "safeRoutines.info"
   },
   {
-    title: "Inkluderande och modern scouting",
-    info: "Våra program välkomnar barn med olika bakgrund, trosuppfattning och förutsättningar. Traditionella scoutmetoder har utvecklats för att fokusera på samarbete, respekt, personlig utveckling och friluftsupplevelser, snarare än religion eller hierarkiska strukturer."
+    titleKey: "inclusiveScouting.title",
+    infoKey: "inclusiveScouting.info"
   },
   {
-    title: "Öppen kommunikation",
-    info: "Föräldrar är alltid välkomna att ställa frågor och besöka våra möten. Vi strävar efter att ge tydlig information om aktiviteter, säkerhetsrutiner och hur föräldrar kan vara delaktiga i verksamheten."
+    titleKey: "openCommunication.title",
+    infoKey: "openCommunication.info"
   },
 ]

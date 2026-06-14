@@ -2,12 +2,15 @@
 import Nav from "@/components/headers/Nav";
 import { usePathname } from "next/navigation";
 import { pageHeaderImage } from "../../../data/pageBackgrounds";
+import { useTranslations } from "next-intl";
 
 const HeaderOther = () => {
   const pathname = usePathname();
   const strippedPath = pathname.replace(/^\/(sv|en)/, "") || "/";
   const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
   const headerImage = findPage?.image ?? "vilkaArVi_hero.jpg";
+
+  const t = useTranslations("vad-gor-vi")
 
   return (
     <header
@@ -22,8 +25,8 @@ const HeaderOther = () => {
         pathname === "/sv/vad-gor-vi" ||
         pathname === "/en/vad-gor-vi") && (
         <h1 className="bottom-0 heading-1 text-center text-shadow-black text-white pb-6 mt-auto">
-          Välkommen till HSS<br className="md:hidden"></br>
-          <span className="text-accent"> och äventyret</span>
+          {t("pageTitle")}{" "}<br className="md:hidden"></br>
+          <span className="text-accent">{t("pageTitle2")}</span>
         </h1>
       )}
     </header>

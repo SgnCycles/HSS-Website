@@ -9,20 +9,22 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   const files = [
-    "home",
-    "nav",
-    "footer",
-    "pages/vad-gor-vi",
-    "pages/vanliga-fragor",
-    "pages/vara-lokaler",
-    "pages/policy",
-    "pages/vara-batar", "pages/scoutmarken",
-    "pages/bra-att-veta",
-    "pages/engagera-dig",
-    "pages/aret-i-hss",
-    "pages/aldersgrupper",
-    "not-found"
-  ];
+  "home",
+  "nav",
+  "footer",
+  "pages/vad-gor-vi",
+  "pages/vanliga-fragor",
+  "pages/vara-lokaler",
+  "pages/policy",
+  "pages/vara-batar",
+  "pages/scoutmarken",
+  "pages/bra-att-veta",
+  "pages/engagera-dig",
+  "pages/aret-i-hss",
+  "pages/aldersgrupper",
+  "pages/bli-ledare",
+  "pages/trygghet-och-sakerhet",
+];
 
   const messages = (
     await Promise.all(
