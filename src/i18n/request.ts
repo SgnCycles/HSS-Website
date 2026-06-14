@@ -21,6 +21,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/aldersgrupper",
     "not-found",
     "pages/scoutmarken",
+    "pages/vanliga-fragor",
+    "pages/vara-lokaler",
+    "pages/policy",
+    "pages/vara-batar",
   ];
 
   const messages = (
