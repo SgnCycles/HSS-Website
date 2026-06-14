@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const VaraLokalerPage = () => {
-  const t = useTranslations('VaraLokalerPage')
+  const t = useTranslations("VaraLokalerPage")
   return (
     <main id="main-content">
       <section className="container flex flex-col justify-center items-center pb-0 lg:items-start">
@@ -23,9 +23,9 @@ const VaraLokalerPage = () => {
             width={30}
             alt=""
           />
-          <h1 className="heading-2">{t('title')}</h1>
+          <h1 className="heading-2">{t("title")}</h1>
         </div>
-        <p className="paragraph-light text-center">{t('info')}</p>
+        <p className="paragraph-light text-center">{t("info")}</p>
       </section>
       <section>
         <VaraLokalerMobile />
