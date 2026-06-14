@@ -1,7 +1,7 @@
 import Button from "@/components/buttons/Button";
 import { scoutEquipment, scoutEquipmentStore } from "@/data/braAttVetaContent";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
