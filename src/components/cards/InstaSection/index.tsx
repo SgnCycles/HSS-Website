@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MessageCircle } from "lucide-react";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 
 interface FeedProps {
   id?: string;

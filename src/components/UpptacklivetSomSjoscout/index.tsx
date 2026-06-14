@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import InstaSection from "../cards/InstaSection";
 
