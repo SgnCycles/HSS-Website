@@ -1,5 +1,4 @@
 import Button from "@/components/buttons/Button";
-import { scoutEquipment, scoutEquipmentStore } from "@/data/braAttVetaContent";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
