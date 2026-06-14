@@ -1,0 +1,39 @@
+{
+  "vanliga-fragor": {
+    "faq_title": "Vanliga frågor",
+    "faq_description": "Här hittar du svar på de vanligaste frågorna om medlemskap, fakturor och ledarskap i HSS.",
+    "contact_description": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt.",
+    "not_found": "Hittade du inte svaret?",
+    "email_us": "Maila oss",
+    "faq": {
+      "scout-uniform": {
+        "title": "Varför har vi en scoutdräkt?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      },
+      "new-leader": {
+        "title": "Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      },
+      "lost-invoice": {
+        "title": "Jag har tappat bort min faktura. Vad gör jag?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      },
+      "membership-fee": {
+        "title": "Vad ingår i min medlemsavgift?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      },
+      "invoice-address": {
+        "title": "Hur ändrar jag min fakturaadress?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      },
+      "wrong-amount": {
+        "title": "Min faktura har felaktigt belopp. Vad gör jag?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      },
+      "contact-details": {
+        "title": "Hur ändrar jag mina kontaktuppgifter?",
+        "content": "Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
+      }
+    }
+  }
+}
