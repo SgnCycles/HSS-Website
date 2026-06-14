@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import FooterImage from "../FooterImage";
 import FooterLocation from "../FooterLocation";
 import FooterContact from "../FooterContact";
@@ -38,13 +38,13 @@ const FooterDesktop = () => {
           <address className="not-italic">
             <ul>
               <FooterLocation
-                title="Ruffen"
-                address="Kårlokal Ruffen,|vid Hässelby strandbad,|165 65 Hässelby"
+                title={t("ruffen_title")}
+                address={t("ruffen_address")}
                 googleMapslink={`https://www.google.com/maps/place/59°21'47.8"N+17°49'19.8"E/@59.3632844,17.819599,439m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d59.3632844!4d17.8221739?entry=tts&g_ep=EgoyMDI2MDUwNi4wIPu8ASoASAFQAw%3D%3D&skid=bcbe2d02-4dc2-4735-bc14-6a5e74833589`}
               />
               <FooterLocation
-                title="Myset"
-                address="Hajkstugan Myset,|mellan Kyrkhamn och Gåseborg,|175 48, Järfälla"
+                title={t("myset_title")}
+                address={t("myset_address")}
                 googleMapslink="https://maps.app.goo.gl/McVsJCFb1JEePGu96"
               />
             </ul>

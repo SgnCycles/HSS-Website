@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/buttons/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const VaraLokalerMobile = () => {
