@@ -27,7 +27,7 @@ const EngageraDigSomVuxenPage = () => {
         <article>
           <div className="flex w-full justify-center items-center lg:justify-start pb-6">
             <Image
-              src={`/Icons/engagera-icon.svg`}
+              src="/Icons/engagera-icon.svg"
               height={30}
               width={30}
               alt=""

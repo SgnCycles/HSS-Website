@@ -20,7 +20,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/bra-att-veta",
     "pages/engagera-dig",
     "pages/aret-i-hss",
-    "pages/aldersgrupper"
+    "pages/aldersgrupper",
+    "not-found"
   ];
 
   const messages = (
