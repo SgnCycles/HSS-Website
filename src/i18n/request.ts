@@ -16,7 +16,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/vanliga-fragor",
     "pages/vara-lokaler",
     "pages/policy",
-    "pages/vara-batar",
+    "pages/vara-batar", "pages/scoutmarken",
     "pages/bra-att-veta",
     "pages/engagera-dig",
     "pages/aret-i-hss",
