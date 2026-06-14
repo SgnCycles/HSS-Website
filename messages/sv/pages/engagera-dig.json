@@ -1,0 +1,37 @@
+{
+  "engagera-dig": {
+    "titleOne": "Engagera dig",
+    "titletwo": "som vuxen",
+    "intro": "Som förälder behöver du inte ta på dig ett fast uppdrag. Även tillfällig hjälp är ovärderlig för kårens vardag.",
+    "activityList": [
+      {
+        "id": "activityOne",
+        "icon": "🧹",
+        "activity": "Städning och underhåll av Ruffen eller Myset"
+      },
+      {
+        "id": "activityTwo",
+        "icon": "🚗",
+        "activity": "Transport till vandringar och utflykter"
+      },
+      {
+        "id": "activityThree",
+        "icon": "⛺",
+        "activity": "Praktiska hjälp vid läger och events"
+      },
+      {
+        "id": "activityFour",
+        "icon": "🍳",
+        "activity": "Matlagning och kökshjälp på läger"
+      },
+      {
+        "id": "activityFive",
+        "icon": "📷",
+        "activity": "Foto, kommunikation eller sociala medier"
+      }
+    ],
+    "sectionTwoTitle": "Vet du inte var du passar in?",
+    "sectionTwoIntro": "Hör av dig så berättar vi mer om vad som behövs just nu. Alla bidrag räknas, stora som små.",
+    "contactUs": "Kontakta oss"
+  }
+}
