@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 const BliLedareHome = () => {
   const tCards = useTranslations("BliLedareCard");
   const t = useTranslations("BliLedarePage");
+  const tTitle = useTranslations("hurManBlirScout")
   return (
     <section className="bg-primary font-body text-background grid place-items-center">
       <article className="container">
@@ -18,10 +19,8 @@ const BliLedareHome = () => {
             className="h2-icon"
           />
           <h2 className="heading-2 text-white">
-            <span className="text-accent">{t("headingAccent")}</span>{" "}
-            <span className="hidden sm:inline-block">
-              {t("headingSubtitle")}
-            </span>
+             <span className="text-accent">{tTitle('heading')} - </span>
+             <span className="sm:inline-block">{tTitle('headingAccent')}{" "}</span>
           </h2>
         </div>
         <p className="paragraph-light text-muted">{t("intro")}</p>

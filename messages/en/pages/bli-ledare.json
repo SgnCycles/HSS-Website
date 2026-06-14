@@ -18,8 +18,7 @@
     }
   },
   "BliLedarePage": {
-    "headingAccent": "Become a scout",
-    "headingSubtitle": "- we train you!",
+     "heading": "Become a leader - we train you!",
     "intro": "No prior experience needed. We send you to Scouts Sweden's leadership training and you'll have support from experienced leaders from day one.",
     "cta": "Register your interest here →",
     "readMore": "More information here",
