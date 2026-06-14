@@ -1,5 +1,5 @@
 import { ButtonProps } from "@/types/common.types"
-import { Link } from "@/i18n/routing";
+import Link from "next/link"
 
 export default function Button({ ariaLabel, href, variant, text, download=false, target="_blank" }: ButtonProps) {
   const variantClasses = {
