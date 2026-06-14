@@ -1,4 +1,5 @@
 export type ageGroupCardContentType = {
+  id:string,
   title: string,
   ageGroup: string,
   ageRange: string,
