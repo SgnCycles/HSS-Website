@@ -1,0 +1,51 @@
+{
+  "intro": {
+    "p1": "A badge is so much more than a piece of fabric. It shows that you have learned something, that you have experienced something special or that you belong to a certain patrol or scout troop.",
+    "p2": "Decorating your scout shirt with badges is a fun way to always remember your adventures and see everything you have learned along the way. A shirt story about everything you have been part of!",
+    "readMore": "Read more"
+  },
+  "specificaMarken": {
+    "heading": "Sea scout badges",
+    "info": "The proof and qualification badges become a sign of what the scouts can do and contribute to safety.",
+    "link": "See more sea scout badges →"
+  },
+  "markesaffisch": {
+    "badges": {
+      "sparare": {
+        "title": "Pathfinder Scouts",
+        "age": "8-9 years",
+        "subtitle": "For pathfinder scouts there are four participation badges, one proof badge and many interest badges to choose from."
+      },
+      "upptackare": {
+        "title": "Explorer Scouts",
+        "age": "10-11 years",
+        "subtitle": "For explorer scouts there are six participation badges, four proof badges and many interest badges."
+      },
+      "aventyrare": {
+        "title": "Adventure Scouts",
+        "age": "12-14 years",
+        "subtitle": "The adventurers have eight adventures each with their own badge. Proof and interest badges are of course also available!"
+      },
+      "utmanare": {
+        "title": "Challenge Scouts",
+        "age": "15+ years",
+        "subtitle": "As a challenge scout you create your own projects. The project you have done can be celebrated with one of the badges."
+      }
+    }
+  },
+  "uniform": {
+    "heading": "Every badge has its place",
+    "subtitle1": "The badge for your scout troop goes at the top of your left arm. Participation, qualification, proof and interest badges are placed on the left sleeve.",
+    "subtitle2": "Your patrol badge is sewn onto the right breast pocket together with the age group badge.",
+    "subtitle3": "The Sweden, Europe and world organisation badges go at the top of your right arm. On the right arm you also place your camp and event badges.",
+    "downloadText": "Instructions for placement of the new badges on the scout shirt.",
+    "downloadBtn": "Download PDF"
+  },
+  "scoutmarkenPage": {
+    "heading": "Scout Badges",
+    "tagline": "Every badge tells a story",
+    "markesaffischHeading": "Badges by age group",
+    "downloadText": "Instructions for placement of the new badges on the scout shirt.",
+    "downloadBtn": "Download PDF"
+  }
+}
