@@ -1,0 +1,86 @@
+{
+  "aret-i-hss": {
+    "title": "Året i HSS",
+    "subTitle": "Återkommande aktiviteter och traditioner",
+    "seasons": [
+      {
+        "title": "Vinter",
+        "icon": "snow-icon.svg",
+        "months": [
+          {
+            "subtitle": "Januari",
+            "info": "Terminsstart: 1 vecka efter skolstart|15 januari: Inlämnande av närvarolistor för höstterminen|Funktionärsmöte"
+          },
+          {
+            "subtitle": "Februari",
+            "info": "1 februari: Teckning av HSBK klubb vakter|Vikingarännet|Fakturering av terminsavgifter"
+          }
+        ]
+      },
+      {
+        "title": "Vår",
+        "icon": "green-leaf-icon.svg",
+        "months": [
+          {
+            "subtitle": "Mars",
+            "info": "Sjöscoutdagen|Ledarträff"
+          },
+          {
+            "subtitle": "April",
+            "info": "Sjöscoutdagen|Anmälningssavgift sommarläger|Hälsodeklaration sommarläger|Bokning av sjösättningsdatum"
+          },
+          {
+            "subtitle": "Maj",
+            "info": "1 maj: Sjösättning av båtarna|Kristihimmelsfärd MAWR - Mälaren Around the World Race|Funktionärsmöte|Slutbetalning sommarläger|Bryggfest på HSBK"
+          }
+        ]
+      },
+      {
+        "title": "Sommar",
+        "icon": "sunflower-icon.svg",
+        "months": [
+          {
+            "subtitle": "Juni",
+            "info": "Terminsavslutning"
+          },
+          {
+            "subtitle": "Juli",
+            "info": "Kontrollera båtarna vid HSBK|Någongång under sommaren: Läger/eskader"
+          },
+          {
+            "subtitle": "Augusti",
+            "info": "15 augusti: Inlämnande av närvarolistor för höstterminen|Terminsstart: 1 vecka efter skolstart"
+          }
+        ]
+      },
+      {
+        "title": "Höst",
+        "icon": "maple-leaf-icon.svg",
+        "months": [
+          {
+            "subtitle": "September",
+            "info": "Fakturering av terminsavgifter|Kårstämma|Bidragsansökan till St:Göran senast 30 sep"
+          },
+          {
+            "subtitle": "Oktober",
+            "info": "Båtupptagning"
+          },
+          {
+            "subtitle": "November",
+            "info": "KM - Kårmästerskap (Fars dag)|Funktionärsmöte"
+          }
+        ]
+      },
+      {
+        "title": "Vinter",
+        "icon": "snow-icon.svg",
+        "months": [
+          {
+            "subtitle": "December",
+            "info": "IGLOO - Kylslagen Utmanarhajk|Terminsavslutning i Kyrkan|Redovisning av bidrag från St:Göranskommitteen före 31 dec"
+          }
+        ]
+      }
+    ]
+  }
+}
