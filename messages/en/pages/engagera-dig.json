@@ -1,0 +1,37 @@
+{
+  "engagera-dig": {
+    "titleOne": "Get Involved",
+    "titletwo": "as an adult",
+    "intro": "As a parent, you don't need to take on a fixed role. Even occasional help is invaluable to the group's day-to-day life.",
+    "activityList": [
+      {
+        "id": "activityOne",
+        "icon": "🧹",
+        "activity": "Cleaning and maintenance of Ruffen or Myset"
+      },
+      {
+        "id": "activityTwo",
+        "icon": "🚗",
+        "activity": "Transport to hikes and day trips"
+      },
+      {
+        "id": "activityThree",
+        "icon": "⛺",
+        "activity": "Practical help at camps and events"
+      },
+      {
+        "id": "activityFour",
+        "icon": "🍳",
+        "activity": "Cooking and kitchen assistance at camp"
+      },
+      {
+        "id": "activityFive",
+        "icon": "📷",
+        "activity": "Photography, communications, or social media"
+      }
+    ],
+    "sectionTwoTitle": "Not sure where you fit in?",
+    "sectionTwoIntro": "Get in touch and we'll tell you more about what's needed right now. Every contribution counts, big or small.",
+    "contactUs": "Contact us"
+  }
+}
