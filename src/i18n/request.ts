@@ -8,7 +8,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-  const files = ["home", "nav", "pages/vad-gor-vi", "pages/vara-lokaler", "pages/policy", "pages/vara-batar", "pages/bra-att-veta", "pages/engagera-dig"];
+  const files = ["home", "nav", "pages/vad-gor-vi", "pages/vara-lokaler", "pages/policy", "pages/vara-batar", "pages/bra-att-veta", "pages/engagera-dig", "pages/aret-i-hss"];
 
   const messages = (
     await Promise.all(files.map((file) => import(`../../messages/${locale}/${file}.json`)))
