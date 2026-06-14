@@ -22,6 +22,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   "pages/engagera-dig",
   "pages/aret-i-hss",
   "pages/aldersgrupper",
+  "not-found",
   "pages/bli-ledare",
   "pages/trygghet-och-sakerhet",
 ];
