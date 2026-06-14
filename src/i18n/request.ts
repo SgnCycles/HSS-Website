@@ -17,6 +17,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/vara-lokaler",
     "pages/policy",
     "pages/vara-batar",
+    "pages/bra-att-veta"
   ];
 
   const messages = (
