@@ -1,49 +1,38 @@
 "use client"
 import Image from "next/image";
-import useIsMobile from "@/hooks/useGetMobile";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { scoutQualification } from "@/data/scoutBadges";
 
 const SpecificaMarken = () => {
   const t = useTranslations('scoutmarken')
-  const isMobile = useIsMobile();
-
   return (
-    <article className="container pt-0">
+    <article className="container pt-3 flex flex-col gap-6">
       <h2 className="heading-2 text-center xl:text-left">{t(`quali.title`)}</h2>
-      <div className="sm:w-full sm:grid sm:place-items-center sm:mb-6">
+        <div className="grid grid-cols-3 grid md:grid-cols-4 gap-3 w-full h-full justify-content-end">
+          {scoutQualification && scoutQualification.map((quali) =>
+            <div key={quali.id} className={`grid grid-rows-[7fr_1fr] gap-2 ${
+              quali.id === 1 ? 'row-start-1 row-end-3 col-span-3 md:col-span-1 h-100 md:h-75' : 'h-50 md:h-75 col-span-1 md:col-span-1'
+            }`}>
+              <div className={`relative  ${
+                quali.id === 1 ? 'drop-shadow-xl/70 md:drop-shadow-lg/60' : 'drop-shadow-lg/60'
+              }`}>
+                <Image src={quali.image} alt={quali.name} fill className="object-contain mask-clip-content" />
+              </div>
+              <p className="relative text-center heading-4">{quali.name}</p>
+            </div>
+          )}
+        </div>
       <p className="paragraph-light">
         {t(`quali.info`)}
       </p>
-      <Image src="/badges/batettan.svg" alt="" width={50} height={50} />
-        <Image
-          className="w-full h-auto"
-          src={
-            isMobile
-              ? "/images/Scoutmarken/Mobile/sjoscoutmarket_mobile.png"
-              : "/images/Scoutmarken/Desktop/sjoscoutmarken_desktop.png"
-          }
-          height={1200}
-          width={800}
-          alt="Sjöscoutmärken"
-        />
-      </div>
-      <div className="mt-6 mb-6 sm:hidden">
-        <Image
-          className="w-full h-auto"
-          src="/images/Scoutmarken/Mobile/bat_mobile.png"
-          height={1200}
-          width={800}
-          alt="Båttettan, båttvåan, båttrean märken"
-        />
-      </div>
       <div className="card paragraph flex flex-col border border-accent sm:p-6 bg-yellow-200">
         <Link
-          className="underline text-primary font-semibold"
+          className="underline text-primary font-semibold cursor-pointer"
           href="https://media.scoutcontent.se/uploads/2021/03/Affisch-A3-Sjo-och-vatten-vit-bakgrund-2020-klar-1.pdf"
           target="_blank"
         >
-          Se flera sjöscoutmärken →
+          {t(`quali.btn`)}
         </Link>
       </div>
       <div className="md:hidden w-full flex justify-center items-center">

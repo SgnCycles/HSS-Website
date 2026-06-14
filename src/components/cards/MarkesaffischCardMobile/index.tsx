@@ -1,20 +1,22 @@
-import { markesaffischCardContent } from "@/data/scoutmarkenCardContent";
+import { markesAffischCardContent } from "@/data/scoutmarkenCardContent";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const MarkesaffischCardMobile = () => {
+  const t = useTranslations('scoutmarken')
   return (
     <ul className="text-center sm:hidden">
-      {markesaffischCardContent &&
-        markesaffischCardContent.map((badge, index) => (
-          <li key={index} className={`${badge.colourSchemeSecondary} mb-6`}>
+      {markesAffischCardContent &&
+        markesAffischCardContent.map((badge) => (
+          <li key={badge.id} className={`${badge.secondary} mb-6`}>
             <h3
-              className={`font-heading text-[18px] md:text-[20px] font-bold pt-4 ${badge.colourSchemeHeading} text-[18px] md:text-[20px]`}
+              className={`ml-0 mr-0 font-heading text-[18px] md:text-[20px] font-bold pt-4 ${badge.heading} text-[18px] md:text-[20px]`}
             >
-              {`${badge.title} ${badge.age}`}
+              {badge.title} {t(`ageBadges.${badge.id}.age`)}
             </h3>
             <div className="grid place-items-center">
               <p className="paragraph-light text-center w-[90%]">
-                {badge.subtitle}
+              {t(`ageBadges.${badge.id}.text`)}
               </p>
             </div>
             {badge.mobileImage &&

@@ -1,3 +1,9 @@
+export type ImageProps = {
+  id: number,
+  image: string,
+  name: string
+}
+
 export type BadgeProps = {
   id: number,
   name: string,
@@ -6,6 +12,13 @@ export type BadgeProps = {
   }[]
   image: string
 }
+
+export const scoutQualification: ImageProps[] = [
+  { id: 1, image: "/badges/sjoscoutmarket.svg", name: "Sjöscoutmärket" },
+  { id: 2, image: "/badges/batettan.svg", name: "Båtettan" },
+  { id: 3, image: "/badges/battvaan.svg", name: "Båttvåan" },
+  { id: 4, image: "/badges/battrean.svg", name: "Båttrean" }
+]
 
 export const scoutBadges: BadgeProps[] = [
   {

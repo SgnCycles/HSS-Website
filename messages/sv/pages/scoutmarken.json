@@ -1,18 +1,78 @@
 {
   "scoutmarken": {
+    "metaTitle": "HSS - Scoutmärken",
+    "metaDescription": "Scoutmärken berättar din historia. Om äventyr, kunskaper och upplevelser. Lär dig vad märkena betyder och hur de bärs på scoutskjortan.",
     "title": "Scoutmärken",
     "subTitle": "Varje märke berättar en historia",
+    "readMoreBtn": "Läs mer",
+    "intro": {
+      "1": {"text": "Ett märke är så mycket mer än en tygbit. Det visar att du lärt dig något, att du varit med om något speciellt eller att du tillhör en viss patrull eller scoutkår."},
+      "2": {"text": "Att klä din scoutskjorta med märken är ett roligt sätt att alltid minnas dina äventyr och se allt du lärt dig på vägen. En skjortberättelse om allt du varit med om!"}
+    },
     "paragraph": "Ett märke är så mycket mer än en tygbit. Det visar att du lärt dig något, att du varit med om något speciellt eller att du tillhör en viss patrull eller scoutkår.",
     "quali": {
-      "title": "Behörighetsmärken",
-      "info": "Att lära dig hantera en båt är ett spännande lärande som aldrig tar slut. Märket kan användas för att visa vilken båt du får ta ut. Förutsättningarna i scoutkårer ser olika ut. Kriterierna behöver anpassas utifrån vilka båtar kåren har, vilka vatten som finns i närområdet och hur verksamheten är upplagd. Nedan finns förslag på kriterier för att underlätta vid gemensamma utfärder mellan kårer. Behörighetsmärkena är inte specificerade utifrån åldersgrupp eftersom åldersgrupp beror på förutsättningarna lokalt. Scoutkåren kan vid behov själva skapa ytterligare märken som Båtfyran, Båtfemman osv med samma utseende.",
-      "1": { "text": ""}, 
-      "2": { "text": ""}, 
-      "3": { "text": ""} 
+      "title": "Specifika märken för sjöscouter",
+      "info": "Bevis - och behörighetsmärkena blir ett tecken på vad scouterna kan och bidrar till säkerheten.",
+      "btn": "Se flera sjöscoutmärken →"
+    },
+    "ageBadges": {
+      "title": "Märkesaffisch för din åldersgrupp",
+      "1": { 
+        "age": "8-9 år", 
+        "text": "För dig som är spårare finns fyra deltagandemärken, ett bevismärke och många intressemärken att välja bland."
+      },
+      "2": { 
+        "age": "10-11 år", 
+        "text": "För upptäckarscouter finns sex deltagandemärken, fyra bevismärken och många intressemärken."
+      },
+      "3": { 
+        "age": "12-14 år", 
+        "text": "Äventyrarna har åtta äventyr som alla har sitt eget märke. Bevis- och intressemärken finns såklart också!"
+      },
+      "4": { 
+        "age": "15+ år", 
+        "text": "Som utmanarscout skapar ni era egna projekt. Det projekt ni gjort kan ni fira med något av märkena."
+      }
     },
     "interest": {
       "title": "Intressemärken",
       "text": "Här ser du några märken som handlar om scouting på sjö och vatten."
+    },
+    "placements": {
+      "title": "Varje märke har sin plats",
+      "pdfBtn": "Ladda ner PDF",
+      "text": "Anvisningar för placering av de nya märkena på scoutskjortan.",
+      "front": {
+        "imageText": "illustration skjorta scoutmärken framsida",
+        "1": "Åldersgrupp",
+        "2": "Scoutsymbolen (broderad)",
+        "3": "Patrull",
+        "4": "Utbildningsmärken",
+        "5": "Förtjänstmärken",
+        "6": "Samverkansorganisation"
+      },
+      "left": {
+        "imageText": "illustration skjorta scoutmärken vänster",
+        "1": "Lokal/Scoutkår",
+        "2": "Regionalt/District",
+        "3": "Sjöscout",
+        "4": "Ställningstagande",
+        "5": "Deltagandemärken",
+        "6": "Bevis-, Intresse-,",
+        "7": "Behörighetsmärken"
+      },
+      "right": {
+        "imageText": "illustration skjorta scoutmärken höger",
+        "1": "Sverige, Europa",
+        "2": "Världsförbund",
+        "3": "Arrangemang",
+        "4": "och läger"
+      },
+      "locations": {
+        "1": { "text": "Märket för din scoutkår sätter du högst upp på vänster arm. Deltagande-, behörighets-, bevis- och intressemärken placerar du på vänster ärm." },
+        "2": { "text": "Ert patrullmärke syr du fast på höger bröstficka tillsammans med åldersgruppsmärket." },
+        "3": { "text": "Sverige-, Europa- och världsorganisationsmärkena sätter du högst upp på höger ärm. På höger arm sätter du även dina läger- och arrangemangsmärken." }
+      }
     }
   }
 }

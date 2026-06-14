@@ -19,11 +19,13 @@ const ScoutBadgesWater = () => {
         <div key={badge.id} className="grid grid-cols-8 grid-rows-[1fr_auto] text-center gap-2 items-center group">
           <div className="flex flex-col gap-2 ">
             {badge.groups && badge.groups.map((group, index) =>
-              <Image key={`${badge.id}-group-${index}`} src={group.age} alt="" width={30} height={30} />
+              <Image key={`${badge.id}-group-${index}`} src={group.age} alt="" width={30} height={30} className="h-auto w-auto" />
             )}
           </div>
-          <Image src={badge.image} alt="" width={200} height={200} className="col-start-2 col-end-8 w-full h-auto perspective-near perspective-origin-bottom-right transition-all duration-200 origin-bottom-right group-hover:rotate-10"  />
-          <p className="col-start-2 col-end-8 row-start-2 paragraph text-center transition-all duration-200 lg:text-black/0 lg:group-hover:text-black">{badge.name}</p>
+          <div className="col-start-2 col-end-8 h-full w-full">
+            <Image src={badge.image} alt={badge.name} width={200} height={200} className="w-full h-auto perspective-near perspective-origin-bottom-right transition-all duration-200 origin-bottom-right group-hover:rotate-10"  />
+          </div>
+          <p className="col-start-2 col-end-8 row-start-2 paragraph text-center">{badge.name}</p>
         </div>
         )}
       </div>

@@ -1,18 +1,78 @@
 {
   "scoutmarken": {
-    "title": "Scoutmärken",
-    "subTitle": "Varje märke berättar en historia",
-    "paragraph": "Ett märke är så mycket mer än en tygbit. Det visar att du lärt dig något, att du varit med om något speciellt eller att du tillhör en viss patrull eller scoutkår.",
+    "metaTitle": "HSS - Scout badges",
+    "metaDescription": "Scout badges tell your story. About adventures, knowledge and experiences. Learn what the badges mean and how they are worn on the scout shirt.",
+    "title": "Scout badges",
+    "subTitle": "Every scout badge tells a story",
+    "readMoreBtn": "Read more",
+    "intro": {
+      "1": {"text": "A badge is so much more than a piece of cloth. It shows that you have learned something, that you have been involved in something special, or that you belong to a certain patrol or scout troop."},
+      "2": {"text": "Decorating your scout shirt with badges is a fun way to always remember your adventures and see everything you've learned along the way. A shirt story about everything you've been through!"}
+    },
+    "paragraph": "A badge is so much more than a piece of cloth. It shows that you have learned something, that you have been involved in something special, or that you belong to a certain patrol or scout troop.",
     "quali": {
-      "title": "Behörighetsmärken",
-      "info": "Att lära dig hantera en båt är ett spännande lärande som aldrig tar slut. Märket kan användas för att visa vilken båt du får ta ut. Förutsättningarna i scoutkårer ser olika ut. Kriterierna behöver anpassas utifrån vilka båtar kåren har, vilka vatten som finns i närområdet och hur verksamheten är upplagd. Nedan finns förslag på kriterier för att underlätta vid gemensamma utfärder mellan kårer. Behörighetsmärkena är inte specificerade utifrån åldersgrupp eftersom åldersgrupp beror på förutsättningarna lokalt. Scoutkåren kan vid behov själva skapa ytterligare märken som Båtfyran, Båtfemman osv med samma utseende.",
-      "1": { "text": ""}, 
-      "2": { "text": ""}, 
-      "3": { "text": ""} 
+      "title": "Sjöscout badges",
+      "info": "Bevis - och behörighetsmärkena (certification and qualification badges) become a sign of what the scouts can do and contribute to safety.",
+      "btn": "Se more sea scout badges →"
+    },
+    "ageBadges": {
+      "title": "Scout badges for specific age groups",
+      "1": { 
+        "age": "Ages 8-9", 
+        "text": "For those of you who are spårare (trackers), there are four deltagandemärken (participation badges), bevismärket (proof badge) and many intressemärken (interest badges) to choose from."
+      },
+      "2": { 
+        "age": "Ages 10-11", 
+        "text": "For upptäckarscouter (explorer scouts) there are six deltagandemärken (participation badges), four bevismärken (proof badges) and many intressemärken (interest badges)."
+      },
+      "3": { 
+        "age": "Ages 12-14", 
+        "text": "Äventyrarna (adventurers) have eight adventures that all have their own badge. Bevismärken (proof badges) and intressemärken (interest badges) as well!"
+      },
+      "4": { 
+        "age": "Ages 15+", 
+        "text": "As an utmanarscout (challenger scout) you create your own projects. You can celebrate the project you have completed with one of the badges."
+      }
     },
     "interest": {
       "title": "Intressemärken",
-      "text": "Här ser du några märken som handlar om scouting på sjö och vatten."
+      "text": "Here you will see some intressemärken (interest badges) that are about scouting on the lake and water."
+    },
+    "placements": {
+      "title": "Every badge has its place",
+      "pdfBtn": "Download PDF",
+      "text": "Instructions for placing the new badges on the scout shirt.",
+      "front": {
+        "imageText": "Illustration, shirt scout badges front",
+        "1": "Age group",
+        "2": "Scout symbol (embroidered)",
+        "3": "Squad",
+        "4": "Education badge",
+        "5": "Merit badges",
+        "6": "Organization"
+      },
+      "left": {
+        "imageText": "Illustration, shirt scout badges left",
+        "1": "Local/Scout Corps",
+        "2": "Regional/District",
+        "3": "Sjöscout",
+        "4": "Position statement",
+        "5": "Participation badges",
+        "6": "Proof-, Interest-,",
+        "7": "Authorization badges"
+      },
+      "right": {
+        "imageText": "Illustration, shirt scout badges right",
+        "1": "Sweden, Europe",
+        "2": "World Federation",
+        "3": "Arrangements",
+        "4": "and camps"
+      },
+      "locations": {
+        "1": { "text": "You place the badge for your scout corps at the top of your left arm. You place the participation, qualification, proof and interest badges on the left sleeve." },
+        "2": { "text": "You sew your patrol badge onto the right breast pocket together with the age group badge." },
+        "3": { "text": "You put the Swedish, European and world organization badges at the top of the right sleeve. You also put your camp and event badges on the right arm." }
+      }
     }
   }
 }

@@ -1,28 +1,21 @@
-import { scoutUniformCardContent } from "@/data/scoutmarkenCardContent";
-import Image from "next/image";
+import BadgePlacementFront from "@/components/features/BadgePlacementFront";
+import BadgePlacementLeft from "@/components/features/BadgePlacementLeft";
+import BadgePlacementRight from "@/components/features/BadgePlacementRight";
+import { useTranslations } from "next-intl";
 
 const ScoutUniformDesktop = () => {
+  const t = useTranslations('scoutmarken')
   return (
-    <>
-      {scoutUniformCardContent && (
-        <div className="hidden sm:flex sm:flex-col">
-          <h2 className="heading-2 text-center xl:text-left pb-6">{scoutUniformCardContent[0].title}</h2>
-          <p className="paragraph-light">
-            {scoutUniformCardContent[0].subtitle}
-            {scoutUniformCardContent[0].second_subtitle}
-            {scoutUniformCardContent[0].third_subtitle}
-          </p>
-          <div className="w-full grid place-items-center">
-            <Image
-              src={scoutUniformCardContent[0].desktopImage}
-              height={1000}
-              width={1000}
-              alt="Scoutkläder"
-            />
-          </div>
-        </div>
-      )}
-    </>
+    <div className="hidden sm:grid grid-rows-[1fr_auto] gap-8">
+      <div className="grid grid-cols-[4fr_7fr_5fr] w-full">
+        <BadgePlacementRight className="font-bold tracking-tighter h-auto object-contain justify-self-end text-[8px] text-shadow-xs text-shadow-white/100" />
+        <BadgePlacementFront className="font-bold tracking-tighter h-auto object-contain justify-self-center text-[9px] text-shadow-xs text-shadow-white/100" />
+        <BadgePlacementLeft className="font-bold tracking-tighter h-auto object-contain text-[8px] text-shadow-xs text-shadow-white/100" />
+      </div>
+      <p className="paragraph-light">
+        {t(`placements.locations.1.text`)} {t(`placements.locations.2.text`)} {t(`placements.locations.3.text`)}
+      </p>
+    </div>
   );
 };
 

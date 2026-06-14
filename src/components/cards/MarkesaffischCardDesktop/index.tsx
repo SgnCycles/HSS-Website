@@ -1,14 +1,16 @@
-import { markesaffischCardContent } from "@/data/scoutmarkenCardContent";
+import { markesAffischCardContent } from "@/data/scoutmarkenCardContent";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const MarkesaffischCardDesktop = () => {
+  const t = useTranslations('scoutmarken')
   return (
-    <ul className="hidden sm:flex sm:flex-col sm:text-center sm:w-full sm:items-center">
-      {markesaffischCardContent &&
-        markesaffischCardContent.map((badge, index) => (
+    <ul className="hidden container sm:flex sm:flex-col sm:text-center sm:w-full sm:items-center">
+      {markesAffischCardContent &&
+        markesAffischCardContent.map((badge) => (
           <li
-            key={index}
-            className={`border-[5px] ${badge.colourSchemeBorder} mb-6 rounded-sm p-6 w-full`}
+            key={badge.id}
+            className={`border-[5px] ${badge.border} mb-6 rounded-sm p-6 w-full`}
           >
             <div className="flex flex-row justify-between">
               <div className="flex flex-col justify-center sm:w-50 mr-6">
@@ -17,18 +19,19 @@ const MarkesaffischCardDesktop = () => {
                     src={`/images/Agegroup/${badge.icon}`}
                     height={70}
                     width={70}
+                    className="h-auto w-auto"
                     alt={`${badge.title} märken`}
-                  ></Image>
+                  />
                 </div>
                 <div
-                  className={`font-heading font-bold ${badge.colourSchemeHeading} ${badge.colourSchemeSecondary} text-md rounded-sm pt-1 pb-2 pr-2 pl-2`}
+                  className={`font-heading font-bold ${badge.heading} ${badge.secondary} text-md rounded-sm pt-1 pb-2 pr-2 pl-2`}
                 >
                   <h3>{badge.title}</h3>
-                  <span>{badge.age}</span>
+                  <span>{t(`ageBadges.${badge.id}.age`)}</span>
                 </div>
               </div>
               <div className="flex flex-col justify-between">
-                <div className="w-full" key={index}>
+                <div className="w-full">
                   <Image
                     className="w-[90%] h-auto"
                     src={badge.desktopImage}
@@ -38,7 +41,7 @@ const MarkesaffischCardDesktop = () => {
                   />
                 </div>
                 <p className="paragraph-light text-wrap mb-0">
-                  {badge.subtitle}
+                  {t(`ageBadges.${badge.id}.text`)}
                 </p>
               </div>
             </div>

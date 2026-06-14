@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "@/components/buttons/Button";
 import ScoutUniformDesktop from "@/components/cards/ScoutUniformDesktop";
 import ScoutUniformMobile from "@/components/cards/ScoutUniformMobile";
@@ -8,64 +7,55 @@ import SpecificaMarken from "@/components/cards/SpecificaMarkenCard";
 import ScoutmarkenIntro from "@/components/cards/ScoutmarkenIntro";
 import type { Metadata } from "next";
 import ScoutBadgesWater from "@/components/cards/ScoutBadgesWater";
+import Icons from "@/components/features/Icons";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Scoutmärken",
-  description:
-    "Scoutmärken berättar din historia. Om äventyr, kunskaper och upplevelser. Lär dig vad märkena betyder och hur de bärs på scoutskjortan.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('scoutmarken')
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription')
+  }
+}
 
 const ScoutmarkenPage = () => {
+  const t = useTranslations('scoutmarken')
   return (
     <main id="main-content">
       <section className="grid place-items-center font-body">
-        <div className="flex justify-center lg:justify-start items-center flex-wrap container pb-0">
-          <div className="flex justify-center sm:justify-start pb-6">
-            <Image
-              src="/Icons/yellow-anchor-icon.svg"
-              height={30}
-              width={30}
-              alt=""
-              className="h1-icon"
-            />
-            <h1 className="heading-1">Scoutmärken</h1>
-          </div>
-          <div className="grid place-items-center ml-4 pb-6">
-            <p className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md">
-              Varje märken berättar en historia
-            </p>
-          </div>
+        <div className="container flex justify-center lg:justify-start items-center pb-2 flex-wrap gap-4">
+          <h1 className="heading-1">
+            <Icons name="anchor" variant="text-accent h1-icon" />
+            {t(`title`)}
+          </h1>
+          <p className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md">
+            {t(`subTitle`)}
+          </p>
         </div>
         <ScoutmarkenIntro />
         <SpecificaMarken />
-        <article className="w-full container pt-0 pb-0">
+        <article className="pt-0 pb-0">
           <h2 className="heading-2 text-center mb-6 xl:text-left">
-            Märkesaffisch för din åldersgrupp
+            {t(`ageBadges.title`)}
           </h2>
           <MarkesaffischCardMobile />
           <MarkesaffischCardDesktop />
-          <div className="md:hidden w-full flex justify-center items-center">
-            <Image
-              src="/images/Body/blue_seperator.png"
-              height={100}
-              width={1000}
-              alt=""
-            />
-          </div>
         </article>
         <ScoutBadgesWater />
         <article className="container pb-0">
+        <h2 className="heading-2 text-center pb-6 pt-6">{t(`placements.title`)}</h2>
           <ScoutUniformMobile />
           <ScoutUniformDesktop />
           <div className="card flex flex-col sm:flex-row lg:justify-around items-center border border-accent bg-yellow-200 rounded-sm mt-6 mb-6">
             <p className="paragraph text-primary text-center sm:text-left mb-6 mr-2 sm:mb-0">
-              Anvisningar för placering av de nya märkena på scoutskjortan.
+              {t(`placements.text`)}
             </p>
             <Button
               ariaLabel=""
               href="/pdf/nya-maerkessystemet.pdf"
               variant="ternaryBlue"
-              text="Ladda ner PDF"
+              text={t(`placements.pdfBtn`)}
               download={true}
             />
           </div>
