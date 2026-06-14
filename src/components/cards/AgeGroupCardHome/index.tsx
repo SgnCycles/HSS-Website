@@ -2,8 +2,16 @@
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
 import Button from "@/components/buttons/Button";
+import { useTranslations } from "next-intl";
 
 const AgeGroupCardHome = () => {
+
+  const t = useTranslations("aldersgrupper");
+  const groups = t.raw("groups") as Record<string, any>;
+  const newDataCards = ageGroupCardContent.map((card) => ({
+    ...card,
+    ...groups[card.id],
+  }));
 
   return (
     <section className="bg-yellow-100 grid place-items-center">
@@ -16,29 +24,25 @@ const AgeGroupCardHome = () => {
             alt=""
             className="h2-icon"
           />
-          <h2 className="heading-2">
-            Åldersgrupper
-          </h2>
+          <h2 className="heading-2">{t("title")}</h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="paragraph-light text-center sm:text-left mb-0">
-            Oavsett ålder finns det en plats för dig i HSS.
-            <br />
-            Varje avdelning har sin egen karaktär och sina egna äventyr.
+          <p className="paragraph-light text-center sm:text-left mb-0 whitespace-pre-line">
+            {t("intro")}
           </p>
           <div className="hidden place-content-center md:flex flex-wrap text-xl">
             <Button
               ariaLabel=""
               href="/aldersgrupper"
               variant="primaryBlue"
-              text="Läs mer här"
+              text={`${t("readMoreHere")}`}
               target="_self"
             />
           </div>
         </div>
         <ul className="flex flex-col h-auto justify-center items-center gap-6 pb-6">
-          {ageGroupCardContent &&
-            ageGroupCardContent.map((card, index) => (
+          {newDataCards &&
+            newDataCards.map((card, index) => (
               <li
                 key={index}
                 className={`bg-background flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-md rounded-tr-md rounded-bl-xs rounded-br-xs overflow-hidden`}

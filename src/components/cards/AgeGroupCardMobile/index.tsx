@@ -3,6 +3,7 @@ import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const AgeGroupPageMobile = () => {
 
@@ -10,11 +11,17 @@ const AgeGroupPageMobile = () => {
   const handleClick = (index: number) => {
     setIsOpen(isOpen === index ? null : index);
   };
+  const t = useTranslations("aldersgrupper");
+  const groups = t.raw("groups") as Record<string, any>;
+  const newDataCards = ageGroupCardContent.map((card) => ({
+    ...card,
+    ...groups[card.id]
+  }));
 
   return (
     <>
-      {ageGroupCardContent &&
-        ageGroupCardContent.map((card, index) => (
+      {newDataCards &&
+        newDataCards.map((card, index) => (
           <li
             key={index}
             className="flex flex-col justify-between md:min-h-30 bg-background"
@@ -26,9 +33,7 @@ const AgeGroupPageMobile = () => {
               <p className="place-content-center text-left pl-4 h-8">
                 {card.meetings}
               </p>
-              <button
-                className="flex justify-between items-center pr-4 cursor-pointer"
-              >
+              <button className="flex justify-between items-center pr-4 cursor-pointer">
                 <Image
                   src="/Icons/caret_down_white.svg"
                   height={15}

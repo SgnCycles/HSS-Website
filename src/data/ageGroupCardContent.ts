@@ -2,6 +2,7 @@ import { ageGroupCardContentType } from "@/types/types";
 
 export const ageGroupCardContent:ageGroupCardContentType[] = [
   {
+    id: "sjohumlorna",
     title: "Sjöhumlorna",
     ageGroup: "Spårarscouter",
     ageRange: "8-9 år",
@@ -31,6 +32,8 @@ export const ageGroupCardContent:ageGroupCardContentType[] = [
     apply: "https://www.scoutnet.se/register/in/group/764"
   },
   {
+
+    id: "kaparna",
     title: "Kaparna",
     ageGroup: "Upptäckarscouter",
     ageRange: "10-11 år",
@@ -60,6 +63,7 @@ export const ageGroupCardContent:ageGroupCardContentType[] = [
     apply: "https://www.scoutnet.se/register/in/group/764"
   },
   {
+    id: "konvojen",
     title: "Konvojen",
     ageGroup: "Äventyrarscouter",
     ageRange: "12-14 år",
@@ -89,6 +93,7 @@ export const ageGroupCardContent:ageGroupCardContentType[] = [
     apply: "https://www.scoutnet.se/register/in/group/764"
   },
   {
+    id: "utmanare",
     title: "Utmanare",
     ageGroup: "Utmanarscouter",
     ageRange: "15+ år",
@@ -118,6 +123,7 @@ export const ageGroupCardContent:ageGroupCardContentType[] = [
     apply: "https://www.scoutnet.se/register/in/group/764"
   },
   {
+    id: "familjescouter",
     title: "Familjescouter",
     ageGroup: "Ungascouter",
     ageRange: "upp till 8 år",
