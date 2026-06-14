@@ -2,6 +2,7 @@ import AretiHssCard from "@/components/cards/AretIHssCard";
 import { aretIHss } from "@/data/aretIHssContent";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
  title: "Året i HSS",
@@ -9,6 +10,10 @@ export const metadata: Metadata = {
 };
 
 const AretiHssPage = () => {
+
+  const t = useTranslations('aret-i-hss');
+  const seasons = t.raw("seasons") as typeof aretIHss;
+
   return (
     <main
       id="main-content"
@@ -19,19 +24,19 @@ const AretiHssPage = () => {
           <div className="flex flex-row">
             <Image
               className="h1-icon"
-              src={`/Icons/yellow-calendar-icon.svg`}
+              src="/Icons/yellow-calendar-icon.svg"
               height={30}
               width={30}
               alt=""
             />
-            <h1 className="heading-1">Året i HSS</h1>
+            <h1 className="heading-1">{t("title")}</h1>
           </div>
           <div className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md ml-4">
-            <p>Återkommande aktiviteter och traditioner</p>
+            <p>{t("subTitle")}</p>
           </div>
         </div>
-        {aretIHss &&
-          aretIHss.map((content, index) => {
+        {seasons &&
+          seasons.map((content, index) => {
             return <AretiHssCard key={index} {...content} />;
           })}
       </section>

@@ -18,7 +18,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/policy",
     "pages/vara-batar",
     "pages/bra-att-veta",
-    "pages/engagera-dig"
+    "pages/engagera-dig",
+    "pages/aret-i-hss"
   ];
 
   const messages = (
