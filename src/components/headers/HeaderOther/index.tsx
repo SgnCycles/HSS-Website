@@ -10,7 +10,7 @@ const HeaderOther = () => {
   const findPage = pageHeaderImage.find((page) => strippedPath === page.path);
   const headerImage = findPage?.image ?? "vilkaArVi_hero.jpg";
 
-  const t = useTranslations('vad-gor-vi')
+  const t = useTranslations("vad-gor-vi")
 
   return (
     <header
@@ -25,8 +25,8 @@ const HeaderOther = () => {
         pathname === "/sv/vad-gor-vi" ||
         pathname === "/en/vad-gor-vi") && (
         <h1 className="bottom-0 heading-1 text-center text-shadow-black text-white pb-6 mt-auto">
-          {t('pageTitle')}{" "}<br className="md:hidden"></br>
-          <span className="text-accent">{t('pageTitle2')}</span>
+          {t("pageTitle")}{" "}<br className="md:hidden"></br>
+          <span className="text-accent">{t("pageTitle2")}</span>
         </h1>
       )}
     </header>

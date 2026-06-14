@@ -26,20 +26,20 @@ const SecurityAndSafetyFeature = () => {
     }
   }, [isOpen]);
 
-  const tPopUp = useTranslations('securityPopup');
-  const tInfo = useTranslations('security-and-safety-info');
-  const tChecks = useTranslations('security-and-safety-checks');
-  const tPage = useTranslations('security-and-safety-page');
+  const tPopUp = useTranslations("securityPopup");
+  const tInfo = useTranslations("security-and-safety-info");
+  const tChecks = useTranslations("security-and-safety-checks");
+  const tPage = useTranslations("security-and-safety-page");
 
   return (
     <article className="flex flex-col items-center self-center container">
       <div className="flex flex-col items-center lg:flex-row lg:items-start lg:gap-10 lg:justify-between">
         <section className="flex flex-col items-center lg:mb-6 lg:mt-6 lg:items-start">
           <div className="flex items-center justify-center w-full lg:p-4 lg:pt-0 mb-6 md:text-nowrap">
-            <Image className="h1-icon" src={"/Icons/yellow-shield-cross-icon.svg"} alt="" height={40} width={40} />
-            <h1 className="heading-1 text-primary">{tPage('page-title')}</h1>
+            <Image className="h1-icon" src="/Icons/yellow-shield-cross-icon.svg" alt="" height={40} width={40} />
+            <h1 className="heading-1 text-primary">{tPage("page-title")}</h1>
           </div>
-          <p className="pb-4 pt-0 paragraph-light text-center max-w-lg lg:text-left lg:p-0 lg:pl-6">{tPage('sub-title')}</p>
+          <p className="pb-4 pt-0 paragraph-light text-center max-w-lg lg:text-left lg:p-0 lg:pl-6">{tPage("sub-title")}</p>
         </section>
         <div className="mt-auto">
           <ul className="flex flex-col mb-4">
@@ -65,7 +65,7 @@ const SecurityAndSafetyFeature = () => {
         <ReadMoreButton
           ariaLabel="Open to read more"
           variant="primaryBlue"
-          text={tPage('cta')}
+          text={tPage("cta")}
           onClick={handleClick}
         />
       </div>
@@ -77,7 +77,7 @@ const SecurityAndSafetyFeature = () => {
           ></div>
           <article className="bg-background p-6 z-10 w-[80%]">
             <div className="text-center">
-              <h2 className="heading-2 m-4">{tPage('popup-title')}</h2>
+              <h2 className="heading-2 m-4">{tPage("popup-title")}</h2>
             </div>
             {securityAndSafetyPopupContent && securityAndSafetyPopupContent.map((box, index) => (
               <section className="p-2" key={index}>
@@ -88,7 +88,7 @@ const SecurityAndSafetyFeature = () => {
             <div className="flex justify-end">
               <CloseButton
                 ariaLabel="Close the window"
-                text={tPage('close-cta')}
+                text={tPage("close-cta")}
                 onClick={handleClick}
               />
             </div>

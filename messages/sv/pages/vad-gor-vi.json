@@ -1,7 +1,6 @@
 {
   "vad-gor-vi": {
-
-    "pageTitle":"Välkommen till HSS",
+    "pageTitle": "Välkommen till HSS",
     "pageTitle2": "och äventyret",
     "titleKey": "Vad gör vi i scout?",
     "subTitleKey": "Sjöscout sedan 1954",
@@ -29,22 +28,34 @@
     }
   },
   "blirScoutSteps": {
-  "step1": { "title": "Skicka in intresseanmälan", "info": "Fyll i formuläret på hemsidan. Vi kontaktar dig inom några dagar för att berätta mer." },
-  "step2": { "title": "Kom på ett prova-på möte", "info": "Ditt barn träffar sin blivande patrull och ledare för en rolig provkväll → kostnadsfritt." },
-  "step3": { "title": "Välkommen in i kåren!", "info": "Vi skriver in dig, berättar om terminsavgiften och du är redo att börja äventyret." },
-  "step4": { "title": "Investering & utrustning", "info": "Basplagg bekostas av familjen, men vi hjälper till att hitta allt du behöver." }
-},
-"hurManBlirScout": {
-  "heading": "Hur man blir",
-  "headingAccent": "scout?",
-  "intro": "Det är enkelt att komma igång! Fyra steg och du är en del av vår kårfamilj.",
-  "termTitle": "Terminavgift inkluderar",
-  "term1": "Veckomöten & aktiviteter",
-  "term2": "Försäkring via Scouterna",
-  "term3": "Tillgång till båtar & utrustning",
-  "faqQuestion": "Har du frågor?",
-  "faqLink": "Besök FAQ",
-  "ageGroupBtn": "Läs mer om åldersgrupper",
-  "applyBtn": "Ansök om att bli scout!"
-}
+    "step1": {
+      "title": "Skicka in intresseanmälan",
+      "info": "Fyll i formuläret på hemsidan. Vi kontaktar dig inom några dagar för att berätta mer."
+    },
+    "step2": {
+      "title": "Kom på ett prova-på möte",
+      "info": "Ditt barn träffar sin blivande patrull och ledare för en rolig provkväll → kostnadsfritt."
+    },
+    "step3": {
+      "title": "Välkommen in i kåren!",
+      "info": "Vi skriver in dig, berättar om terminsavgiften och du är redo att börja äventyret."
+    },
+    "step4": {
+      "title": "Investering & utrustning",
+      "info": "Basplagg bekostas av familjen, men vi hjälper till att hitta allt du behöver."
+    }
+  },
+  "hurManBlirScout": {
+    "heading": "Hur man blir",
+    "headingAccent": "scout?",
+    "intro": "Det är enkelt att komma igång! Fyra steg och du är en del av vår kårfamilj.",
+    "termTitle": "Terminavgift inkluderar",
+    "term1": "Veckomöten & aktiviteter",
+    "term2": "Försäkring via Scouterna",
+    "term3": "Tillgång till båtar & utrustning",
+    "faqQuestion": "Har du frågor?",
+    "faqLink": "Besök FAQ",
+    "ageGroupBtn": "Läs mer om åldersgrupper",
+    "applyBtn": "Ansök om att bli scout!"
+  }
 }
