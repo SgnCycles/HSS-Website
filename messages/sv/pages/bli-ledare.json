@@ -19,7 +19,8 @@
     "pagetitleKey": "Bli ledare - vi utbildar dig!"
   },
   "BliLedarePage": {
-    "heading": "Bli ledare - vi utbildar dig!",
+    "headingAccent": "Bli ledare ",
+    "headingSubtitle": "- vi utbildar dig!",
     "intro": "Du behöver inga förkunskaper. Vi skickar dig på Scouternas ledarutbildning och du får stöd av erfarna ledare från dag ett.",
     "cta": "Anmäl ditt intresse här →",
     "readMore": "Mer information här",

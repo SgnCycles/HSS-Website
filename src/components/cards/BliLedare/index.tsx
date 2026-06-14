@@ -4,9 +4,8 @@ import Button from "@/components/buttons/Button";
 import { useTranslations } from "next-intl";
 
 const BliLedareHome = () => {
-  
-    const tCards = useTranslations('BliLedareCard')
-    const t = useTranslations('BliLedarePage')
+  const tCards = useTranslations("BliLedareCard");
+  const t = useTranslations("BliLedarePage");
   return (
     <section className="bg-primary font-body text-background grid place-items-center">
       <article className="container">
@@ -19,12 +18,13 @@ const BliLedareHome = () => {
             className="h2-icon"
           />
           <h2 className="heading-2 text-white">
-            <span className="text-accent">Bli ledare </span><span className="hidden sm:inline-block">- vi utbildar dig!</span>
+            <span className="text-accent">{t("headingAccent")}</span>
+            <span className="hidden sm:inline-block">
+              {t("headingSubtitle")}
+            </span>
           </h2>
         </div>
-        <p className="paragraph-light text-muted">
-         {t('intro')}
-        </p>
+        <p className="paragraph-light text-muted">{t("intro")}</p>
         <div className="flex flex-col justify-between md:flex-row">
           <ul className="cards-column pb-6 md:pb-0 w-full md:pr-6">
             {bliLedareCardContent &&
@@ -66,14 +66,14 @@ const BliLedareHome = () => {
               ariaLabel=""
               href="https://www.scoutnet.se/register/in/group/764"
               variant="primaryBrown"
-              text={t('cta')}
+              text={t("cta")}
               target="_blank"
             />
             <Button
               ariaLabel=""
               href="/bli-ledare"
               variant="primaryBlue"
-              text={t('readMore')}
+              text={t("readMore")}
               target="_self"
             />
           </div>
