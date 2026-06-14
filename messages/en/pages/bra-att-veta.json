@@ -1,0 +1,28 @@
+{
+  "bra-att-veta": {
+    "title": "Good to Know",
+    "intro": "What clothing and equipment do you need to become a Scout? You don't need anything special to get started in the Sea Scouts. However, there are a few items that can be useful to have or borrow after a while.",
+    "scoutEquipment": [
+      "Scout uniform (T-shirt, polo shirt, or scout shirt with neckerchief)",
+      "Sleeping mat",
+      "Sleeping bag",
+      "A pair of hiking shoes, boots, or ankle boots",
+      "Cutlery",
+      "Something to eat from, e.g. a plate or camping bowl",
+      "Water bottle",
+      "Rain gear"
+    ],
+    "readMore": "Read more about the scout uniform here →",
+    "sectionTwoTitle": "What makes HSS different from other Scout groups?",
+    "sectionTwoIntro": "Of course, it's our stylish, practical, and durable HSS sweaters!",
+    "scoutStoreClothes": [
+      "HSS sweater: Classic college sweatshirt: 350:-",
+      "HSS T-shirt: Hard-wearing and indispensable: 150:-",
+      "HSS cap: A must in the forest and at sea: 150:-",
+      "HSS bundle: A bargain on the lot: 550:-"
+    ],
+    "sectionTwoParagraphOne": "The easiest way to buy a sweater is at the scout's event in November or at the summer closing event in June.",
+    "sectionThreeTitle": "You can also, of course, email:",
+    "sectionFourParagraph": "Please note: when an HSS sweater has reached the end of its life, it should be discarded rather than donated to a clothing collection. HSS sweaters are intended exclusively for HSS members and no one else!"
+  }
+}
