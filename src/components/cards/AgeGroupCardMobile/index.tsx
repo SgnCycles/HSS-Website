@@ -98,7 +98,7 @@ const AgeGroupPageMobile = () => {
                       href="https://www.scoutnet.se/register/in/group/764"
                       target="_blank"
                     >
-                      Ansök om plats
+                      {t("apply")}
                     </Link>
                   </button>
                 </div>

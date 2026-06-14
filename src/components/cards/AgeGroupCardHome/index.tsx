@@ -18,7 +18,7 @@ const AgeGroupCardHome = () => {
       <article className="container">
         <div className="flex justify-center lg:justify-start pb-6">
           <Image
-            src={`/Icons/anchor-icon.svg`}
+            src="/Icons/anchor-icon.svg"
             height={25}
             width={25}
             alt=""
