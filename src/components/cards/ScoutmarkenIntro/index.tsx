@@ -1,42 +1,23 @@
-
+"use client";
 import Button from "@/components/buttons/Button";
+import { useTranslations } from "next-intl";
 
 const ScoutmarkenIntro = () => {
+  const t = useTranslations('intro');
+
   return (
     <article className="container pb-0 pt-0">
-      <p className="paragraph-light">
-        Ett märke är så mycket mer än en tygbit. Det visar att du lärt dig
-        något, att du varit med om något speciellt eller att du tillhör en viss
-        patrull eller scoutkår.
-      </p>
+      <p className="paragraph-light">{t('p1')}</p>
       <div className="pb-6 md:hidden">
-        <Button
-          ariaLabel=""
-          href="https://media.scoutcontent.se/uploads/2025/08/Markbart-2025.pdf"
-          variant="primaryBlue"
-          text="Läs mer"
-        />
+        <Button ariaLabel="" href="https://media.scoutcontent.se/uploads/2025/08/Markbart-2025.pdf" variant="primaryBlue" text={t('readMore')} />
       </div>
-      <p className="paragraph-light mb-6 sm:hidden">
-        Att klä din scoutskjorta med märken är ett roligt sätt att alltid minnas
-        dina äventyr och se allt du lärt dig på vägen. En skjortberättelse om
-        allt du varit med om!
-      </p>
+      <p className="paragraph-light mb-6 sm:hidden">{t('p2')}</p>
       <div className="hidden sm:flex justify-around mb-6 flex-row section">
         <div className="pb-6 hidden md:flex">
-          <Button
-            ariaLabel=""
-            href="https://media.scoutcontent.se/uploads/2025/08/Markbart-2025.pdf"
-            variant="primaryBlue"
-            text="Läs mer"
-          />
+          <Button ariaLabel="" href="https://media.scoutcontent.se/uploads/2025/08/Markbart-2025.pdf" variant="primaryBlue" text={t('readMore')} />
         </div>
         <div className="grid place-items-center">
-          <p className="paragraph-light">
-            Att klä din scoutskjorta med märken är ett roligt sätt att alltid
-            minnas dina äventyr och se allt du lärt dig på vägen. En
-            skjortberättelse om allt du varit med om!
-          </p>
+          <p className="paragraph-light">{t('p2')}</p>
         </div>
       </div>
     </article>

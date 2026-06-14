@@ -7,6 +7,7 @@ import MarkesaffischCardMobile from "@/components/cards/MarkesaffischCardMobile"
 import SpecificaMarken from "@/components/cards/SpecificaMarkenCard";
 import ScoutmarkenIntro from "@/components/cards/ScoutmarkenIntro";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "HSS - Scoutmärken",
@@ -15,23 +16,19 @@ export const metadata: Metadata = {
 };
 
 const ScoutmarkenPage = () => {
+  const t = useTranslations('scoutmarkenPage');
+
   return (
     <main id="main-content">
       <section className="grid place-items-center font-body">
         <div className="flex justify-center lg:justify-start items-center flex-wrap container pb-0">
           <div className="flex justify-center sm:justify-start pb-6">
-            <Image
-              src="/Icons/yellow-anchor-icon.svg"
-              height={30}
-              width={30}
-              alt=""
-              className="h1-icon"
-            />
-            <h1 className="heading-1">Scoutmärken</h1>
+            <Image src="/Icons/yellow-anchor-icon.svg" height={30} width={30} alt="" className="h1-icon" />
+            <h1 className="heading-1">{t('heading')}</h1>
           </div>
           <div className="grid place-items-center ml-4 pb-6">
             <p className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md">
-              Varje märken berättar en historia
+              {t('tagline')}
             </p>
           </div>
         </div>
@@ -39,17 +36,12 @@ const ScoutmarkenPage = () => {
         <SpecificaMarken />
         <article className="w-full container pt-0 pb-0">
           <h2 className="heading-2 text-center mb-6 xl:text-left">
-            Märkesaffisch för din åldersgrupp
+            {t('markesaffischHeading')}
           </h2>
           <MarkesaffischCardMobile />
           <MarkesaffischCardDesktop />
           <div className="md:hidden w-full flex justify-center items-center">
-            <Image
-              src="/images/Body/blue_seperator.png"
-              height={100}
-              width={1000}
-              alt=""
-            />
+            <Image src="/images/Body/blue_seperator.png" height={100} width={1000} alt="" />
           </div>
         </article>
         <article className="container pb-0">
@@ -57,15 +49,9 @@ const ScoutmarkenPage = () => {
           <ScoutUniformDesktop />
           <div className="card flex flex-col sm:flex-row lg:justify-around items-center border border-accent bg-yellow-200 rounded-sm mt-6 mb-6">
             <p className="paragraph text-primary text-center sm:text-left mb-6 mr-2 sm:mb-0">
-              Anvisningar för placering av de nya märkena på scoutskjortan.
+              {t('downloadText')}
             </p>
-            <Button
-              ariaLabel=""
-              href="/pdf/nya-maerkessystemet.pdf"
-              variant="ternaryBlue"
-              text="Ladda ner PDF"
-              download={true}
-            />
+            <Button ariaLabel="" href="/pdf/nya-maerkessystemet.pdf" variant="ternaryBlue" text={t('downloadBtn')} download={true} />
           </div>
         </article>
       </section>
