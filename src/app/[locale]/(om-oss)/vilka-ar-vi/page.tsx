@@ -14,17 +14,17 @@ export const metadata: Metadata = {
 };
 
 const VilkaArViPage = () => {
-  const t = useTranslations('vilka-ar-vi')
+  const t = useTranslations("vilka-ar-vi")
   return (
     <main id="main-content">
       <section className="flex flex-col lg:bg-blue-100 lg:bg-[url(/images/Backgrounds/boat-white-transparent.png)] lg:bg-size-[398px] lg:bg-no-repeat lg:bg-top-right">
         <article className="container flex flex-col pb-0">
             <h1 className="heading-1 flex align-center justify-center pb-3 lg:justify-start">
               <Icons name="hssLogo" variant="h1-icon" /> 
-              {t('title')}
+              {t("title")}
             </h1>
           <div className="w-fit border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base m-auto rounded-md lg:hidden mb-6">
-            <p>{t('subTitle')}</p>
+            <p>{t("subTitle")}</p>
           </div>
           <AboutUsCardMobile />
           <AboutUsCardDesktop />
@@ -32,10 +32,10 @@ const VilkaArViPage = () => {
       </section>
       <BorderSingleDown variant="text-blue-100 lg:block hidden" />
       <section className=" md:container">
-        <h2 className="heading-2 hidden lg:block pb-6">{t('documents.title')}</h2>
+        <h2 className="heading-2 hidden lg:block pb-6">{t("documents.title")}</h2>
         <div className="flex flex-col bg-yellow-200 p-5 mb-0 font-body lg:paragraph-light lg:text-blue-900 text-blue-900 lg:border-accent lg:rounded-md lg:bg-secondary lg:border lg:gap-5 md:rounded-md md:border-accent md:border">
           <h2 className="heading-3 lg:hidden">
-            {t('documents.title')}
+            {t("documents.title")}
           </h2>
           {aboutUsDocuments && aboutUsDocuments.map((doc) => 
             <Link
@@ -52,7 +52,7 @@ const VilkaArViPage = () => {
       <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
         <h2 className="heading-2">
           <Icons name="anchor" variant="h2-icon text-accent" />
-          {t('history.title')}
+          {t("history.title")}
         </h2>
         <div className="flex flex-col gap-4">
           {historyHSS && historyHSS.map((h) => (

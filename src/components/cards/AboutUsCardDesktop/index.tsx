@@ -3,7 +3,7 @@ import { aboutUs } from "@/data/vilkaArViCardContent";
 import { useTranslations } from "next-intl";
 
 const AboutUsCardDesktop = () => {
-  const t = useTranslations('vilka-ar-vi')
+  const t = useTranslations("vilka-ar-vi")
   return (
     <section className="pt-0 ">
       <div  className="hidden lg:flex flex-col justify-center">

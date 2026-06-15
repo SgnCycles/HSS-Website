@@ -21,8 +21,6 @@ export type SourceProp = {
   source: string
 }
 
-
-
 export type TextImageProps = {
   id: number,
   text: string,
