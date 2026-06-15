@@ -50,7 +50,7 @@ const BraAttVetaPage = () => {
             {t("readMore")}
           </Link>
         </article>
-        <article className="container">
+        <article className="container pb-0">
           <div className="w-full flex justify-center sm:justify-start items-center pb-2 sm:pb-6">
             <Image
               className="h2-icon hidden sm:flex place-self-start pt-3 lg:pt-1"
@@ -84,7 +84,7 @@ const BraAttVetaPage = () => {
                 </a>
               </h3>
             </div>
-            <div className="w-full hidden sm:grid sm:place-items-center">
+            <div className="w-full hidden sm:grid sm:place-items-center pt-6">
               <Image
                 className="w-full h-auto rounded-md"
                 src="/images/Body/braAttVeta_body1.png"
@@ -115,7 +115,7 @@ const BraAttVetaPage = () => {
             text="hsstrojan@hss-scout.org"
           />
         </div>
-        <div className="container card bg-yellow-200 border border-accent rounded-md">
+        <div className="container card bg-yellow-200 border border-accent rounded-md sm:mt-6">
           <p className="paragraph-light mb-0">
             {t("sectionFourParagraph")}
           </p>

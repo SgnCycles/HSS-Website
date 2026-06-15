@@ -27,10 +27,10 @@ const AgeGroupCardHome = () => {
           <h2 className="heading-2">{t("title")}</h2>
         </div>
         <div className="sm:flex pb-6 sm:justify-between">
-          <p className="paragraph-light text-center sm:text-left mb-0 whitespace-pre-line">
+          <p className="paragraph-light text-left mb-0 whitespace-pre-line">
             {t("intro")}
           </p>
-          <div className="hidden place-content-center md:flex flex-wrap text-xl">
+          <div className="hidden place-content-center md:flex flex-wrap text-xl ml-2 lg:ml-0">
             <Button
               ariaLabel=""
               href="/aldersgrupper"

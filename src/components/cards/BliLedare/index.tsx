@@ -6,7 +6,7 @@ const BliLedareHome = () => {
   return (
     <section className="bg-primary font-body text-background grid place-items-center">
       <article className="container">
-        <div className="flex w-full justify-center lg:justify-start items-center pb-0 md:pb-6">
+        <div className="flex w-full justify-center lg:justify-start items-center pb-6">
           <Image
             src={`/Icons/party-leader-icon.svg`}
             height={30}
@@ -49,7 +49,7 @@ const BliLedareHome = () => {
                 </li>
               ))}
           </ul>
-          <div className="flex flex-col justify-between items-center text-center gap-6 font-bold">
+          <div className="flex flex-col justify-start lg:justify-between items-center text-center gap-6 font-bold">
             <div className="hidden md:flex">
               <Image
                 className="rounded-md"

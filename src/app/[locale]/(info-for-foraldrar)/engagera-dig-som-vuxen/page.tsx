@@ -45,7 +45,7 @@ const EngageraDigSomVuxenPage = () => {
             {t("intro")}
           </p>
           <div className="flex justify-center items-center">
-            <ul className="cards-column pb-6 md:w-[70%] mb-6">
+            <ul className="cards-column md:pb-6 md:w-[70%] mb-6">
               {tActivityList &&
                 tActivityList.map((card, index) => (
                   <li

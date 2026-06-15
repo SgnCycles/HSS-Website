@@ -28,7 +28,7 @@ const PolicyLifejackets = () => {
             {t(`lifejacket.paragraph3`)}
           </p>
         </div>
-        <div className="pl-6 grid place-items-center">
+        <div className="md:pl-6 grid place-items-center">
           <Image
             src="/images/Body/policy_lifejacket.png"
             alt=""

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Button from "@/components/buttons/Button";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const VaraLokalerMobile = () => {
@@ -62,7 +61,7 @@ const VaraLokalerMobile = () => {
         <div className="container flex flex-col justify-center">
           <h2 className="heading-3">{t('bookingDetail1')}</h2>
           <p className="paragraph-light">{t('bookingDetail2')}</p>
-          <Link target="_blank" href="/pdf/myset_plan.pdf" className="paragraph-light underline underline-offset-2 text-blue-900">{t('bookingDetail3')}</Link>
+          <a target="_blank" href="/pdf/myset_plan.pdf" className="paragraph-light underline underline-offset-2 text-blue-900">{t('bookingDetail3')}</a>
           <Button
             ariaLabel="skicka bokningsförfrågan"
             href="mailto:myset.hss.scout@gmail.com"

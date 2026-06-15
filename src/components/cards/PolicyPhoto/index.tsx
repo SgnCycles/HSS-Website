@@ -21,6 +21,7 @@ const PolicyPhoto = () => {
         <p className="paragraph-light">
           {p('paragraph1')}
           <br />
+          <br />
           {p('paragraph2')}
         </p>
         <div className="text-end">

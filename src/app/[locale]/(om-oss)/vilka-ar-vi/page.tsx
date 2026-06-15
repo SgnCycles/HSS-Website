@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { vilkaArViGamlaBatarContent } from "@/data/vilkaArViCardContent";
 import BorderSingleDown from "@/components/borders/BorderSingleDown";
 import { historyHSS } from "@/data/vilkaArViCardContent";
@@ -40,27 +39,27 @@ const VilkaArViPage = () => {
         <h2 className="heading-2 hidden lg:block pb-6">Se andra dokument</h2>
         <div className="flex flex-col bg-yellow-200 p-5 mb-0 font-body lg:paragraph-light lg:text-blue-900 text-blue-900 lg:border-accent lg:rounded-md lg:bg-secondary lg:border lg:gap-5 md:rounded-md md:border-accent md:border">
           <h2 className="heading-2 lg:hidden">Se andra dokument</h2>
-          <Link
+          <a
             target="_blank"
             href="/pdf/Stadgar-Hasselby-Strands-Sjoscoutkar-beslutad-2025-10-22-signerade.pdf"
             className="underline underline-offset-2"
           >
             Stadgar för Hässelby Strands Sjöscoutkår →
-          </Link>
-          <Link
+          </a>
+          <a
             target="_blank"
             href="/pdf/Verksamhetsplan-for-perioden-2025-09-01-2026-12-31.pdf"
             className="underline underline-offset-2"
           >
             Verksamhetsplan för perioden 2025-2026 →
-          </Link>
-          <Link
+          </a>
+          <a
             target="_blank"
             href="/pdf/HSS-karstamma-2025-10-22-protokoll-signerat.pdf"
             className="underline underline-offset-2"
           >
             HSS Kår stämma för 2025 →
-          </Link>
+          </a>
         </div>
       </section>
       <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
