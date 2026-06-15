@@ -4,18 +4,14 @@ import BorderSingleDown from "@/components/borders/BorderSingleDown";
 import { aboutUsDocuments, historyHSS } from "@/data/vilkaArViCardContent";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
 import Icons from "@/components/features/Icons";
 import AboutUsCardDesktop from "@/components/cards/AboutUsCardDesktop";
 import AboutUsCardMobile from "@/components/cards/AboutUsCardMobile";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations('vilka-ar-vi') 
-  return {
-    title: t('metaTitle'),
-    description: t('metaDescription')
-  }
-}
+export const metadata: Metadata = {
+  title: "HSS - Vilka är vi",
+  description: "Scouterna ger barn och unga äventyr och personlig utveckling i en inkluderande gemenskap där mångfald, respekt och samarbete står i centrum.",
+};
 
 const VilkaArViPage = () => {
   const t = useTranslations('vilka-ar-vi')
