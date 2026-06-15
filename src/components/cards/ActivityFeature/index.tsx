@@ -4,7 +4,7 @@ import { activityFeatureContent } from "@/data/activityFeatureContent";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import Button from "@/components/buttons/Button";
+import InternalButton from "@/components/buttons/InternalButton";
 
 const ActivityFeature = () => {
   
@@ -72,7 +72,7 @@ const ActivityFeature = () => {
       />
       {isHomePage && (
         <div className="flex justify-center container lg:hidden">
-          <Button
+          <InternalButton
             ariaLabel=""
             href="/vad-gor-vi"
             variant="secondaryBlue"
