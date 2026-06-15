@@ -4,7 +4,8 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const BliLedareBenefitCard = () => {
-  const tCards = useTranslations('BliLedareCard');
+
+  const tCards = useTranslations("BliLedareCard");
 
   return (
     <ul className="cards-column w-full lg:pr-6">

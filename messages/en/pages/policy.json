@@ -1,5 +1,7 @@
 {
   "policy": {
+    "metaTitle": "HSS Policies",
+    "metaDescription": "Hässelby Strands Sea Scout Group's policies on safety, life jackets, photography and personal data help ensure a safe and secure scouting environment.",
     "pageTitle": "Trygga Möten",
     "subTitle": "Hikes and camps",
     "pdfButton": "Read full PDF",
@@ -26,13 +28,19 @@
     },
     "gdpr": {
       "title": "Data we collect",
-      "1": {"text": "Name, social security number and address"},
-      "2": {"text": "Telephone number (at least one parent's number for minor scouts)"},
-      "3": {"text": "Email address (at least one parent's address for minor scouts)"},
-      "4": {"text": "Department, patrol and start date"},
-      "5": {"text": "Membership fee and any awards"},
-      "6": {"text": "Information about siblings and parents' role in the union"},
-      "7": {"text": "For leaders: completed training and role in the union"},
+      "1": { "text": "Name, social security number and address" },
+      "2": {
+        "text": "Telephone number (at least one parent's number for minor scouts)"
+      },
+      "3": {
+        "text": "Email address (at least one parent's address for minor scouts)"
+      },
+      "4": { "text": "Department, patrol and start date" },
+      "5": { "text": "Membership fee and any awards" },
+      "6": {
+        "text": "Information about siblings and parents' role in the union"
+      },
+      "7": { "text": "For leaders: completed training and role in the union" },
       "paragraph": "Information about siblings and parents is used to offer sibling preference and prioritize children whose parents have a role in the corps. We never enter health information into Scoutnet.",
       "button": "Read about GDPR",
       "popUp": {

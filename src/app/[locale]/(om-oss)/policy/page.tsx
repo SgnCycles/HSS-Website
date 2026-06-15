@@ -8,12 +8,15 @@ import PolicyGdpr from "@/components/cards/PolicyGdpr";
 import PolicyGatheredInfo from "@/components/cards/PolicyGatheredInfo";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Policy",
-  description:
-    "Hässelby Strands Sjöscoutkårs policyer för trygghet, flytvästar, fotografering och personuppgifter skapar en säker och trygg scoutverksamhet.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("policy");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const PolicyPage = () => {
   const t = useTranslations("policy")

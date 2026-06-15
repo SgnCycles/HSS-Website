@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const ScoutUniformMobile = () => {
+  
   const t = useTranslations("uniform");
 
   return (
@@ -15,19 +16,34 @@ const ScoutUniformMobile = () => {
             <p className="paragraph-light">{t("subtitle1")}</p>
           </div>
           <div className="w-full">
-            <Image src={scoutUniformCardContent[0].image_mobile_subtitle} height={100} width={1000} alt="Scoutkläder" />
+            <Image
+              src={scoutUniformCardContent[0].image_mobile_subtitle}
+              height={100}
+              width={1000}
+              alt="Scoutkläder"
+            />
           </div>
           <div className="grid place-items-center">
             <p className="paragraph-light">{t("subtitle2")}</p>
           </div>
           <div className="w-full">
-            <Image src={scoutUniformCardContent[0].image_mobile_second_subtitle} height={100} width={1000} alt="Scoutkläder" />
+            <Image
+              src={scoutUniformCardContent[0].image_mobile_second_subtitle}
+              height={100}
+              width={1000}
+              alt="Scoutkläder"
+            />
           </div>
           <div className="grid place-items-center">
             <p className="paragraph-light">{t("subtitle3")}</p>
           </div>
           <div className="w-full">
-            <Image src={scoutUniformCardContent[0].image_mobile_third_subtitle} height={100} width={1000} alt="Scoutkläder" />
+            <Image
+              src={scoutUniformCardContent[0].image_mobile_third_subtitle}
+              height={100}
+              width={1000}
+              alt="Scoutkläder"
+            />
           </div>
         </div>
       )}

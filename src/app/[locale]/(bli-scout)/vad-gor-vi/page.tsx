@@ -3,12 +3,15 @@ import BorderTwoDown from "@/components/borders/BorderTwoDown";
 import ActivityFeature from "@/components/cards/ActivityFeature";
 import HurManBlirScoutFeature from "@/components/cards/HurManBlirScoutFeature";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Vad gör vi",
-  description:
-    "Scouterna ger barn och unga äventyr, gemenskap och personlig utveckling i en inkluderande verksamhet byggd på mångfald, respekt och allas lika värde.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("vad-gor-vi");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const VadGorViPage = () => {
   return (

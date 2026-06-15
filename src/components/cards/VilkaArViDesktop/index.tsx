@@ -1,12 +1,11 @@
 import Image from "next/image";
-import {
-  vilkaArVi,
-
-} from "@/data/vilkaArViCardContent";
+import { vilkaArVi } from "@/data/vilkaArViCardContent";
 import { useTranslations } from "next-intl";
 
 const VilkaArViCardDesktop = () => {
-  const t = useTranslations("vilka-ar-vi")
+
+  const t = useTranslations("vilka-ar-vi");
+  
   return (
     <article className="lg:container md:container lg:pt-0 ">
       <div className="hidden lg:flex lg:justify-center md:flex md:flex-col">

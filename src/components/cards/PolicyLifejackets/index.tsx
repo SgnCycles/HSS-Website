@@ -3,7 +3,9 @@ import Button from "@/components/buttons/Button";
 import { useTranslations } from "next-intl";
 
 const PolicyLifejackets = () => {
-  const t = useTranslations('policy')
+
+  const t = useTranslations("policy");
+
   return (
     <section>
       <article className="flex flex-col md:flex-row container">
@@ -16,19 +18,13 @@ const PolicyLifejackets = () => {
               height={30}
               className="h2-icon"
             />
-            <h2 className="heading-2">{t(`lifejacket.title`)}</h2>
+            <h2 className="heading-2">{t("lifejacket.title")}</h2>
           </div>
-          <p className="paragraph-light">
-            {t(`lifejacket.paragraph1`)}
-          </p>
-          <p className="paragraph-light">
-            {t(`lifejacket.paragraph2`)}
-          </p>
-          <p className="paragraph-light">
-            {t(`lifejacket.paragraph3`)}
-          </p>
+          <p className="paragraph-light">{t("lifejacket.paragraph1")}</p>
+          <p className="paragraph-light">{t("lifejacket.paragraph2")}</p>
+          <p className="paragraph-light">{t("lifejacket.paragraph3")}</p>
         </div>
-        <div className="pl-6 grid place-items-center">
+        <div className="md:pl-6 grid place-items-center">
           <Image
             src="/images/Body/policy_lifejacket.png"
             alt=""
@@ -40,7 +36,7 @@ const PolicyLifejackets = () => {
             ariaLabel=""
             href="/pdf/HSS-Flytvastpolicy-2025-Beslutad.pdf"
             variant="primaryBlue"
-            text={t('pdfButton')}
+            text={t("pdfButton")}
           />
         </div>
       </article>

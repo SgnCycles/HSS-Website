@@ -3,15 +3,19 @@ import { aretIHss } from "@/data/aretIHssContent";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
- title: "Året i HSS",
- description: "Året i Hässelby Strands Sjöscoutkår fylls av återkommande aktiviteter och traditioner som skapar gemenskap, äventyr och utveckling för barn och unga.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("aret-i-hss");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const AretiHssPage = () => {
 
-  const t = useTranslations('aret-i-hss');
+  const t = useTranslations("aret-i-hss");
   const seasons = t.raw("seasons") as typeof aretIHss;
 
   return (

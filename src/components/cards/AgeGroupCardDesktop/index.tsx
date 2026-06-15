@@ -109,7 +109,7 @@ const AgeGroupPageDesktop = () => {
                     <p className="font-bold">{card.price}</p>
                   </div>
                   <div
-                    className={`agegroup-card-buttons flex justify-end gap-4 h-fit`}
+                    className="agegroup-card-buttons flex justify-end gap-4 h-fit"
                   >
                     <button
                       className={`font-bold ${card.colourSchemeAccentSurface} ${card.colourSchemeHover} hover:border-2 hover:border-accent text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 cursor-pointer`}

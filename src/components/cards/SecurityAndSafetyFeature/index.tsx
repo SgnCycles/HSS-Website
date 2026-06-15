@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import ReadMoreButton from "@/components/buttons/ReadMoreButton";
 
 const SecurityAndSafetyFeature = () => {
+  
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {
