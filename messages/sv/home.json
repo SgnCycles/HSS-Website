@@ -1,10 +1,13 @@
 {
   "home": {
+    "metaTitle": "Hässelby Strands sjöscoutkår",
+    "metaDescription": "Hässelby Strands Sjöscoutkår, är en scoutkår inom Svenska Scout Förbundet. Man har bedrivit sjöscoutsverksamhet i Hässelby utanför Stockholm sedan 1959.",
     "title": "Välkommen till",
     "description": "Vi är en stolt sjöscoutkår som ger barn och ungdomar en trygg plats att växa,\nlära sig sjömanskap och skapa livslånga vänner.",
     "cta": "Bli scout",
     "ig_description": "Kliv in i vår vardag, läger, segling, knutar och kamratskap. Se våra äventyr, vänskap och minnen som vi skapar tillsammans.",
     "discover_title": "Upptäck livet som sjöscout",
+    "discoverTitleMobile": "Livet som sjöscout", 
     "follow_us": "Följ oss"
   }
 }

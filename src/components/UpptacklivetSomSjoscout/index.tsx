@@ -5,23 +5,23 @@ import InstaSection from "../cards/InstaSection";
 
 export default function UpptäckLivetSomSjöscout() {
   const t = useTranslations("home");
+
   return (
     <section className=" bg-blue-100">
       <div className="container">
         <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
-          <div className="self-center lg:self-baseline pb-0">
-            <h2 className="flex heading-2 items-center gap-2">
-              <Image
-                src="/Icons/yellow-instagram-icon.svg"
-                alt=""
-                width={41}
-                height={41}
-                className="h2-icon"
-              />
-              <span className="font-bold md:heading-2  sm:flex items-center">
-                {t("discover_title")}
-              </span>
+          <div className="flex justify-center lg:justify-start pb-0 md:pb-6">
+            <Image
+              src="/Icons/yellow-instagram-icon.svg"
+              alt=""
+              width={41}
+              height={41}
+              className="h2-icon"
+            />
+            <h2 className="hidden md:inline-block heading-2">
+              {t("discover_title")}
             </h2>
+            <h2 className="inline-block heading-2 md:hidden pb-0">{t("discoverTitleMobile")}</h2>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-6 w-full order-1 md:order-2">
             <p className="paragraph flex-1 order-1 md:order-2 mb-0">
@@ -49,7 +49,7 @@ export default function UpptäckLivetSomSjöscout() {
               />
               <p className="heading-3 text-accent">
                 {t("follow_us")}
-                <span className="">&#8594;</span>
+                <span className=""> &#8594;</span>
               </p>
             </Link>
           </div>

@@ -6,11 +6,13 @@
     "readMoreHere": "Read more",
     "close": "Close",
     "apply": "Apply",
+    "metaTitle": "Age Groups",
+    "metaDescription": "Find the right Sea Scout group at HSS. Sailing, hiking, outdoor skills, leadership and adventure for children, young people and families of all ages.",
     "groups": {
       "sjohumlorna": {
         "title": "Sjöhumlorna",
         "ageGroup": "Trail Scouts",
-        "ageRange": "8-9 years",
+        "ageRange": "age 8-9",
         "subtitle": "Knots, nature skills, and dinghy sailing. Whittling with a knife or putting a bandage on someone who got hurt.",
         "info": "At the age of 8, when starting Year 2, you can join HSS. We meet every week and go on overnights, hikes, and camps. Children learn knots, nature skills, and seamanship in a playful way. In Scouts you learn by doing things for real — for example whittling with a knife, applying bandages, and working together in patrols where everyone has a say. We also sail Optimist dinghies and two-kronor boats together.",
         "info_block_one": "At the age of 8, when starting Year 2, you can join HSS.",
@@ -26,7 +28,7 @@
       "kaparna": {
         "title": "Kaparna",
         "ageGroup": "Explorer Scouts",
-        "ageRange": "10-11 years",
+        "ageRange": "age 10-11",
         "subtitle": "Water safety, knife skills, and basic first aid. The level of challenge increases.",
         "info": "In Kaparna you start at the age of 10 and stay for two years until it is time for the next step. The difficulty of tasks increases in Kaparna. Scouts learn to sail an Optimist and get to try sailing a two-kronor boat and a keelboat. A fully trained Explorer Scout can, among other things, handle a knife, light and extinguish small fires, sail an Optimist independently, and apply basic first aid and water safety. The Kaparna section meets on Tuesdays at our clubhouse Ruffen at Hässelby Strandbad. As a scout you always do your best, but it doesn't matter if things go wrong — that is why we reflect on how things went so we can do better next time.",
         "info_block_one": "In Kaparna you start at the age of 10 and stay for two years until it is time for the next step.",
@@ -42,7 +44,7 @@
       "konvojen": {
         "title": "Konvojen",
         "ageGroup": "Adventure Scouts",
-        "ageRange": "12-14 years",
+        "ageRange": "age 12-14",
         "subtitle": "Serious archipelago sailing, winter hiking in tents, and the legendary ice-hole swim that no one escapes.",
         "info": "At the age of 12 the doors open to the Adventure Scouts. Over three exciting years you learn useful skills in seamanship and nature. This is where sailing gets serious, heading out into the archipelago in summer. When we are not sailing we practise navigation and take part in traditional land scout activities. In winter, when it is coldest, we go on a proper winter hike sleeping in tents. Another highlight is the traditional ice-hole swim that no patrol scout escapes… Konvojen meets on Thursdays.",
         "info_block_one": "At the age of 12 the doors open to the Adventure Scouts. Over three exciting years you learn useful skills in seamanship and nature.",
@@ -58,7 +60,7 @@
       "utmanare": {
         "title": "Utmanare",
         "ageGroup": "Challenger Scouts",
-        "ageRange": "15+ years",
+        "ageRange": "age 15+",
         "subtitle": "Sailing independently, making your own decisions, and growing into a leader.",
         "info": "For Challengers, who are typically in Year 9 and upper secondary school, friends and community matter a great deal. In Scouts, Challengers face bigger tasks in an increasingly international context. Scouts try out the adult role and everyone has space to explore and find their place. As a Challenger Scout you take on great responsibility while it is still perfectly fine to be silly or simply be yourself. Challenger Scouts decide for themselves what they want to do. To make things happen it is useful to run them as projects. A project can be anything from going on a mountain hike to learning to dance salsa. There are also ten challenges, each with its own badge, which work like projects with specific themes.",
         "info_block_one": "For Challengers, who are typically in Year 9 and upper secondary school, friends and community matter a great deal.",
@@ -74,7 +76,7 @@
       "familjescouter": {
         "title": "Familjescouter",
         "ageGroup": "Young Scouts",
-        "ageRange": "up to 8 years",
+        "ageRange": "ages up to 8",
         "subtitle": "Children under eight together with one or more adults experience scouting in a fun and playful way.",
         "info": "Child and adult take part in activities together, and everything is suited to both big and small. The adult participant is always responsible for the child they have brought along. Having adults in the group makes it possible to do slightly more advanced activities, since adult and child can help each other. The adults are just as much participants as the children, and it is important to plan activities so that both can take an active part.",
         "info_block_one": "Child and adult take part in activities together, and everything is suited to both big and small.",

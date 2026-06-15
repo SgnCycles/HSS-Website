@@ -3,6 +3,7 @@ import { aretIHssContentType } from "@/types/types"
 import Image from "next/image"
 
 const AretiHssCard = (content: aretIHssContentType) => {
+  
   const { title, icon, months } = content
 
   return (

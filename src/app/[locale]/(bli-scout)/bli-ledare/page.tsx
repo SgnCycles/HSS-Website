@@ -1,11 +1,14 @@
 import BliLedareMainSection from "@/components/cards/BliLedareMainSection";
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Bli Ledare",
-  description:
-    "Bli scoutledare i HSS. Inga förkunskaper krävs. Få utbildning, stöd och möjligheten att utveckla ditt ledarskap samtidigt som du gör skillnad för barn och unga.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("BliLedarePage");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const BliLedarePage = () => {
   return (

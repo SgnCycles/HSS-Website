@@ -3,7 +3,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const ActivityCard = () => {
+
   const t = useTranslations("activityCards");
+  
   return (
     <ul className="flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:gap-3">
       {activityCardContent &&

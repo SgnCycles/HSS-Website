@@ -23,15 +23,17 @@ const placeholders: FeedProps[] = [
   },
   {
     mediaUrl: "/images/Instagram/placeholder_insta2.png",
-    caption:  "Äventyrarscouterna Konvojen har kvällsmöte. Kanske sista resan med Lumbago 💔",
+    caption:
+      "Äventyrarscouterna Konvojen har kvällsmöte. Kanske sista resan med Lumbago 💔",
     permalink: "https://www.instagram.com/hss_scout",
     username: "hss_scout",
   },
   {
     mediaUrl: "/images/Instagram/placeholder_insta3.png",
-    caption:  "Idag hade HSS sommaravslutning för hela kåren! Tack till alla som kom☀️🌸⚜️",
+    caption:
+      "Idag hade HSS sommaravslutning för hela kåren! Tack till alla som kom☀️🌸⚜️",
     permalink: "https://www.instagram.com/hss_scout",
-    username:  "hss_scout",
+    username: "hss_scout",
   },
 ];
 

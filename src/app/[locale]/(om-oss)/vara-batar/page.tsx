@@ -4,15 +4,18 @@ import Image from "next/image";
 import VaraBatarCard from "@/components/cards/VaraBatarCard";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Våra båtar",
-  description:
-    "HSS är en av Sveriges mest ambitiösa sjöscoutkårer med en varierad flotta för utbildning, segling och säkerhet som utvecklar scouter på alla nivåer.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("VaraBatarPage");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const VaraBatarPage = () => {
-  const t = useTranslations('VaraBatarPage')
+  const t = useTranslations("VaraBatarPage")
   return (
     <main
       id="main-content"

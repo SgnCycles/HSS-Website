@@ -7,7 +7,8 @@ import ReadMoreButton from "@/components/buttons/ReadMoreButton";
 import { useTranslations } from "next-intl";
 
 const PolicyGdpr = () => {
-  const t = useTranslations('policy')
+
+  const t = useTranslations("policy");
   const [gdpr, setGdpr] = useState<boolean>(false);
 
   const handelGdpr = () => {
@@ -36,15 +37,13 @@ const PolicyGdpr = () => {
               height={20}
               className="w-8 h-8 mr-2 mt-0.5"
             />
-            <p className="paragraph-light">
-              {t(`gdpr.paragraph`)}
-            </p>
+            <p className="paragraph-light">{t("gdpr.paragraph")}</p>
           </div>
           <div className=" flex justify-end">
             <ReadMoreButton
               ariaLabel=""
               variant="primaryBlue"
-              text={t(`gdpr.button`)}
+              text={t("gdpr.button")}
               onClick={handelGdpr}
             />
           </div>

@@ -3,15 +3,17 @@ import type { Metadata } from "next";
 import AgeGroupPageMobile from "@/components/cards/AgeGroupCardMobile";
 import AgeGroupPageDesktop from "@/components/cards/AgeGroupCardDesktop";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Åldersgrupper",
-  description:
-    "Hitta rätt scoutgrupp i HSS. Segling, hajker, naturkunskap, ledarskap och äventyr för barn, ungdomar och familjer i alla åldrar.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("aldersgrupper");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const AgeGroupPage = () => {
-
   const t = useTranslations("aldersgrupper");
 
   return (
@@ -33,9 +35,7 @@ const AgeGroupPage = () => {
               <h1 className="heading-1">{t("title")}</h1>
             </div>
             <div className="flex sm:justify-between pb-6">
-              <p className="paragraph-light">
-                {t("intro")}
-              </p>
+              <p className="paragraph-light">{t("intro")}</p>
             </div>
           </div>
           <ul className="flex flex-col md:hidden">
