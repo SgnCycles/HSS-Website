@@ -46,8 +46,10 @@
     }
   },
   "hurManBlirScout": {
-    "heading": "Bli ledare",
-    "headingAccent": "vi utbildar dig!",
+    "heading": "Hur man blir ",
+    "headingAccent": "scout?",
+    "headingMobile": "Bli ",
+    "headingMobileAccent": "scout",
     "intro": "Det är enkelt att komma igång! Fyra steg och du är en del av vår kårfamilj.",
     "termTitle": "Terminavgift inkluderar",
     "term1": "Veckomöten & aktiviteter",
