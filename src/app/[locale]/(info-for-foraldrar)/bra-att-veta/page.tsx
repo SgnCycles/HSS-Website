@@ -1,8 +1,8 @@
 import Button from "@/components/buttons/Button";
-import { scoutEquipment, scoutEquipmentStore } from "@/data/braAttVetaContent";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "HSS - Bra att veta",
@@ -11,6 +11,11 @@ export const metadata: Metadata = {
 };
 
 const BraAttVetaPage = () => {
+
+  const t = useTranslations("bra-att-veta");
+  const tScoutsEquipment = t.raw("scoutEquipment") as string[];
+  const tscoutClothes = t.raw("scoutStoreClothes") as string[];
+
   return (
     <main id="main-content">
       <section className="grid place-items-center bg-[url(/images/Backgrounds/blueWavyBoat2.png)] bg-cover sm:bg-top-right font-body pb-6">
@@ -23,16 +28,14 @@ const BraAttVetaPage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="heading-1">Bra att veta</h1>
+            <h1 className="heading-1">{t("title")}</h1>
           </div>
           <p className="paragraph-light">
-            Vilka kläder och saker behöver man för att bli scout? Det behövs
-            inget särskilt för att börja i Scouterna. Men det finns en del saker
-            som kan vara bra att ha eller låna efter ett tag.
+            {t("intro")}
           </p>
           <ul className="list-disc paragraph-light pl-6 sm:pl-8">
-            {scoutEquipment &&
-              scoutEquipment.map((equipment, index) => (
+            {tScoutsEquipment &&
+              tScoutsEquipment.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}
           </ul>
@@ -41,7 +44,7 @@ const BraAttVetaPage = () => {
             href="https://www.scouterna.se/scout-ledare-kar/jag-ar-scout/scoutklader/"
             target="_blank"
           >
-            Läs mer om scoutdräkten här →
+            {t("readMore")}
           </Link>
         </article>
         <article className="container">
@@ -54,27 +57,25 @@ const BraAttVetaPage = () => {
               alt=""
             />
             <h2 className="heading-2 pb-6">
-              Vad är det som skiljer HSS från andra scoutkårer?
+              {t("sectionTwoTitle")}
             </h2>
           </div>
           <div className="flex flex-col lg:flex-row lg:pb-6">
             <div className="w-full flex flex-col justify-between md:pr-4 pb-6 md:pb-0">
               <p className="paragraph-light">
-                Självklart våra supersnygga, praktiska och slitstarka
-                HSS-tröjor!
+                {t("sectionTwoIntro")}
               </p>
               <ul className="paragraph-light pl-6 sm:pl-6">
-                {scoutEquipmentStore &&
-                  scoutEquipmentStore.map((equipment, index) => (
+                {tscoutClothes &&
+                  tscoutClothes.map((equipment, index) => (
                     <li key={index}>{equipment}</li>
                   ))}
               </ul>
               <p className="paragraph-light">
-                Tröjorna köps enklast på kårdiscot i november eller på
-                sommaravslutningen i juni.
+                {t("sectionTwoParagraphOne")}
               </p>
               <h3 className="hidden sm:flex flex-col heading-4">
-                Du kan självklart också mejla:
+                {t("sectionThreeTitle")}
                 <a href="mailto:hsstrojan@hss-scout.org" className="underline">
                   hsstrojan@hss-scout.org
                 </a>
@@ -102,7 +103,7 @@ const BraAttVetaPage = () => {
         </div>
         <div className="sm:hidden pb-6">
           <h3 className="heading-3 text-center pb-6 md:pb-0">
-            Du kan självklart också mejla:
+            {t("sectionThreeTitle")}
           </h3>
           <Button
             ariaLabel=""
@@ -113,9 +114,7 @@ const BraAttVetaPage = () => {
         </div>
         <div className="container card bg-yellow-200 border border-accent rounded-md">
           <p className="paragraph-light mb-0">
-            OBS! Tänk på att när en HSS-tröja har tjänat ut skall den slängas
-            och inte lämnas till klädinsamling. HSS-tröjor är till för medlemmar
-            i HSS och ingen annan!
+            {t("sectionFourParagraph")}
           </p>
         </div>
       </section>

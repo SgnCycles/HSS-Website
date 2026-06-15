@@ -1,43 +1,11 @@
-import { FaqProps } from "@/types/types"
+import { FaqProps } from "@/types/types";
 
-export const faqData:FaqProps[]=[
-
-  { 
-    id:1,
-    title:"Varför har vi en scoutdräkt?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  },
-   {
-     id:2,
-    title:"Jag är ny scoutledare! Vilken utbildning ska jag gå först?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  },
-   {
-     id:3,
-    title:"Jag har tappat bort min faktura. Vad gör jag?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  },
-   {
-    id:4,
-    title:"Vad ingår i min medlemsavgift?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  },
-   {
-    id:5,
-    title:"Hur ändrar jag min fakturaadress?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  },
-   {
-    id:6,
-    title:"Min faktura har felaktigt belopp. Vad gör jag?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  },
-   {
-    id:7,
-    title:"Hur ändrar jag mina kontaktuppgifter?",
-    content:"Hör av dig till oss direkt. Vi svarar inom ett par dagar och hjälper dig rätt."
-  }
-
-
+export const faqData: FaqProps[] = [
+  { id: 1, titleKey: "faq.scout-uniform.title", contentKey: "faq.scout-uniform.content" },
+  { id: 2, titleKey: "faq.new-leader.title", contentKey: "faq.new-leader.content" },
+  { id: 3, titleKey: "faq.lost-invoice.title", contentKey: "faq.lost-invoice.content" },
+  { id: 4, titleKey: "faq.membership-fee.title", contentKey: "faq.membership-fee.content" },
+  { id: 5, titleKey: "faq.invoice-address.title", contentKey: "faq.invoice-address.content" },
+  { id: 6, titleKey: "faq.wrong-amount.title", contentKey: "faq.wrong-amount.content" },
+  { id: 7, titleKey: "faq.contact-details.title", contentKey: "faq.contact-details.content" },
 ]
-

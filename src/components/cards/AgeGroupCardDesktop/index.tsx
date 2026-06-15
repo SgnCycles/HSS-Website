@@ -1,20 +1,28 @@
 "use client";
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const AgeGroupPageDesktop = () => {
-
+  
   const [isOpen, setIsOpen] = useState<number | null>(null);
   const handleClick = (index: number) => {
     setIsOpen(isOpen === index ? null : index);
   };
 
+  const t = useTranslations("aldersgrupper");
+  const groups = t.raw("groups") as Record<string, any>;
+  const newDataCards = ageGroupCardContent.map((card) => ({
+    ...card,
+    ...groups[card.id],
+  }));
+
   return (
     <>
-      {ageGroupCardContent &&
-        ageGroupCardContent.map((card, index) => (
+      {newDataCards &&
+        newDataCards.map((card, index) => (
           <li
             key={index}
             className={`flex flex-col justify-between w-full h-full md:min-h-30 border ${card.colourSchemeBorder} pt-2 md:pt-4 rounded-tl-md rounded-tr-md rounded-bl-xs rounded-br-xs overflow-hidden bg-background`}
@@ -53,9 +61,8 @@ const AgeGroupPageDesktop = () => {
               <p className="place-content-center text-left pl-4 h-8">
                 {card.meetings}
               </p>
-              <button
-                className="flex justify-between items-center pr-4 cursor-pointer"              >
-                Läs mer
+              <button className="flex justify-between items-center pr-4 cursor-pointer">
+                {t("readMore")}
                 <Image
                   src="/Icons/caret_down_white.svg"
                   height={15}
@@ -108,7 +115,7 @@ const AgeGroupPageDesktop = () => {
                       className={`font-bold ${card.colourSchemeAccentSurface} ${card.colourSchemeHover} hover:border-2 hover:border-accent text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 cursor-pointer`}
                       onClick={() => handleClick(index)}
                     >
-                      Stäng
+                      {t("close")}
                     </button>
                     <button
                       className={`font-bold ${card.colourSchemeAccent} text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 ${card.colourSchemeHover} hover:border-2 hover:border-accent cursor-pointer`}
@@ -117,7 +124,7 @@ const AgeGroupPageDesktop = () => {
                         href="https://www.scoutnet.se/register/in/group/764"
                         target="_blank"
                       >
-                        Ansök om plats
+                        {t("apply")}
                       </Link>
                     </button>
                   </div>

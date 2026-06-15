@@ -1,5 +1,6 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 type FooterLocationType = {
   title: string,
@@ -8,6 +9,8 @@ type FooterLocationType = {
 }
 
 const FooterLocation = ({ title, address, googleMapslink }: FooterLocationType) => {
+
+ const t = useTranslations('footer')
 
   const addresses = address.split('|')
 
@@ -33,7 +36,7 @@ const FooterLocation = ({ title, address, googleMapslink }: FooterLocationType) 
         className="flex items-center gap-1 font-body text-white pr-1 text-[16px] font-bold md:text-[22px]"
         href={googleMapslink}
       >
-        <p>Hitta hit</p>
+        <p>{t('find_us')}</p>
         <Image
           src="/Icons/yellow-link-icon.svg"
           height={15}

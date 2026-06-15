@@ -1,12 +1,15 @@
-import Link from "next/link"
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const FooterHeadSection = () => {
+
+  const t = useTranslations('footer')
   return (
     <section className="bg-linear-to-t text-center px-4 from-blue-200 py-4">
       <h2 className="font-heading text-blue-900 font-extrabold text-[18px]">Hässelby Strands Sjöscoutkår</h2>
-      <p className="font-body text-[15px]">En stolt del av Scouterna sedan 1959.
-        Vi ger barn och ungdomar äventyr, sjömanskap och gemenskap vid Hässelby Strand.</p>
+      <p className="font-body text-[15px]">{t('footer_about_description_1')}{t('footer_about_description_2')}
+        </p>
       <Image
         src="/images/Logo/scouterna_logo.png"
         height={113}

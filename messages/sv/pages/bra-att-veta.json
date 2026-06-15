@@ -1,0 +1,28 @@
+{
+  "bra-att-veta": {
+    "title": "Bra att veta",
+    "intro": "Vilka kläder och saker behöver man för att bli scout? Det behövs inget särskilt för att börja i Scouterna. Men det finns en del saker som kan vara bra att ha eller låna efter ett tag.",
+    "scoutEquipment": [
+      "Scoutdräkt (T-shirt, piké eller scoutskjorta med halsduk)",
+      "Liggunderlag",
+      "Sovsäck",
+      "Ett par vandringsskor, stövlar eller kängor",
+      "Matbestick",
+      "Något att äta från, t.ex som tallrik eller kåsa",
+      "Vattenflaska",
+      "Regnkläder"
+    ],
+    "readMore": "Läs mer om scoutdräkten här →",
+    "sectionTwoTitle": "Vad är det som skiljer HSS från andra scoutkårer?",
+    "sectionTwoIntro": "Självklart våra supersnygga, praktiska och slitstarka HSS-tröjor!",
+    "scoutStoreClothes": [
+      "HSS-tröja: Klassisk  collegetröja: 350:-",
+      "HSS-T-shirt: Outslitlig och oumbärlig: 150:-",
+      "HSS-keps: Ett måste i skogen och till sjöss: 150:-",
+      "HSS-paketet: Fyndpris på rubbet: 550:-"
+    ],
+    "sectionTwoParagraphOne": "Tröjorna köps enklast på kårdiscot i november eller på sommaravslutningen i juni.",
+    "sectionThreeTitle": "Du kan självklart också mejla:",
+    "sectionFourParagraph": "OBS! Tänk på att när en HSS-tröja har tjänat ut skall den slängas och inte lämnas till klädinsamling. HSS-tröjor är till för medlemmar i HSS och ingen annan!"
+  }
+}

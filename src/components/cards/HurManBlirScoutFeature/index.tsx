@@ -1,5 +1,5 @@
-"use client";
-import Link from "next/link";
+"use client"
+import { Link } from "@/i18n/routing";
 import HurManBlirScoutSteps from "../HurManBlirScoutSteps";
 import Button from "@/components/buttons/Button";
 import Image from "next/image";

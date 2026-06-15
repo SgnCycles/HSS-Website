@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import CloseButton from "../buttons/CloseButton";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 export default function GDPR({ handelGdpr }: { handelGdpr: () => void }) {
   const t = useTranslations(`policy.gdpr.popUp`)

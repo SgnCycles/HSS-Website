@@ -1,7 +1,7 @@
 import Button from "@/components/buttons/Button";
-import { engageraDigCardContent } from "@/data/engageraDigCardContent";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "HSS - Engagera dig",
@@ -10,6 +10,14 @@ export const metadata: Metadata = {
 };
 
 const EngageraDigSomVuxenPage = () => {
+
+  const t = useTranslations("engagera-dig");
+  const tActivityList = t.raw("activityList") as {
+    id: string,
+    icon: string,
+    activity: string,
+  }[];
+
   return (
     <main
       id="main-content"
@@ -19,25 +27,24 @@ const EngageraDigSomVuxenPage = () => {
         <article>
           <div className="flex w-full justify-center items-center lg:justify-start pb-6">
             <Image
-              src={`/Icons/engagera-icon.svg`}
+              src="/Icons/engagera-icon.svg"
               height={30}
               width={30}
               alt=""
               className="h1-icon"
             />
             <h1 className="heading-1">
-              Engagera dig{" "}
-              <span className="hidden sm:inline-block">som vuxen</span>
+               {t("titleOne")}{" "}
+              <span className="hidden sm:inline-block">{t("titletwo")}</span>
             </h1>
           </div>
           <p className="paragraph-light">
-            Som förälder behöver du inte ta på dig ett fast uppdrag. Även
-            tillfällig hjälp är ovärderlig för kårens vardag.
+            {t("intro")}
           </p>
           <div className="flex justify-center items-center">
             <ul className="cards-column pb-6 md:w-[70%] mb-6">
-              {engageraDigCardContent &&
-                engageraDigCardContent.map((card, index) => (
+              {tActivityList &&
+                tActivityList.map((card, index) => (
                   <li
                     key={index}
                     className="flex border border-[#1E7BC4] rounded-md p-4 bg-blue-100 min-h-17"
@@ -47,7 +54,7 @@ const EngageraDigSomVuxenPage = () => {
                     </div>
                     <div className="grid place-items-center">
                       <p className="paragraph-light font-medium mb-0">
-                        {card.title}
+                        {card.activity}
                       </p>
                     </div>
                   </li>
@@ -56,19 +63,18 @@ const EngageraDigSomVuxenPage = () => {
           </div>
         </article>
         <article className="card sm:bg-yellow-200 md:border sm:border-accent">
-          <h2 className="heading-3 text-center md:text-left">
-            Vet du inte var du passar in?
+          <h2 className="heading-3 text-center md:text-left pb-6">
+            {t("sectionTwoTitle")}
           </h2>
           <p className="paragraph-light text-center md:text-left">
-            Hör av dig så berättar vi mer om vad som behövs just nu. Alla bidrag
-            räknas, stora som små.
+            {t("sectionTwoIntro")}
           </p>
           <div className="flex justify-end">
             <Button
               ariaLabel=""
               href="mailto:info@hss-scout.org"
               variant="primaryBlue"
-              text="Kontakta oss"
+              text={`${t("contactUs")}`}
             />
           </div>
         </article>
