@@ -3,7 +3,7 @@ import ActivityCard from "../ActivityCard";
 import { activityFeatureContent } from "@/data/activityFeatureContent";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Button from "@/components/buttons/Button";
 

@@ -1,6 +1,6 @@
 import Button from "@/components/buttons/Button";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 

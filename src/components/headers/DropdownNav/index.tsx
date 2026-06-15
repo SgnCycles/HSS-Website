@@ -1,5 +1,5 @@
 "use client"
-import Link from "next/link"
+import { Link } from "@/i18n/routing";
 import Icons from "@/components/features/Icons";
 import { useTranslations } from "next-intl";
 
