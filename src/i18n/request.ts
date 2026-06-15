@@ -11,6 +11,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const files = [
     "home",
     "nav",
+    "footer",
     "pages/vad-gor-vi",
     "pages/vara-lokaler",
     "pages/policy",
