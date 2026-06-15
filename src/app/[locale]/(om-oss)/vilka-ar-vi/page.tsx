@@ -49,7 +49,7 @@ const VilkaArViPage = () => {
           )}
         </div>
       </section>
-      <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
+      <section className="container pt-0 align-center flex flex-col justify-center bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
         <h2 className="heading-2">
           <Icons name="anchor" variant="h2-icon text-accent" />
           {t("history.title")}
@@ -63,26 +63,17 @@ const VilkaArViPage = () => {
             </div>
           ))}
         </div>
-        <div className="grid md:grid-cols-3 gap-3 md:gap-9">
+        <div className="flex flex-col pb-0 lg:flex-row gap-0 lg:gap-2 w-full">
           {historyHSS && historyHSS.map((image) => (
-            <Image
-              key={image.id}
-              src={`/images/Body/${image.image}`}
-              height={276}
-              width={393}
-              alt="historia om båtar"
-              className=" 
-                origin-top
-                duration-300
-                rounded-sm
-                md:rounded-md
-                border-background 
-                w-full
-                h-auto 
-                object-cover
-                aspect-4/3
-              "
-            />
+            <div key={image.id} className="relative overflow-hidden self-center h-auto ml-0 mr-0 w-screen aspect-4/3 ">
+              <Image
+                src={`/images/Body/${image.image}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="historia om båtar"
+                className="ml-0 mr-0 object-cover md:rounded-none lg:rounded-md"
+              />
+            </div>
           ))}
         </div>
         <Image
