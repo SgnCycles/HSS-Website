@@ -1,0 +1,33 @@
+{
+  "vilka-ar-vi": {
+    "title": "About HSS",
+    "subTitle": "Established in 1959",
+    "about-us": {
+      "1": { 
+        "text": "Hässelby Strands Sjöscoutkår (HSS) is a traditional non-profit youth organization with a focus on scouting and boating. We are religiously and politically independent, and a member of the Svenska Scoutförbundet (Swedish Scout Association), which with about 65,000 members is one of Sweden's largest youth organizations.",
+        "imgAlt": ""
+      },
+      "2": { 
+        "text": "The goal of our activities is to give children and young people the opportunity to experience nature, boating, seamanship, challenges and – above all – camaraderie. The basic idea is Learning by doing. There is no substitute bench in Scouterna!",
+        "imgAlt": ""
+      },
+      "3": { 
+        "text": "HSS was formed in 1959 and operates in a pleasant lodge (called Ruffen) on the shores of Lake Mälaren in Hässelby. HSS has around 130 happy members, owns five sailboats, ten optimist dinghies, two 2-krona boats, a fast escort boat and a large scout cabin.",
+        "imgAlt": ""
+      }
+    },
+    "history": {
+      "title": "HSS History",
+      "1": { "text": "HSS was founded in 1959 and grew rapidly thanks to the strong commitment of leaders, parents and scouts. Together they helped build the business through activities, fundraising and volunteer work." },
+      "2": { "text": "The corps' first boat, the Igelknäcken (“Inga-Lunda”), was the start of HSS's strong sea scout tradition. Over time, more boats could be purchased thanks to bazaars, lotteries and a great deal of joint commitment. During the 1960s, the corps continued to grow. More children and young people found their way into scouting life, and sailing on Lake Mälaren became a natural part of the activities. New boats were launched and sea life became an important part of the community." },
+      "3": { "text": "The need for a gathering place on land also emerged. Through many voluntary efforts, the Myset scout hut was built, which was inaugurated in 1968. It is still used today as a place for camps, community and memories." },
+      "4": { "text": "Since its inception, HSS has been a sea scout corps characterized by community, cooperation and adventure. It is a tradition that still lives on today." }
+    },
+    "documents": {
+      "title": "See other documents",
+      "1": { "text": "Hässelby Strands Sjöscoutkår statues (swedish) →" },
+      "2": { "text": "Business plan for the period 2025-2026 (swedish) →" },
+      "3": { "text": "HSS Union meeting for 2025 (swedish) →" }
+    }
+  }
+}

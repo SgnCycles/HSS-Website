@@ -25,6 +25,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/scoutmarken",
     "not-found",
     "pages/vanliga-fragor",
+    "pages/vilka-ar-vi"
   ];
 
   const messages = (
