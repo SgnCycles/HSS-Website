@@ -1,7 +1,7 @@
 "use client";
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
-import Button from "@/components/buttons/Button";
+import InternalButton from "@/components/buttons/InternalButton";
 import { useTranslations } from "next-intl";
 
 const AgeGroupCardHome = () => {
@@ -30,8 +30,8 @@ const AgeGroupCardHome = () => {
           <p className="paragraph-light text-left mb-0 whitespace-pre-line">
             {t("intro")}
           </p>
-          <div className="hidden place-content-center md:flex flex-wrap text-xl ml-2 lg:ml-0">
-            <Button
+          <div className="hidden place-content-center md:flex flex-wrap text-xl pl-3">
+            <InternalButton
               ariaLabel=""
               href="/aldersgrupper"
               variant="primaryBlue"
@@ -87,7 +87,7 @@ const AgeGroupCardHome = () => {
             ))}
         </ul>
         <div className="flex sm:hidden items-center justify-center text-xl">
-          <Button
+          <InternalButton
             ariaLabel=""
             href="/aldersgrupper"
             variant="secondaryBlue"

@@ -1,0 +1,69 @@
+{
+  "securityPopup": {
+    "leaderScreening": {
+      "title": "Thorough Leader Screening",
+      "info": "All leaders undergo background checks and reference checks before working with the scouts. Leaders also complete mandatory training in child safety and safe leadership, for example through Scouts Sweden's Trygga Möten training."
+    },
+    "safeRoutines": {
+      "title": "Safe and Transparent Routines",
+      "info": "Our activities follow clear guidelines to ensure children are always under appropriate supervision. We also have procedures for reporting and handling any incidents or concerns, so both children and parents can feel secure."
+    },
+    "inclusiveScouting": {
+      "title": "Inclusive and Modern Scouting",
+      "info": "Our programs welcome children from different backgrounds, beliefs and circumstances. Traditional scouting methods have evolved to focus on cooperation, respect, personal development and outdoor experiences, rather than religion or hierarchical structures."
+    },
+    "openCommunication": {
+      "title": "Open Communication",
+      "info": "Parents are always welcome to ask questions and visit our meetings. We strive to provide clear information about activities, safety routines and how parents can be involved in the organization."
+    }
+  },
+  "security-and-safety-info": {
+    "safe-transparent-routines": {
+      "title": "Safe and Transparent Procedures",
+      "info": "Our activities follow clear guidelines to ensure that children are always under appropriate supervision. We also have procedures in place for reporting and handling any incidents or concerns, so that both children and parents can feel safe and secure."
+    },
+    "inclusive-modern-scouting": {
+      "title": "Inclusive and Modern Scouting",
+      "info": "Our programs welcome children from diverse backgrounds, beliefs, and circumstances. Traditional scouting methods have evolved to focus on collaboration, respect, personal development, and outdoor experiences rather than religion or hierarchical structures."
+    },
+    "open-communication": {
+      "title": "Open Communication",
+      "info": "Parents are always welcome to ask questions and visit our meetings. We strive to provide clear information about activities, safety procedures, and how parents can participate in and support our organization."
+    }
+  },
+  "security-and-safety-checks": {
+    "checks": {
+      "background-checks": "Background checks for all leaders",
+      "safety-training": "Mandatory safety training",
+      "incident-reporting": "Clear incident reporting procedures",
+      "parent-visits": "Parents are welcome to visit meetings"
+    }
+  },
+  "security-and-safety-cards": {
+    "leader-screening": {
+      "title": "Careful Leader Screening",
+      "info": "Background checks, reference checks, and mandatory training through Scouting Sweden's Safe Meetings program."
+    },
+    "life-jackets-required": {
+      "title": "Life Jackets Are Always Required",
+      "info": "Clear supervision guidelines and incident management procedures. Life jackets are always mandatory during water-based activities."
+    },
+    "safety-training": {
+      "title": "Safety Training",
+      "info": "Mandatory training in Safe Meetings and child protection."
+    },
+    "safe-community": {
+      "title": "A Safe and Supportive Community",
+      "info": "Parents are always welcome. We provide clear information about activities and safety procedures."
+    }
+  },
+  "security-and-safety-page": {
+    "metaTitle": "HSS - Safety and Security",
+    "metaDescription": "Hässelby Strands Sjöscoutkår prioritizes safety, inclusion, and security through trained leaders, clear procedures, and a positive scouting environment.",
+    "page-title": "Safety & Security",
+    "sub-title": "At HSS, children's safety, inclusion, and happiness are always our highest priority.",
+    "cta": "Read more here",
+    "close-cta": "Close",
+    "popup-title": "Safety and inclusion at HSS"
+  }
+}

@@ -11,10 +11,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const files = [
     "home",
     "nav",
+    "pages/bli-ledare",
+    "pages/trygghet-och-sakerhet",
+    "footer",
     "pages/vad-gor-vi",
-    "pages/vara-lokaler",
-    "pages/policy",
-    "pages/vara-batar",
     "pages/bra-att-veta",
     "pages/engagera-dig",
     "pages/aret-i-hss",
@@ -25,6 +25,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "pages/vara-lokaler",
     "pages/policy",
     "pages/vara-batar",
+    "pages/vilka-ar-vi"
   ];
 
   const messages = (

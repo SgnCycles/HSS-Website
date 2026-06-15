@@ -5,7 +5,7 @@ import Nav from "../Nav";
 import BorderTwoUp from "@/components/borders/BorderTwoUp";
 
 const HeaderHome = () => {
-
+  
   const t = useTranslations("home");
 
   return (
@@ -26,8 +26,9 @@ const HeaderHome = () => {
               "linear-gradient(to top, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
           }}
         />
-        <h1 className="z-5 p-4 pb-0 md:pb-50 lg:pb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 text-xl sm:text-6xl font-heading font-extrabold text-shadow-black text-shadow-xs text-center text-white">
-          {t("title")}<br />
+        <h1 className="z-5 p-4 pb-0 md:pb-65 lg:pb-0 lg:mb-80 xl:mb-0 bg-primary md:bg-transparent md:row-start-1 row-start-2 text-xl sm:text-3xl md:text-6xl font-heading font-extrabold text-shadow-black text-shadow-sm text-center text-white">
+          {t("title")}
+          <br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
         <BorderTwoUp
@@ -38,13 +39,13 @@ const HeaderHome = () => {
           <div className="z-5 bg-primary md:bg-primary/45">
             <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
               <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg sm:whitespace-pre-line">
-                {t('description')}
+                {t("description")}
               </p>
               <Button
                 ariaLabel=""
                 href="https://www.scoutnet.se/register/in/group/764"
                 variant="primaryBlue"
-                text={t('cta')}
+                text={t("cta")}
               />
             </div>
           </div>

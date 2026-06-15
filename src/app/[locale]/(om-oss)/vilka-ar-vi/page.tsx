@@ -1,18 +1,23 @@
 import Image from "next/image";
-import { vilkaArViGamlaBatarContent } from "@/data/vilkaArViCardContent";
+import { aboutUsDocuments } from "@/data/vilkaArViCardContent";
 import BorderSingleDown from "@/components/borders/BorderSingleDown";
 import { historyHSS } from "@/data/vilkaArViCardContent";
 import VilkaArViCardDesktop from "@/components/cards/VilkaArViDesktop";
 import VilkaArViCardMobile from "@/components/cards/VilkaArViMobile";
 import type { Metadata } from "next";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Vilka är vi",
-  description:
-    "Scouterna ger barn och unga äventyr och personlig utveckling i en inkluderande gemenskap där mångfald, respekt och samarbete står i centrum.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("vilka-ar-vi");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const VilkaArViPage = () => {
+  const t = useTranslations("vilka-ar-vi")
   return (
     <main id="main-content">
       <section className="flex flex-col lg:bg-blue-100 lg:bg-[url(/images/Backgrounds/boat-white-transparent.png)] lg:bg-size-[398px] lg:bg-no-repeat lg:bg-top-right">
@@ -25,10 +30,10 @@ const VilkaArViPage = () => {
               alt=""
               className="h1-icon"
             />
-            <h1 className="heading-1">Om HSS</h1>
+            <h1 className="heading-1">{t("title")}</h1>
           </div>
           <div className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md lg:hidden mb-6">
-            <p>Scoutkåren bildades 1959</p>
+            <p>{t("subTitle")}</p>
           </div>
           <VilkaArViCardDesktop />
           <VilkaArViCardMobile />
@@ -36,30 +41,19 @@ const VilkaArViPage = () => {
       </section>
       <BorderSingleDown variant="text-blue-100 lg:block hidden" />
       <section className="lg:container md:container">
-        <h2 className="heading-2 hidden lg:block pb-6">Se andra dokument</h2>
+        <h2 className="heading-2 hidden lg:block pb-6">{t("documents.title")}</h2>
         <div className="flex flex-col bg-yellow-200 p-5 mb-0 font-body lg:paragraph-light lg:text-blue-900 text-blue-900 lg:border-accent lg:rounded-md lg:bg-secondary lg:border lg:gap-5 md:rounded-md md:border-accent md:border">
-          <h2 className="heading-2 lg:hidden">Se andra dokument</h2>
-          <a
-            target="_blank"
-            href="/pdf/Stadgar-Hasselby-Strands-Sjoscoutkar-beslutad-2025-10-22-signerade.pdf"
-            className="underline underline-offset-2"
-          >
-            Stadgar för Hässelby Strands Sjöscoutkår →
-          </a>
-          <a
-            target="_blank"
-            href="/pdf/Verksamhetsplan-for-perioden-2025-09-01-2026-12-31.pdf"
-            className="underline underline-offset-2"
-          >
-            Verksamhetsplan för perioden 2025-2026 →
-          </a>
-          <a
-            target="_blank"
-            href="/pdf/HSS-karstamma-2025-10-22-protokoll-signerat.pdf"
-            className="underline underline-offset-2"
-          >
-            HSS Kår stämma för 2025 →
-          </a>
+          <h2 className="heading-2 lg:hidden">{t("documents.title")}</h2>
+          {aboutUsDocuments && aboutUsDocuments.map((doc) => 
+            <a
+              key={doc.id}
+              target="blank"
+              href={doc.source}
+              className="underline underline-offset-2"
+            >
+              {t(`documents.${doc.id}.text`)}
+            </a>
+          )}
         </div>
       </section>
       <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
@@ -71,19 +65,19 @@ const VilkaArViPage = () => {
             alt=""
             className="h2-icon"
           />
-          <h2 className="heading-2">Historien om HSS</h2>
+          <h2 className="heading-2">{t("history.title")}</h2>
         </div>
         <div className="flex flex-col">
           {historyHSS &&
-            historyHSS.map((content, index) => (
-              <p key={index} className="paragraph-light">
-                {content.info}
+            historyHSS.map((content) => (
+              <p key={content.id} className="paragraph-light">
+                {t(`history.${content.id}.text`)}
               </p>
             ))}
         </div>
         <div className="flex flex-col items-center lg:flex-row lg:gap-5 lg:justify-center md:flex-row self-center lg:w-full w-screen md:w-auto gap-1 md:gap-2">
-          {vilkaArViGamlaBatarContent &&
-            vilkaArViGamlaBatarContent.map((image, index) => (
+          {historyHSS &&
+            historyHSS.map((image, index) => (
               <Image
                 key={index}
                 src={`/images/Body/${image.image}`}

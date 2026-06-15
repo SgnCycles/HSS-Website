@@ -1,9 +1,14 @@
-import Link from "next/link";
+"use client";
+import { Link } from "@/i18n/routing";
 import HurManBlirScoutSteps from "../HurManBlirScoutSteps";
-import Button from "@/components/buttons/Button";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import InternalButton from "@/components/buttons/InternalButton";
 
 const HurManBlirScoutFeature = () => {
+  
+  const t = useTranslations("hurManBlirScout");
+
   return (
     <div className="bg-primary">
       <div className="container">
@@ -15,14 +20,18 @@ const HurManBlirScoutFeature = () => {
             width={50}
             alt=""
           />
-          <h2 className="heading-2 text-white">
-            Hur man blir <span className="text-accent">scout?</span>
+          <h2 className="hidden md:inline-block heading-2 text-white">
+            {t("heading")}{" "}
+            <span className="text-accent hidden md:inline-block">
+              {t("headingAccent")}
+            </span>
+          </h2>
+          <h2 className="md:hidden heading-2 text-white">
+            {t("headingMobile")}
+            <span className="text-accent">{t("headingMobileAccent")}</span>
           </h2>
         </div>
-        <p className="paragraph-light text-white">
-          Det är enkelt att komma igång! Fyra steg och du är en del av vår
-          kårfamilj.
-        </p>
+        <p className="paragraph-light text-white">{t("intro")}</p>
         <div className="md:flex justify-between">
           <div className="section">
             <HurManBlirScoutSteps />
@@ -32,7 +41,7 @@ const HurManBlirScoutFeature = () => {
               <ul className="border-b">
                 <div className="flex">
                   <h3 className="heading-3 text-white mb-4 m-auto">
-                    Terminavgift inkluderar
+                    {t("termTitle")}
                   </h3>
                 </div>
                 <div className="flex items-center">
@@ -43,7 +52,7 @@ const HurManBlirScoutFeature = () => {
                     width={50}
                     alt=""
                   />
-                  <li className="paragraph-light">Veckomöten & aktiviteter</li>
+                  <li className="paragraph-light">{t("term1")}</li>
                 </div>
                 <div className="flex items-center">
                   <Image
@@ -53,7 +62,7 @@ const HurManBlirScoutFeature = () => {
                     width={50}
                     alt=""
                   />
-                  <li className="paragraph-light">Försäkring via Scouterna</li>
+                  <li className="paragraph-light">{t("term2")}</li>
                 </div>
                 <div className="flex items-center">
                   <Image
@@ -63,23 +72,21 @@ const HurManBlirScoutFeature = () => {
                     width={50}
                     alt=""
                   />
-                  <li className="paragraph-light">
-                    Tillgång till båtar & utrustning
-                  </li>
+                  <li className="paragraph-light">{t("term3")}</li>
                 </div>
               </ul>
               <div className="flex gap-2 mt-4">
-                <p>Har du frågor?</p>
+                <p>{t("faqQuestion")}</p>
                 <Link className="underline" href="/vanliga-fragor">
-                  Besök FAQ
+                  {t("faqLink")}
                 </Link>
               </div>
             </div>
-            <Button
+            <InternalButton
               ariaLabel="link"
               variant="primaryBrown"
               href="/aldersgrupper"
-              text="Läs mer om åldersgrupper"
+              text={t("ageGroupBtn")}
               target="_self"
             />
             <Link
@@ -87,12 +94,13 @@ const HurManBlirScoutFeature = () => {
               target="_blank"
               className="font-bold bg-primary hover:bg-primary-hover text-accent hover:text-accent-hover border-accent hover:border-accent/50 text-center px-10.5 w-[80%] sm:w-max transition-all duration-300 border inline-flex items-center justify-center rounded-sm py-2 min-h-17.5"
             >
-              Ansök om att bli scout!<span className="hidden md:block">→</span>
+              {t("applyBtn")}
+              <span className="hidden md:block">→</span>
             </Link>
           </div>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 };
 

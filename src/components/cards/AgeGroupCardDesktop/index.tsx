@@ -1,7 +1,7 @@
 "use client";
 import { ageGroupCardContent } from "@/data/ageGroupCardContent";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -109,7 +109,7 @@ const AgeGroupPageDesktop = () => {
                     <p className="font-bold">{card.price}</p>
                   </div>
                   <div
-                    className={`agegroup-card-buttons flex justify-end gap-4 h-fit`}
+                    className="agegroup-card-buttons flex justify-end gap-4 h-fit"
                   >
                     <button
                       className={`font-bold ${card.colourSchemeAccentSurface} ${card.colourSchemeHover} hover:border-2 hover:border-accent text-background text-center px-16 transition-all duration-300 border-2 ${card.colourSchemeAccentSecondary} rounded-sm min-h-15 cursor-pointer`}
