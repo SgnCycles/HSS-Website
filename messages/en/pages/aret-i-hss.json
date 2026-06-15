@@ -1,0 +1,86 @@
+{
+  "aret-i-hss": {
+    "title": "The Year at HSS",
+    "subTitle": "Recurring activities and traditions",
+    "seasons": [
+      {
+        "title": "Winter",
+        "icon": "snow-icon.svg",
+        "months": [
+          {
+            "subtitle": "January",
+            "info": "Term start: 1 week after school starts|15 January: Submission of attendance lists for the autumn term|Officer meeting"
+          },
+          {
+            "subtitle": "February",
+            "info": "1 February: Sign-up for HSBK club duties|The Viking Race|Invoicing of term fees"
+          }
+        ]
+      },
+      {
+        "title": "Spring",
+        "icon": "green-leaf-icon.svg",
+        "months": [
+          {
+            "subtitle": "March",
+            "info": "Sea Scout Day|Leader gathering"
+          },
+          {
+            "subtitle": "April",
+            "info": "Sea Scout Day|Registration fee for summer camp|Health declaration for summer camp|Booking of launch date"
+          },
+          {
+            "subtitle": "May",
+            "info": "1 May: Launch of the boats|Ascension Day MAWR - Mälaren Around the World Race|Officer meeting|Final payment for summer camp|Jetty party at HSBK"
+          }
+        ]
+      },
+      {
+        "title": "Summer",
+        "icon": "sunflower-icon.svg",
+        "months": [
+          {
+            "subtitle": "June",
+            "info": "End of term"
+          },
+          {
+            "subtitle": "July",
+            "info": "Check the boats at HSBK|At some point during the summer: Camp/squadron"
+          },
+          {
+            "subtitle": "August",
+            "info": "15 August: Submission of attendance lists for the autumn term|Term start: 1 week after school starts"
+          }
+        ]
+      },
+      {
+        "title": "Autumn",
+        "icon": "maple-leaf-icon.svg",
+        "months": [
+          {
+            "subtitle": "September",
+            "info": "Invoicing of term fees|Group assembly|Grant application to St. Göran by 30 September at the latest"
+          },
+          {
+            "subtitle": "October",
+            "info": "Boat haul-out"
+          },
+          {
+            "subtitle": "November",
+            "info": "CM - Club Championship (Father's Day)|Officer meeting"
+          }
+        ]
+      },
+      {
+        "title": "Winter",
+        "icon": "snow-icon.svg",
+        "months": [
+          {
+            "subtitle": "December",
+            "info": "IGLOO - The Frozen Challenger Hike|End of term service in the Church|Reporting of grants from the St. Göran Committee before 31 December"
+          }
+        ]
+      }
+    ]
+  }
+}
