@@ -1,11 +1,13 @@
 {
   "aldersgrupper": {
-    "title": "Åldersgrupper",
+    "title": "HSS Åldersgrupper",
     "intro": "Oavsett ålder finns det en plats för dig i HSS.\nVarje avdelning har sin egen karaktär och sina egna äventyr.",
     "readMore": "Läs mer",
     "readMoreHere": "Läs mer här",
     "close": "Stäng",
     "apply": "Ansök om plats",
+    "metaTitle": "Åldersgrupper",
+    "metaDescription": "Hitta rätt scoutgrupp i HSS. Segling, hajker, naturkunskap, ledarskap och äventyr för barn, ungdomar och familjer i alla åldrar.",
     "groups": {
       "sjohumlorna": {
         "title": "Sjöhumlorna",

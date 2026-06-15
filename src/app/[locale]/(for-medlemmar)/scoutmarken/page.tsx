@@ -8,12 +8,15 @@ import SpecificaMarken from "@/components/cards/SpecificaMarkenCard";
 import ScoutmarkenIntro from "@/components/cards/ScoutmarkenIntro";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Scoutmärken",
-  description:
-    "Scoutmärken berättar din historia. Om äventyr, kunskaper och upplevelser. Lär dig vad märkena betyder och hur de bärs på scoutskjortan.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("scoutmarkenPage");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const ScoutmarkenPage = () => {
   const t = useTranslations("scoutmarkenPage");

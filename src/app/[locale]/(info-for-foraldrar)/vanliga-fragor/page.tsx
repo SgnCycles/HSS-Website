@@ -3,12 +3,15 @@ import FaqCard from "@/components/Faq";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Vanliga frågor",
-  description:
-    "Vanliga frågor om scouting - lär dig mer om hur verksamheten fungerar, vad scouter gör, hur du blir medlem och hur trygghet och gemenskap skapas.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("vanliga-fragor");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const VanligaFragorPage = () => {
   const t = useTranslations("vanliga-fragor");

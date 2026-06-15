@@ -3,12 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Bra att veta",
-  description:
-    "Det behövs inga särskilda kläder eller saker för att börja i Scouterna, men vissa utrustningar kan vara bra att ha eller låna efter en tid.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("bra-att-veta");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const BraAttVetaPage = () => {
 

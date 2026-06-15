@@ -1,11 +1,13 @@
 {
   "aldersgrupper": {
-    "title": "Age Groups",
+    "title": "HSS Age Groups",
     "intro": "Whatever your age, there is a place for you at HSS. Each section has its own character and its own adventures.",
     "readMore": "Read more",
     "readMoreHere": "Read more",
     "close": "Close",
     "apply": "Apply",
+    "metaTitle": "Age Groups",
+    "metaDescription": "Find the right Sea Scout group at HSS. Sailing, hiking, outdoor skills, leadership and adventure for children, young people and families of all ages.",
     "groups": {
       "sjohumlorna": {
         "title": "Sjöhumlorna",

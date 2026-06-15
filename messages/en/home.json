@@ -1,8 +1,9 @@
 {
   "home": {
+    "metaTitle": "Hässelby Strands sjöscoutkår",
+    "metaDescription": "Hässelby Strands Sjöscoutkår is part of the Swedish Scouting Association. Sea Scouting has been active in Hässelby, near Stockholm, since 1959, offering outdoor adventure and sailing activities.",
     "title": "Welcome to",
-    "description":"We are a proud Sea Scout troop that provides children and young people with \na safe place to grow, learn seamanship, and make lifelong friends.",
-    "cta":"Become a scout"
-  
+    "description": "We are a proud Sea Scout troop that provides children and young people with \na safe place to grow, learn seamanship, and make lifelong friends.",
+    "cta": "Become a scout"
   }
 }

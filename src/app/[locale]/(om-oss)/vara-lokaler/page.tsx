@@ -3,15 +3,18 @@ import VaraLokalerMobile from "@/components/cards/VaraLokalerMobile";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Våra lokaler",
-  description:
-    "Myset och Ruffen är HSS:s scoutlokaler för möten, läger och sjöscouting – välutrustade samlingsplatser för äventyr, gemenskap och lärande.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("VaraLokalerPage");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const VaraLokalerPage = () => {
-  const t = useTranslations('VaraLokalerPage')
+  const t = useTranslations("VaraLokalerPage")
   return (
     <main id="main-content">
       <section className="container flex flex-col justify-center items-center pb-0 lg:items-start">
