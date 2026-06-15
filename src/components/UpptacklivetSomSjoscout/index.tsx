@@ -1,18 +1,16 @@
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import InstaFeedCard from "../cards/InstaSection";
 import { useTranslations } from "next-intl";
+import InstaSection from "../cards/InstaSection";
 
 export default function UpptäckLivetSomSjöscout() {
-
-
-  const t = useTranslations('home')
+  const t = useTranslations("home");
   return (
     <section className=" bg-blue-100">
       <div className="container">
         <div className="flex flex-col items-start w-full md:max-w-6xl mx-auto gap-6">
           <div className="self-center lg:self-baseline pb-0">
-            <h2 className="flex heading-2 items-center justify-between">
+            <h2 className="flex heading-2 items-center gap-2">
               <Image
                 src="/Icons/yellow-instagram-icon.svg"
                 alt=""
@@ -20,15 +18,14 @@ export default function UpptäckLivetSomSjöscout() {
                 height={41}
                 className="h2-icon"
               />
-              <span className="font-bold md:heading-2 hidden sm:flex items-center">
-                {t('discover_title')}
+              <span className="font-bold md:heading-2  sm:flex items-center">
+                {t("discover_title")}
               </span>
-              <span className="flex sm:hidden">Livet som sjöscout</span>
             </h2>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-6 w-full order-1 md:order-2">
             <p className="paragraph flex-1 order-1 md:order-2 mb-0">
-              {t('ig_description')}
+              {t("ig_description")}
               <Link
                 className="paragraph text-primary font-extrabold flex-1"
                 href="https://www.instagram.com/hss_scout/"
@@ -51,12 +48,13 @@ export default function UpptäckLivetSomSjöscout() {
                 className="w-10 h-10 pr-2"
               />
               <p className="heading-3 text-accent">
-              {t('follow_us')}<span className="pl-1">&#8594;</span>
+                {t("follow_us")}
+                <span className="">&#8594;</span>
               </p>
             </Link>
           </div>
           <div className="w-full order-2 md:order-3">
-            <InstaFeedCard />
+            <InstaSection />
           </div>
         </div>
       </div>
