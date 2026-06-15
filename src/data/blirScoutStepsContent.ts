@@ -1,24 +1,19 @@
 import { BlirScoutStepsType } from "@/types/types";
-
-export const BlirScoutStepsContent:BlirScoutStepsType[] = [
-  {
-    title: "Skicka in intresseanmälan",
-    info: "Fyll i formuläret på hemsidan. Vi kontaktar dig inom några dagar för att berätta mer.",
-    step: "1"
+export const BlirScoutStepsContent: BlirScoutStepsType[] = [
+  { titleKey: "step1.title", 
+    infoKey: "step1.info", 
+    step: "1" 
   },
-  {
-    title: "Kom på ett prova-på möte",
-    info: "Ditt barn träffar sin blivande patrull och ledare för en rolig provkväll → kostnadsfritt.",
-    step: "2"
+  { titleKey: "step2.title",
+    infoKey: "step2.info", 
+    step: "2" 
   },
-  {
-    title: "Välkommen in i kåren!",
-    info: "Vi skriver in dig, berättar om terminsavgiften och du är redo att börja äventyret.",
-    step: "3"
+  { titleKey: "step3.title",
+     infoKey: "step3.info", 
+     step: "3" 
+    },
+  { titleKey: "step4.title",
+    infoKey: "step4.info",
+    step: "4" 
   },
-  {
-    title: "Investering & utrustning",
-    info: "Basplagg bekostas av familjen, men vi hjälper till att hitta allt du behöver.",
-    step: "4"
-  },
-]
+];

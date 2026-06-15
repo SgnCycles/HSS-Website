@@ -12,6 +12,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     "home",
     "nav",
     "footer",
+    "pages/bli-ledare",
+    "pages/trygghet-och-sakerhet",
     "pages/vad-gor-vi",
     "pages/vara-lokaler",
     "pages/policy",
