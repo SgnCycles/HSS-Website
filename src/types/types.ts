@@ -53,8 +53,8 @@ export type scoutUniformCardContentType = {
   desktopImage: string,
 }
 export type bliLedareCardContentType = {
-  title: string,
-  subtitle: string,
+  titleKey: string,
+  subtitleKey: string,
   icon: string,
 }
 
@@ -80,25 +80,26 @@ export type pageHeaderImageType = {
 }
 
 export type SecurityAndSafetyCardContentType = {
-  title: string,
+  titleKey: string,
   icon: string,
-  info: string
+  infoKey: string
 }
 
 export type SecurityAndSafetyCheckType = {
-  info: string,
+  infoKey: string,
   icon: string
 }
 
 export type SecurityAndSafetyInfoType = {
-  title: string,
-  info: string
+  titleKey: string,
+  infoKey: string
 }
 
 export type ActivityCardType = {
+ 
   icon: string,
-  title: string,
-  info: string
+  titleKey: string,
+  infoKey: string
 }
 
 export type ActivityFeatureType = {
@@ -163,9 +164,9 @@ export type vilkaArViTextContentMobileType = {
 }
 
 export type BlirScoutStepsType = {
-  title: string,
-  info: string,
-  step: string
+  titleKey: string;
+  infoKey: string;
+  step: string;
 }
 
 export type RegisterInfoProps = {

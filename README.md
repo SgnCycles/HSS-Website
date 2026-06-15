@@ -16,6 +16,7 @@ Check out HSS [website](https://hss-website-two.vercel.app/).
 - deployed on Vercel
 
 ## Project Structure ##
+```bash
 ├── README.md
 ├── eslint.config.mjs
 ├── messages
@@ -39,18 +40,18 @@ Check out HSS [website](https://hss-website-two.vercel.app/).
 │   ├── proxy.ts
 │   └── types
 └── tsconfig.json
+```
 
 ## Features ##
 - Responsive layout (mobile, tablet, desktop)
 - Accessibility: semantic HTML, Aria labels, etc.
 
 ## Team ##
-- Signe Bekere - Frontend Developer - @SgnCycles
-- Clara Swahn - Frontend Developer - @clarahedgehog
-- Villain Agnas - Frontend Developer - @villiam-Agnas
-- Mousumi Mukherjee - Frontend Developer - @mousmimukherjee-dev
-- Emelie Boman Silfverberg
- - Frontend Developer - @bosilf
+- Signe Bekere - Frontend Developer - [SgnCycles](https://github.com/SgnCycles)
+- Clara Swahn - Frontend Developer - [clarahedgehog](https://github.com/clarahedgehog)
+- Villain Agnas - Frontend Developer - [villiam-Agnas](https://github.com/villiam-Agnas)
+- Mousumi Mukherjee - Frontend Developer - [mousmimukherjee-dev](https://github.com/Mousumi-632)
+- Emelie Boman Silfverberg - Frontend Developer - [bosilf](https://github.com/bosilf)
 - PA Nguyen - UX Designer
 
 ## Acknowledgment ##
