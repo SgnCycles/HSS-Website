@@ -1,19 +1,21 @@
 {
   "vilka-ar-vi": {
-    "title": "Om HSS",
-    "subTitle": "Scoutkåren bildades 1959",
+    "metaTitle": "HSS - Who we are",
+    "metaDescription": "Scouterna provide children and young people with adventure and personal development in an inclusive community where diversity, respect and cooperation are at the center.",
+    "title": "About HSS",
+    "subTitle": "Established in 1959",
     "about-us": {
       "1": { 
         "text": "Hässelby Strands Sjöscoutkår (HSS) is a traditional non-profit youth organization with a focus on scouting and boating. We are religiously and politically independent, and a member of the Svenska Scoutförbundet (Swedish Scout Association), which with about 65,000 members is one of Sweden's largest youth organizations.",
-        "imgText": ""
+        "imgAlt": ""
       },
       "2": { 
         "text": "The goal of our activities is to give children and young people the opportunity to experience nature, boating, seamanship, challenges and – above all – camaraderie. The basic idea is Learning by doing. There is no substitute bench in Scouterna!",
-        "imgText": ""
+        "imgAlt": ""
       },
       "3": { 
         "text": "HSS was formed in 1959 and operates in a pleasant lodge (called Ruffen) on the shores of Lake Mälaren in Hässelby. HSS has around 130 happy members, owns five sailboats, ten optimist dinghies, two 2-krona boats, a fast escort boat and a large scout cabin.",
-        "imgText": ""
+        "imgAlt": ""
       }
     },
     "history": {

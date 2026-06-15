@@ -5,7 +5,7 @@ export type IconsProps = {
 
 const HssLogo = ({ size, className }: IconsProps) => {
   return (
-    <svg className={className} data-name="hss-logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width={size} height="auto" viewBox="0 0 375.749 375.749">
+    <svg className={className} data-name="hss-logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width={size} height={size} viewBox="0 0 375.749 375.749">
       <g id="Group_36" data-name="Group 36" clipPath="url(#clip-path)">
         <g id="Group_33" data-name="Group 33">
           <g id="Group_32" data-name="Group 32" clipPath="url(#clip-path)">
