@@ -22,14 +22,14 @@ const VaraBatarPage = () => {
         <div className="flex w-full justify-center lg:justify-start pb-6">
           <Image
             className="h1-icon"
-            src={`/Icons/sail-boat-icon.svg`}
+            src="/Icons/sail-boat-icon.svg"
             height={30}
             width={30}
             alt=""
           />
-          <h1 className="heading-1">{t('title')}</h1>
+          <h1 className="heading-1">{t("title")}</h1>
         </div>
-        <p className="paragraph-light">{t('info')}</p>
+        <p className="paragraph-light">{t("info")}</p>
         <div className="w-screen lg:w-full ml-0 lg:flex lg:justify-center lg:gap-5 lg:flex-row lg:flex-wrap flex flex-col gap-1">
           {varaBatarContent &&
             varaBatarContent.map((image, index) => (
@@ -45,7 +45,7 @@ const VaraBatarPage = () => {
         </div>
         <div className="lg:flex lg:justify-center md:flex md:justify-center">
           <Image
-            src={`/images/Backgrounds/wavyLineTransparent.png`}
+            src="/images/Backgrounds/wavyLineTransparent.png"
             height={64}
             width={777}
             alt=""
