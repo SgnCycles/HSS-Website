@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaAnchor, FaCompass, FaShieldAlt, FaHandHoldingHeart, FaAward, FaHome, FaHandsHelping, FaInstagram, FaArrowRight, FaArrowLeft, FaGraduationCap, FaHeart } from "react-icons/fa";
 import { FaFire, FaSailboat } from "react-icons/fa6";
 import { IoBookOutline, IoCloseOutline, IoHandLeft, IoHelpBuoy, IoHelpCircle, IoInformationCircle, IoKey, IoMap, IoMenuOutline, IoPeople, IoToday } from "react-icons/io5";
+import HssLogo from "../HssLogo";
 
 const iconList = {
   compass: FaCompass,
@@ -29,6 +30,7 @@ const iconList = {
   hamburgerMenu: IoMenuOutline,
   closeMenu: IoCloseOutline,
   calendar: IoToday,
+  hssLogo: HssLogo
 } as const;
 
 export type IconsProps = {

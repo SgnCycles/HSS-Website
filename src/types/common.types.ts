@@ -6,6 +6,27 @@ export type IdProp = {
   id: number
 }
 
+export type ImageProp = {
+  id: number,
+  image: string
+}
+
+export type TextProp = {
+  id: number,
+  text: string
+}
+
+export type SourceProp = {
+  id: number,
+  source: string
+}
+
+export type TextImageProps = {
+  id: number,
+  text: string,
+  image: string
+}
+
 export type VariantType = {
   variantBackground: string,
 }
