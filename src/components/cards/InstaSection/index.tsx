@@ -66,7 +66,7 @@ const PostCard = ({
         </div>
       )}
     </Link>
-    <div className="mt-4 px-2 pb-4.5 h-12">
+    <div className="mt-4 px-2 pb-5.5 ">
       <p className="text-sm line-clamp-2">
         <span className="font-bold">{post.username}</span> {post.caption}
       </p>
