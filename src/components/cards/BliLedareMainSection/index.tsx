@@ -42,7 +42,7 @@ const BliLedareMainSection = () => {
         <article className="container text-primary">
           <div className="flex w-full justify-center md:justify-start items-center pb-6">
             <Image src="/Icons/bliledare_blue.svg" height={30} width={30} alt="" className="h1-icon" />
-            <h1 className="heading-1">{t("heading")}</h1>
+            <h1 className="heading-1">{t("heading1")}{t("heading2")}</h1>
           </div>
           <div className="flex flex-col paragraph-light mb-6">
             <BliLedareContentCardDesktop />
