@@ -27,7 +27,7 @@ const HeaderHome = () => {
           }}
         />
         <h1 className="z-5 p-4 m-auto lg:pb-0 bg-primary sm:bg-transparent sm:row-start-1 row-start-2 text-xl sm:text-6xl font-heading font-extrabold text-shadow-black text-shadow-xs text-center text-white ">
-          {t('title')}<br />
+          {t("title")}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
         <BorderTwoUp
