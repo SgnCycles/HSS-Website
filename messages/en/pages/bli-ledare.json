@@ -1,0 +1,37 @@
+{
+  "BliLedareCard": {
+    "paidTraining": {
+      "title": "Paid Leadership Training",
+      "subtitle": "The association covers your foundational training through Scouts Sweden"
+    },
+    "supportNetwork": {
+      "title": "Experienced Support Network",
+      "subtitle": "You are never alone. We always work in teams with experienced leaders."
+    },
+    "meaningfulEngagement": {
+      "title": "Meaningful Engagement",
+      "subtitle": "Make a difference in young people's lives and create memories that last a lifetime."
+    },
+    "internationalOpportunities": {
+      "title": "International Opportunities",
+      "subtitle": "Trips, jamborees, and exchanges with scouts around the world."
+    }
+  },
+  "BliLedarePage": {
+    "heading1": "Become a leader ",
+    "heading2": "- we train you",
+    "intro": "No prior experience needed. We send you to Scouts Sweden's leadership training and you'll have support from experienced leaders from day one.",
+    "cta": "Register your interest here →",
+    "readMore": "More information here",
+    "trainingNote": "The association covers all the training you need to thrive as a scout leader.",
+    "details": {
+      "p1": "No prior experience needed. We send you to Scouts Sweden's leadership training and you'll have support from experienced leaders from day one.",
+      "p2": "To give more children and young people the scouting experience, we need more engaged adults. Do you want to grow as a leader and help young people develop? Great, then you'll be a perfect fit as a scout leader.",
+      "p3": "Being a leader is perhaps the greatest adventure. As a leader you make a big difference for many, while getting the opportunity to learn new things, create experiences and develop your leadership. Together with the scouts you'll experience adventure, community and laughter.",
+      "p4": "The leadership situation in the association is relatively good, but every year we need to recruit new ones. We especially welcome new female leaders as we currently have more male leaders.",
+      "p5": "You don't need to be an experienced sailor to participate in our activities. You don't need to be a former scout either. The only requirement is that you have a genuine interest in working with young people and want to volunteer in a well-functioning scout association.",
+      "p6": "The association covers all the training you need to thrive as a scout leader."
+    },
+    "closeCta": "Stäng"
+  }
+}

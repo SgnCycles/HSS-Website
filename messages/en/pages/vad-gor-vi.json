@@ -1,10 +1,63 @@
 {
-"vad-gor-vi": {
-  "titleKey": "What do we do in scouts?",
-  "subTitleKey": "Sea scouts since 1959",
-  "infoKey": "The Scouts give children and young people the opportunity to experience adventures together, grow as individuals, and learn from each other's differences. Our activities are built on community, diversity, and ensuring that everyone can participate on their own terms.",
-  "infoDescFirstKey": "The Scouts give children and young people from all parts of society the chance to experience adventures together while growing as individuals. This means that every day we contribute to an open society characterized by diversity and respect, something that is more relevant than ever.",
-  "infoDescSecondKey": "What makes the Scouts unique is that we do and experience things together. We learn from and value our differences. Our activities are built on the idea that everyone in the group should be able to participate on their own terms.",
-  "readMoreKey":"Read more about what we do in scouts"
-}
+  "vad-gor-vi": {
+    "pageTitle": "Welcome to HSS",
+    "pageTitle2": "and the adventure",
+    "titleKey": "What do we do?",
+    "subTitleKey": "Sea scouts since 1959",
+    "infoKey": "The Scouts give children and young people the opportunity to experience adventures together, grow as individuals, and learn from each other's differences. Our activities are built on community, diversity, and ensuring that everyone can participate on their own terms.",
+    "infoDescFirstKey": "The Scouts give children and young people from all parts of society the chance to experience adventures together while growing as individuals. This means that every day we contribute to an open society characterized by diversity and respect, something that is more relevant than ever.",
+    "infoDescSecondKey": "What makes the Scouts unique is that we do and experience things together. We learn from and value our differences. Our activities are built on the idea that everyone in the group should be able to participate on their own terms.",
+    "readMoreKey": "Read more about what we do in scouts"
+  },
+  "activityCards": {
+    "sailing": {
+      "title": "Sailing & Boating",
+      "info": "We teach sailing, rowing, navigation and water safety in a safe and fun environment."
+    },
+    "camping": {
+      "title": "Camps & Outdoor Life",
+      "info": "Campfires, tenting, nature skills and adventures in forests and the archipelago."
+    },
+    "skills": {
+      "title": "Practical Skills",
+      "info": "We teach maps, compass, knots and construction. Practical skills that last a lifetime."
+    },
+    "community": {
+      "title": "Community",
+      "info": "We build confidence, responsibility and strong friendships in an inclusive group."
+    }
+  },
+  "blirScoutSteps": {
+    "step1": {
+      "title": "Submit your interest form",
+      "info": "Fill in the form on the website. We will contact you within a few days to tell you more."
+    },
+    "step2": {
+      "title": "Come to a try-out meeting",
+      "info": "Your child meets their future patrol and leader for a fun trial evening → free of charge."
+    },
+    "step3": {
+      "title": "Welcome to the troop!",
+      "info": "We register you, tell you about the term fee and you are ready to start the adventure."
+    },
+    "step4": {
+      "title": "Investment & equipment",
+      "info": "Base clothing is paid for by the family, but we help you find everything you need."
+    }
+  },
+  "hurManBlirScout": {
+    "heading": "Become a ",
+    "headingAccent": "scout",
+    "headingMobile": "Become a ",
+    "headingMobileAccent": "scout",
+    "intro": "It's easy to get started! Four steps and you're part of our scout family.",
+    "termTitle": "Term fee includes",
+    "term1": "Weekly meetings & activities",
+    "term2": "Insurance via Scouterna",
+    "term3": "Access to boats & equipment",
+    "faqQuestion": "Do you have questions?",
+    "faqLink": "Visit FAQ",
+    "ageGroupBtn": "Read about age groups",
+    "applyBtn": "Become a scout!"
+  }
 }

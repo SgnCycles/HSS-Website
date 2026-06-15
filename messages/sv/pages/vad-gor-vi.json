@@ -1,10 +1,63 @@
 {
-  "vad-gor-vi":{
-  "titleKey": "Vad gör vi i scout?",
-  "subTitleKey": "Sjöscout sedan 1959",
-  "infoKey": "Scouterna ger barn och unga möjlighet att uppleva äventyr tillsammans, utvecklas som individer och lära av varandras olikheter. Vår verksamhet bygger på gemenskap, mångfald och att alla ska kunna vara med utifrån sina förutsättningar.",
-  "infoDescFirstKey": "Scouterna ger barn och unga från alla delar av samhället chansen att få uppleva äventyr tillsammans och samtidigt växa som individer. Det innebär att vi varje dag bidrar till ett öppet samhälle präglat av mångfald och respekt, något som är mer aktuellt än någonsin.",
-  "infoDescSecondKey": "Något som gör Scouterna unikt är att vi gör och upplever saker tillsammans. Vi lär av och värdesätter våra olikheter. Vår verksamhet bygger på att alla i gruppen ska kunna vara med utifrån sina förutsättningar.",
-  "readMoreKey":"Läs mer om vad vi gör i scout"
+  "vad-gor-vi": {
+    "pageTitle": "Välkommen till HSS",
+    "pageTitle2": "och äventyret",
+    "titleKey": "Vad gör vi i scout?",
+    "subTitleKey": "Sjöscout sedan 1954",
+    "infoKey": "Scouterna ger barn och unga möjlighet att uppleva äventyr tillsammans, utvecklas som individer och lära av varandras olikheter. Vår verksamhet bygger på gemenskap, mångfald och att alla ska kunna vara med utifrån sina förutsättningar.",
+    "infoDescFirstKey": "Scouterna ger barn och unga från alla delar av samhället chansen att få uppleva äventyr tillsammans och samtidigt växa som individer. Det innebär att vi varje dag bidrar till ett öppet samhälle präglat av mångfald och respekt, något som är mer aktuellt än någonsin.",
+    "infoDescSecondKey": "Något som gör Scouterna unikt är att vi gör och upplever saker tillsammans. Vi lär av och värdesätter våra olikheter. Vår verksamhet bygger på att alla i gruppen ska kunna vara med utifrån sina förutsättningar.",
+    "readMoreKey": "Läs mer om vad vi gör i scout"
+  },
+  "activityCards": {
+    "sailing": {
+      "title": "Segling & båtliv",
+      "info": "Vi lär ut segling, rodd, navigation och säkerhet på vattnet i en trygg och rolig miljö."
+    },
+    "camping": {
+      "title": "Läger & friluftsliv",
+      "info": "Lägereldar, tältning, naturkunskap och äventyr i skog och skärgård."
+    },
+    "skills": {
+      "title": "Praktiska skills",
+      "info": "Vi lär ut karta, kompass, knutar och konstruktion. Praktiska färdigheter som håller hela livet."
+    },
+    "community": {
+      "title": "Gemenskap",
+      "info": "Vi bygger självförtroende, ansvarskänsla och starka vänskaper i en inkluderande grupp."
+    }
+  },
+  "blirScoutSteps": {
+    "step1": {
+      "title": "Skicka in intresseanmälan",
+      "info": "Fyll i formuläret på hemsidan. Vi kontaktar dig inom några dagar för att berätta mer."
+    },
+    "step2": {
+      "title": "Kom på ett prova-på möte",
+      "info": "Ditt barn träffar sin blivande patrull och ledare för en rolig provkväll → kostnadsfritt."
+    },
+    "step3": {
+      "title": "Välkommen in i kåren!",
+      "info": "Vi skriver in dig, berättar om terminsavgiften och du är redo att börja äventyret."
+    },
+    "step4": {
+      "title": "Investering & utrustning",
+      "info": "Basplagg bekostas av familjen, men vi hjälper till att hitta allt du behöver."
+    }
+  },
+  "hurManBlirScout": {
+    "heading": "Hur man blir ",
+    "headingAccent": "scout?",
+    "headingMobile": "Bli ",
+    "headingMobileAccent": "scout",
+    "intro": "Det är enkelt att komma igång! Fyra steg och du är en del av vår kårfamilj.",
+    "termTitle": "Terminavgift inkluderar",
+    "term1": "Veckomöten & aktiviteter",
+    "term2": "Försäkring via Scouterna",
+    "term3": "Tillgång till båtar & utrustning",
+    "faqQuestion": "Har du frågor?",
+    "faqLink": "Besök FAQ",
+    "ageGroupBtn": "Läs mer om åldersgrupper",
+    "applyBtn": "Ansök om att bli scout!"
   }
 }
