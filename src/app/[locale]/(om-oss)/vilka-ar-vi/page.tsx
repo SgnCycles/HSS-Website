@@ -38,14 +38,14 @@ const VilkaArViPage = () => {
             {t("documents.title")}
           </h2>
           {aboutUsDocuments && aboutUsDocuments.map((doc) => 
-            <Link
+            <a
               key={doc.id}
-              target="blank"
+              target="_blank"
               href={doc.source}
               className="underline underline-offset-2"
             >
               {t(`documents.${doc.id}.text`)}
-            </Link>
+            </a>
           )}
         </div>
       </section>
