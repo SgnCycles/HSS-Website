@@ -22,8 +22,7 @@ const BliLedareHome = () => {
             className="h2-icon"
           />
           <h2 className="heading-2 text-white">
-            <span className="text-accent">{tTitle('heading')}{" "}</span>
-            <span className={ locale === "sv" ? "hidden" : "hidden md:inline-block"} > -{" "}{tTitle('headingAccent')}{" "}</span>
+            <span className="text-accent">{t("heading1")}</span><span className="hidden sm:inline-block">{t("heading2")}</span>
           </h2>
         </div>
         <p className="paragraph-light text-muted">{t("intro")}</p>
