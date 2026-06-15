@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import BorderSingleDown from "@/components/borders/BorderSingleDown";
 import { aboutUsDocuments, historyHSS } from "@/data/vilkaArViCardContent";
 import type { Metadata } from "next";
