@@ -16,6 +16,7 @@ Check out HSS [website](https://hss-website-two.vercel.app/).
 - deployed on Vercel
 
 ## Project Structure ##
+```bash
 ├── README.md
 ├── eslint.config.mjs
 ├── messages
@@ -39,6 +40,7 @@ Check out HSS [website](https://hss-website-two.vercel.app/).
 │   ├── proxy.ts
 │   └── types
 └── tsconfig.json
+```
 
 ## Features ##
 - Responsive layout (mobile, tablet, desktop)
