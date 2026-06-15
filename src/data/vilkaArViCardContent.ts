@@ -1,6 +1,6 @@
 import { IdProp, ImageProp, SourceProp } from "@/types/common.types";
 
-export const aboutUs: ImageProp[] = [
+export const vilkaArVi: ImageProp[] = [
   { 
     id: 1, 
     image: "/images/Body/vilkaViAr_body1.png" 

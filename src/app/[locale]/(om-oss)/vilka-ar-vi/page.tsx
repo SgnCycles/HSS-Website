@@ -4,9 +4,8 @@ import BorderSingleDown from "@/components/borders/BorderSingleDown";
 import { aboutUsDocuments, historyHSS } from "@/data/vilkaArViCardContent";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import Icons from "@/components/features/Icons";
-import AboutUsCardDesktop from "@/components/cards/AboutUsCardDesktop";
-import AboutUsCardMobile from "@/components/cards/AboutUsCardMobile";
+import VilkaArViCardDesktop from "@/components/cards/VilkaArViDesktop";
+import VilkaArViCardMobile from "@/components/cards/VilkaArViMobile";
 
 export const metadata: Metadata = {
   title: "HSS - Vilka är vi",
@@ -18,29 +17,33 @@ const VilkaArViPage = () => {
   return (
     <main id="main-content">
       <section className="flex flex-col lg:bg-blue-100 lg:bg-[url(/images/Backgrounds/boat-white-transparent.png)] lg:bg-size-[398px] lg:bg-no-repeat lg:bg-top-right">
-        <article className="container flex flex-col pb-0">
-            <h1 className="heading-1 flex align-center justify-center pb-3 lg:justify-start">
-              <Icons name="hssLogo" variant="h1-icon" /> 
-              {t("title")}
-            </h1>
-          <div className="w-fit border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base m-auto rounded-md lg:hidden mb-6">
+        <article className="flex flex-col items-center pb-0">
+          <div className="justify-center container flex flex-row items-center lg:justify-start">
+            <Image
+              src="/images/Logo/logo.png"
+              height={74}
+              width={78}
+              alt=""
+              className="h1-icon"
+            />
+            <h1 className="heading-1">{t("title")}</h1>
+          </div>
+          <div className="border border-accent bg-yellow-200 font-body font-normal text-center pr-4 pl-4 pt-1 pb-1 text-base rounded-md lg:hidden mb-6">
             <p>{t("subTitle")}</p>
           </div>
-          <AboutUsCardMobile />
-          <AboutUsCardDesktop />
+          <VilkaArViCardDesktop />
+          <VilkaArViCardMobile />
         </article>
       </section>
       <BorderSingleDown variant="text-blue-100 lg:block hidden" />
-      <section className=" md:container">
+      <section className="lg:container md:container">
         <h2 className="heading-2 hidden lg:block pb-6">{t("documents.title")}</h2>
         <div className="flex flex-col bg-yellow-200 p-5 mb-0 font-body lg:paragraph-light lg:text-blue-900 text-blue-900 lg:border-accent lg:rounded-md lg:bg-secondary lg:border lg:gap-5 md:rounded-md md:border-accent md:border">
-          <h2 className="heading-3 lg:hidden">
-            {t("documents.title")}
-          </h2>
+          <h2 className="heading-2 lg:hidden">{t("documents.title")}</h2>
           {aboutUsDocuments && aboutUsDocuments.map((doc) => 
             <a
               key={doc.id}
-              target="_blank"
+              target="blank"
               href={doc.source}
               className="underline underline-offset-2"
             >
@@ -49,31 +52,36 @@ const VilkaArViPage = () => {
           )}
         </div>
       </section>
-      <section className="container pt-0 align-center flex flex-col justify-center bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
-        <h2 className="heading-2">
-          <Icons name="anchor" variant="h2-icon text-accent" />
-          {t("history.title")}
-        </h2>
-        <div className="flex flex-col gap-4">
-          {historyHSS && historyHSS.map((h) => (
-            <div key={h.id}>
-            <p className="paragraph-light">
-              {t(`history.${h.id}.text`)}
-            </p>
-            </div>
-          ))}
+      <section className="container flex flex-col bg-[url(/images/Backgrounds/boatBackground1.png)] bg-size-[119px] bg-no-repeat bg-top-right lg:bg-none">
+        <div className="flex flex-row items-center justify-center lg:justify-start pb-6">
+          <Image
+            src="/Icons/yellow-anchor-icon.svg"
+            height={30}
+            width={30}
+            alt=""
+            className="h2-icon"
+          />
+          <h2 className="heading-2">{t("history.title")}</h2>
         </div>
-        <div className="flex flex-col pb-0 lg:flex-row gap-0 lg:gap-2 w-full">
-          {historyHSS && historyHSS.map((image) => (
-            <div key={image.id} className="relative overflow-hidden self-center h-auto ml-0 mr-0 w-screen aspect-4/3 ">
+        <div className="flex flex-col">
+          {historyHSS &&
+            historyHSS.map((content) => (
+              <p key={content.id} className="paragraph-light">
+                {t(`history.${content.id}.text`)}
+              </p>
+            ))}
+        </div>
+        <div className="flex flex-col items-center lg:flex-row lg:gap-5 lg:justify-center md:flex-row self-center lg:w-full w-screen md:w-auto gap-1 md:gap-2">
+          {historyHSS &&
+            historyHSS.map((image, index) => (
               <Image
+                key={index}
                 src={`/images/Body/${image.image}`}
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
+                height={276}
+                width={393}
                 alt="historia om båtar"
-                className="ml-0 mr-0 object-cover md:rounded-none lg:rounded-md"
+                className="lg:h-60 lg:rounded-md md:rounded-md md:w-[33.33%] h-auto w-[-webkit-fill-available] object-cover md:h-50"
               />
-            </div>
           ))}
         </div>
         <Image
