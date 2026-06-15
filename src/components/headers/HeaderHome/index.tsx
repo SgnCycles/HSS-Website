@@ -27,18 +27,18 @@ const HeaderHome = () => {
           }}
         />
         <h1 className="z-5 p-4 m-auto lg:pb-0 bg-primary sm:bg-transparent sm:row-start-1 row-start-2 text-xl sm:text-6xl font-heading font-extrabold text-shadow-black text-shadow-xs text-center text-white ">
-          {t('title')}<br />
+          {t("title")}<br />
           <span className="text-accent">Hässelby Strand Sjöscoutkår</span>
         </h1>
         <BorderTwoUp
           foreground="text-primary sm:text-primary/45"
           background="text-blue-100/30 sm:text-blue-100/45"
         />
-        <div className="z-5 bg-primary sm:bg-blue-100/45">
-          <div className="z-5 bg-primary sm:bg-primary/45">
-            <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] sm:grid-rows-[auto] gap-4 sm:gap-20 sm:grid-cols-[1fr_auto] ">
-              <p className="paragraph font-bold mb-0 text-center sm:text-left text-white sm:justify-self-start sm:text-shadow-lg sm:whitespace-pre-line">
-                {t('description')}
+        <div className="z-5 bg-primary md:bg-blue-100/45">
+          <div className="z-5 bg-primary md:bg-primary/45">
+            <div className="containerHero h-min justify-items-center items-end grid grid-rows-[auto_auto] md:grid-rows-[auto] gap-4 md:gap-20 md:grid-cols-[1fr_auto] ">
+              <p className="paragraph font-bold mb-0 text-center md:text-left text-white md:justify-self-start md:text-shadow-lg sm:whitespace-pre-line">
+                {t("description")}
               </p>
               <Button
                 ariaLabel=""
