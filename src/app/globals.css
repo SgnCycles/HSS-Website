@@ -357,12 +357,13 @@
 }
 
 @utility paragraph {
+  color: inherit;
+  line-height: 120%;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 1rem;
-  color: inherit;
-  text-align: left;
   margin: 0 0 16px 0;
+  text-align: left;
 
   @media (min-width: 640px) {
     margin: 0 0 24px 0;
@@ -373,6 +374,7 @@
 @utility paragraph-light {
   font-family: var(--font-body);
   font-weight: 400;
+  line-height: 170%;
   font-size: 1.1rem;
   color: inherit;
   text-align: left;

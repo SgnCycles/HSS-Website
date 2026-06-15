@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import useIsMobile from "@/hooks/useGetMobile";
-import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 const SpecificaMarken = () => {
   const isMobile = useIsMobile();
