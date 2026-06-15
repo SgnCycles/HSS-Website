@@ -13,7 +13,9 @@ const HurManBlirScoutFeature = () => {
       <div className="container">
         <div className="flex justify-center lg:justify-start pb-6">
           <Image className="h2-icon" src="/Icons/yellow-two-people-icon.svg" height={50} width={50} alt="" />
-          <h2 className="heading-2 text-white">{t('heading')} <span className="text-background hidden">{t('headingAccent')}</span>
+          <h2 className="hidden md:inline-block heading-2 text-white">{t('heading')} <span className="text-accent hidden md:inline-block">{t('headingAccent')}</span>
+          </h2>
+          <h2 className="md:hidden heading-2 text-white">{t("headingMobile")}<span className="text-accent">{t("headingMobileAccent")}</span>
           </h2>
         </div>
         <p className="paragraph-light text-white">{t('intro')}</p>

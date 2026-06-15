@@ -46,8 +46,10 @@
     }
   },
   "hurManBlirScout": {
-    "heading": "Become a",
-    "headingAccent": "leader",
+    "heading": "Become a ",
+    "headingAccent": "scout",
+    "headingMobile": "Become a ",
+    "headingMobileAccent": "scout",
     "intro": "It's easy to get started! Four steps and you're part of our scout family.",
     "termTitle": "Term fee includes",
     "term1": "Weekly meetings & activities",
