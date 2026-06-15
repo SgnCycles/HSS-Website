@@ -1,0 +1,33 @@
+{
+  "vilka-ar-vi": {
+    "title": "Om HSS",
+    "subTitle": "Scoutkåren bildades 1959",
+    "about-us": {
+      "1": { 
+        "text": "Hässelby Strands Sjöscoutkår (HSS) är en traditionsrik ideell ungdomsverksamhet med fokus på scouting och båtliv. Vi är religiöst och politisk obundna, och medlem i Svenska Scoutförbundet, som med ca 65.000 medlemmar är en av Sveriges största ungdomsorganisationer.",
+        "imgAlt": "" 
+      },
+      "2": { 
+        "text": "Målet med vår verksamhet är att ge barn och ungdomar möjligheten att uppleva naturen, båtlivet, sjömanskapet, utmaningarna och – framförallt – kamratskapet. Grundidén är Learning by doing. Inom Scouterna finns ingen avbytarbänk!",
+        "imgAlt": "" 
+      },
+      "3": { 
+        "text": "Scoutkåren bildades 1959 och bedriver verksamheten i en trevlig lokal (kallad Ruffen) vid Mälarens strand i Hässelby. Kåren har omkring 130 glada medlemmar, äger fem segelbåtar, tio optimistjollar, två 2-kronor, snabb följebåt och en stor scoutstuga.",
+        "imgAlt": "" 
+      }
+    },
+    "history": {
+      "title": "Historien om HSS",
+      "1": { "text": "HSS grundades år 1959 och växte snabbt tack vare ett starkt engagemang från både ledare, föräldrar och scouter. Tillsammans hjälptes man åt att bygga upp verksamheten genom aktiviteter, insamlingar och ideellt arbete." },
+      "2": { "text": "Kårens första båt, Igelknäcken (“Inga-Lunda”), blev starten på HSS starka sjöscouttradition. Med tiden kunde fler båtar köpas in tack vare basarer, lotterier och ett stort gemensamt engagemang. Under 1960-talet fortsatte kåren att växa. Fler barn och ungdomar hittade till scoutinglivet, och segling på Mälaren blev en självklar del av verksamheten. Nya båtar sjösattes och sjölivet blev en viktig del av gemenskapen." },
+      "3": { "text": "Behovet av en egen samlingsplats på land växte också fram. Genom många ideella krafter byggdes scoutstugan Myset, som invigdes 1968. Än idag används den som en plats för läger, gemenskap och minnen." },
+      "4": { "text": "Sedan starten har HSS varit en sjöscoutkår präglad av gemenskap, samarbete och äventyr. Det är en tradition som fortfarande lever vidare idag." }
+    },
+    "documents": {
+      "title": "Se andra dokument",
+      "1": { "text": "Stadgar för Hässelby Strands Sjöscoutkår →" },
+      "2": { "text": "Verksamhetsplan för perioden 2025-2026 →" },
+      "3": { "text": "HSS Kår stämma för 2025 →" }
+    }
+  }
+}
