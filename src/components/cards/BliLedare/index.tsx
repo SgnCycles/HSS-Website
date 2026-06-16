@@ -53,7 +53,7 @@ const BliLedareHome = () => {
               ))}
           </ul>
           <div className="cards-column items-center text-center font-bold">
-            <div className="hidden md:flex relative flex-1 w-full">
+            <div className="hidden md:flex relative flex-1 md:max-h-85 w-full">
               <Image
                 className="rounded-md object-cover"
                 src="/images/Body/home_body2.png"
