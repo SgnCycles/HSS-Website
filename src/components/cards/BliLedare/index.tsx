@@ -51,13 +51,13 @@ const BliLedareHome = () => {
                 </li>
               ))}
           </ul>
-          <div className="flex flex-col justify-start lg:justify-between items-center text-center gap-6 font-bold">
-            <div className="hidden md:flex">
+          <div className="cards-column items-center text-center font-bold">
+            <div className="hidden md:flex relative flex-1 md:max-h-85 w-full">
               <Image
-                className="rounded-md"
-                src={"/images/Body/home_body2.png"}
-                height={300}
-                width={300}
+                className="rounded-md object-cover"
+                src="/images/Body/home_body2.png"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
                 alt=""
               />
             </div>
