@@ -2,12 +2,15 @@ import Button from "@/components/buttons/Button";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Engagera dig",
-  description:
-    "Som förälder behöver du inget fast uppdrag – även tillfällig hjälp är värdefull för kårens verksamhet och barnens scoutupplevelse.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("engagera-dig");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const EngageraDigSomVuxenPage = () => {
 
@@ -42,7 +45,7 @@ const EngageraDigSomVuxenPage = () => {
             {t("intro")}
           </p>
           <div className="flex justify-center items-center">
-            <ul className="cards-column pb-6 md:w-[70%] mb-6">
+            <ul className="cards-column md:pb-6 md:w-[70%] mb-6">
               {tActivityList &&
                 tActivityList.map((card, index) => (
                   <li

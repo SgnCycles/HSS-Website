@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
 import { aboutUsDocuments } from "@/data/vilkaArViCardContent";
 import BorderSingleDown from "@/components/borders/BorderSingleDown";
 import { historyHSS } from "@/data/vilkaArViCardContent";
@@ -7,12 +6,15 @@ import VilkaArViCardDesktop from "@/components/cards/VilkaArViDesktop";
 import VilkaArViCardMobile from "@/components/cards/VilkaArViMobile";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Vilka är vi",
-  description:
-    "Scouterna ger barn och unga äventyr och personlig utveckling i en inkluderande gemenskap där mångfald, respekt och samarbete står i centrum.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("vilka-ar-vi");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const VilkaArViPage = () => {
   const t = useTranslations("vilka-ar-vi")

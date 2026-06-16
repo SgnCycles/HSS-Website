@@ -3,12 +3,15 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSS - Bra att veta",
-  description:
-    "Det behövs inga särskilda kläder eller saker för att börja i Scouterna, men vissa utrustningar kan vara bra att ha eller låna efter en tid.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("bra-att-veta");
+  return {
+    title: `${t("metaTitle")}`,
+    description: `${t("metaDescription")}`,
+  };
+}
 
 const BraAttVetaPage = () => {
 
@@ -47,7 +50,7 @@ const BraAttVetaPage = () => {
             {t("readMore")}
           </Link>
         </article>
-        <article className="container">
+        <article className="container pb-0">
           <div className="w-full flex justify-center sm:justify-start items-center pb-2 sm:pb-6">
             <Image
               className="h2-icon hidden sm:flex place-self-start pt-3 lg:pt-1"
@@ -81,7 +84,7 @@ const BraAttVetaPage = () => {
                 </a>
               </h3>
             </div>
-            <div className="w-full hidden sm:grid sm:place-items-center">
+            <div className="w-full hidden sm:grid sm:place-items-center pt-6">
               <Image
                 className="w-full h-auto rounded-md"
                 src="/images/Body/braAttVeta_body1.png"
@@ -112,7 +115,7 @@ const BraAttVetaPage = () => {
             text="hsstrojan@hss-scout.org"
           />
         </div>
-        <div className="container card bg-yellow-200 border border-accent rounded-md">
+        <div className="container card bg-yellow-200 border border-accent rounded-md sm:mt-6">
           <p className="paragraph-light mb-0">
             {t("sectionFourParagraph")}
           </p>

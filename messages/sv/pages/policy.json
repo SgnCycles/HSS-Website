@@ -1,5 +1,7 @@
 {
   "policy": {
+    "metaTitle": "HSS Policy",
+    "metaDescription": "Hässelby Strands Sjöscoutkårs policyer för trygghet, flytvästar, fotografering och personuppgifter skapar en säker och trygg scoutverksamhet.",
     "pageTitle": "Trygga Möten",
     "subTitle": "Hajker och läger",
     "pdfButton": "Läs hela PDF",
@@ -26,13 +28,19 @@
     },
     "gdpr": {
       "title": "Uppgifter vi registrerar",
-      "1": {"text": "Namn, personnummer och adress"},
-      "2": {"text": "Telefonnummer (minst en vårdnadshavares för omyndig scout)"},
-      "3": {"text": "E-postadress (minst en vårdnadshavares adress för omyndig scout)"},
-      "4": {"text": "Avdelning, patrull och startdatum"},
-      "5": {"text": "Medlemsavgift och ev. utmärkelser"},
-      "6": {"text": "Ev. uppgifter om syskon och vårdnadshavares roll i kåren"},
-      "7": {"text": "För ledare: genomförda utbildningar och roll i kåren"},
+      "1": { "text": "Namn, personnummer och adress" },
+      "2": {
+        "text": "Telefonnummer (minst en vårdnadshavares för omyndig scout)"
+      },
+      "3": {
+        "text": "E-postadress (minst en vårdnadshavares adress för omyndig scout)"
+      },
+      "4": { "text": "Avdelning, patrull och startdatum" },
+      "5": { "text": "Medlemsavgift och ev. utmärkelser" },
+      "6": {
+        "text": "Ev. uppgifter om syskon och vårdnadshavares roll i kåren"
+      },
+      "7": { "text": "För ledare: genomförda utbildningar och roll i kåren" },
       "paragraph": "Uppgifter om syskon och vårdnadshavare används för att erbjuda syskonförtur och prioritera barn vars vårdnadshavare har en roll i kåren. Vi skriver aldrig in hälsouppgifter i Scoutnet.",
       "button": "Läs hela GDPR",
       "popUp": {

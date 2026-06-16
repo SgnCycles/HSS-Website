@@ -1,7 +1,9 @@
 {
   "VaraLokalerPage": {
     "title": "Våra lokaler",
-    "info": "Upptäck våra lokaler vid vattnet och ute i skogen."
+    "info": "Upptäck våra lokaler vid vattnet och ute i skogen.",
+    "metaTitle": "HSS lokaler",
+    "metaDescription": "Myset och Ruffen är HSS:s scoutlokaler för möten, läger och sjöscouting - välutrustade samlingsplatser för äventyr, gemenskap och lärande."
   },
   "VaraLokalerCard": {
     "title": "Myset",
